@@ -3,15 +3,15 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.4.2756",
+        "id": "forge-14.23.4.2759",
         "primary": true
       }
     ]
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "All the Mods 3 test MORE RECENTISH",
-  "version": "v6.0.0-ptr3",
+  "name": "All The Remix: Yamz",
+  "version": "ATM3-R 0.0.1",
   "author": "atmteam",
   "projectID": 269708,
   "files": [
@@ -936,11 +936,6 @@
       "required": true
     },
     {
-      "projectID": 296289,
-      "fileID": 2593280,
-      "required": true
-    },
-    {
       "projectID": 226780,
       "fileID": 2441500,
       "required": true
@@ -1371,13 +1366,8 @@
       "required": true
     },
     {
-      "projectID": 297038,
-      "fileID": 2600190,
-      "required": true
-    },
-    {
       "projectID": 299815,
-      "fileID": 2599056,
+      "fileID": 2610772,
       "required": true
     }
   ],
