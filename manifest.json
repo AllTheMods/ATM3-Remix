@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "All the Mods 3 - Remix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "atmteam",
   "projectID": 301845,
   "files": [
@@ -32,7 +32,7 @@
     },
     {
       "projectID": 258205,
-      "fileID": 2607001,
+      "fileID": 2611185,
       "required": true
     },
     {
@@ -187,7 +187,7 @@
     },
     {
       "projectID": 255232,
-      "fileID": 2593671,
+      "fileID": 2611166,
       "required": true
     },
     {
@@ -403,6 +403,11 @@
     {
       "projectID": 239286,
       "fileID": 2609136,
+      "required": true
+    },
+    {
+      "projectID": 250898,
+      "fileID": 2607735,
       "required": true
     },
     {
