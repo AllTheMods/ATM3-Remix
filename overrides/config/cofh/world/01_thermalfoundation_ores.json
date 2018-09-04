@@ -1,13 +1,13 @@
 {
 	"dependencies": "thermalfoundation",
 	"populate": {
-		"silver": {
+		"aluminium": {
 			"distribution": "uniform",
 			"generator": {
 				"block": {
 					"name": "thermalfoundation:ore",
 					"properties": {
-						"type": "silver"
+						"type": "aluminium"
 					}
 				},
 				"material": "minecraft:stone",
