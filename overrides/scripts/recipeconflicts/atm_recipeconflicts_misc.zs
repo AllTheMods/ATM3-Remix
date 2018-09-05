@@ -337,3 +337,19 @@ print(" ======================================================== ");
 //
 	recipes.removeShaped(<techreborn:dust:20>);
 	recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+   
+//====== Birds Food Pita Conflict ======
+//
+	recipes.remove(<birdsfoods:pita>);
+	recipes.remove(<actuallyadditions:item_misc:4>);
+   recipes.addShaped(<birdsfoods:pita>, [
+      [null, <minecraft:wheat>, <minecraft:wheat>],
+      [null, null, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<actuallyadditions:item_misc:4> * 2, [
+      [<minecraft:wheat>, <minecraft:wheat>, null],
+      [null, null, null],
+      [null, null, null]
+      ]);
+      
