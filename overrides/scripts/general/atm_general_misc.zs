@@ -455,9 +455,9 @@ recipes.remove(<minecraft:chest>);
 	
 //====== Angel Ring Message for Draconic Crafting ======
 //
-	<extrautils2:angelring:0>.addTooltip(
+	<extrautils2:angelring:0>.addTooltip(format.aqua(
 		"Use this ring for making the draconic chestplate."
-	);
+	));
    
 //====== SkyStone Tooltip ======
 //
@@ -465,6 +465,6 @@ recipes.remove(<minecraft:chest>);
 		
 //====== Nether Wart Tooltip ======
 //
-	<minecraft:nether_wart>.addTooltip(
+	<minecraft:nether_wart>.addTooltip(format.aqua(
 		"Nether Wart can be grown on tilled soul sand with lava nearby to hydrate."
-	);
+	));
