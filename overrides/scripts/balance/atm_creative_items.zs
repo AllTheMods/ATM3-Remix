@@ -233,7 +233,7 @@ print(" ====================================================== ");
 	*/
 	
 	// Thermal Expansion Capacitor
-	recipes.addShapeless("CreativeCap", <thermalexpansion:capacitor:32000>, [
+	recipes.addShapeless("CreativeCap", <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), [
 		atmStarReturnOrb, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>
 		]);
 	<thermalexpansion:capacitor:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
@@ -305,6 +305,12 @@ print(" ====================================================== ");
 		<atmtweaks:item_material>.giveBack(), <extrautils2:itembuilderswand>, <betterbuilderswands:wandunbreakable>
 		]);
 	<extrautils2:itemcreativebuilderswand>.addTooltip("Does not consume the ATM Star at all when crafted");
+	
+	// Creative Destruction Wand
+	recipes.addShapeless("CreativeDWand", <extrautils2:itemcreativedestructionwand>, [
+		<atmtweaks:item_material>.giveBack(), <extrautils2:itemdestructionwand>, <xreliquary:destruction_catalyst>
+		]);
+	<extrautils2:itemcreativedestructionwand>.addTooltip("Does not consume the ATM Star at all when crafted");
 		
 	// Embers Creative Ember Source
 	recipes.addShapedMirrored("CreativeEmber", <embers:creative_ember_source>, [
@@ -483,3 +489,61 @@ print(" ====================================================== ");
 		[<overloaded:nether_star_block>, atmStarReturnOrb, <overloaded:nether_star_block>]
 		]);
 	<overloaded:multi_boots>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+
+	// Creative Bookcase
+	recipes.addShaped("CBookcase", <bibliocraft:bookcasecreative>, [
+		[<bibliocraft:bookcase>, <bibliocraft:bookcase>, <bibliocraft:bookcase>],
+		[<bibliocraft:bookcase>, atmStarReturnOrb, <bibliocraft:bookcase>],
+		[<bibliocraft:bookcase>, <bibliocraft:bookcase>, <bibliocraft:bookcase>]
+	]);
+	<bibliocraft:bookcasecreative>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Magnet
+	recipes.addShapeless("CFluxMag",
+		<thermalinnovation:magnet:32000>.withTag({Energy: 600000}), [
+			atmStarReturnOrb, <thermalinnovation:magnet:4>, <thermalinnovation:magnet:4>
+		]);
+	<thermalinnovation:magnet:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Saw
+	recipes.addShapeless("CFluxSaw",
+		<thermalinnovation:saw:32000>.withTag({Energy: 600000}), [
+			atmStarReturnOrb, <thermalinnovation:saw:4>, <thermalinnovation:saw:4>
+		]);
+	<thermalinnovation:saw:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Bore
+	recipes.addShapeless("CFluxBore",
+		<thermalinnovation:drill:32000>.withTag({Energy: 600000}), [
+			atmStarReturnOrb, <thermalinnovation:drill:4>, <thermalinnovation:drill:4>
+		]);
+	<thermalinnovation:drill:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+		
+	// Creative Jetpack
+	recipes.addShapeless("CJetpack",
+		<simplyjetpacks:itemjetpack:0>.withTag({Energy: 200000}), [
+			atmStarReturnOrb, <simplyjetpacks:itemjetpack:13>, <simplyjetpacks:itemjetpack:4>
+		]);
+	<simplyjetpacks:itemjetpack:0>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Pack
+	recipes.addShapeless("CFluxPack",
+		<simplyjetpacks:itemfluxpack:0>.withTag({Energy: 2000000}), [
+			atmStarReturnOrb, <simplyjetpacks:itemfluxpack:8>, <simplyjetpacks:itemfluxpack:3>
+		]);
+	<simplyjetpacks:itemfluxpack:0>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Compressor
+	recipes.addShaped("CCompressor", <pneumaticcraft:creative_compressor>, [
+		[<pneumaticcraft:heat_sink>, <pneumaticcraft:advanced_air_compressor>, <pneumaticcraft:heat_sink>],
+		[<pneumaticcraft:electrostatic_compressor>, atmStarReturnOrb, <pneumaticcraft:advanced_liquid_compressor>],
+		[<pneumaticcraft:electric_compressor>, <pneumaticcraft:compressed_iron_block>, <pneumaticcraft:flux_compressor>]
+	]);
+	<pneumaticcraft:creative_compressor>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Wireless Crafting Terminal
+	recipes.addShapeless("CWCTerm",
+		<wct:wct_creative>, [
+			atmStarReturnOrb, <wct:wct>, <wct:wct>
+		]);
+	<wct:wct_creative>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
