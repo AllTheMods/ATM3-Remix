@@ -353,3 +353,7 @@ print(" ======================================================== ");
       [null, null, null]
       ]);
       
+//====== Relapse/Love Potions ======
+//
+   recipes.addShapeless(<minecraft:potion>.withTag({Potion: "extrautils2:xu2.relapse"}), [<minecraft:potion>.onlyWithTag({Potion: "extrautils2:xu2.love"})]);
+   recipes.addShapeless(<minecraft:potion>.withTag({Potion: "extrautils2:xu2.love"}), [<minecraft:potion>.onlyWithTag({Potion: "extrautils2:xu2.relapse"})]);
