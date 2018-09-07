@@ -294,7 +294,6 @@ print(" ======================================================== ");
 		[null, <ore:cropRice>, null],
 		[null, null, <ore:cropRice>]
 		]);
-	recipes.addShapeless("PaperShapeless2", <minecraft:paper>*6, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <liquid:water>*1000]);
 
 	recipes.remove(<mekanism:cardboardbox>);
 	recipes.addShaped("CardboardBox", <mekanism:cardboardbox>, [
