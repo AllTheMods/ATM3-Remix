@@ -21,12 +21,12 @@ print(" ====================================================== ");
 	var atmStar             = <atmtweaks:item_material>;
 
 	//Energy Core vars
-	val dracoCap = <draconicevolution:draconium_capacitor:1>.withTag({Energy: 256000000});
+	val dracoCap = <draconicevolution:draconium_capacitor:1>.withTag({Energy:256000000});
 	val fusionCoil = <techreborn:fusion_coil>;
-	val teCap = <thermalexpansion:capacitor:4>.withTag({Energy: 25000000});
+	val teCap = <thermalexpansion:capacitor:4>.withTag({Energy:25000000});
 	val dracoReactor = <draconicevolution:reactor_core>;
 	val dracoInjector = <draconicevolution:reactor_component:1>;
-	val inflictGem = <embers:inflictor_gem>;
+	val resonatingCrystal = <deepresonance:resonating_crystal>.withTag({efficiency:99.99893f,strength:100.0f,purity:100.0f,power:100.0f}).onlyWithTag({strength:100.0f,purity:100.0f,power:100.0f});
 	val energyCore = <overloaded:energy_core>;
 	val rainbow = <extrautils2:rainbowgenerator>;
 
@@ -38,8 +38,8 @@ print(" ====================================================== ");
 	var richSlag = <thermalfoundation:material:865>;
 	var etAethium = <environmentaltech:aethium_crystal>;
 	var tungstensteel = <techreborn:plates:32>;
-	var advAlloy = <ore:plateAdvancedAlloy>;
 	var fuelMOX = <ic2:nuclear:4>;
+	var octineIng = <thebetweenlands:octine_ingot>;
 
 	//Density vars
 	var singularity = <appliedenergistics2:material:48>;
@@ -55,22 +55,21 @@ print(" ====================================================== ");
 	var uuTR = <techreborn:uumatter>;
 	var uuFluid = <liquid:ic2uu_matter>;
 	var rftRarity6 = <rftoolsdim:dimlet_control_circuit:6>;
+	var advPressurePipes = <pneumaticcraft:advanced_pressure_tube>;
 
 	//Orb Vars
-	var rootsTimeSpell = <roots:petal_dust>.withTag({spell: "spell_oxeye_daisy"});
+	var rootsTimeSpell = <roots:petal_dust>.withTag({spell:"spell_oxeye_daisy"}).onlyWithTag({spell:"spell_oxeye_daisy"});
 	var manaBiscuit = <botania:manacookie>;
 	var starShard = <mysticalagradditions:stuff>;
-	var alfglass = <botania:elfglass>;
 	var opinium = <extrautils2:opinium:8>;
 	var embersWildfire = <embers:wildfire_core>;
-	var corporea = <botania:corporeaindex>;
-	var soulShard = <soulshardsrespawn:soul_shard>.withTag({binding: {kills: 1600}});
+	var soulShard = <soulshardsrespawn:soul_shard>.withTag({binding:{kills:1600}}).onlyWithTag({binding:{kills:1600}});
 	var blockIvory = <psi:psi_decorative:8>;
 	var gaiaIngot = <botania:manaresource:14>;
 	var infusedDiamond = <rftools:infused_diamond>;
 	var dustManaTE = <thermalfoundation:material:1028>;
 	var sacredLight = <mobtotems:sacred_light>;
-	var manaTabFull = <botania:manatablet>.withTag({mana: 500000});
+	var manaTabFull = <botania:manatablet>.withTag({mana:500000}).onlyWithTag({mana:500000});
 	//var gaiaHead = <botania:gaiahead>;
 	var runePride = <ore:runePrideB>;
 	var runeEnvy = <ore:runeEnvyB>;
@@ -79,7 +78,11 @@ print(" ====================================================== ");
 	var runeGreed = <ore:runeGreedB>;
 	var runeGluttony = <ore:runeGluttonyB>;
 	var runeLust = <ore:runeLustB>;
-	var bloodDrop = <tconstruct:edible:33>;
+	var voidPearl = <thaumcraft:voidseer_charm>;
+	var archMageOrb = <bloodmagic:blood_orb>.withTag({orb:"bloodmagic:archmage"}).onlyWithTag({orb:"bloodmagic:archmage"});
+	var ying = <careerbees:ingredients:11>;
+	var yang = <careerbees:ingredients:12>;
+	var necroPrime = <astralsorcery:blockborehead>;
 
 	val atmStarReturnOrb = <atmtweaks:item_material:0>.transformReplace(atmOrb);
 	val atmStarReturnIndustrium = <atmtweaks:item_material:0>.transformReplace(atmForgedIndustrium);
@@ -107,7 +110,7 @@ print(" ====================================================== ");
 	recipes.remove(energyCore);
 	recipes.addShapedMirrored("overloadedenergycore", energyCore,
 		[[teCap, dracoCap, teCap],
-		 [inflictGem, dracoInjector, inflictGem],
+		 [resonatingCrystal, dracoInjector, resonatingCrystal],
 		 [rainbow, <ore:fusionExtreme>, rainbow]]);
 
 
@@ -119,7 +122,7 @@ print(" ====================================================== ");
 		[fluxElectrumThing, ludicriteIngot, fluxElectrumThing]
 		]);
 	mods.immersiveengineering.ArcFurnace.addRecipe(atmForgedIndustrium, atmIndustrium, richSlag, 600, 4200,
-		[etAethium, tungstensteel, advAlloy, fuelMOX]);
+		[etAethium, tungstensteel, octineIng, fuelMOX]);
 
 
 //====== Density ======
@@ -159,7 +162,7 @@ print(" ====================================================== ");
 	//
 		recipes.addShaped("UnifiedCore", atmUnifiedCore, [
 			[uuIC2, energyCore, uuIC2],
-			[uuIC2, atmDense.transformReplace(atmSphere), uuIC2],
+			[advPressurePipes, atmDense.transformReplace(atmSphere), advPressurePipes],
 			[uuIC2, rftRarity6, uuIC2]
 			]);
 
@@ -177,7 +180,7 @@ print(" ====================================================== ");
 	//Anima Mundi
 	recipes.addShaped("Anima", atmAnima, [
 		[infusedDiamond, dustManaTE.giveBack(), infusedDiamond],
-		[blockIvory, bloodDrop, blockIvory],
+		[blockIvory, voidPearl, blockIvory],
 		[gaiaIngot, manaBiscuit, gaiaIngot]
 		]);
 		
@@ -191,11 +194,11 @@ print(" ====================================================== ");
 	//Transcend Orb
 	mods.astralsorcery.Altar.addConstellationAltarRecipe(atmOrb, 2000, 10, [
 		/*[00]*/    starShard,
-		/*[01]*/    corporea,
+		/*[01]*/    necroPrime,
 		/*[02]*/    starShard,
-		/*[03]*/    alfglass,
+		/*[03]*/    yang,
 		/*[04]*/    atmAnima,
-		/*[05]*/    alfglass,
+		/*[05]*/    ying,
 		/*[06]*/    starShard,
 		/*[07]*/    soulShard,
 		/*[08]*/    starShard,
@@ -217,7 +220,7 @@ print(" ====================================================== ");
 //====== THE GOOD STUFF! =======
 //
 	//ATM Star
-	recipes.addShapeless("ATMStar", atmStar, [atmOrb,atmUnifiedCore,atmForgedIndustrium,manaTabFull,manaTabFull,manaTabFull]);
+	recipes.addShapeless("ATMStar", atmStar, [atmOrb,atmUnifiedCore,atmForgedIndustrium,manaTabFull,archMageOrb,manaTabFull]);
 
 	// Thermal Expansion Creative Upgrade Kit
 	// Disabled since applied to cache or tanks has infinite vending
@@ -230,7 +233,7 @@ print(" ====================================================== ");
 	*/
 	
 	// Thermal Expansion Capacitor
-	recipes.addShapeless("CreativeCap", <thermalexpansion:capacitor:32000>, [
+	recipes.addShapeless("CreativeCap", <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), [
 		atmStarReturnOrb, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>
 		]);
 	<thermalexpansion:capacitor:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
@@ -302,6 +305,12 @@ print(" ====================================================== ");
 		<atmtweaks:item_material>.giveBack(), <extrautils2:itembuilderswand>, <betterbuilderswands:wandunbreakable>
 		]);
 	<extrautils2:itemcreativebuilderswand>.addTooltip("Does not consume the ATM Star at all when crafted");
+	
+	// Creative Destruction Wand
+	recipes.addShapeless("CreativeDWand", <extrautils2:itemcreativedestructionwand>, [
+		<atmtweaks:item_material>.giveBack(), <extrautils2:itemdestructionwand>, <xreliquary:destruction_catalyst>
+		]);
+	<extrautils2:itemcreativedestructionwand>.addTooltip("Does not consume the ATM Star at all when crafted");
 		
 	// Embers Creative Ember Source
 	recipes.addShapedMirrored("CreativeEmber", <embers:creative_ember_source>, [
@@ -480,3 +489,61 @@ print(" ====================================================== ");
 		[<overloaded:nether_star_block>, atmStarReturnOrb, <overloaded:nether_star_block>]
 		]);
 	<overloaded:multi_boots>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+
+	// Creative Bookcase
+	recipes.addShaped("CBookcase", <bibliocraft:bookcasecreative>, [
+		[<bibliocraft:bookcase>, <bibliocraft:bookcase>, <bibliocraft:bookcase>],
+		[<bibliocraft:bookcase>, atmStarReturnOrb, <bibliocraft:bookcase>],
+		[<bibliocraft:bookcase>, <bibliocraft:bookcase>, <bibliocraft:bookcase>]
+	]);
+	<bibliocraft:bookcasecreative>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Magnet
+	recipes.addShapeless("CFluxMag",
+		<thermalinnovation:magnet:32000>.withTag({Energy: 600000}), [
+			atmStarReturnOrb, <thermalinnovation:magnet:4>, <thermalinnovation:magnet:4>
+		]);
+	<thermalinnovation:magnet:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Saw
+	recipes.addShapeless("CFluxSaw",
+		<thermalinnovation:saw:32000>.withTag({Energy: 600000}), [
+			atmStarReturnOrb, <thermalinnovation:saw:4>, <thermalinnovation:saw:4>
+		]);
+	<thermalinnovation:saw:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Bore
+	recipes.addShapeless("CFluxBore",
+		<thermalinnovation:drill:32000>.withTag({Energy: 600000}), [
+			atmStarReturnOrb, <thermalinnovation:drill:4>, <thermalinnovation:drill:4>
+		]);
+	<thermalinnovation:drill:32000>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+		
+	// Creative Jetpack
+	recipes.addShapeless("CJetpack",
+		<simplyjetpacks:itemjetpack:0>.withTag({Energy: 200000}), [
+			atmStarReturnOrb, <simplyjetpacks:itemjetpack:13>, <simplyjetpacks:itemjetpack:4>
+		]);
+	<simplyjetpacks:itemjetpack:0>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Flux Pack
+	recipes.addShapeless("CFluxPack",
+		<simplyjetpacks:itemfluxpack:0>.withTag({Energy: 2000000}), [
+			atmStarReturnOrb, <simplyjetpacks:itemfluxpack:8>, <simplyjetpacks:itemfluxpack:3>
+		]);
+	<simplyjetpacks:itemfluxpack:0>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Compressor
+	recipes.addShaped("CCompressor", <pneumaticcraft:creative_compressor>, [
+		[<pneumaticcraft:heat_sink>, <pneumaticcraft:advanced_air_compressor>, <pneumaticcraft:heat_sink>],
+		[<pneumaticcraft:electrostatic_compressor>, atmStarReturnOrb, <pneumaticcraft:advanced_liquid_compressor>],
+		[<pneumaticcraft:electric_compressor>, <pneumaticcraft:compressed_iron_block>, <pneumaticcraft:flux_compressor>]
+	]);
+	<pneumaticcraft:creative_compressor>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	
+	// Creative Wireless Crafting Terminal
+	recipes.addShapeless("CWCTerm",
+		<wct:wct_creative>, [
+			atmStarReturnOrb, <wct:wct>, <wct:wct>
+		]);
+	<wct:wct_creative>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
