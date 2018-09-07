@@ -455,15 +455,19 @@ recipes.remove(<minecraft:chest>);
 	
 //====== Angel Ring Message for Draconic Crafting ======
 //
-	<extrautils2:angelring:0>.addTooltip(
-	"Use this ring for making the draconic chestplate."
-	);
-
+	<extrautils2:angelring:0>.addTooltip(format.aqua(
+		"Use this ring for making the draconic chestplate."
+	));
    
 //====== SkyStone Tooltip ======
 //
 	blockSkyS.addTooltip(format.aqua("You can find it only in Mining World dimension, where AE2 meteors will spawn."));
 
+//====== Nether Wart Tooltip ======
+//
+	<minecraft:nether_wart>.addTooltip(format.aqua(
+		"Nether Wart can be grown on tilled soul sand with lava nearby to hydrate."
+	));
 
 //====== Fix Map Recipe ======
 //

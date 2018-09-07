@@ -293,6 +293,14 @@ print(" ==================================================== ");
 					"akashictome:definedMod": "envtech"
 				},
 				Damage: 0 as short
+			},
+			deepresonance: {
+				id: "deepresonance:dr_manual",
+				Count: 1 as byte,
+				tag: {
+					"akashictome:definedMod": "deepresonance"
+				},
+				Damage: 0 as short
 			}
 		}
 	}
@@ -351,7 +359,8 @@ print(" ==================================================== ");
 		<conarm:book>,
 		<thebetweenlands:manual_hl>,
 		<guideapi:inventorygenerators-guide_book>,
-		<valkyrielib:guide>
+		<valkyrielib:guide>,
+		<deepresonance:dr_manual>
 		] as IItemStack[];
 
 	for itemBook in addedBooks {
