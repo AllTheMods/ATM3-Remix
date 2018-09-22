@@ -377,3 +377,7 @@ print(" ======================================================== ");
       [<ore:string>, <ore:rodStone>, <ore:string>]
       ]);
       
+//====== Iron Plate ======
+//
+   recipes.addShapeless(<thermalfoundation:material:32>, [<ore:ingotIron>,<ic2:forge_hammer:*>]);
+   
