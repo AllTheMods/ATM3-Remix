@@ -356,3 +356,15 @@ print(" ======================================================== ");
 //
    recipes.addShapeless(<minecraft:potion>.withTag({Potion: "extrautils2:xu2.relapse"}), [<minecraft:potion>.onlyWithTag({Potion: "extrautils2:xu2.love"})]);
    recipes.addShapeless(<minecraft:potion>.withTag({Potion: "extrautils2:xu2.love"}), [<minecraft:potion>.onlyWithTag({Potion: "extrautils2:xu2.relapse"})]);
+
+//====== Simply Jetpacks Plates ======
+//
+//Remove existing if there will be any in future.
+//   mods.thermalexpansion.InductionSmelter.removeRecipe(<simplyjetpacks:metaitemmods:9>, <enderio:item_alloy_ingot:4>);
+//   mods.thermalexpansion.InductionSmelter.removeRecipe(<simplyjetpacks:metaitemmods:10>, <enderio:item_alloy_ingot>);
+//   mods.thermalexpansion.InductionSmelter.removeRecipe(<simplyjetpacks:metaitemmods:11>, <enderio:item_alloy_ingot:6>);
+//Add fixed ones.
+   mods.thermalexpansion.InductionSmelter.addRecipe(<simplyjetpacks:metaitemmods:10>, <simplyjetpacks:metaitemmods:9>, <enderio:item_alloy_ingot:4> * 10, 3200);
+   mods.thermalexpansion.InductionSmelter.addRecipe(<simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:10>, <enderio:item_alloy_ingot> * 10, 4800);
+   mods.thermalexpansion.InductionSmelter.addRecipe(<simplyjetpacks:metaitemmods:12>, <simplyjetpacks:metaitemmods:11>, <enderio:item_alloy_ingot:6> * 10, 6400);
+   
