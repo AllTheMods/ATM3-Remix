@@ -368,3 +368,12 @@ print(" ======================================================== ");
    mods.thermalexpansion.InductionSmelter.addRecipe(<simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:10>, <enderio:item_alloy_ingot> * 10, 4800);
    mods.thermalexpansion.InductionSmelter.addRecipe(<simplyjetpacks:metaitemmods:12>, <simplyjetpacks:metaitemmods:11>, <enderio:item_alloy_ingot:6> * 10, 6400);
    
+//====== Stone Frame ======
+//
+   recipes.remove(<backpack:backpack_frame:1>);
+   recipes.addShaped(<backpack:backpack_frame:1>, [
+      [<ore:string>, <ore:rodStone>, <ore:string>],
+      [<ore:rodStone>, null, <ore:rodStone>],
+      [<ore:string>, <ore:rodStone>, <ore:string>]
+      ]);
+      
