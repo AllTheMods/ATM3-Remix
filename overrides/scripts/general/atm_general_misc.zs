@@ -477,4 +477,12 @@ recipes.remove(<minecraft:chest>);
       [<minecraft:paper>, <minecraft:compass>, <minecraft:paper>], 
       [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
       ]);
-		
+
+//====== Taako Balance ======
+//
+   recipes.remove(<birdsfoods:taako>);
+   recipes.addShaped(<birdsfoods:taako>, [
+      [<birdsfoods:beef_taco_supreme>, <birdsfoods:chicken_taco_supreme>, <birdsfoods:fish_taco_supreme>],
+      [<birdsfoods:pork_taco_supreme>, <birdsfoods:veggie_taco_supreme>, <birdsfoods:apple_pie_a_la_mode>],
+      [null, <birdsfoods:tequila>, null]
+      ]);
