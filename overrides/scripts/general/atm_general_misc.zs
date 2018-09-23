@@ -459,9 +459,10 @@ recipes.remove(<minecraft:chest>);
 		"Use this ring for making the draconic chestplate."
 	));
    
-//====== SkyStone Tooltip ======
+//====== SkyStone/Meteor Tooltip ======
 //
 	blockSkyS.addTooltip(format.aqua("You can find it only in Mining World dimension, where AE2 meteors will spawn."));
+	<appliedenergistics2:sky_compass>.addTooltip(format.aqua("You can find AE2 meteors only in the Mining World dimension."));
 
 //====== Nether Wart Tooltip ======
 //
