@@ -487,3 +487,8 @@ recipes.remove(<minecraft:chest>);
       [<birdsfoods:pork_taco_supreme>, <birdsfoods:veggie_taco_supreme>, <birdsfoods:apple_pie_a_la_mode>],
       [null, <birdsfoods:tequila>, null]
       ]);
+
+//====== Red Hook Removal ======
+//
+	// Once mod is updated this can be pulled
+	mods.jei.JEI.removeAndHide(<hooked:hook:3>,false);
