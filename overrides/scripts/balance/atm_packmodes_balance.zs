@@ -621,6 +621,8 @@ print(" ====================================================== ");
 //
 	recipes.remove(<techreborn:solar_panel:4>);
 	recipes.remove(<techreborn:solar_panel:3>);
+	recipes.remove(<techreborn:solar_panel:2>);
+	recipes.remove(<techreborn:solar_panel:1>);
 	
 	recipes.addShaped("QuantumSolarPanel", <techreborn:solar_panel:4>, [
 		[<ore:dustDiamond>, <ore:glassReinforced>, <ore:dustDiamond>],
@@ -632,6 +634,16 @@ print(" ====================================================== ");
 		[<ore:glassReinforced>, <ore:dustDiamond>, <ore:glassReinforced>],
 		[<ore:circuitAdvanced>, <techreborn:solar_panel:2>, <ore:circuitAdvanced>]
 	]);
+	recipes.addShaped("AdvancedSolarPanel",<techreborn:solar_panel:2>, [
+		[<ore:dustDiamond>, <ore:blockGlassColorless>, <ore:dustDiamond>],
+		[<ore:blockGlassColorless>, <ore:dustDiamond>, <ore:blockGlassColorless>],
+		[<ore:circuitAdvanced>, <techreborn:solar_panel:1>, <ore:circuitAdvanced>]
+	]);
+	recipes.addShaped("HybridSolarPanel",<techreborn:solar_panel:1>, [
+		[<ore:dustCoal>, <ore:blockGlassColorless>, <ore:dustCoal>],
+		[<ore:blockGlassColorless>, <ore:dustCoal>, <ore:blockGlassColorless>],
+		[<ore:circuitAdvanced>, <ore:ic2SolarPanel>, <ore:circuitAdvanced>]
+		]);
 
 
 //====== Disable AgriCraft Clippers ======
