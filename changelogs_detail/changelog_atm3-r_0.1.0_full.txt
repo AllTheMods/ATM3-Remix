@@ -30,7 +30,95 @@ Updated:
 			* Made the weight of lush caves 10k, if other mods are still generating later it'll have to be moved to an event.
 			* Fixed the crusher search case blacklist not being applied to default recipes.
 
-	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.4.0-99-UNSTABLE build -99 for 1.12.2 to AdvancedRocketry 1.12.2-1.4.0-102-UNSTABLE build -102 for 1.12.2):
+	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.4.0-99-UNSTABLE build -99 for 1.12.2 to AdvancedRocketry 1.12.2-1.4.1-103-UNSTABLE build -103 for 1.12.2):
+		AdvancedRocketry 1.12.2-1.4.1-103-UNSTABLE build -103 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.4.1-103
+
+			 * [ Fix ASM transformers... they've been broken for months](https://github.com/zmaster587/AdvancedRocketry/commit/0f56a1325d33f63)
+			 * [ update libvulpes](https://github.com/zmaster587/AdvancedRocketry/commit/189147716ad3f5e)
+			 * [ added block hole, black hole generators](https://github.com/zmaster587/AdvancedRocketry/commit/5b7e34b34a19116)
+			 * [ Allow player zero gravity in space stations if config is enabled](https://github.com/zmaster587/AdvancedRocketry/commit/2960eb7863fbc11)
+			 * [ fixes small rooms not needing O2, fixes #1404](https://github.com/zmaster587/AdvancedRocketry/commit/4a974901d6a2079)
+			 * [ fix issue where player may need to relog after using rocket, introduced with multiple seats on rockets, add metadata support for fillerblocks](https://github.com/zmaster587/AdvancedRocketry/commit/3b3974d6f9f84ca)
+			 * [ Prevent crash when a tile being added to a rocket cannot be loaded from nbt, #1401](https://github.com/zmaster587/AdvancedRocketry/commit/2461f90ffe5286c)
+			 * [ fixes #1361, sat builder issues](https://github.com/zmaster587/AdvancedRocketry/commit/0c74c4ecdfdf8b8)
+			 * [ add some warnings for XML loading](https://github.com/zmaster587/AdvancedRocketry/commit/3bb6f105e7f9d95)
+			 * [ Fix compat with betweenlands](https://github.com/zmaster587/AdvancedRocketry/commit/f07d921b03862e4)
+			 * [ fix audio being too quiet](https://github.com/zmaster587/AdvancedRocketry/commit/e381b0014ea13cb)
+			 * [ fix rocket builder and fueling station recipes](https://github.com/zmaster587/AdvancedRocketry/commit/f55905cb957664b)
+			 * [ Fix broken planet texture](https://github.com/zmaster587/AdvancedRocketry/commit/32db3c9abf4067c)
+			 * [ Allow for planets made with custom resource packs to be specified via XML](https://github.com/zmaster587/AdvancedRocketry/commit/a18be3e2bebc5db)
+			 * [ rocket countdown](https://github.com/zmaster587/AdvancedRocketry/commit/32c896d7246b377)
+			 * [ locallization for keybinds](https://github.com/zmaster587/AdvancedRocketry/commit/553f304a9d9c349)
+			 * [ x where there should be a y](https://github.com/zmaster587/AdvancedRocketry/commit/abdbbb07eb5b4cb)
+			 * [ Add asteroids as an option, make it harder to get stranded](https://github.com/zmaster587/AdvancedRocketry/commit/bf5a4f2c2d68896)
+			 * [ Make Small Plate Presser spawn the item entity at the center of the block instead of at the corner](https://github.com/zmaster587/AdvancedRocketry/commit/d37b606d6bd60c8)
+			 * [ update curseGradle](https://github.com/zmaster587/AdvancedRocketry/commit/892399469024736)
+			 * [ Allow for multiple people to ride rockets](https://github.com/zmaster587/AdvancedRocketry/commit/d94841152f7efb1)
+			 * [ added entity spawning tag: 'spawnable', docs soon to update](https://github.com/zmaster587/AdvancedRocketry/commit/b5d77f5b9aa9bbf)
+			 * [ Create temp file, allow for recovery of AR save files upon IO error such as full disk, #1388](https://github.com/zmaster587/AdvancedRocketry/commit/8164818cd6df995)
+			 * [ Fixes #1389](https://github.com/zmaster587/AdvancedRocketry/commit/b0e2b6449a4f286)
+			 * [ Add addtorch command, more help](https://github.com/zmaster587/AdvancedRocketry/commit/ff74048d1ccad33)
+			 * [ fix accidental hard dep on chisel and bits, #1369](https://github.com/zmaster587/AdvancedRocketry/commit/4c4062856266ad4)
+			 * [ initial Chisel support, closes #1275](https://github.com/zmaster587/AdvancedRocketry/commit/09ed9f251055c55)
+			 * [ Fix rockets forgetting where they came from when going between planets](https://github.com/zmaster587/AdvancedRocketry/commit/5f0a62e997ba735)
+			 * [ Fix incorrect default recipes for the rolling machine #1359](https://github.com/zmaster587/AdvancedRocketry/commit/6301506173e7f60)
+			 * [ Numerous fixes with the ore scanner, closes #1050](https://github.com/zmaster587/AdvancedRocketry/commit/8c5262c52abfb66)
+			 * [ Possible fix to #1310](https://github.com/zmaster587/AdvancedRocketry/commit/b354dc558fc668c)
+			 * [ add check, should prevent crash in #1350](https://github.com/zmaster587/AdvancedRocketry/commit/1ef1a5746e43ea7)
+			 * [ Fix #1354, rev 2, cleaner code](https://github.com/zmaster587/AdvancedRocketry/commit/79feb2611588a09)
+			 * [ fix null check #1354](https://github.com/zmaster587/AdvancedRocketry/commit/e55b5855f7b35e4)
+			 * [ Excuse the colorful language, writing code is stressful at times](https://github.com/zmaster587/AdvancedRocketry/commit/83c5f058bdea1f7)
+			 * [ Fix space elevator not working between planet/moon](https://github.com/zmaster587/AdvancedRocketry/commit/92c760b91ea0479)
+			 * [ fix #1340](https://github.com/zmaster587/AdvancedRocketry/commit/39f901de1f98191)
+			 * [ fix crash with hitting the up button](https://github.com/zmaster587/AdvancedRocketry/commit/54a435a4032aa09)
+			 * [ change invalid planet from -1 to something else, address #1320](https://github.com/zmaster587/AdvancedRocketry/commit/098669b5e12ed28)
+			 * [ fix #1325](https://github.com/zmaster587/AdvancedRocketry/commit/d5e1e5350688505)
+			 * [ Fixes #1248, #1326](https://github.com/zmaster587/AdvancedRocketry/commit/01317ec7d329b04)
+			 * [ Fix rolling machine not being able to take recipies without water, fix bad recipies, fixes #1313](https://github.com/zmaster587/AdvancedRocketry/commit/961fc5502de1cf2)
+			 * [ remove extraneous file](https://github.com/zmaster587/AdvancedRocketry/commit/be00b019c4a69a7)
+			 * [ fix #1302](https://github.com/zmaster587/AdvancedRocketry/commit/345f0de430fff25)
+			 * [ don't unregister dims that aren't registered this seemed to cause issues on Sponge, simple check that shouldn't hurt anyone](https://github.com/zmaster587/AdvancedRocketry/commit/5f174ff6d160832)
+			 * [ build deobf](https://github.com/zmaster587/AdvancedRocketry/commit/cfbb75f8af7257c)
+			 * [ possible fix for #1279](https://github.com/zmaster587/AdvancedRocketry/commit/0f64b012179ee83)
+			 * [ fix railguns not working station => planet](https://github.com/zmaster587/AdvancedRocketry/commit/3159f949f2574d1)
+			 * [ resolves #1059 #987 #1002](https://github.com/zmaster587/AdvancedRocketry/commit/ff3741bd6d7a059)
+			 * [ Fix for duplicated artifact slots on Warp Controller (#1266)](https://github.com/zmaster587/AdvancedRocketry/commit/2d0331558820eaf)
+			 * [ Fix for custom gas config not showing on GasGiatns (#1267)](https://github.com/zmaster587/AdvancedRocketry/commit/cd6c61b302244f9)
+			 * [ fixes #1254](https://github.com/zmaster587/AdvancedRocketry/commit/3e82485098687ac)
+			 * [ fix accidental removal of GC handling](https://github.com/zmaster587/AdvancedRocketry/commit/5c90a74654032c2)
+			 * [ fix gas mining rockets only half connect to infrastructure, #1256](https://github.com/zmaster587/AdvancedRocketry/commit/9e05b3a761d369d)
+			 * [ add extraneous load for world #1257](https://github.com/zmaster587/AdvancedRocketry/commit/11789f5ce9d38c0)
+			 * [ fix spelling error in config comments](https://github.com/zmaster587/AdvancedRocketry/commit/de72308146917f6)
+			 * [ Update GC handling for 1.12, should fix #1135](https://github.com/zmaster587/AdvancedRocketry/commit/54345b555f9f4df)
+			 * [ orbitalTheta, icon now transfer from config folder when resetFromConfig](https://github.com/zmaster587/AdvancedRocketry/commit/934ecbc3619251c)
+			 * [ improvements to the tranciever](https://github.com/zmaster587/AdvancedRocketry/commit/0abbb673ffc02cc)
+			 * [ planet loading fixes, things and stuff](https://github.com/zmaster587/AdvancedRocketry/commit/e48525e4f85cfdb)
+			 * [ fix crash when trying to store data to non existant chip in the warp controller](https://github.com/zmaster587/AdvancedRocketry/commit/87aa196c0fcff46)
+			 * [ fix random world crash when opening rocket contents](https://github.com/zmaster587/AdvancedRocketry/commit/77096646c69c03f)
+			 * [ Fix pressure tanks returning wrong capability Fair warning: this was written on github, so you might want to double check the syntax. This fixes crashes like [this one](https://pastebin.com/NTsgib8A) when getCapability is queried with a capability other than IFluidHandlerItem.](https://github.com/zmaster587/AdvancedRocketry/commit/10476a779f24afc)
+			 * [ Jetpacks massivly improved](https://github.com/zmaster587/AdvancedRocketry/commit/388891e87d415c9)
+			 * [ fix jetpack not deactivating in certain conditions, fly speed interference](https://github.com/zmaster587/AdvancedRocketry/commit/9b894763984a263)
+			 * [ fix crash with recent forge builds #1235](https://github.com/zmaster587/AdvancedRocketry/commit/e44e4c4a2d10df3)
+			 * [ fix issue with jetpack recipe not working in chemical assembler](https://github.com/zmaster587/AdvancedRocketry/commit/a2c62ef29276179)
+			 * [ Fix #1228](https://github.com/zmaster587/AdvancedRocketry/commit/2ad2f540cb2ce7c)
+			 * [ Fix #1215 #1199, make sure planets know where they're going](https://github.com/zmaster587/AdvancedRocketry/commit/e9b86eb64e21f84)
+			 * [ fix gravity becoming gravy, +1 if you get the reference, #1211](https://github.com/zmaster587/AdvancedRocketry/commit/f6b6b7ee7b29711)
+			 * [ fix name in pressurized tank](https://github.com/zmaster587/AdvancedRocketry/commit/fbd747356461ffb)
+			 * [ fix bad localization with solar collector](https://github.com/zmaster587/AdvancedRocketry/commit/0ce1864fdc6cffc)
+			 * [ fix white screen with rocket builder, with AR only](https://github.com/zmaster587/AdvancedRocketry/commit/68cc272b8a4f761)
+			 * [ fix #1210](https://github.com/zmaster587/AdvancedRocketry/commit/d74dece36aeb2c0)
+			 * [ add sizes to artifacts](https://github.com/zmaster587/AdvancedRocketry/commit/46c917e19ab6b75)
+			 * [ fix #1165](https://github.com/zmaster587/AdvancedRocketry/commit/0e6e58c9886650d)
+			 * [ Don't push default values to XML](https://github.com/zmaster587/AdvancedRocketry/commit/6a47627d752245a)
+			 * [ prevent crash if a planet is removed](https://github.com/zmaster587/AdvancedRocketry/commit/cf206d27a58401d)
+			 * [ fix a few mistakes](https://github.com/zmaster587/AdvancedRocketry/commit/660f0583e148e6d)
+			 * [ update minor version number](https://github.com/zmaster587/AdvancedRocketry/commit/03b3c080c4ce86b)
+			 * [ Address #1205](https://github.com/zmaster587/AdvancedRocketry/commit/e6b1e919bacb2e5)
+			 * [ Add some variation in lunar spawning, liquid oxygen lakes](https://github.com/zmaster587/AdvancedRocketry/commit/17ed80ec9fee2f9)
+			 * [ terrain gen revamp, added cave planets, they are very slow](https://github.com/zmaster587/AdvancedRocketry/commit/09c8b2552afceb2)
 		AdvancedRocketry 1.12.2-1.4.0-102-UNSTABLE build -102 for 1.12.2:
 			 Highly untested and may break world
 
@@ -342,7 +430,45 @@ Updated:
 		appliedenergistics2-rv6-alpha-1.jar:
 			 Feature #3232: Rework custom recipe system - fscanFeature #3510: Initial Fluid Integration. Cells, Import/Export/Storage Bus, Fluid Terminal - BrockWS, DrummerMCFeature #3543: Added fluid models - yuehFeature #3564: Added ME Fluid Interface - fscanChanges #3383: Updated Cell Registry safety and docs. - yuehChanges #3384: IAEStack#fuzzyComparison now compares the same subtypes. - yuehChanges #3392: Replaced LinkedList with ArrayList or ArrayDeque when applicable. - yuehChanges #3399: Updated Grid API - yuehChanges #3434: Replaces all custom number comparisons with java provided ones. - yuehChanges #3539: Changed fluid cells to better match the item ones. - yuehChanges #3567: Updated fluid interface GUI and other fluid related textures. - yuehFixes #3449: Fix CellInventory to not mess with the item definition - fscanFixes #3459: Just open the inventory if raytrace misses. - fscanFixes #3462: Remove call to neighborChanged() - kylevFixes #3476: Correctly handle an empty top namepress. - yuehFixes #3478: Changes the way xp drops from Certus Ore blocks - fscanFixes #3490: Use cached recipe before reaching out to CraftingManager - yuehFixes #3504: Fixes issue with Fluid Channel not being sent changes. - BrockWSFixes #3520: Correct order for sort by mod and general code cleanup - yuehFixes #3535, Fixes #3486: Fixes crash when either quartz types are disabled and prevent cascading worldgen. - fscanFixes #3544: Fixes interface shift-clicking to generate correct onChangeInventory events - fscanFixes #3545: Fixes DriveBakedModel to not crash when SLOT_STATE is null - fscanFixes #3548: Fix AEBaseTile to respect overridden markDirty implementations. - fscanFixes #3556: Only extract insertable fluid amount. - yuehFixes #3560: Render the fluid stacksize for ME fluid slots. - yueh
 
-	Aroma1997Core (went from Aroma1997Core-1.12.2-2.0.0.0.b156.jar to Aroma1997Core-1.12.2-2.0.0.0.b160.jar):
+	Aroma1997Core (went from Aroma1997Core-1.12.2-2.0.0.0.b156.jar to Aroma1997Core-1.12.2-2.0.0.0.b161.jar):
+		Aroma1997Core-1.12.2-2.0.0.0.b161.jar:
+			Release 2.0.0.0.b161
+
+			 * Improve world teleportation. (Aroma1997)
+			 * Fix backwards compat. (Aroma1997)
+			Release 2.0.0.0.b160
+
+			 * Added a shortcut for registering a packet as packet and handler. (Aroma1997)
+			Release 2.0.0.0.b159
+
+			 * Clean up some more of the teleportation stuff. (Aroma1997)
+			Release 2.0.0.0.b158
+
+			 * Minor cleanup. (Aroma1997)
+			Release 2.0.0.0.b157
+
+			 * Fixed AromasMods/MiningWorld#176 (Aroma1997)
+			Release 2.0.0.0.b156
+
+			 * Fix build script for nonexistant changelog files. (Aroma1997)
+			Release 2.0.0.0.b155
+
+			 * Fix AsmHelper iteration. (Aroma1997)
+			Release 2.0.0.0.b154
+
+			 * Add exception to previous change. (Aroma1997)
+			Release 2.0.0.0.b152
+
+			 * Only make the crash command in dev env. (Aroma1997)
+			Release 2.0.0.0.b150
+
+			 * Increased teleport respawn invulnerability. (Aroma1997)
+			Release 2.0.0.0.b149
+
+			 * Fix Miningworld/#161 (Aroma1997)
+			Release 2.0.0.0.b148
+
+			 * Fix packets not being sendable from client to server. (Aroma1997)
 		Aroma1997Core-1.12.2-2.0.0.0.b160.jar:
 			Release 2.0.0.0.b160
 
@@ -462,7 +588,64 @@ Updated:
 
 			 * Fix packets not being sendable from client to server. (Aroma1997)
 
-	Aroma1997s Dimensional World (went from Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b81.jar to Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b85.jar):
+	Aroma1997s Dimensional World (went from Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b81.jar to Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b86.jar):
+		Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b86.jar:
+			Release 2.0.0.2.b86
+
+			 * Fix entity teleportation. (Aroma1997)
+			Release 2.0.0.2.b85
+
+			 * Also fix sticky ore generation. (Aroma1997)
+			Release 2.0.0.2.b84
+
+			 * Fix #179 (Aroma1997)
+			Release 2.0.0.2.b83
+
+			 * Rework teleporters. (Aroma1997)
+			Release 2.0.0.2.b82
+
+			 * Minor Cleanup. (Aroma1997)
+			Release 2.0.0.2.b81
+
+			 * It doesn't. (Aroma1997)
+			 * Does gradle accept wildcards on plugin versions? (Aroma1997)
+			Release 2.0.0.2.b78
+
+			 * Added AromaCore as a dependency, so forge knows about it. (Aroma1997)
+			Release 2.0.0.2.b77
+
+			 * Updated .gitignore to ignore .iml files (Mata)
+			Release 2.0.0.2.b76
+
+			 * Remove cofh energy api, as it's not needed anymore. (Aroma1997)
+			Release 2.0.0.2.b75
+
+			 * Disable Grass to enable it again. (Aroma1997)
+			 * Moved oreGenDebug to world modifiers. Should fix #169 (Aroma1997)
+			Release 2.0.0.2.b74
+
+			 * Added missing smelting recipes for ores. (Aroma1997)
+			Release 2.0.0.2.b72
+
+			 * Delete old config file. (Aroma1997)
+			 * Minor cleanup. (Aroma1997)
+			Release 2.0.0.2.b71
+
+			 * Rewrite + cleanup of config loading. (Aroma1997)
+			 * Fix #167 (Aroma1997)
+			 * Add Russian translation (kellixon) (Aroma1997)
+			Release 2.0.0.2.b70
+
+			 * Remove grass from the mining world (Aroma1997)
+			Release 2.0.0.2.b69
+
+			 * Fix #159 (Aroma1997)
+			Release 2.0.0.2.b68
+
+			 * Fix #158 (Aroma1997)
+			Release 2.0.0.2.b67
+
+			 * Bump forge version. (Aroma1997)
 		Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b85.jar:
 			Release 2.0.0.2.b85
 
@@ -672,7 +855,9 @@ Updated:
 		BetterAdvancements-1.12.2-0.0.12.59:
 			[[cd6bd69](https://github.com/way2muchnoise/BetterAdvancements/commit/cd6bd69c8870e0997efb59d466e485908c6c7ca1)] Display tracking info for criteria (#43) (way2muchnoise)
 
-	Bookshelf (went from Bookshelf-1.12.2-2.3.559.jar to Bookshelf-1.12.2-2.3.562.jar):
+	Bookshelf (went from Bookshelf-1.12.2-2.3.559.jar to Bookshelf-1.12.2-2.3.563.jar):
+		Bookshelf-1.12.2-2.3.563.jar:
+			 * [1.12] Updates (#105) - Jasmine Iwanek
 		Bookshelf-1.12.2-2.3.562.jar:
 			 * Updated Forge, MCP and the readme Nodecraft logo. Fixed broken mapping names and a few doc errors. (#104) - proxyneko
 		Bookshelf-1.12.2-2.3.561.jar:
@@ -692,6 +877,14 @@ Updated:
 	Chisels & Bits (went from chiselsandbits-14.23.jar to chiselsandbits-14.24.jar):
 		chiselsandbits-14.24.jar:
 			 * Add new API for Rotation/Mirroring ( Thanks Phylogeny! )
+
+	CoFH Core (went from CoFHCore-1.12.2-4.5.3.20-universal.jar to CoFHCore-1.12.2-4.6.0.21-universal.jar):
+		CoFHCore-1.12.2-4.6.0.21-universal.jar:
+			[](https://github.com/CoFH/Version/blob/master/cofhcore_changelog.txt)[https://github.com/CoFH/Version/blob/master/cofhcore_changelog.txt](https://github.com/CoFH/Version/blob/master/cofhcore_changelog.txt)
+
+	CoFH World (went from CoFHWorld-1.12.2-1.2.0.5-universal.jar to CoFHWorld-1.12.2-1.3.0.6-universal.jar):
+		CoFHWorld-1.12.2-1.3.0.6-universal.jar:
+			Backend adjustments and optimizations. Please refer to the wiki for feature generation instructions.
 
 	CodeChicken Lib 1.8.+ (went from CodeChicken Lib 1.12.2-3.2.1.351-universal to CodeChicken Lib 1.12.2-3.2.2.353-universal):
 		CodeChicken Lib 1.12.2-3.2.2.353-universal:
@@ -867,7 +1060,478 @@ Updated:
 
 			Fixed #NoFilter edition not showing oredict recipe variants correctly
 
-	Corail Tombstone (went from Corail Tombstone 3.0.2 for 1.12.2 to Corail Tombstone 3.1.2 for 1.12.2):
+	Corail Tombstone (went from Corail Tombstone 3.0.2 for 1.12.2 to Corail Tombstone 3.2.0 for 1.12.2):
+		Corail Tombstone 3.2.0 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.12
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.2.0 - Recommended : 3.2.0
+
+			Changes 3.2.0 : halloween content
+
+			NB : the halloween content is only active if it's halloween date on the server when it launches
+
+			 * special decorations for grave
+			 * mobs can drop some lollylop providing some random effects (it uses the blacklist of effects of the config)
+			 * during the night, some howling ghosts are among the living (client side as Tombstone never adds living entities)
+			 * client config to disable the special effects of halloween
+			 * during Halloween (as it's also the Sabbath), some features are unlocked and improved without the need of the adequate perks (like voodoo poppets)
+			 * reduced distance of detection for the enchantment "Shadow Step" (to fit the 1.13 version)
+			 * enhances the config option about locations where graves don't spawn to also accept only the dimension id
+			 * renames the translation of the enchant "Soulbound" to "Tombstone Soulbound"
+			Changes 3.1.2 :
+
+			 * compatibity for SmartBackPacks (auto-equip)
+			 * allows to accomplish the advancement related to the book of disenchantment (missing code)
+			 * improves the "safe retreat" of the Dust of Vanishing (this indirectly affects the tablet of assistance)
+			 * improves the LANG en_us (thanks TheRandomLabs)
+			 * workaround for "ice & fire dragons"
+			 * refactor about Location
+			 * new way to earn knowledge points (exorcism)
+			 * new client config option allowing to display or not the messages of gain of points in knowledge of death
+			Changes 3.1.1 :
+
+			 * compatibility with dimensional doors (desactivates Ghostly Shape in Limbo Dimension)
+			 * the effect Feather Fall reduces less the fall speed (also affects Ghostly Shape )
+			 * new Perk related to the book of disenchantment
+			 * book of disenchantment strips each enchantment in a separated book (limited by the perk)
+			 * fix the grave access (the decayTime wasn't taken in account correctly)
+			Changes 3.1.0 :
+
+			 * nerf ghostly shape when pushing mob (if the option is set to nerf ghostly shape)
+			 * prevents a possible interaction with the grave while sneaking and dying
+			 * fix for modded wrench and rotation of graves
+			 * config category for player recovery
+			 * allows to set the number of saves for the command recovery
+			 * it's no more possible to use the right click to decrease a knowledge skill (as it's no more a beta) - the ankh allows to reset perks
+			Changes 3.0.2 [beta] :
+
+			 * config option to set the required time for a soul check
+
+			 * new config category for all contents related to "loots"
+			 * client config option to display only the minecraft days since the death
+			 * new item "Ankh of Pray" allowing to pray on a grave (this is a way to earn knowledge with a cooldown of 6 hours in-game) -> the ankh can be used on a soul to reset the perks tree (the soul is consumed)
+			 * informs the player when earning knowledge & also a clickable chat message that open the gui when he earns a new perk point (indeed, there's a client command that does the same /tbgui so you are not forced to use a keybind to access it)
+
+			 * the casting animation when using magic items is changed
+			 * refactor about time
+			 * increases the time to be able to accept a teleport with the tablet of assistance to 2 minutes
+			 * advancements can reward knowledge points with a custom function (thanks Paul Fulham)
+			Changes 3.0.1 [beta] :
+
+			 * a new gui allowing you to access a tree of perks (the keybind in "misc" is not defined by default)
+			perks are small bonus to unlock related to all the features of tombstone, instead of providing them by default (some of them will be displayed based on what is allowed in the config)
+			NB : as it's a beta, you can decrease your perks with right click to get the points back
+			 * player earns knowledge each time they use a grave's soul, or free a soul from a receptacle (and the number of perk points to spend is based on this knowledge)
+			 * new command /tbknowledge allowing to change the knowledge of a player
+			 * voodoo poppet protections can't be added without the adequate perk
+			 * ghostly shape is nerfed as you now need to unlock some of the features
+			Changes 2.10.4 :
+			 * "Ghostly Shape" & "Diversion" effects are removed if the player does damages to any entityliving (including indirect damages)
+			 * compat for "ice & fire" (because it checks the unlocalized name to grief)
+			 * reset the death date on the grave when filling an existing grave (so the decayTime is reset)
+			Changes 2.10.3 :
+			 * fix infinite soul when using soul receptacle (#19, thanks Reassembly)
+			Changes 2.10.2 :
+			 * config options to disable some magic items (by preventing to use the soul)
+			 * fix the namespace for tileentities (dataFixer)
+			Changes 2.10.1 :
+			 * allows the config-in-game to have all options with several categories (& includes the custom lists)
+			-> the .cfg is now directly is the root of the config folder (no more in a sub folder)
+			 * compat for Cosmetic Armor
+			Changes 2.10.0 :
+
+			 * fix #17 (enchant tables don't update the total of experience : by recalculating the total with the level & the bar)
+			 * same kind of fix for the Scroll of Knowledge (when the item is filled with the player's xp)
+			 * prevent a possible null entity when teleporting while riding (if the mount returns to itemstack while the "re-mount" code)
+			Changes 2.9.11 :
+
+			 * same change as 2.9.10 (but working on server)
+			Changes 2.9.10 : [removed]
+
+			 * prevents #16 (grave could rotate when receiving a soul)
+			Changes 2.9.9 :
+
+			 * replaces the dirt texture of graves, with the vanilla podzol (#14)
+			 * prevents #15
+			Changes 2.9.8 :
+			 * fix a wrong import (#12, thanks Drunkender)
+			Changes 2.9.7 :
+			 * fix for lost tablets (#10) on 2.9.6 server (you only need to fix the server and this version will accept remote client 2.9.6)
+			Changes 2.9.6 :
+			NB : all the config options are reset in this version
+
+			 * add the missing recipe & advancement for the scroll of true sight
+			 * the tablet of assistance requires an acceptance from the other player (with a chat message to click and only valid 30 seconds)
+
+			 * command /tbteleportdiscovery can be used to teleport to Stronghold, EndCity, Fortress, Mineshaft (and the different temples are splitted)
+			+ improve the placement (faster as it only looks for a slice of the chunk) + add an optional param for the dimension
+
+			 * the tablet of recall can only be bound to a decorative grave (by sneaking with the tablet in main hand) and this also applies the cooldown on the item
+			 * the chance for a soul on a decorative grave doesn't matter if the chunk/world is loaded or not (based on the last checked time and how many checks has been skipped and one unique test (with probability), the check is now done every 30 minutes (and the config doesn't limit the chance value)
+			 * lost tablets show the kind of destination (and can lead to some more structures), and the location can be in another world if the current one doesn't fit to the structure
+			 * adapt some loot tables with a separate pool
+			Changes 2.9.5 :
+			 * allows to activate player's graves by sneaking (to have a way to avoid anti-griefing mods)
+			 * adds a param entity for the commands teleportdiscovery & teleportvillage (and so they can be used now in console)
+			 * disables the shadow step particles for player in first person (on themself only)
+			 * ghostly shape provides a night & aquatic vision
+			 * Scroll of True Sight
+			 * improvments on translation (not on the content, but how it works)
+			 * graves will always drop their inventory when "some mods" replace graves with air
+
+			 * the mod [VanillaFix](https://minecraft.curseforge.com/projects/vanillafix) is now an optional dependency (because it fix MC-129057)
+			Changes 2.9.4 : (special thanks to Runemoro)
+			 * Book Of Disenchantment : strips the enchantments of an item (with a grave's soul)
+			 * force grave to spawn with any anti-griefing mod (and a config option to disable this)
+			 * client config option (disabled by default) to skip the respawn screen (except in hardcore, and by using the Gui event)
+			 * list of location (+range) where graves don't spawn with a custom message when this happens, mainly for some modpacks arenas (the list is in the config folder with an example in it)
+			 * slightly increase the maximal size of grave inventories
+			 * prevent to use some commands on a dead player or spectator
+			Changes 2.9.3 : (special thanks to Gegy & Ichttt)
+
+			 * new command /tbrecovery <saveallplayers|saveplayer <player>|loadplayer<player> <save>>
+			-> to manually backup all players (or one), or to rollback a player from an old save (use 'tab' for easy completions)
+			-> the datas are readables & saved in world folder (to fit with world backup) & use ThreadedFileIOBase
+			NB : don't use the command loadplayer on a dead player, or he'll need to relog (i'll improve this soon)
+			 * config options to allow to backup the players automatically (max 5 saves by playerId, and the default value enables this feature every 60 minutes)
+			Changes 2.9.2 :
+
+			 * remove support for the command /back of FTBUtilities (because of a breaking change in FTBUtilities-5.0.2.11)
+			NB : if your kind of modpack requires to have a way to return easily to the grave, you can set the config option for the chance to have an enchanted key on death to 100% (allowing one unique teleportation)
+			 * add some checks on compatibilities
+			Changes 2.9.1 :
+
+			 * auto-equip for the mod "The BetweenLands" (with config option to disable this feature)
+			Changes 2.9.0 :
+
+			 * new item "Voodoo Poppet" : prevent you to die from some specific damages, providing a small potion effect to counter the kind of damage, and healing you. The poppet can cumulate multiple protections, and then requires to be sealed with a soul.
+			 * new scrolls : "Scroll of Feather Fall" (slowing any fall) & "Scroll of Purification" (dispel your negative effects over time)
+			-> also merge all scrolls providing spell buff in the same item (existing scrolls will convert automatically)
+			 * ghostly shape doesn't half fall damage anymore but applied the "Feather Fall I" effect if needed
+			 * reintroduce the crafting recipe for the grave's key
+			 * remove tombstone potion icons in debug screen
+			 * itemstack tooltips only show the "hold shift" based on client config
+			Changes 2.8.7 :
+
+			 * allow to disable the tombstone enchantments in config
+			 * add some infos about the tombstone enchantments on the tooltip of the enchanted book
+			 * lang modifs on the messages about teleportation & last grave (wasn't correctly formatted in 2.8.5)
+			 * reenchant the grave's key if needed when your items are stored in an existing grave (related to config option about the chance to get a key directly enchanted)
+			 * allow grave for creative players
+			 * some improvments on "lost tablet" (but i'll come back on this "beta" item later)
+			 * slowdown the checks to see if a grave's key should be destroyed
+			 * improves the message about the new grave by adding some infos about accesses and decayTime
+			Changes 2.8.5 :
+
+			 * auto-equip 'Aether Legacy' & 'RPG Inventory' accessories, and food slots of 'techguns'
+			 * waypoints for JourneyMap
+			 * replace how you get a soul on a grave with a check every hour based on the date of placement (because thundering doesn't fit well)
+			 * client config option to let you choose the color of your particles when using magic items
+			 * remove the 'provisory fix' for 'welcome to the jungle' (the modder explains on his page how to set his config)
+			 * when harvesting a decorative grave, only remove the tileentity after the drop (to keep the name on the itemstack)
+			 * allow to harvest decorative graves with pickaxe (before only shovel was working)
+			Changes 2.8.4 :
+
+			 * add the effect "water breathing" to player in water in "ghostly shape"
+			 * add a different message to player when tombstone prevents a player from falling in the void depending if it's with the server config preventDeathOutsideWorld or the soul receptacle
+			 * transfer the grave's keys and soulbound items in a separate event than the grave event
+			 * apply some features of tombstone to players in creative mode
+			 * allow to spawn grave and teleport in water in aqua cavern of 'cavern' mod
+			 * add some infos on the item "soul receptacle" (about death prevention)
+			 * add a more precise message on death depending if you have no loot to recover (no grave so), if an existing grave has been filled or if it's a new grave. (with coord & dim)
+			 * provisory fix for a "forgeSponge" bug related to "techguns" ammos preventing theses items to be catched by grave in the drops event (solved by using a callable to catch the drops later)
+			 * lowercase for all tombstone commands (and some will be renamed without "To" for easy 'tabulation' with sponge console command-line)
+			Changes 2.8.3 :
+
+			 * adapt the item "soul receptacle" to prevent to die if the player has one in his inventory (breaking the item)
+			-> the player is moved to a safe position, with full health (and remove any bad effects/burning)
+			 * server config option to prevent to die outside of world (same effect as soul receptacle, disabled by default)
+			 * adapt the default config options and some minor changes
+			Changes 2.8.2 :
+
+			 * new item "soul receptacle" : to set a soul on a grave (no recipe, it's for creative purpose and modpack quest reward)
+			 * adapt the enchant 'shadow step' : once you're detected, the effect is inactive (even if you sneak to reduce the distance), and the 'aggressive range' is reduced by the expected value (20% while sneaking + 10% by enchantment level + 10% if night)
+			 * server config option to nerf 'shadow step' : the effect is only active while sneaking
+			 * server config option to only apply the effect of the shadow step on players (enabled by default)
+			 * server config option about the chance to get an already enchanted grave's key on respawn (allowing teleportation)
+			 * allow to disable the xp handler in config
+			 * server config options to enable/disable the auto-equip for techguns & galacticraft inventories
+			 * client config option to let players choose to auto-equip elytra in priority
+			Changes 2.8.1 :
+
+			 * fix for the 'shadow step' enchantment introduces in 2.8.0 (#27, thanks Kreezxil for the report)
+			 * new enchantment 'Soulbound' : keep these items on the player after death (includes an auto-equip on respawn) - tested with Sync/LevelsUp
+			 * better integration of the curse enchantments (and with the soulbound) & auto-equip elytra
+			 * remove the crafting recipe to upgrade the grave's key (as decorative graves can upgrade keys)
+			 * support for the FTB Utilities command /back is always active (no more a config option, with Latvian agreement)
+			 * prevent to launch Gravestone (from Euhdawson) with Tombstone
+			Changes 2.8.0 :
+
+			 * new enchantment 'Shadow Step' : reduces the distance that monsters detect you and slightly reduces falling damage.
+			This enchant can only be put on boots (even with anvil in creative mode), has a custom particle(can be disabled in client config), has 3 levels possible, cumulates with sneaking, and doesn't work while riding)
+			 * new texture for the grave's smoke (always in 64px)
+			 * Dust of Vanishing : make you vanish in a smoke column preventing monsters to target you for a short time (5 seconds), and teleport you on the same time to a safe backward location allowing an easy retreat. It's a way to use your grave's dust in something else (and can really improve the survivability).
+			This dust is craftable by combining with gunpowder (stackable by 64), has a cooldown of 10 seconds on use and the effect is cancelled if you attack something.
+			 * about ghostly shape : slight heal, half fall damage and prevent bad effects (and burning)
+			 * add a compatibility for FTB Utilities : redirect the command "back" from this mod to the grave position (disabled by default in config)
+			 * small fix : when grave's accesses aren't needed (server config), the grave's key is only removed after restoring the inventory (so the items are one slot away from their previous position in the inventory)
+			Changes 2.7.2 :
+
+			 * some improvments when recovering your lost items
+			 * add some compatibilities with openblocks : prevent tombstone anvil recipes from being in the auto anvil & handle the case where the 2 mods are set to handle graves
+			Changes 2.7.1 :
+
+			 * small fix for the auto-equip Techguns Slots
+			Changes 2.7.0 :
+
+			 * auto-equip Techguns Slots (when you recovers your lost items from a grave)
+			 * improve slightly the new casting animation
+			Changes 2.6.0 :
+
+			 * improve the casting animation when using magic items
+			Changes 2.5.2 :
+
+			 * auto-equip Galacticraft Slots (when you recovers your lost items from a grave)
+			 * add more infos on the fishing rod
+			 * ObjectHolder annotations (registration)
+			Changes 2.5.0 :
+
+			 * config option to prevent abuses with 'ghostly shape' (cancel the effect if a chest is opened or when breaking blocks) (#24)
+			 * enhance tooltip (shift for more informations)
+			 * lost tablet : only obtained by fishing (low rate in junk tableloot) & in creative tab
+			- when discovered, it requires some time to wake up its magic
+			- when the magic wake up, the tablet can broke into dust or reveal an unexplored structure (mainly village and a few others structures)
+			- the tablet can be enchanted to allow teleportation
+			- work like a "grave's key" (showing at distance, and doesn't consume the item, but requires to be enchanted each time for teleportation)
+			- config option chance to set the chance to get a lost tablet by fishing
+			- there're for 2 different icons for tablet + advancement
+			 * command TBTeleportDiscovery can be used with a few others structures (Temple, Mansion, Monument)
+			 * disable snow layer on top of graves
+			 * allow the fishing rod of misadventure to be enchanted with a grave's soul (unbreakable & faster) & fix the malus on the rod ;)
+			 * config option to disable auto-equip for baubles slots (can be used for compatibility with Skillable)
+			Changes 2.4.1 :
+
+			 * fix #25 : null pointer
+			 * cancel 'ghostly shape' 5 seconds after recovering items from a grave
+			Changes 2.4.0 :
+
+			 * new feature to customize the village siege with config options : (set to vanilla values by default)
+			- the existing conditions (number of doors[10], villagers[20], chance to occur[10%])
+			- a new condition (number of golems, set to 0 by default)
+			- disable VillageSiege Tick for Nether/End dimensionType
+			- set if creative player can be included in location for siege village [true by default in vanilla]
+			- set the maximum number of hostile creatures when a siege occurs [20]
+			 * finally a fix for "ice & fire" (#17, dragons could transform the grave into charred blocks) (@Runemoro)
+			 * provide more compatibility with 'Level Up' mod (#23, by disabling xp handling when the mod is present)
+			 * always equip the same armor after re-equip (#22)
+			 * fishing rod of misadventure : new fishing rod (with more chance to have junk while fishing)
+			=> created with deadbush (cut with shears) & grave's dust + advancement
+			 * some checks on teleport if another mod has cancelled it (mainly to prevent item to loose one use)
+			 * minor improvments/cleaning on code
+			Changes 2.3.2 :
+
+			 * avoid to place the grave in underground cave (#19)
+			 * incompatibility with 'ice & fire' (should fix #17)
+			 * fix a message about "wrong key" (as in 2.3, you don't need to hold the key in hand to open a grave)
+			 * place 'Wearable BackPack' near the grave if too far away (#18)
+			+ config option to enable this feature (disabled by default)
+			 * config option for chance to loose items on death (#20)
+			 * command TBTeleport adjustment (teleport to the center of the blockpos)
+			 * decorative graves slightly emits light (but less than player's graves)
+			Changes 2.3.0 :
+
+			 * command TBTeleport : for dimensional teleport to any position [fully working]
+			=> TBTeleport [entity] <destination>
+			=> <destination> = <targetEntity> or <x> <y> <z> [dim]
+			 * remove the command TBTeleportToPlayer (as the command above can do it too)
+			 * command TBTeleportToGrave : change the syntaxe to allow to teleport playerX to graveY
+			=> TBTeleportToGrave [player] [playerGrave]
+			 * command "TBTeleportToGrave", "TBShowLastGrave" & "TBRestoreInventory" looks for grave's key on the player to use it as location when the deathHandler hadn't this data anymore (as last known grave isn't a persistent data)
+			 * handle argument "~", "@p" in some of the different new commands (and add some parsing check)
+			 * only trigger the advancement "first_grave" if the grave is really built
+			 * provisory fix for "welcome to the jungle" to prevent the mod to cancel grave
+
+			 * compatibility with "ice & fire" (dragons could transform the grave into charred blocks)
+			 * update baubles api
+			 * some changes about grave placement and teleportation
+			- the placer looks for positions to the up & down on the same time
+			- look for "ideal pattern" before returning a lower pattern
+			=> ideal pattern for grave is a place where you can tp over the grave and with a safe ground below the grave
+
+			 * check if the last grave is close when generating a new grave, and fill the grave if it has enough space
+			Changes 2.2.0 :
+
+			 * command TBTeleportDiscovery : teleport to a unexplored village [no param, it finds itself the village]
+			 * command TBTeleportToVillage : teleport to an explored village (using only a number as param from 0 to X, to avoid to use position)
+			 * improve spawn placement for teleportation (and grave placement btw), check PathNodeType for modded blocks (mainly for damage type)
+			 * ensure teleportation to ungenerated lands(thanks barteks2x)
+			 * add information on some items about the distance to reach a destination
+			 * tablet of recall can show the path (like the key) and can change the binded place (while sneaking)
+			Changes 2.1.5 :
+
+			 * fix #14 (about world border)
+			 * improve grave's key (grave can be seen from any distance, remove useless grave's key also in offhand)
+			 * command TBRestoreInventory (return the grave inventory to its owner, only work with the last grave data)
+			Changes 2.1.4 :
+
+			 * protect grave against ender dragon (fix #13)
+			 * remove sound packet
+			 * 1.10.2 is now also compatible with Cubic Chunks (thanks Barteks2x)
+			Changes 2.1.3 :
+
+			 * fix about grave's inventory not dropped when broken
+			Changes 2.1.2 :
+
+			 * fix #12 (refering to ghostly appearance & version 2.1.1)
+			Changes 2.1.1 :
+
+			 * add a ghostly appareance during the second you're invincible with the Scroll of Unstable Intangibleness
+			 * fix the ghostly shape appearance (issue #11)
+			 * add tab completions for player/grave list in commands
+
+			 * command TBTeleportToGrave : can be used without player name, to refer to your grave
+			 * command TBTeleportToPlayer : remove the 'teleport to you' case & limit to online players
+			Changes 2.1.0 :
+
+			 * Scroll of Unstable Intangibleness : provide a potion effect making you invincible for one second every 5 seconds
+			 * compatibility with Cubic Chunks (and with any mod using uncommon values for world height)
+			 * config option : set the decorative graves as unbreakable (default to false)
+			 * ingame-command : (tested on dedicated server)
+			- TBShowLastGrave : show last player's grave position & dimension (can be used in console)
+			- TBTeleportToGrave : teleport to last player's grave (also dimensional)
+			- TBTeleportToPlayer : teleport to player (also dimensional)
+			Changes 2.0.1 :
+
+			 * a player's grave also appears if this player has no drop, but there are drops around
+			 * compatibility with Aether Legacy
+			 * protect decorative graves against explosion (like player's grave)
+			Changes 2.0.0 : This beta is working correctly but i need feedbacks on the whole changes
+
+			 * all the magic items are updated, they have now "casting time" & "cooldown", and get some missing translations/texts
+			 * about scroll :
+			- improve the scroll model
+			- all scrolls' recipes require now a "Strange Scroll" (instead of paper)
+			 recipe = paper, stick & "Grave's Dust"
+			- "Scroll of preservation" : when used, provide a potion effect that keep your experience and beneficial effects after death (for command, the effect name is tombstone:preservation)
+			 recipe = strange scroll + rabbit's foot
+			 * about drop :
+			- "Grave's Dust" is dropped by undead (10%, configurable)  (credit to Cofh Team as i only adapt the png)
+			- skeleton/zombie can drop their skull [without charged creeper] (0.5% chance, can be disabled in config)
+			 * about config :
+			- allow to put higher chance values for grave's soul & grave's dust (the value is the chance on 1000)
+			- new option to allow to have a grave's key without the grave's access (enabled by default)
+			- option for "scroll of recall's max uses" is replaced by "tablet's max uses"
+			- option to "allow dimensional teleportation" is now applied to all magic items
+			- client options to customize the tootip of magic items
+			 * about grave :
+			- plate is not shown on grave is not inscribed (compatible with old saves)
+			- anvil recipe to inscribe graves requires an iron ingot
+			- grave can be harvested with shovel or pickaxe
+			- dark marble block can be crafted (required in decorative grave recipes instead of stone)
+			- change the tombstone texture to be seamless
+			 * sound compression (-40ko)
+			 * update the advancement tree to be a guide for all tombstone features (and remove announce to chat)
+			This include lots of new advancements, some recipes will be visible sooner (to know what to do ;) ), and some loot tables are set to give rewards during the tutorial. (the free decorative grave is no more given but you receive nearly enough ingredients to build one)
+
+			 * "Tablet",  new kind of magic item with more than one use (instead of scroll with only one use)
+			- "Tablet of Recall" (replace the "Scroll of Recall" - teleportation to the bounded place)
+			- "Tablet of Assistance" (replace the "Ankh of Assistance" - teleportation to the engraved player name)
+			Changes 1.6.1 :
+
+			 * fix : the grave's souls couldn't be seen when the client config option "grave smoke" was set to false
+			 * fix : in multiplayer, the player could look in "ghost" by others players after the end of the effect
+			Changes 1.6.0 :
+
+			 * an engravable ankh with one use, allowing to teleport to a player (with mount & between dimensions)
+			recipe : some gold nuggets and a glowstone dust
+			 * improve the grave's key model (+ display position)
+			 * server config option to restore beneficial effects after death (disabled by default) + blacklist for effects
+			 * server config option to log the grave position when a player die (disabled by default)
+			 * about languages : remove chinese, update german (Mr Riegel), add dutch (Robijn Vogel)
+			 * add some missing oredict names in some recipes
+			Changes 1.5.0 :
+
+			 * new item : Scroll of Knowledge, as a storage of xp [ recipe = paper + glowstone_dust ]
+			 * remove the config option "ingredient to upgrade the grave's key"
+			 * 2 new advancements
+			Changes 1.4.1 :
+
+			 * fix #10 (crash server from CustomModLoadingErrorDisplayException)
+			Changes 1.4.0 :
+
+			 * The ghostly shape is a potion effect received after death (and configurable for duration) preventing monsters to attack you. The effect is directly removed if the player attacks a creature. For command, the effect name is tombstone:ghostly_shape.
+			 * new animations : smoother smoke, spinning grave's soul [[video](https://www.youtube.com/watch?v=H_IlHe4l6kA)]
+			 * fix about chance of getting a grave's soul (the chance was higher in multiplayer)
+			Changes 1.3.9 :
+
+			 * support with euhdawson's gravestone (fix [#8](https://github.com/Corail31/tombstone_lite/issues/8))
+			Changes 1.3.8 :
+
+			 * add a configurable range for placement of player's graves (default is 2)
+			Changes 1.3.7 :
+
+			 * adapt the grave/key recipes to look better in JEI & remove recipe groups [1.12+ only]
+			Changes 1.3.6 :
+
+			 * fix #7
+			 * use event registry [1.12+ only]
+			Changes 1.3.5 :
+
+			 * the player's grave aspires items around on spawn (config option to change the range)
+			 * the grave's key is removed before restoring items to player
+			 * others small changes
+			Changes 1.3.3 :
+
+			 * auto-equip shield & Baubles slots
+			 * fix ground collision
+			 * fix achievement about engravement [1.8.9,1.9.4]
+			Changes 1.3.1 :
+
+			 * first release of 1.3, should work fine on SP/MP (see the changelog of beta below)
+			Changes 1.3.0 : (beta because lots of changes to be tested but stable)
+
+			 * engrave names on decorative graves (with anvil and a stick in the ingredient slot)
+			 * show recipes in the crafting book as soon as you have the ingredients [1.12]
+			 * adapt the tooltip of the grave key to hide some informations when useless
+			 * enhance the config with new options : color for the different texts on graves(client side), chance to get a soul on grave (and remove server config options from config gui), handlePlayerDeath (or not)
+			 * add/fix some sounds (grave activation, teleport)
+			 * replace IInventory with ItemStackHandler & adapt the code for the grave events of the future extension
+			 * perfect collisions with graves
+			 * add snow layer to replaceable blocks for tombstone spawn (but you need to delete first "whitelist_blocks" file in config folder)
+			 * reduce tombstone texture to 64px + custom ground texture
+			 * new advancements (about engrave & your favorite grave type) & table loot for a random decorative grave (used by advancements)
+			 * include NightKosh GraveStone API
+			 * allow the player to choose his grave model (client side config option, visible for all others players)
+
+			 * the decorative graves are now harvested by shovel and don't require silk touch anymore
+			 * change the decayTime config option to be in minutes
+			 * improve grave model => grow + plates
+			Changes 1.2.11 :
+
+			 * compatibility with Vanilla Spawn Protection (to be able to interact with tombstone in the starting protected area on dedicated server)
+			Changes 1.2.10 :
+
+			 * compatibility with FTB Utilities/GriefPrevention (place/interract event with tombstone)
+			 * compatibility with grave mods (override player's death)
+			Changes 1.2.9 :
+
+			 * compatibility with the mod "FTB Utilities" (be able to interract with the tombstone when it's on a claimed land)
+			Changes 1.2.8 :
+
+			 * crafting recipes in json format (except the upgrade of the grave's key)
+			 * advancements (tutorial part)
+			Changes 1.2.7 :
+
+			 * new config option to set the number of uses of Scroll of Recall
+			 * Update to last forge changes
+			Changes 1.2.6.001 :
+
+			 * Update to last forge changes (registry)
+			Changes 1.2.6 :
+
+			 * First version for 1.12, with same changes as others versions
+			 * Achievements (old Advancements) are disabled for now
+			 * PVP hasn't been tested (need feedbacks)
 		Corail Tombstone 3.1.2 for 1.12.2:
 			This mod supports mc version from 1.8.9 to 1.12
 			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
@@ -2413,8 +3077,9 @@ Updated:
 			 * Improved compatibility of JEI search tree patch
 			 * Minor improvements here and there
 
-	Forestry (went from forestry_1.12.2-5.8.1.339.jar to forestry_1.12.2-5.8.1.348.jar):
+	Forestry (went from forestry_1.12.2-5.8.1.339.jar to forestry_1.12.2-5.8.1.349.jar):
 		5.8.1:
+			* Update de_de.lang (#2262) - Vexatos
 			* more fixes for charcoal (#2248) * more fixes for charcoal * fix typo * simplify things - temp1011
 			* Fix #2255 Menril Seeds from Mystical Agriculture - Nedelosk
 			* Fix Escritoire Crash when loading minecraft - Nedelosk
@@ -3055,6 +3720,123 @@ Updated:
 			 * Reverse test stuff (Aroma1997)
 			 * Test changelog autogeneration (Aroma1997)
 
+	Industrial Foregoing (went from industrialforegoing-1.12.2-1.11.2-212.jar to industrialforegoing-1.12.2-1.11.4-214.jar):
+		industrialforegoing-1.12.2-1.11.4-214.jar:
+			Industrial Foregoing
+
+			1.11.4 (2018-10-02 20:54:28 +0200)
+
+			 * Fixed server side crash (Buuz135)
+			1.11.3 (2018-10-02 19:30:10 +0200)
+
+			 * Updated version and license (Buuz135)
+			 * Enchantment extractor reduces the repair cost when extracting enchantments, closes #422 (Buuz135)
+			 * Buffed hydrator range but it still doesnt hydrate water because forge doesnt accept PRs, closes #424 (Buuz135)
+			 * Enchantment Extractor now accepts enchanted books with 1 enchant and they simply get pushed to the output, closes #426 (Buuz135)
+			 * Enchantment Sorter now process stacks at a time, closes #425 (Buuz135)
+			 * Fixed potion brewer not working when the potions are stacked, closes #427 (Buuz135)
+			 * Fixed conveyor filters JEI dragging not filtering itemstacks , closes #430 (Buuz135)
+			 * Fixed black hole units going over the int limit, closes #431 (Buuz135)
+			 * Removed some debug (Buuz135)
+			 * Filters now work with fluids (Buuz135)
+			 * Added fluid conveyors (Buuz135)
+			 * Update things (Buuz135)
+			1.11.2 (2018-08-27 23:30:48 +0200)
+
+			 * Added a config option to change how much power the liquids generators produces, closes #421 (Buuz135)
+			 * Fixed Black Hole Unit stopped working when stacks were less than 64, closes #420 (Buuz135)
+			 * Fixed Ore Sieve not consuming items (Buuz135)
+			 * Fixed being able to extract from the spore recreator input (Buuz135)
+			1.11.1 (2018-08-18 20:30:42 +0200)
+
+			 * Added fortune addon (Buuz135)
+			 * Animals now produce more Pink slime in the Mob Slaughter Factory (Buuz135)
+			 * Fixed some description typos (Buuz135)
+			 * Added glowstone to the laser drill (Buuz135)
+			 * Buffed Fermentation Station operations (Buuz135)
+			 * Added a botton the plant sower to disable hoeing, closes #412 (Buuz135)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Create ko_KR.lang (E. Kim)
+			1.11.0 (2018-08-11 21:04:34 +0200)
+
+			 * Fixed some random casting code that did nothing in the sludge refiner, closes #405 (Buuz135)
+			 * Fixed labels sometimes crashing, closes #404 (Buuz135)
+			 * Added a few uses for the pink slime ingot, more incoming soon (Buuz135)
+			 * Added a recipe for the pink slime ingot using the Fluid Sieve (Buuz135)
+			 * Added better localizations for some stuff (Buuz135)
+			 * Added pink slime ingot (Buuz135)
+			 * Updated translation (Ore Meat and etc...) (DenisMasterHerobrine)
+			 * Added a better description for the Fermentation Station (Buuz135)
+			 * Added Washing Factory, Fermentation Station and Fluid Sieving Machine, a new ore processing system based on meat. (Buuz135)
+			 * [ru-RU] Updated translation to v1.10.7-204 (DenisMasterHerobrine)
+			1.10.7 (2018-07-24 18:48:30 +0200)
+
+			 * Extractor JEI Handler is more descriptive (Buuz135)
+			 * Added a parameter to the extractor to define progress increase chance (between 0 and 1). The block that is being consumed can be broken 7 times so a recipe with a progress increase chance of 1 it will run only 7 times. (Buuz135)
+			 * Added Froster outputs to JEI (Buuz135)
+			 * Updated forge (Buuz135)
+			 * Added changelog generation, curseforge distribution and license formatting (Buuz135)
+		industrialforegoing-1.12.2-1.11.3-213.jar:
+			Industrial Foregoing
+
+			1.11.3 (2018-10-02 19:30:10 +0200)
+
+			 * Updated version and license (Buuz135)
+			 * Enchantment extractor reduces the repair cost when extracting enchantments, closes #422 (Buuz135)
+			 * Buffed hydrator range but it still doesnt hydrate water because forge doesnt accept PRs, closes #424 (Buuz135)
+			 * Enchantment Extractor now accepts enchanted books with 1 enchant and they simply get pushed to the output, closes #426 (Buuz135)
+			 * Enchantment Sorter now process stacks at a time, closes #425 (Buuz135)
+			 * Fixed potion brewer not working when the potions are stacked, closes #427 (Buuz135)
+			 * Fixed conveyor filters JEI dragging not filtering itemstacks , closes #430 (Buuz135)
+			 * Fixed black hole units going over the int limit, closes #431 (Buuz135)
+			 * Removed some debug (Buuz135)
+			 * Filters now work with fluids (Buuz135)
+			 * Added fluid conveyors (Buuz135)
+			 * Update things (Buuz135)
+			1.11.2 (2018-08-27 23:30:48 +0200)
+
+			 * Added a config option to change how much power the liquids generators produces, closes #421 (Buuz135)
+			 * Fixed Black Hole Unit stopped working when stacks were less than 64, closes #420 (Buuz135)
+			 * Fixed Ore Sieve not consuming items (Buuz135)
+			 * Fixed being able to extract from the spore recreator input (Buuz135)
+			1.11.1 (2018-08-18 20:30:42 +0200)
+
+			 * Added fortune addon (Buuz135)
+			 * Animals now produce more Pink slime in the Mob Slaughter Factory (Buuz135)
+			 * Fixed some description typos (Buuz135)
+			 * Added glowstone to the laser drill (Buuz135)
+			 * Buffed Fermentation Station operations (Buuz135)
+			 * Added a botton the plant sower to disable hoeing, closes #412 (Buuz135)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Update ko_KR.lang (E. Kim)
+			 * Create ko_KR.lang (E. Kim)
+			1.11.0 (2018-08-11 21:04:34 +0200)
+
+			 * Fixed some random casting code that did nothing in the sludge refiner, closes #405 (Buuz135)
+			 * Fixed labels sometimes crashing, closes #404 (Buuz135)
+			 * Added a few uses for the pink slime ingot, more incoming soon (Buuz135)
+			 * Added a recipe for the pink slime ingot using the Fluid Sieve (Buuz135)
+			 * Added better localizations for some stuff (Buuz135)
+			 * Added pink slime ingot (Buuz135)
+			 * Updated translation (Ore Meat and etc...) (DenisMasterHerobrine)
+			 * Added a better description for the Fermentation Station (Buuz135)
+			 * Added Washing Factory, Fermentation Station and Fluid Sieving Machine, a new ore processing system based on meat. (Buuz135)
+			 * [ru-RU] Updated translation to v1.10.7-204 (DenisMasterHerobrine)
+			1.10.7 (2018-07-24 18:48:30 +0200)
+
+			 * Extractor JEI Handler is more descriptive (Buuz135)
+			 * Added a parameter to the extractor to define progress increase chance (between 0 and 1). The block that is being consumed can be broken 7 times so a recipe with a progress increase chance of 1 it will run only 7 times. (Buuz135)
+			 * Added Froster outputs to JEI (Buuz135)
+			 * Updated forge (Buuz135)
+			 * Added changelog generation, curseforge distribution and license formatting (Buuz135)
+
 	Industrial Wires (went from 1.7-30 (MC 1.12.x) to 1.7-31 (MC 1.12.x)):
 		1.7-31 (MC 1.12.x):
 			 * Fixed accidental conversion from FE to EU
@@ -3072,6 +3854,10 @@ Updated:
 			* Fix cables and blocks reading connection data from items
 			* Fix crash when applying isNull on ANY value types, Closes #625
 			* Fix rare crash when looking at display panel, Closes #627
+
+	Iron Chests (went from ironchest-1.12.2-7.0.46.831.jar to ironchest-1.12.2-7.0.47.832.jar):
+		ironchest-1.12.2-7.0.47.832.jar:
+			Empty
 
 	JAOPCA (went from JAOPCA-1.12.2-2.2.8.91.jar to JAOPCA-1.12.2-2.2.8.94.jar):
 		JAOPCA-1.12.2-2.2.8.94.jar:
@@ -3350,7 +4136,47 @@ Updated:
 
 			 - Swapping wand and building wand now respect/calls forge placement events
 
-	NuclearCraft (went from NuclearCraft-2.11c--1.12.2 to NuclearCraft-2.11g--1.12.2):
+	NuclearCraft (went from NuclearCraft-2.11c--1.12.2 to NuclearCraft-2.12b--1.12.2):
+		NuclearCraft-2.12b--1.12.2:
+			* Fixed potential Heat Exchanger infinite heat loops
+
+			* Fixed steel recipes in the Alloy Furnace
+			* Minor recipe changes
+		NuclearCraft-2.12a--1.12.2:
+			* Quartz coolers now cool at a rate of 90 H/t by default (NaK-Quartz at 360 H/t)
+
+			* The Radiation HUD resizing now works
+
+			* Removed some small Centrifuge recipe conflicts
+
+			* Updated Russian language file [thanks to kellixon!]
+		NuclearCraft-2.12--1.12.2:
+			Huge update!
+
+			+ Added new Molten Salt Reactor components
+			* Molten Salt Reactor parts are now available to craft
+			* Tweaked depleted fuel centrifuge recipes
+
+			+ Added multiblock Heat Exchangers - heat water into steam with hot coolant!
+
+			+ Added Mekanism gas support for fluid-handling machines
+
+			+ Added Borax for Radiation Scrubbers
+			+ Added IC2 hazmat suit pieces and Extra Planets suits to default radiation protection list
+
+			* Fixed solid-fuel fission structures occasionally being read incorrectly
+			+ Added remaining fuel time to solid-fuel Fission Controller GUI
+
+			* Fixed batteries charging at incorrect rates in IC2 energy storages
+
+			* Fixed Chance FluidStacks not working correctly in recipes added via CT
+			* Added extra chance output info to JEI tooltips
+
+			* Fixed various metadata block-related bugs [thanks to josephcsible!]
+			* Idle machines now take up much less tick time
+
+			* Many under-the-hood changes
+			- Removed Paulobrine and Herobrian
 		NuclearCraft-2.11g--1.12.2:
 			+ Added config options for disabling and blacklisting armor radiation shielding recipes
 			+ Added config option for adding default radiation resistance levels to armor pieces
@@ -3579,6 +4405,15 @@ Updated:
 			(drcrazy) Update for fluid container drain. Should close FTBTeam/FTB-Continuum#369
 			(modmuss50) make removeRecipe public
 
+	Redstone Arsenal (went from RedstoneArsenal-1.12.2-2.5.1.13-universal.jar to RedstoneArsenal-1.12.2-2.6.0.14-universal.jar):
+		2.6.0:
+			ADDED:
+				-New tool: Flux-Infused Excavator. It's like the hammer, but it's a shovel.
+
+	Redstone Flux (went from RedstoneFlux-1.12-2.0.2.3-universal.jar to RedstoneFlux-1.12-2.1.0.6-universal.jar):
+		RedstoneFlux-1.12-2.1.0.6-universal.jar:
+			Some internal changes on how versioning is read; this will be used for gradual transition AWAY from this dependency. :)
+
 	Refined Storage (went from Refined Storage 1.6.4 to Refined Storage 1.6.5):
 		Refined Storage 1.6.5:
 			 * Fixed Refined Storage silicon's oredict entry being registered too late (raoulvdberge)
@@ -3631,7 +4466,31 @@ Updated:
 			(modmuss50) Use static fuse in static way. cherry-pick from: 8cac9a9315c445e9022a34c18512789b959f0297
 			(drcrazy) Buffed oreCoal processing in Industrial Grinder
 
-	The Lost Cities (went from LostCities - 1.12-2.0.10 to LostCities - 1.12-2.0.11):
+	Thaumcraft (went from Thaumcraft-1.12.2-6.1.BETA24.jar to Thaumcraft-1.12.2-6.1.BETA25.jar):
+		Thaumcraft-1.12.2-6.1.BETA25.jar:
+			6.1.BETA25
+			- golem press will now properly consume crafting components
+			- more fixes to seal & logistics GUI's
+			- custom thaumcraft shaders should once again work
+			- buffer will no longer draw essentia from adjacent blocks if that side has been disconnected
+			- added Lamplighter infusion enchantment
+			- I now prevent most thaumcraft UI elements from overlapping
+			- when riding a minecart the arcane bore will not switch off if there are no tracks below (for whatever reason)
+			- tainted animals & critters will now do damage instead of just aggressive nudging
+			- changed the way itemstacks sync to clients which should get rid of a lot of odd behaviour in certain gui's
+			- greatwood trees now require 4 saplings to grow like large vanilla trees. They drop more saplings to account for this change.
+			- thaumatorium should now display all recipes (occasionally a recipe would be lost, like the spiritus vis crystal recipe)
+			- thaumatorium recipes are now sorted alphabetically
+			- cultist armor now have their own material types
+			- made many thaumcraft blocks rotateble with modded wrenches that allow it
+			- entity aspects can now be viewed through the thaumometer
+			- empty & provider seal should no longer cause golems to drop items on ground when picking up something new
+			- water jar can now fill vanilla cauldrons & glass bottles again
+
+	The Lost Cities (went from LostCities - 1.12-2.0.10 to LostCities - 1.12-2.0.12):
+		LostCities - 1.12-2.0.12:
+			 - New profile config option to change the default base liquid to use while generating the world ('liquidBlock')
+			 - New profile config option to change the default base block to use while generating the world ('baseBlock')
 		LostCities - 1.12-2.0.11:
 			 - Log an error if we detect that a block's TileEntity is wrong
 
@@ -3654,6 +4513,50 @@ Updated:
 			 * Fix crash when parrying Naga.
 			 * Fix crash with Trophy Pedestals upon unexpected Moonworm.
 			 * Small-time optimizations and code tidying here and there!
+
+	Thermal Cultivation (went from ThermalCultivation-1.12.2-0.3.0.7-universal.jar to ThermalCultivation-1.12.2-0.3.1.8-universal.jar):
+		0.3.1:
+			GENERAL:
+				-Minor update, compatibility patch for new Enchantment effect disable feature in CoFHCore.
+
+	Thermal Dynamics (went from ThermalDynamics-1.12.2-2.5.1.14-universal.jar to ThermalDynamics-1.12.2-2.5.2.15-universal.jar):
+		2.5.2:
+			FIXED:
+				-Corrects a corner case issue with Fluiducts.
+
+	Thermal Expansion (went from ThermalExpansion-1.12.2-5.5.0.29-universal.jar to ThermalExpansion-1.12.2-5.5.1.34-universal.jar):
+		5.5.1:
+			GENERAL:
+				-Backend refactors.
+
+			ADDED:
+				-Config options for JEI plugins (client-side).
+				-More recipes. :)
+
+			CHANGED:
+				-Redstone behavior of machines has been reverted so that operations are able to finish on toggle.
+
+			FIXED:
+				-Corrected errant behavior with recycle recipes.
+				-Fixed a minor issue with the XP collector.
+				-Mitigated crashes caused by other mods doing questionable things.
+
+	Thermal Foundation (went from ThermalFoundation-1.12.2-2.5.0.19-universal.jar to ThermalFoundation-1.12.2-2.6.0.20-universal.jar):
+		2.6.0:
+			ADDED:
+				-New tools: Excavators. :) 3x3 shovels. No, not original. But easy enough to make.
+				-More Gears, as requested.
+
+			CHANGED:
+				-Various recipes now better support the OreDictionary.
+
+			FIXED:
+				-The Forge Lexicon will no longer eat ingots if you leave them inside it.
+
+	Thermal Innovation (went from ThermalInnovation-1.12.2-0.3.0.7-universal.jar to ThermalInnovation-1.12.2-0.3.1.8-universal.jar):
+		0.3.1:
+			GENERAL:
+				-Minor update, compatibility patch for new Enchantment effect disable feature in CoFHCore.
 
 	UniDict (went from UniDict-1.12.2-2.7b.jar to UniDict-1.12.2-2.8.jar):
 		UniDict-1.12.2-2.8.jar:
