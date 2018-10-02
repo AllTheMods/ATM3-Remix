@@ -149,3 +149,8 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:1>);
 	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:2>);
 	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:3>);
+	
+//====== IC2 Solar ======
+//
+	<ore:ic2SolarPanel>.addItems([<ic2:te:8>]);
+	

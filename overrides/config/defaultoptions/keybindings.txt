@@ -31,14 +31,13 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_Change Caster Focus:33
-key_Misc Caster Toggle:0
 key_ALT Key:56
 key_Boost Key:29
 key_Mode Switch Key:50
 key_Side Inventory Key:40
 key_Hub Expand Key:45
-key_key.staff_mode.desc:50
+key_Change Caster Focus:33
+key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
 key_enderio.keybind.glidertoggle:0
 key_enderio.keybind.soundlocator:0
@@ -79,29 +78,34 @@ key_quark.emote.headbang:0
 key_quark.emote.weep:0
 key_quark.emote.facepalm:0
 key_quark.keybind.lockBuilding:0
+key_key.personalBackpack:48
 key_key.mobtotems.activateBaubleDescription:0
 key_bloodmagic.keybind.open_holding:0
 key_bloodmagic.keybind.cycle_holding_pos:0
 key_bloodmagic.keybind.cycle_holding_neg:0
 key_cos.key.openCosArmorInventory:0
+key_key.next_item.desc:0
+key_key.previous_item.desc:0
+key_key.open_danknull.desc:0
 key_key.ebwizardry.next_spell:0
 key_key.ebwizardry.previous_spell:0
-key_key.exchanger_mode:51
+key_key.exchanger_range_switch:51
+key_key.exchanger_mode_switch:39
 key_key.exchanger_force_drop_items:52
 key_key.ftbutilities.warp:0
 key_key.ftbutilities.nbt:0
-key_key.ironbackpacks.equip:0
-key_key.ironbackpacks.open:0
-key_key.moreoverlays.lightoverlay.desc:0
+key_key.hooked.fire:46
+key_key.moreoverlays.lightoverlay.desc:65
 key_key.moreoverlays.chunkbounds.desc:67
 key_oreexcavation.key.excavate:41
 key_oreexcavation.key.shape:0
 key_openblocks.keybind.vario_switch:0
 key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0
-key_pneumaticcraft.helmet.options:0
+key_pneumaticcraft.armor.options:22
 key_pneumaticcraft.helmet.hack:0
 key_pneumaticcraft.helmet.debugging.drone:0
+key_pneumaticcraft.boots.kick:45:CONTROL
 key_schematica.key.load:181
 key_schematica.key.save:55
 key_schematica.key.control:74
@@ -121,7 +125,8 @@ key_key.open_terminal.desc:0
 key_key.open_magnet.desc:0
 key_key.switch_magnet_mode.desc:0
 key_key.xtones.scroll:0
-key_key.narrator:0
+key_key.clipboardPaste:210
+key_key.cofh.multimode:47
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
@@ -130,12 +135,13 @@ key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.previousPage:201
 key_key.jei.nextPage:209
-key_key.cofh.multimode:47
 key_key.placeItem:25
 key_key.toolConfig:39
 key_key.toolProfileChange:0
+key_key.armorProfileChange:43:ALT
 key_key.toggleFlight:0
 key_key.toggleDislocator:0
+key_nei.options.keys.gui.botania_corporea_request:46
 key_keys.techreborn.config:0
 key_key.toggleLiquids:0
 key_key.toggleVisible:0
@@ -162,6 +168,7 @@ key_key.columnshiftdown:0
 key_key.columnbarup:0
 key_key.columnbardown:0
 key_key.keyExtraInvo:0
+key_key.keyWheel:19
 key_key.keyExtraCraftin:24
 key_mod.chiselsandbits.chiselmode.single:0
 key_mod.chiselsandbits.chiselmode.snap2:0
@@ -191,9 +198,10 @@ key_mod.chiselsandbits.other.offgrid:0
 key_mod.chiselsandbits.other.undo:0
 key_mod.chiselsandbits.other.redo:0
 key_mod.chiselsandbits.other.add_to_clipboard:0
+key_key.clienttweaks.disable_step_assist:0
+key_key.clienttweaks.hide_offhand_item:0
 key_key.refinedstorage.focusSearchBar:15
 key_key.refinedstorage.clearGridCraftingMatrix:45:CONTROL
-key_key.clipboardPaste:210
 key_key.craftingtweaks.rotate:0
 key_key.craftingtweaks.rotate_counter_clockwise:0
 key_key.craftingtweaks.balance:0
@@ -212,7 +220,6 @@ key_key.craftingtweaks.refill_last_stack:0
 key_key.integrateddynamics.logic_programmer_focus_search:0
 key_key.integrateddynamics.logic_programmer_open_rename:0
 key_invtweaks.key.sort:19
-key_key.llor.hotkey:65
 key_key.modifier:0
 key_key.submode:0
 key_key.nutrition:49
@@ -220,12 +227,16 @@ key_overloaded.key.noclip:0
 key_key.noclip:62
 key_key.reloadSoundSystem:66
 key_xreliquary.keybind.fortune_coin:0
+key_§aKnowledge of Death:0
 key_key.radial_menu:23
 key_key.use_ring:0
 key_key.open_pouch:0
 key_key.connect_caving_rope:0
 key_Toggle Jetpack:0
 key_Open Rocket GUI:0
+key_Toggle RCS:19
+key_Rotate Rocket Right:32
+key_Rotate Rocket Left:30
 key_key.control:29
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
@@ -242,4 +253,4 @@ key_key.journeymap.fullscreen.north:200
 key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
-key_Change Mode:0
+key_Change Mode:23
