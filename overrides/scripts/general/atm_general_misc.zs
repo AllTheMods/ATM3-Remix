@@ -2,7 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.thermalexpansion.Enchanter;
 
 #packmode normal simplified
 
@@ -493,7 +492,3 @@ recipes.remove(<minecraft:chest>);
 //
 	// Once mod is updated this can be pulled
 	mods.jei.JEI.removeAndHide(<hooked:hook:3>,false);
-
-//====== Arcane Ensorcellator Excavate Enchantment ======
-//
-   mods.thermalexpansion.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 46}]}), <oeintegration:excavatemodifier>, <tconstruct:ingots:2>, 12000, 5000, false);
