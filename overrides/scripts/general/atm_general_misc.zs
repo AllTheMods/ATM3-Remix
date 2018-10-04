@@ -459,9 +459,10 @@ recipes.remove(<minecraft:chest>);
 		"Use this ring for making the draconic chestplate."
 	));
    
-//====== SkyStone Tooltip ======
+//====== SkyStone/Meteor Tooltip ======
 //
 	blockSkyS.addTooltip(format.aqua("You can find it only in Mining World dimension, where AE2 meteors will spawn."));
+	<appliedenergistics2:sky_compass>.addTooltip(format.aqua("You can find AE2 meteors only in the Mining World dimension."));
 
 //====== Nether Wart Tooltip ======
 //
@@ -477,4 +478,17 @@ recipes.remove(<minecraft:chest>);
       [<minecraft:paper>, <minecraft:compass>, <minecraft:paper>], 
       [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
       ]);
-		
+
+//====== Taako Balance ======
+//
+   recipes.remove(<birdsfoods:taako>);
+   recipes.addShaped(<birdsfoods:taako>, [
+      [<birdsfoods:beef_taco_supreme>, <birdsfoods:chicken_taco_supreme>, <birdsfoods:fish_taco_supreme>],
+      [<birdsfoods:pork_taco_supreme>, <birdsfoods:veggie_taco_supreme>, <birdsfoods:apple_pie_a_la_mode>],
+      [null, <birdsfoods:tequila>, null]
+      ]);
+
+//====== Red Hook Removal ======
+//
+	// Once mod is updated this can be pulled
+	mods.jei.JEI.removeAndHide(<hooked:hook:3>,false);

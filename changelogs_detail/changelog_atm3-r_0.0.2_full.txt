@@ -1,0 +1,13 @@
+All the Mods 3 - Remix 0.0.1 to All the Mods 3 - Remix 0.0.2
+
+Updated:
+	RandomTweaks (went from RandomTweaks 1.12.2-2.1.3.0 to RandomTweaks 1.12.2-2.1.3.1):
+		RandomTweaks 1.12.2-2.1.3.1:
+			Removed the option to disable mob spawning on non-full cubes.
+
+	p455w0rd's Library (went from p455w0rdslib-1.12-2.0.32.jar to p455w0rdslib-1.12-2.0.33.jar):
+		p455w0rdslib-1.12-2.0.33.jar:
+			changed patrons.txt host to AWS
+
+Downgraded:
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.10.2)

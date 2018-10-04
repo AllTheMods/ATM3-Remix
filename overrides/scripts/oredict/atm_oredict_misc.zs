@@ -129,11 +129,20 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 		[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
 		]);
 
-//====== Conductive Iron Thruster ======
+	
+//====== NetherEx Chiselling ======
 //
-	recipes.remove(<simplyjetpacks:metaitemmods:4>);
-	recipes.addShaped("CondIronThrust", <simplyjetpacks:metaitemmods:4>, [
-		[<enderio:item_alloy_ingot:4>, <enderio:item_basic_capacitor>, <enderio:item_alloy_ingot:4>],
-		[<enderio:item_redstone_conduit>, <enderio:item_basic_capacitor>, <enderio:item_redstone_conduit>],
-		[<teslacorelib:gear_wood>, <minecraft:redstone>, <teslacorelib:gear_wood>]
-	]);
+	// There's probably a better way.
+	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:0>);
+	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:1>);
+	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:2>);
+	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:3>);
+	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:0>);
+	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:1>);
+	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:2>);
+	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:3>);
+	
+//====== IC2 Solar ======
+//
+	<ore:ic2SolarPanel>.addItems([<ic2:te:8>]);
+	

@@ -294,7 +294,6 @@ print(" ======================================================== ");
 		[null, <ore:cropRice>, null],
 		[null, null, <ore:cropRice>]
 		]);
-	recipes.addShapeless("PaperShapeless2", <minecraft:paper>*6, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <liquid:water>*1000]);
 
 	recipes.remove(<mekanism:cardboardbox>);
 	recipes.addShaped("CardboardBox", <mekanism:cardboardbox>, [
@@ -353,3 +352,21 @@ print(" ======================================================== ");
       [null, null, null]
       ]);
       
+//====== Relapse/Love Potions ======
+//
+   recipes.addShapeless(<minecraft:potion>.withTag({Potion: "extrautils2:xu2.relapse"}), [<minecraft:potion>.onlyWithTag({Potion: "extrautils2:xu2.love"})]);
+   recipes.addShapeless(<minecraft:potion>.withTag({Potion: "extrautils2:xu2.love"}), [<minecraft:potion>.onlyWithTag({Potion: "extrautils2:xu2.relapse"})]);
+   
+//====== Stone Frame ======
+//
+   recipes.remove(<backpack:backpack_frame:1>);
+   recipes.addShaped(<backpack:backpack_frame:1>, [
+      [<ore:string>, <ore:rodStone>, <ore:string>],
+      [<ore:rodStone>, null, <ore:rodStone>],
+      [<ore:string>, <ore:rodStone>, <ore:string>]
+      ]);
+      
+//====== Iron Plate ======
+//
+   recipes.addShapeless(<thermalfoundation:material:32>, [<ore:ingotIron>,<ic2:forge_hammer:*>]);
+   
