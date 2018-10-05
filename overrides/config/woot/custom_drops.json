@@ -13,7 +13,7 @@
         },
         {
           "drop": {
-            "item": "<quark:enderdragon_scale>"
+            "item": "quark:enderdragon_scale"
           },
           "sizes": [ 1, 1, 1, 1 ],
           "chances": [ 13, 25, 50, 100 ]
