@@ -124,7 +124,7 @@
             <orbitalPhi>-3</orbitalPhi>
             <rotationalPeriod>17082</rotationalPeriod>
             <atmosphereDensity>100</atmosphereDensity>
-            <biomeIds>abyssalcraft:dreadlands_forest,minecraft:savanna_rock,biomesoplenty:overgrown_cliffs,minecraft:mutated_jungle,minecraft:ocean</biomeIds>
+            <biomeIds>minecraft:savanna_rock,biomesoplenty:overgrown_cliffs,minecraft:mutated_jungle,minecraft:ocean</biomeIds>
         </planet>
         <planet name="Neptune" DIMID="12">
             <isKnown>false</isKnown>
@@ -251,28 +251,6 @@
             <rotationalPeriod>35217</rotationalPeriod>
             <atmosphereDensity>111</atmosphereDensity>
             <biomeIds>biomesoplenty:tropical_rainforest,traverse:woodlands,traverse:badlands,minecraft:mutated_savanna,traverse:temperate_rainforest</biomeIds>
-        </planet>
-        <planet name="Phobos" DIMID="42">
-            <isKnown>false</isKnown>
-            <fogColor>1.0,1.0,1.0</fogColor>
-            <skyColor>0.26757395,0.7063006,1.0</skyColor>
-            <gravitationalMultiplier>62</gravitationalMultiplier>
-            <orbitalDistance>141</orbitalDistance>
-            <orbitalPhi>-2</orbitalPhi>
-            <rotationalPeriod>100701</rotationalPeriod>
-            <atmosphereDensity>25</atmosphereDensity>
-            <biomeIds>abyssalcraft:dark_realm</biomeIds>
-        </planet>
-        <planet name="Titan" DIMID="43">
-            <isKnown>false</isKnown>
-            <fogColor>1.0,1.0,1.0</fogColor>
-            <skyColor>0.3092326,0.5720936,1.0</skyColor>
-            <gravitationalMultiplier>73</gravitationalMultiplier>
-            <orbitalDistance>126</orbitalDistance>
-            <orbitalPhi>-3</orbitalPhi>
-            <rotationalPeriod>61693</rotationalPeriod>
-            <atmosphereDensity>20</atmosphereDensity>
-            <biomeIds>abyssalcraft:dark_realm</biomeIds>
         </planet>
         <planet name="Charon" DIMID="44">
             <isKnown>false</isKnown>
