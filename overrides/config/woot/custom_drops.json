@@ -80,7 +80,7 @@
             "item": "draconicevolution:chaos_shard",
             "data": 0
           },
-          "sizes": [ 1, 1, 1, 1 ],
+          "sizes": [ 1, 2, 3, 5 ],
           "chances": [ 5, 10, 15, 100 ]
         },
         {
