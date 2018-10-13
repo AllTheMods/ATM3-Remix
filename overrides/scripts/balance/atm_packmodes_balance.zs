@@ -610,13 +610,13 @@ print(" ====================================================== ");
 		[<environmentaltech:aethium_crystal>, <environmentaltech:aethium_crystal>, <environmentaltech:aethium_crystal>],
 		[<environmentaltech:solar_cell_ionite>, photo, <environmentaltech:solar_cell_ionite>]
 		]);
-
-
+		
+		
 //====== Coal Ore Removal ======
 //
 	mods.mekanism.combiner.removeRecipe(<minecraft:coal_ore>);
 
-
+	
 //====== Tech Reborn Change ======
 //
 	recipes.remove(<techreborn:solar_panel:4>);
@@ -645,19 +645,10 @@ print(" ====================================================== ");
 		[<ore:circuitAdvanced>, <ore:ic2SolarPanel>, <ore:circuitAdvanced>]
 		]);
 
-
+	
 //====== Disable AgriCraft Clippers ======
 // Disabled until it can be reviewed further (i.e. duping MA crops)
 //
     recipes.remove(<agricraft:clipper>);
 	<agricraft:clipper>.addTooltip(format.aqua("Disabled by modpack"));
-
-
-//====== Disable Bonsai Trees ======
-// Disabled due to performance impact
-// Will re-enable if updated to address performance
-//
-	recipes.remove(<bonsaitrees:bonsaipot:0>);
-	recipes.remove(<bonsaitrees:bonsaipot:1>);
-
 
