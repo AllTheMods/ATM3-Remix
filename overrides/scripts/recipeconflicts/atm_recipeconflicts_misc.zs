@@ -341,12 +341,12 @@ print(" ======================================================== ");
 //
 	recipes.remove(<birdsfoods:pita>);
 	recipes.remove(<actuallyadditions:item_misc:4>);
-   recipes.addShaped(<birdsfoods:pita>, [
+   recipes.addShaped("Pita",<birdsfoods:pita>, [
       [null, <minecraft:wheat>, <minecraft:wheat>],
       [null, null, null],
       [null, null, null]
       ]);
-   recipes.addShaped(<actuallyadditions:item_misc:4> * 2, [
+   recipes.addShaped("AA Dough", <actuallyadditions:item_misc:4> * 2, [
       [<minecraft:wheat>, <minecraft:wheat>, null],
       [null, null, null],
       [null, null, null]
@@ -360,7 +360,7 @@ print(" ======================================================== ");
 //====== Stone Frame ======
 //
    recipes.remove(<backpack:backpack_frame:1>);
-   recipes.addShaped(<backpack:backpack_frame:1>, [
+   recipes.addShaped("Stone Frame", <backpack:backpack_frame:1>, [
       [<ore:string>, <ore:rodStone>, <ore:string>],
       [<ore:rodStone>, null, <ore:rodStone>],
       [<ore:string>, <ore:rodStone>, <ore:string>]
@@ -368,5 +368,10 @@ print(" ======================================================== ");
       
 //====== Iron Plate ======
 //
-   recipes.addShapeless(<thermalfoundation:material:32>, [<ore:ingotIron>,<ic2:forge_hammer:*>]);
-   
+   recipes.addShapeless("Iron Plate", <thermalfoundation:material:32>, [<ore:ingotIron>,<ic2:forge_hammer:*>]);
+
+//====== Item Rack ======
+//
+	recipes.remove(<tconstruct:rack:0>);
+	recipes.addShapeless("itemrack",<tconstruct:rack:0>, [<tconstruct:rack:1>]);
+	
