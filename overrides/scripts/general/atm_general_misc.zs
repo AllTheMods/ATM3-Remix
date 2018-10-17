@@ -146,7 +146,7 @@ print(" ============================================================== ");
 
 //====== Bauxite -> Aluminum ======
 //
-	mods.mekanism.infuser.addRecipe("REDSTONE", 10, <techreborn:dust:5>, <thermalfoundation:material:68>);
+	mods.mekanism.infuser.addRecipe("REDSTONE", 10, <thermalfoundation:material:68>, <techreborn:dust:5>);
 
 
 //====== Aluminum Dust ======
