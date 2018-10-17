@@ -2,9 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.thermalexpansion.Pulverizer;
-import mods.extrautils2.Crusher;
-import mods.appliedenergistics2.Grinder;
 
 #packmode simplified
 
