@@ -65,6 +65,3 @@ print(" ======================================================== ");
 	Grinder.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 4);
 	Grinder.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 4);
 	Grinder.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 4);
-//====== Charged Certus Quartz Crystal > Certus Quartz Crystal ======
-    recipes.remove(<jaopca:item_nuggetchargedcertusquartz>);
-	recipes.addShapeless("Charged Certus>Certus", <appliedenergistics2:material>, [<appliedenergistics2:material:1>]);
