@@ -492,33 +492,3 @@ recipes.remove(<minecraft:chest>);
 //
 	// Once mod is updated this can be pulled
 	mods.jei.JEI.removeAndHide(<hooked:hook:3>,false);
-
-//====== EnderIO Compatibility =====
-//
-    //Pulverizer
-	mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 2000);
-	mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 2000);
-	mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 2000);
-	//EX2 Crusher
-	mods.extrautils2.Crusher.add(<enderio:item_material:36>, <enderio:item_material:14>);
-	mods.extrautils2.Crusher.add(<enderio:item_material:37>, <enderio:item_material:16>);
-	mods.extrautils2.Crusher.add(<enderio:item_material:34>, <enderio:item_material:19>);
-	//AA Crusher
-	mods.actuallyadditions.Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>);
-	mods.actuallyadditions.Crusher.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>);
-	mods.actuallyadditions.Crusher.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>);
-	//Mekanism Crusher
-	mods.mekanism.crusher.addRecipe(<enderio:item_material:14>, <enderio:item_material:36>);
-	mods.mekanism.crusher.addRecipe(<enderio:item_material:16>, <enderio:item_material:37>);
-	mods.mekanism.crusher.addRecipe(<enderio:item_material:19>, <enderio:item_material:34>);
-	//IE Crusher
-	mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 2048);
-	mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 2048);
-	mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 2048);
-	//AE2 GrindStone
-	Grinder.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 4);
-	Grinder.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 4);
-	Grinder.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 4);
-//====== Charged Certus Quartz Crystal > Certus Quartz Crystal ======
-    recipes.remove(<jaopca:item_nuggetchargedcertusquartz>);
-	recipes.addShapeless("Charged Certus>Certus", <appliedenergistics2:material>, [<appliedenergistics2:material:1>]);
