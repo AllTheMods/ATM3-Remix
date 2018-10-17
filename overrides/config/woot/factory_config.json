@@ -120,7 +120,11 @@
     "twilightforest:yeti_alpha",
     "twilightforest:snow_queen",
     "twilightforest:giant_miner",
-    "twilightforest:armored_giant"
+    "twilightforest:armored_giant",
+	"thaumcraft:cultistportalgreater",
+	"thaumcraft:cultistportallesser",
+	"thaumcraft:eldritchwarden",
+	"thaumcraft:eldritchgolem"
   ],
   "entitywhitelist": [
   ],
