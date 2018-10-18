@@ -375,3 +375,11 @@ print(" ======================================================== ");
 	recipes.remove(<tconstruct:rack:0>);
 	recipes.addShapeless("itemrack",<tconstruct:rack:0>, [<tconstruct:rack:1>]);
 	
+//====== Limiter Rail ======
+//
+	recipes.remove(<signals:limiter_rail>);
+   recipes.addShaped(<signals:limiter_rail> * 6, [
+      [<ore:ingotIron>, <minecraft:comparator>, <ore:ingotIron>],
+      [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>],
+      [<ore:ingotIron>, null, <ore:ingotIron>]
+      ]);
