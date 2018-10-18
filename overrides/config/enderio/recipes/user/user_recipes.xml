@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
   <recipe name="Enchanter: OE Integration Excavate Enchantment" required="true" disabled="false">
     <enchanting>
       <input name="oeintegration:excavatemodifier" amount="5"/>
       <enchantment name="oeintegration:oreexcavation" costMultiplier="1"/>
     </enchanting>
   </recipe>
+
+  <recipe name="Alloy: Dark Soularium Ingot" required="true" disabled="false">
+    <alloying energy="40000" exp="1.0">
+      <input name="enderio:item_alloy_ingot:6"/>
+      <input name="enderio:item_material:14"/>
+      <input name="enderio:item_alloy_ingot:7"/>
+      <output name="simplyjetpacks:metaitemmods:3"/>
+    </alloying>
+  </recipe>
+
 </enderio:recipes>
