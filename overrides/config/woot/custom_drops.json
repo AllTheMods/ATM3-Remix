@@ -50,7 +50,7 @@
         },
 		{
           "drop": {
-            "item": "bhc:green_heart",
+            "item": "bhc:green_heart"
           },
           "sizes": [ 1, 1, 1, 1 ],
           "chances": [ 5, 10, 15, 100 ]
