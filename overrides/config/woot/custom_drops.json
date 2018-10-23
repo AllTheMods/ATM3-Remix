@@ -50,6 +50,13 @@
         },
 		{
           "drop": {
+            "item": "bhc:green_heart"
+          },
+          "sizes": [ 1, 1, 1, 1 ],
+          "chances": [ 5, 10, 15, 100 ]
+        },
+		  {
+          "drop": {
             "item": "wct:infinity_booster_card"
           },
           "sizes": [ 0, 0, 0, 1 ],
@@ -80,7 +87,7 @@
             "item": "draconicevolution:chaos_shard",
             "data": 0
           },
-          "sizes": [ 1, 1, 1, 1 ],
+          "sizes": [ 1, 1, 1, 5 ],
           "chances": [ 5, 10, 15, 100 ]
         },
         {
