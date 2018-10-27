@@ -3,7 +3,7 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2770",
+        "id": "forge-14.23.5.2768",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "All the Mods 3 - Remix Update Test",
-  "version": "0.2.0-alpha",
+  "version": "0.2.0-beta",
   "author": "atmteam",
   "projectID": 301845,
   "files": [
@@ -52,7 +52,7 @@
     },
     {
       "projectID": 250957,
-      "fileID": 2570118,
+      "fileID": 2630860,
       "required": true
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "projectID": 239286,
-      "fileID": 2629096,
+      "fileID": 2631841,
       "required": true
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "projectID": 240950,
-      "fileID": 2616398,
+      "fileID": 2631378,
       "required": true
     },
     {
@@ -152,7 +152,7 @@
     },
     {
       "projectID": 225643,
-      "fileID": 2611560,
+      "fileID": 2630989,
       "required": true
     },
     {
@@ -297,7 +297,7 @@
     },
     {
       "projectID": 287683,
-      "fileID": 2627643,
+      "fileID": 2631600,
       "required": true
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "projectID": 283644,
-      "fileID": 2600853,
+      "fileID": 2631823,
       "required": true
     },
     {
@@ -417,7 +417,7 @@
     },
     {
       "projectID": 291493,
-      "fileID": 2629830,
+      "fileID": 2630786,
       "required": true
     },
     {
@@ -682,7 +682,7 @@
     },
     {
       "projectID": 74924,
-      "fileID": 2550550,
+      "fileID": 2630843,
       "required": true
     },
     {
@@ -802,7 +802,7 @@
     },
     {
       "projectID": 260912,
-      "fileID": 2616384,
+      "fileID": 2632185,
       "required": true
     },
     {
@@ -1212,7 +1212,7 @@
     },
     {
       "projectID": 225561,
-      "fileID": 2629783,
+      "fileID": 2632255,
       "required": true
     },
     {
@@ -1337,7 +1337,7 @@
     },
     {
       "projectID": 245506,
-      "fileID": 2630509,
+      "fileID": 2632139,
       "required": true
     },
     {
@@ -1413,6 +1413,16 @@
     {
       "projectID": 282001,
       "fileID": 2631093,
+      "required": true
+    },
+    {
+      "projectID": 244940,
+      "fileID": 2529476,
+      "required": true
+    },
+    {
+      "projectID": 245889,
+      "fileID": 2529475,
       "required": true
     }
   ],
