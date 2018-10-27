@@ -519,11 +519,11 @@ recipes.remove(<minecraft:chest>);
       [[<extrabees:misc:10>, <extrabees:misc:10>, null],
       [<extrabees:misc:10>, <extrabees:misc:10>, null],
       [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:1>,
-      [[<extrabees:misc:7>, <extrabees:misc:7>, null],
-      [<extrabees:misc:7>, <extrabees:misc:7>, null], 
-      [null, null, null]]);
    recipes.addShaped(<thermalfoundation:material:66>, 
       [[<extrabees:misc:8>, <extrabees:misc:8>, null],
       [<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [null, null, null]]);
+   recipes.addShaped(<ic2:crushed:6>,
+      [[<extrabees:misc:27>, <extrabees:misc:27>, null],
+      [<extrabees:misc:27>, <extrabees:misc:27>, null], 
       [null, null, null]]);
