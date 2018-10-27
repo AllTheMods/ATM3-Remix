@@ -492,3 +492,38 @@ recipes.remove(<minecraft:chest>);
 //
 	// Once mod is updated this can be pulled
 	mods.jei.JEI.removeAndHide(<hooked:hook:3>,false);
+   
+//====== Missing Dusts from Grains ======
+//
+   recipes.addShaped(<thermalfoundation:material:768>,
+      [[<extrabees:misc:18>, <extrabees:misc:18>, null],
+      [<extrabees:misc:18>, <extrabees:misc:18>, null],
+      [null, null, null]]);
+   recipes.addShaped(<techreborn:dust:55>,
+      [[<extrabees:misc:16>, <extrabees:misc:16>, null],
+      [<extrabees:misc:16>, <extrabees:misc:16>, null],
+      [null, null, null]]);
+   recipes.addShaped(<techreborn:dust:54>,
+      [[<extrabees:misc:15>, <extrabees:misc:15>, null],
+      [<extrabees:misc:15>, <extrabees:misc:15>, null], 
+      [null, null, null]]);
+   recipes.addShaped(<techreborn:dust:59>, 
+      [[<extrabees:misc:14>, <extrabees:misc:14>, null],
+      [<extrabees:misc:14>, <extrabees:misc:14>, null],
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:69>,
+      [[<extrabees:misc:12>, <extrabees:misc:12>, null],
+      [<extrabees:misc:12>, <extrabees:misc:12>, null], 
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:64>, 
+      [[<extrabees:misc:10>, <extrabees:misc:10>, null],
+      [<extrabees:misc:10>, <extrabees:misc:10>, null],
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:1>,
+      [[<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [<extrabees:misc:7>, <extrabees:misc:7>, null], 
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:66>, 
+      [[<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [null, null, null]]);
