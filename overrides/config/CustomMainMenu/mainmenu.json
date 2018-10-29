@@ -14,6 +14,23 @@
     
     "buttons":
     {
+    
+            "changelog":
+        {
+            "text" : "ChangeLog",
+            "normalTextColor" : "6579300",
+            "hoverTextColor" : "0",
+            "shadow" : "false",
+            "posX" : 40,
+            "posY" : -30,
+            "width" : 120,
+            "height" : 30,
+            "texture" : "mainmenu:changelog.png",
+            "textOffsetY":-2,
+            "textOffsetX":8,
+            "wrappedButton" : 401
+        },
+
         "singleplayer":
         {
             "text" : "menu.singleplayer",
@@ -173,7 +190,7 @@
                 "gui" : "mods"
             }
         },
-        
+
         "language":
         {
             "text" : "Languages",
