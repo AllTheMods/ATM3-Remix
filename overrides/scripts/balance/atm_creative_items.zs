@@ -192,7 +192,7 @@ print(" ====================================================== ");
 		// [11] [19]      [20] [12]
 		
 	//Transcend Orb
-	mods.astralsorcery.Altar.addConstellationAltarRecipe(atmOrb, 2000, 10, [
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("Atm Orb Recipe", atmOrb, 2000, 10, [
 		/*[00]*/    starShard,
 		/*[01]*/    necroPrime,
 		/*[02]*/    starShard,
