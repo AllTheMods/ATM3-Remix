@@ -1,6 +1,7 @@
 §2§lAll the Mods 3 - Remix 1.0.0 Changelog
 
 §b§lChanges Made:
+* Updated Forge version to 2768
 * Buffed Deep Resonance RF output
 * Buffed Nuclearcraft in multiple ways
 * Fixed missing recipes for dust from Binnie's mods grains
