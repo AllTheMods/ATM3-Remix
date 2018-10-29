@@ -1,0 +1,12 @@
+{
+  "onScreenNotifications": [
+    {
+      "id": "example",
+      "soundlocation": "minecraft:entity.creeper.primed",
+      "lines": [
+        "§c§nBoom!!!",
+        "§eDid I scare you?"
+      ]
+    }
+  ]
+}

@@ -145,4 +145,8 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 //====== IC2 Solar ======
 //
 	<ore:ic2SolarPanel>.addItems([<ic2:te:8>]);
-	
+
+//====== Marble Chiselling ======
+//
+	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:0>);
+	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:1>);

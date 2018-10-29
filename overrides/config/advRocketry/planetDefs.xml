@@ -124,7 +124,7 @@
             <orbitalPhi>-3</orbitalPhi>
             <rotationalPeriod>17082</rotationalPeriod>
             <atmosphereDensity>100</atmosphereDensity>
-            <biomeIds>abyssalcraft:dreadlands_forest,minecraft:savanna_rock,biomesoplenty:overgrown_cliffs,minecraft:mutated_jungle,minecraft:ocean</biomeIds>
+            <biomeIds>minecraft:savanna_rock,biomesoplenty:overgrown_cliffs,minecraft:mutated_jungle,minecraft:ocean</biomeIds>
         </planet>
         <planet name="Neptune" DIMID="12">
             <isKnown>false</isKnown>
@@ -161,7 +161,7 @@
             <atmosphereDensity>195</atmosphereDensity>
             <biomeIds>advancedrocketry:alien forest</biomeIds>
         </planet>
-        <planet name="Gallifrey" DIMID="33">
+        <planet name="Gallifrey" DIMID="47">
             <isKnown>true</isKnown>
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>0.8,0.6525768,0.8529489</skyColor>
@@ -252,28 +252,6 @@
             <atmosphereDensity>111</atmosphereDensity>
             <biomeIds>biomesoplenty:tropical_rainforest,traverse:woodlands,traverse:badlands,minecraft:mutated_savanna,traverse:temperate_rainforest</biomeIds>
         </planet>
-        <planet name="Phobos" DIMID="42">
-            <isKnown>false</isKnown>
-            <fogColor>1.0,1.0,1.0</fogColor>
-            <skyColor>0.26757395,0.7063006,1.0</skyColor>
-            <gravitationalMultiplier>62</gravitationalMultiplier>
-            <orbitalDistance>141</orbitalDistance>
-            <orbitalPhi>-2</orbitalPhi>
-            <rotationalPeriod>100701</rotationalPeriod>
-            <atmosphereDensity>25</atmosphereDensity>
-            <biomeIds>abyssalcraft:dark_realm</biomeIds>
-        </planet>
-        <planet name="Titan" DIMID="43">
-            <isKnown>false</isKnown>
-            <fogColor>1.0,1.0,1.0</fogColor>
-            <skyColor>0.3092326,0.5720936,1.0</skyColor>
-            <gravitationalMultiplier>73</gravitationalMultiplier>
-            <orbitalDistance>126</orbitalDistance>
-            <orbitalPhi>-3</orbitalPhi>
-            <rotationalPeriod>61693</rotationalPeriod>
-            <atmosphereDensity>20</atmosphereDensity>
-            <biomeIds>abyssalcraft:dark_realm</biomeIds>
-        </planet>
         <planet name="Charon" DIMID="44">
             <isKnown>false</isKnown>
             <fogColor>1.0,1.0,1.0</fogColor>
@@ -310,7 +288,7 @@
             <biomeIds>biomesoplenty:outback,traverse:temperate_rainforest,minecraft:mutated_desert,minecraft:swampland,minecraft:savanna</biomeIds>
         </planet>
     </star>
-    <star name="Norse Mythology" temp="170" x="-200" y="80" size="1.0" numPlanets="0" numGasGiants="0">
+    <star name="Norse Mythology" temp="170" x="-200" y="80" size="1.0" numPlanets="0" numGasGiants="0" blackHole="true">
         <planet name="Asgard" DIMID="34">
             <isKnown>false</isKnown>
             <fogColor>1.0,1.0,1.0</fogColor>

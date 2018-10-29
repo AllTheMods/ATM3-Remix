@@ -10,7 +10,7 @@
         },
         {
           "tag": "spawn_units",
-          "value": 0
+          "value": 7500
         },
         {
           "tag": "factory_tier",
@@ -18,23 +18,23 @@
         },
         {
           "tag": "spawn_ticks",
-          "value": 144000
+          "value": 120000
         },
         {
           "tag": "mass_1_param",
-          "value": 1
+          "value": 2
         },
         {
           "tag": "mass_2_param",
-          "value": 1
+          "value": 3
         },
         {
           "tag": "mass_3_param",
-          "value": 2
+          "value": 4
         },
         {
           "tag": "mass_fx",
-          "value": 2
+          "value": 4
         }
       ]
     },
@@ -47,7 +47,7 @@
         },
         {
           "tag": "spawn_units",
-          "value": 500000
+          "value": 1700000
         },
         {
           "tag": "factory_tier",
@@ -55,23 +55,23 @@
         },
         {
           "tag": "spawn_ticks",
-          "value": 576000
+          "value": 144000
         },
         {
           "tag": "mass_1_param",
-          "value": 1
+          "value": 2
         },
         {
           "tag": "mass_2_param",
-          "value": 1
+          "value": 3
         },
         {
           "tag": "mass_3_param",
-          "value": 2
+          "value": 4
         },
         {
           "tag": "mass_fx",
-          "value": 2
+          "value": 4
         }
       ]
     },
@@ -84,7 +84,7 @@
         },
         {
           "tag": "spawn_units",
-          "value": 1
+          "value": 104
         },
         {
           "tag": "spawn_ticks",
@@ -120,7 +120,11 @@
     "twilightforest:yeti_alpha",
     "twilightforest:snow_queen",
     "twilightforest:giant_miner",
-    "twilightforest:armored_giant"
+    "twilightforest:armored_giant",
+	"thaumcraft:cultistportalgreater",
+	"thaumcraft:cultistportallesser",
+	"thaumcraft:eldritchwarden",
+	"thaumcraft:eldritchgolem"
   ],
   "entitywhitelist": [
   ],
