@@ -1,4 +1,4 @@
-All the Mods 3 - Remix 0.1.2 to All the Mods 3 - Remix Update Test 1.0.0
+All the Mods 3 - Remix 0.1.2 to All the Mods 3 - Remix 1.0.0
 
 Added:
 	- CC: Tweaked
