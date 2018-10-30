@@ -51,6 +51,7 @@
 * Embers Rekindled
 * Ender IO
 * EnderCore
+* Environmental Tech
 * Extra Utilities
 * FTB Utilities
 * FTBLib
