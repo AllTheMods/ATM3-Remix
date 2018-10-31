@@ -399,7 +399,7 @@ print(" ======================================================== ");
       [inscab, <ore:blockRedstone>, inscab],
       [<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>]
       ]);
-	
+   
 //====== Iron Frame ======
 //
    recipes.remove(<advgenerators:iron_frame>);
@@ -407,4 +407,12 @@ print(" ======================================================== ");
       [[<ore:ingotIron>, null, <ore:ingotIron>],
       [null, null, null],
       [<ore:ingotIron>, null, <ore:ingotIron>]]);
-	
+      
+//====== Wooden Gear ======
+//
+   recipes.remove(<thermalfoundation:material:22>);
+   recipes.addShaped(<thermalfoundation:material:22>,
+      [[null, <ore:stickWood>, null],
+      [<ore:stickWood>, null, <ore:stickWood>],
+      [null, <ore:stickWood>, null]]);
+   
