@@ -527,3 +527,12 @@ recipes.remove(<minecraft:chest>);
       [[<extrabees:misc:27>, <extrabees:misc:27>, null],
       [<extrabees:misc:27>, <extrabees:misc:27>, null], 
       [null, null, null]]);
+   
+//====== Remove duplicates from jaopca ======
+//
+   mods.jei.JEI.removeAndHide(<jaopca:block_mysticalcropsquartzblack>);
+   mods.jei.JEI.removeAndHide(<jaopca:block_mysticalcropsastralstarmetal>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_essencequartzblack>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_essenceastralstarmetal>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsquartzblack>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsastralstarmetal>);
