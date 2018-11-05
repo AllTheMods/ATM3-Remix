@@ -536,3 +536,7 @@ recipes.remove(<minecraft:chest>);
    mods.jei.JEI.removeAndHide(<jaopca:item_essenceastralstarmetal>);
    mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsquartzblack>);
    mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsastralstarmetal>);
+
+//====== Remove Time in a Bottle ======
+//
+	recipes.remove(<randomthings:timeinabottle>);
