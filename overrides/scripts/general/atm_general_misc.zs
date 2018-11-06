@@ -251,7 +251,7 @@ print(" ============================================================== ");
 //
 	recipes.remove(<minecraft:elytra>.withTag({"quark:elytraDye": 0}));
 	recipes.addShapeless("Elytra", <minecraft:elytra>.withTag({"quark:elytraDye": 0}), [
-		<minecraft:elytra>.giveBack(), <quark:enderdragon_scale>
+		<minecraft:elytra>.reuse(), <quark:enderdragon_scale>
 		]);
 	<quark:enderdragon_scale>.addTooltip(
 					format.underline(format.aqua(
