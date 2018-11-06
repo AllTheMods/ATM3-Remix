@@ -336,7 +336,11 @@ print(" ======================================================== ");
 //====== Ender Pearl Powder ======
 //
 	recipes.removeShaped(<techreborn:dust:20>);
-	recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+	// This line below doesn't want to work. Recipe stops working, but won't disappear
+	//recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+	// Work around for the moment, although doesnt want to seem to work either.
+	recipes.removeShaped(<appliedenergistics2:material:46>);
+	recipes.addShapeless("AE2Pearl",<appliedenergistics2:material:46>,[<enderio:item_material:28>*9]);
    
 //====== Birds Food Pita Conflict ======
 //
@@ -399,7 +403,7 @@ print(" ======================================================== ");
       [inscab, <ore:blockRedstone>, inscab],
       [<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>]
       ]);
-   
+	
 //====== Iron Frame ======
 //
    recipes.remove(<advgenerators:iron_frame>);
@@ -407,12 +411,4 @@ print(" ======================================================== ");
       [[<ore:ingotIron>, null, <ore:ingotIron>],
       [null, null, null],
       [<ore:ingotIron>, null, <ore:ingotIron>]]);
-      
-//====== Wooden Gear ======
-//
-   recipes.remove(<thermalfoundation:material:22>);
-   recipes.addShaped(<thermalfoundation:material:22>,
-      [[null, <ore:stickWood>, null],
-      [<ore:stickWood>, null, <ore:stickWood>],
-      [null, <ore:stickWood>, null]]);
-   
+	
