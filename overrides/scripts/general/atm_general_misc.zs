@@ -559,3 +559,15 @@ recipes.remove(<minecraft:chest>);
       [<ore:leather>, <ore:blockWool>, <ore:leather>], 
       [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]]);
 
+//====== Botania Fix for Sky ======
+//
+	mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type:"petro_petunia"}));
+	mods.botania.RuneAltar.addRecipe(<botania:specialflower>.withTag({type:"petro_petunia"}),
+		[<botania:manaresource:9>,<botania:manaresource:6>,<botania:rune:0>,<botania:rune:1>,<ore:petalOrange>,<ore:petalBlack>,<ore:petalBrown>
+		], 1000);
+	
+	
+	
+	
+	
+	
