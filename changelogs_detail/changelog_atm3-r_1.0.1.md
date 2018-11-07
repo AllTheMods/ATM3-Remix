@@ -1,0 +1,12 @@
+§2§lAll the Mods 3 - Remix 1.0.1 Changelog
+
+§b§lChanges Made:
+* Downgraded Crafttweaker and Forestry
+* Updated Actually Addon
+* Fixed item dupes with Creative recipes
+* Fixed potential Horse Armor dupe
+* Blacklisted Embers from moving wand and similiar tools
+* Enabled generation of Aluminum ore, prepare for its retrogen
+* Added Minecolonies guidebook into Akashic Tome
+* Tweaked Mekanism Energy Cubes values
+* Fixed Thermal Expansion Gears recipes
