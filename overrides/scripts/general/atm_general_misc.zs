@@ -540,3 +540,22 @@ recipes.remove(<minecraft:chest>);
 //====== Remove Time in a Bottle ======
 //
 	recipes.remove(<randomthings:timeinabottle>);
+   
+//====== Ordify Horse Armors ======
+//
+   recipes.remove(<minecraft:diamond_horse_armor>);
+   recipes.remove(<minecraft:golden_horse_armor>);
+   recipes.remove(<minecraft:iron_horse_armor>);
+   recipes.addShaped(<minecraft:golden_horse_armor>,
+      [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],
+      [<ore:leather>, <ore:blockWool>, <ore:leather>],
+      [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+   recipes.addShaped(<minecraft:iron_horse_armor>,
+      [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+      [<ore:leather>, <ore:blockWool>, <ore:leather>],
+      [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+   recipes.addShaped(<minecraft:diamond_horse_armor>, 
+      [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>],
+      [<ore:leather>, <ore:blockWool>, <ore:leather>], 
+      [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]]);
+
