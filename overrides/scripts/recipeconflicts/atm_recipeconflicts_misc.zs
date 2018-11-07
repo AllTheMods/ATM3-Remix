@@ -356,6 +356,15 @@ print(" ======================================================== ");
       [null, null, null],
       [null, null, null]
       ]);
+
+//====== Bread Conflict ======
+//
+	recipes.remove(<birdsfoods:empty_sandwich>);
+	recipes.addShaped("Empty Sandwich",<birdsfoods:empty_sandwich>*2,[
+		[<minecraft:bread>,<minecraft:bread>,null],
+		[null, null, null],
+		[null, null, null]
+		])
       
 //====== Relapse/Love Potions ======
 //
