@@ -9,7 +9,14 @@ Updated:
 			- Added config
 
 			- Block breakable
-
+		
+	Refined Storage (went from Refined Storage 1.6.8 to Refined Storage 1.6.9):
+		Refined Storage 1.6.9:
+			 * Fixed OpenComputers "unknown error" when using extract item API (raoulvdberge)
+			 * Fixed client FPS stuttering when opening a Crafting Grid (raoulvdberge)
+			 * Fixed rare Grid crashing issue (raoulvdberge)
+			 * You can now interact with the fluid container input slot in the Fluid Interface (raoulvdberge)
+			 
 Downgraded:
 	CraftTweaker (went from CraftTweaker2-1.12-4.1.11 to CraftTweaker2-1.12-4.1.9):
 		CraftTweaker2-1.12-4.1.11:
