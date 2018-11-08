@@ -9,14 +9,45 @@ Updated:
 			- Added config
 
 			- Block breakable
-		
+
+	Corail Tombstone (went from Corail Tombstone 3.2.6 for 1.12.2 to Corail Tombstone 3.3.0 for 1.12.2):
+		Corail Tombstone 3.3.0 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.12
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.3.0 - Recommended : 3.2.6
+
+			Changes 3.3.0 :
+
+			 * provisory compat for Blood Magic to fix the death with the sacrificial dagger and items of others mods preventing death, and prevents indirectly the lost of the inventory (config to disable it)
+			 * the max level of the perk about grave's key is limited to 5 levels instead of 10 (and provides +20%)
+			 * improvments for english translations (TheRandomLabs)
+			 * fix the grave names in some gui overlays (like The One Probe)
+			 * fix #32 (effect "purification" doesn't remove bad effects properly)
+			 * command /tbsiege to start a village siege (for testing purpose mainly, the config option to allow tombstone to handle village siege needs to be enabled)
+
+			 * new config options around the village siege :
+			 * always equip the undeads of a village siege with helm
+			 * delays the next test of trySiege if the first has failed
+			 * enables persistence on spawned mobs of a siege
+			 * shuffle the list players when searching a place for a siege
+			 * list of dimensionType that should never been tested for villageSiege (replaces the option about nether/end)
+
+			 * logs the different states of a village siege while searching for an adequate place
+			 * allows the creatures of a siege to have an effect of glowing (only for test purpose)
+			Changes 3.2.6 :
+
+			 * the ghost only haunts players that don't pray on grave with the Ânkh of Pray (so when the ankh has no cooldown ;) )
+			 * delays the teleportation outside the player tick for some magic items, as onItemUseFinish method doesn't fit well with it (thanks Barteks & Yamza for the help to debug a strange behavior about this in AMT Remix pack)
+			 * the config option about "nerf" ghostly shape reduced the time of the effect to 10 seconds after using teleportation with a grave's key (default is false)
+			 * the chance to have an enchanted key on respawn is applied to an unenchanted key in your inventory if you die without grave
+
 	Refined Storage (went from Refined Storage 1.6.8 to Refined Storage 1.6.9):
 		Refined Storage 1.6.9:
 			 * Fixed OpenComputers "unknown error" when using extract item API (raoulvdberge)
 			 * Fixed client FPS stuttering when opening a Crafting Grid (raoulvdberge)
 			 * Fixed rare Grid crashing issue (raoulvdberge)
 			 * You can now interact with the fluid container input slot in the Fluid Interface (raoulvdberge)
-			 
+
 Downgraded:
 	CraftTweaker (went from CraftTweaker2-1.12-4.1.11 to CraftTweaker2-1.12-4.1.9):
 		CraftTweaker2-1.12-4.1.11:
