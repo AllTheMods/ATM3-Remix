@@ -26,7 +26,7 @@ print(" ====================================================== ");
 	val teCap = <thermalexpansion:capacitor:4>.withTag({Energy:25000000});
 	val dracoReactor = <draconicevolution:reactor_core>;
 	val dracoInjector = <draconicevolution:reactor_component:1>;
-	val resonatingCrystal = <deepresonance:resonating_crystal>.withTag({efficiency:100.0f,strength:100.0f,purity:100.0f,power:100.0f}).onlyWithTag({efficiency:100.0f,strength:100.0f,purity:100.0f,power:100.0f});
+	val resonatingCrystal = <deepresonance:resonating_crystal>.withTag({efficiency:100.0f,strength:100.0f,purity:100.0f,power:100.0f}).onlyWithTag({strength:100.0f,purity:100.0f,power:100.0f});
 	val energyCore = <overloaded:energy_core>;
 	val rainbow = <extrautils2:rainbowgenerator>;
 
