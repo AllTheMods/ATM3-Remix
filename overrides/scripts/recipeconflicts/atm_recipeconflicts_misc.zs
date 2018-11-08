@@ -364,7 +364,7 @@ print(" ======================================================== ");
 		[<minecraft:bread>,<minecraft:bread>,null],
 		[null, null, null],
 		[null, null, null]
-		])
+		]);
       
 //====== Relapse/Love Potions ======
 //
