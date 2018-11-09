@@ -336,7 +336,11 @@ print(" ======================================================== ");
 //====== Ender Pearl Powder ======
 //
 	recipes.removeShaped(<techreborn:dust:20>);
-	recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+	// This line below doesn't want to work. Recipe stops working, but won't disappear
+	//recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+	// Work around for the moment, although doesnt want to seem to work either.
+	recipes.removeShaped(<appliedenergistics2:material:46>);
+	recipes.addShapeless("AE2Pearl",<appliedenergistics2:material:46>,[<enderio:item_material:28>*9]);
    
 //====== Birds Food Pita Conflict ======
 //
@@ -352,6 +356,15 @@ print(" ======================================================== ");
       [null, null, null],
       [null, null, null]
       ]);
+
+//====== Bread Conflict ======
+//
+	recipes.remove(<birdsfoods:empty_sandwich>);
+	recipes.addShaped("Empty Sandwich",<birdsfoods:empty_sandwich>*2,[
+		[<minecraft:bread>,<minecraft:bread>,null],
+		[null, null, null],
+		[null, null, null]
+		]);
       
 //====== Relapse/Love Potions ======
 //

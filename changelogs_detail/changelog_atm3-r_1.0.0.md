@@ -2,9 +2,10 @@
 
 §b§lChanges Made:
 * Updated Forge version to 2768
+* New Halloween themed buttons!
 * Buffed Deep Resonance RF output
 * Buffed Nuclearcraft in multiple ways
-* Fixed missing recipes for dust from Binnie's mods grains
+* Fixed missing recipes for dust from Binnie’s mods grains
 * Toned down Primitive Mobs spawn rates
 * Fixed Iron Plate recipe
 * Disabled Brain Slimes from spawning
@@ -13,6 +14,10 @@
 * Add Excavate modifier for Ender IO enchanter
 * Enabled Bonsai Trees recipe
 * Disabled Minecolony colony protection
+* Woot: 
+* - Ender Dragon/Chaos Guardian times reduced
+* - Added drops to Ender Dragon 
+
 
 §b§lMods Added:
 * CC: Tweaked (In place for ComputerCraft)
@@ -46,6 +51,7 @@
 * Embers Rekindled
 * Ender IO
 * EnderCore
+* Environmental Tech
 * Extra Utilities
 * FTB Utilities
 * FTBLib
