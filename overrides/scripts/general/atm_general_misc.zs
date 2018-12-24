@@ -565,9 +565,11 @@ recipes.remove(<minecraft:chest>);
 	mods.botania.RuneAltar.addRecipe(<botania:specialflower>.withTag({type:"petro_petunia"}),
 		[<botania:manaresource:9>,<botania:manaresource:6>,<botania:rune:0>,<botania:rune:1>,<ore:petalOrange>,<ore:petalBlack>,<ore:petalBrown>
 		], 1000);
-	
-	
-	
-	
-	
-	
+//====== TiC Stone/Wood Gear Cast ======
+//
+    //Stone Gear
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <ore:gearStone>, <liquid:alubrass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <ore:gearStone>, <liquid:brass>, 144, true);
+	//Wood Gear
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <ore:gearWood>, <liquid:alubrass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <ore:gearWood>, <liquid:brass>, 144, true);	
