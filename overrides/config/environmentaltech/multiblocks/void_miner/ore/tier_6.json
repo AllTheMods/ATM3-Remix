@@ -1,6 +1,46 @@
 {
   "outputs": [
     {
+      "target": "yellow",
+      "weight": 311,
+      "id": "OD:oreOctine"
+    },
+	{
+      "target": "purple",
+      "weight": 311,
+      "id": "OD:oreValonite"
+    },
+	{
+      "target": "gray",
+      "weight": 311,
+      "id": "thebetweenlands:scabyst_ore"
+    },
+	{
+      "target": "green",
+      "weight": 311,
+      "id": "OD:oreBone"
+    },	
+	{
+      "target": "blue",
+      "weight": 311,
+      "id": "OD:oreSyrmorite"
+    },
+	{
+      "target": "light_blue",
+      "weight": 211,
+      "id": "OD:oreAquaMiddleGem"
+    },
+	{
+      "target": "red",
+      "weight": 211,
+      "id": "OD:oreCrimsonMiddleGem"
+    },
+	{
+      "target": "green",
+      "weight": 211,
+      "id": "OD:oreGreenMiddleGem"
+    },		  
+    {
       "target": "crystal",
       "weight": 200,
       "id": "environmentaltech:litherite_crystal"
