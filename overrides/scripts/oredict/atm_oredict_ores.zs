@@ -46,11 +46,11 @@ print(" ========================================================== ");
 	//ALUMINUM
 	<ore:oreAluminum>.addItems([
 		<embers:ore_aluminum>,
-		<techreborn:ore:4>,
+		//<techreborn:ore:4>,
 		<thermalfoundation:ore:4>,
 		<immersiveengineering:ore:1>
 		]);
-	<ore:oreBauxite>.addAll(<ore:oreAluminum>);
+	//<ore:oreBauxite>.addAll(<ore:oreAluminum>);
 	recipes.addShapeless("aluminumconvert", <immersiveengineering:ore:1>*2, [<ore:oreAluminum>, <ore:oreAluminum>]);
 	//IRIDIUM
 	<ore:oreIridium>.addItems([

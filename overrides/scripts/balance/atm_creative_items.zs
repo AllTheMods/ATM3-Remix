@@ -26,7 +26,7 @@ print(" ====================================================== ");
 	val teCap = <thermalexpansion:capacitor:4>.withTag({Energy:25000000});
 	val dracoReactor = <draconicevolution:reactor_core>;
 	val dracoInjector = <draconicevolution:reactor_component:1>;
-	val resonatingCrystal = <deepresonance:resonating_crystal>.withTag({efficiency:99.99893f,strength:100.0f,purity:100.0f,power:100.0f}).onlyWithTag({strength:100.0f,purity:100.0f,power:100.0f});
+	val resonatingCrystal = <deepresonance:resonating_crystal>.withTag({efficiency:100.0f,strength:100.0f,purity:100.0f,power:100.0f}).onlyWithTag({strength:100.0f,purity:100.0f,power:100.0f});
 	val energyCore = <overloaded:energy_core>;
 	val rainbow = <extrautils2:rainbowgenerator>;
 
@@ -172,14 +172,14 @@ print(" ====================================================== ");
 	//Mana Dust
 	recipes.remove(dustManaTE);
 	recipes.addShapedMirrored("ManaDust", dustManaTE, [
-		[runePride, rootsTimeSpell.giveBack(), runeEnvy],
+		[runePride, rootsTimeSpell.reuse(), runeEnvy],
 		[runeWrath, <ore:dustObsidian>,        runeSloth],
 		[runeGreed, runeGluttony,              runeLust]
 		]);
 		
 	//Anima Mundi
 	recipes.addShaped("Anima", atmAnima, [
-		[infusedDiamond, dustManaTE.giveBack(), infusedDiamond],
+		[infusedDiamond, dustManaTE.reuse(), infusedDiamond],
 		[blockIvory, voidPearl, blockIvory],
 		[gaiaIngot, manaBiscuit, gaiaIngot]
 		]);
@@ -192,7 +192,7 @@ print(" ====================================================== ");
 		// [11] [19]      [20] [12]
 		
 	//Transcend Orb
-	mods.astralsorcery.Altar.addConstellationAltarRecipe(atmOrb, 2000, 10, [
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("Atm Orb Recipe", atmOrb, 2000, 10, [
 		/*[00]*/    starShard,
 		/*[01]*/    necroPrime,
 		/*[02]*/    starShard,
@@ -290,25 +290,25 @@ print(" ====================================================== ");
 		
 	// Best Creative Item Ever.
 	recipes.addShapeless("CreativeWorm", <waterstrainer:super_worm>, [
-		<atmtweaks:item_material>.giveBack(), <waterstrainer:worm>, <waterstrainer:worm>]
+		<atmtweaks:item_material>.reuse(), <waterstrainer:worm>, <waterstrainer:worm>]
 		); //Ever.
 	<waterstrainer:super_worm>.addTooltip("Does not consume the ATM Star at all when crafted");
 		
 	// CompuCraft Case
 	// recipes.addShapeless("CreativeOC", <opencomputers:casecreative>, [
-	//	<atmtweaks:item_material>.giveBack(), <opencomputers:case2>, <opencomputers:material:21>
+	//	<atmtweaks:item_material>.reuse(), <opencomputers:case2>, <opencomputers:material:21>
 	//	]);
 	//  <opencomputers:casecreative>.addTooltip("Does not consume the ATM Star at all when crafted");
 		
 	// Creative Builder's Wand
 	recipes.addShapeless("CreativeWand", <extrautils2:itemcreativebuilderswand>, [
-		<atmtweaks:item_material>.giveBack(), <extrautils2:itembuilderswand>, <betterbuilderswands:wandunbreakable>
+		<atmtweaks:item_material>.reuse(), <extrautils2:itembuilderswand>, <betterbuilderswands:wandunbreakable>
 		]);
 	<extrautils2:itemcreativebuilderswand>.addTooltip("Does not consume the ATM Star at all when crafted");
 	
 	// Creative Destruction Wand
 	recipes.addShapeless("CreativeDWand", <extrautils2:itemcreativedestructionwand>, [
-		<atmtweaks:item_material>.giveBack(), <extrautils2:itemdestructionwand>, <xreliquary:destruction_catalyst>
+		<atmtweaks:item_material>.reuse(), <extrautils2:itemdestructionwand>, <xreliquary:destruction_catalyst>
 		]);
 	<extrautils2:itemcreativedestructionwand>.addTooltip("Does not consume the ATM Star at all when crafted");
 		
@@ -421,7 +421,7 @@ print(" ====================================================== ");
 	// Steve's Carts Creative ENGINE
 	recipes.addShapedMirrored("CreativeSteveEngine", <stevescarts:cartmodule:61>, [
 		[<stevescarts:cartmodule>, <stevescarts:modulecomponents:22>, <stevescarts:cartmodule:1>],
-		[<stevescarts:modulecomponents:22>, <atmtweaks:item_material>.giveBack(), <stevescarts:modulecomponents:22>],
+		[<stevescarts:modulecomponents:22>, <atmtweaks:item_material>.reuse(), <stevescarts:modulecomponents:22>],
 		[<stevescarts:modulecomponents:22>, <stevescarts:cartmodule:70>, <stevescarts:modulecomponents:22>]
 		]);
 	<stevescarts:cartmodule:61>.addTooltip("Does not consume the ATM Star at all when crafted");
@@ -429,7 +429,7 @@ print(" ====================================================== ");
 	// Steve's Carts Creative Assembler Upgrade
 	recipes.addShapedMirrored("CreativeSteveAssembler", <stevescarts:upgrade:14>, [
 		[<stevescarts:blockcartassembler>, <stevescarts:modulecomponents:16>, <stevescarts:blockcartassembler>],
-		[<stevescarts:modulecomponents:16>, <atmtweaks:item_material>.giveBack(), <stevescarts:modulecomponents:16>],
+		[<stevescarts:modulecomponents:16>, <atmtweaks:item_material>.reuse(), <stevescarts:modulecomponents:16>],
 		[<stevescarts:blockcartassembler>, <stevescarts:modulecomponents:16>, <stevescarts:blockcartassembler>]
 		]);
 	<stevescarts:upgrade:14>.addTooltip("Does not consume the ATM Star at all when crafted");
@@ -438,7 +438,7 @@ print(" ====================================================== ");
 	recipes.addShapedMirrored("CreativeSteveHull", <stevescarts:cartmodule:76>, [
 		[<stevescarts:modulecomponents:22>, <stevescarts:cartmodule:62>, <stevescarts:modulecomponents:22>],
 		[<stevescarts:modulecomponents:22>, <stevescarts:modulecomponents:22>, <stevescarts:modulecomponents:22>],
-		[<stevescarts:modulecomponents:1>, <atmtweaks:item_material>.giveBack(), <stevescarts:modulecomponents:1>]
+		[<stevescarts:modulecomponents:1>, <atmtweaks:item_material>.reuse(), <stevescarts:modulecomponents:1>]
 		]);
 	<stevescarts:cartmodule:76>.addTooltip("Does not consume the ATM Star at all when crafted");
 		

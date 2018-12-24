@@ -301,6 +301,15 @@ print(" ==================================================== ");
 					"akashictome:definedMod": "deepresonance"
 				},
 				Damage: 0 as short
+			},
+			gbook: {
+				id: "gbook:guidebook",
+				Count: 1 as byte,
+				tag: {
+					"akashictome:defineMod": "gbook",
+					Book: "minecolonies:book/minecolonies.xml"
+				},
+				Damage: 0 as short
 			}
 		}
 	}
@@ -360,7 +369,8 @@ print(" ==================================================== ");
 		<thebetweenlands:manual_hl>,
 		<guideapi:inventorygenerators-guide_book>,
 		<valkyrielib:guide>,
-		<deepresonance:dr_manual>
+		<deepresonance:dr_manual>,
+		<gbook:guidebook>.withTag({Book:"minecolonies:book/minecolonies.xml"})
 		] as IItemStack[];
 
 	for itemBook in addedBooks {

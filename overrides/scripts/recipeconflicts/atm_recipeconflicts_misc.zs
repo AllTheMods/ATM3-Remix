@@ -19,6 +19,7 @@ print(" ======================================================== ");
 	var strings = <ore:string>;
 	var cobweb = <minecraft:web>;
 	var marble = <ore:stoneMarble>;
+	var inscab = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte});
 
 
 //====== Misc Tool/Armor Conflicts ======
@@ -335,22 +336,35 @@ print(" ======================================================== ");
 //====== Ender Pearl Powder ======
 //
 	recipes.removeShaped(<techreborn:dust:20>);
-	recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+	// This line below doesn't want to work. Recipe stops working, but won't disappear
+	//recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
+	// Work around for the moment, although doesnt want to seem to work either.
+	recipes.removeShaped(<appliedenergistics2:material:46>);
+	recipes.addShapeless("AE2Pearl",<appliedenergistics2:material:46>,[<enderio:item_material:28>*9]);
    
 //====== Birds Food Pita Conflict ======
 //
 	recipes.remove(<birdsfoods:pita>);
 	recipes.remove(<actuallyadditions:item_misc:4>);
-   recipes.addShaped(<birdsfoods:pita>, [
+   recipes.addShaped("Pita",<birdsfoods:pita>, [
       [null, <minecraft:wheat>, <minecraft:wheat>],
       [null, null, null],
       [null, null, null]
       ]);
-   recipes.addShaped(<actuallyadditions:item_misc:4> * 2, [
+   recipes.addShaped("AA Dough", <actuallyadditions:item_misc:4> * 2, [
       [<minecraft:wheat>, <minecraft:wheat>, null],
       [null, null, null],
       [null, null, null]
       ]);
+
+//====== Bread Conflict ======
+//
+	recipes.remove(<birdsfoods:empty_sandwich>);
+	recipes.addShaped("Empty Sandwich",<birdsfoods:empty_sandwich>*2,[
+		[<minecraft:bread>,<minecraft:bread>,null],
+		[null, null, null],
+		[null, null, null]
+		]);
       
 //====== Relapse/Love Potions ======
 //
@@ -360,7 +374,7 @@ print(" ======================================================== ");
 //====== Stone Frame ======
 //
    recipes.remove(<backpack:backpack_frame:1>);
-   recipes.addShaped(<backpack:backpack_frame:1>, [
+   recipes.addShaped("Stone Frame", <backpack:backpack_frame:1>, [
       [<ore:string>, <ore:rodStone>, <ore:string>],
       [<ore:rodStone>, null, <ore:rodStone>],
       [<ore:string>, <ore:rodStone>, <ore:string>]
@@ -368,5 +382,42 @@ print(" ======================================================== ");
       
 //====== Iron Plate ======
 //
-   recipes.addShapeless(<thermalfoundation:material:32>, [<ore:ingotIron>,<ic2:forge_hammer:*>]);
-   
+   recipes.addShapeless("Iron Plate", <thermalfoundation:material:32>, [<ore:ingotIron>,<ic2:forge_hammer:*>]);
+
+//====== Item Rack ======
+//
+	recipes.remove(<tconstruct:rack:0>);
+	recipes.addShapeless("itemrack",<tconstruct:rack:0>, [<tconstruct:rack:1>]);
+	
+//====== Limiter Rail ======
+//
+	recipes.remove(<signals:limiter_rail>);
+   recipes.addShaped(<signals:limiter_rail> * 6, [
+      [<ore:ingotIron>, <minecraft:comparator>, <ore:ingotIron>],
+      [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>],
+      [<ore:ingotIron>, null, <ore:ingotIron>]
+      ]);
+      	
+//====== Alarm, Incandescent lamp ======
+//
+   recipes.remove(<techreborn:lamp_incandescent>);
+   recipes.remove(<techreborn:alarm>);
+   recipes.addShaped(<techreborn:lamp_incandescent>,
+      [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+      [<ic2:cable>, <ic2:crafting:13>, <ic2:cable>],
+      [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]
+      ]);
+   recipes.addShaped(<techreborn:alarm>,
+      [[<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>],
+      [inscab, <ore:blockRedstone>, inscab],
+      [<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>]
+      ]);
+	
+//====== Iron Frame ======
+//
+   recipes.remove(<advgenerators:iron_frame>);
+   recipes.addShaped(<advgenerators:iron_frame> * 2,
+      [[<ore:ingotIron>, null, <ore:ingotIron>],
+      [null, null, null],
+      [<ore:ingotIron>, null, <ore:ingotIron>]]);
+	

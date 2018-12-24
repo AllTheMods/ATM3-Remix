@@ -146,7 +146,7 @@ print(" ============================================================== ");
 
 //====== Bauxite -> Aluminum ======
 //
-	mods.mekanism.infuser.addRecipe("REDSTONE", 10, <techreborn:dust:5>, <thermalfoundation:material:68>);
+	mods.mekanism.infuser.addRecipe("REDSTONE", 10, <thermalfoundation:material:68>, <techreborn:dust:5>);
 
 
 //====== Aluminum Dust ======
@@ -251,7 +251,7 @@ print(" ============================================================== ");
 //
 	recipes.remove(<minecraft:elytra>.withTag({"quark:elytraDye": 0}));
 	recipes.addShapeless("Elytra", <minecraft:elytra>.withTag({"quark:elytraDye": 0}), [
-		<minecraft:elytra>.giveBack(), <quark:enderdragon_scale>
+		<minecraft:elytra>.reuse(), <quark:enderdragon_scale>
 		]);
 	<quark:enderdragon_scale>.addTooltip(
 					format.underline(format.aqua(
@@ -492,3 +492,82 @@ recipes.remove(<minecraft:chest>);
 //
 	// Once mod is updated this can be pulled
 	mods.jei.JEI.removeAndHide(<hooked:hook:3>,false);
+   
+//====== Missing Dusts from Grains ======
+//
+   recipes.addShaped(<thermalfoundation:material:768>,
+      [[<extrabees:misc:18>, <extrabees:misc:18>, null],
+      [<extrabees:misc:18>, <extrabees:misc:18>, null],
+      [null, null, null]]);
+   recipes.addShaped(<techreborn:dust:55>,
+      [[<extrabees:misc:16>, <extrabees:misc:16>, null],
+      [<extrabees:misc:16>, <extrabees:misc:16>, null],
+      [null, null, null]]);
+   recipes.addShaped(<techreborn:dust:54>,
+      [[<extrabees:misc:15>, <extrabees:misc:15>, null],
+      [<extrabees:misc:15>, <extrabees:misc:15>, null], 
+      [null, null, null]]);
+   recipes.addShaped(<techreborn:dust:59>, 
+      [[<extrabees:misc:14>, <extrabees:misc:14>, null],
+      [<extrabees:misc:14>, <extrabees:misc:14>, null],
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:69>,
+      [[<extrabees:misc:12>, <extrabees:misc:12>, null],
+      [<extrabees:misc:12>, <extrabees:misc:12>, null], 
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:64>, 
+      [[<extrabees:misc:10>, <extrabees:misc:10>, null],
+      [<extrabees:misc:10>, <extrabees:misc:10>, null],
+      [null, null, null]]);
+   recipes.addShaped(<thermalfoundation:material:66>, 
+      [[<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [null, null, null]]);
+   recipes.addShaped(<ic2:crushed:6>,
+      [[<extrabees:misc:27>, <extrabees:misc:27>, null],
+      [<extrabees:misc:27>, <extrabees:misc:27>, null], 
+      [null, null, null]]);
+   
+//====== Remove duplicates from jaopca ======
+//
+   mods.jei.JEI.removeAndHide(<jaopca:block_mysticalcropsquartzblack>);
+   mods.jei.JEI.removeAndHide(<jaopca:block_mysticalcropsastralstarmetal>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_essencequartzblack>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_essenceastralstarmetal>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsquartzblack>);
+   mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsastralstarmetal>);
+
+//====== Remove Time in a Bottle ======
+//
+	recipes.remove(<randomthings:timeinabottle>);
+   
+//====== Ordify Horse Armors ======
+//
+   recipes.remove(<minecraft:diamond_horse_armor>);
+   recipes.remove(<minecraft:golden_horse_armor>);
+   recipes.remove(<minecraft:iron_horse_armor>);
+   recipes.addShaped(<minecraft:golden_horse_armor>,
+      [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],
+      [<ore:leather>, <ore:blockWool>, <ore:leather>],
+      [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+   recipes.addShaped(<minecraft:iron_horse_armor>,
+      [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+      [<ore:leather>, <ore:blockWool>, <ore:leather>],
+      [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+   recipes.addShaped(<minecraft:diamond_horse_armor>, 
+      [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>],
+      [<ore:leather>, <ore:blockWool>, <ore:leather>], 
+      [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]]);
+
+//====== Botania Fix for Sky ======
+//
+	mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type:"petro_petunia"}));
+	mods.botania.RuneAltar.addRecipe(<botania:specialflower>.withTag({type:"petro_petunia"}),
+		[<botania:manaresource:9>,<botania:manaresource:6>,<botania:rune:0>,<botania:rune:1>,<ore:petalOrange>,<ore:petalBlack>,<ore:petalBrown>
+		], 1000);
+	
+	
+	
+	
+	
+	
