@@ -392,7 +392,7 @@ print(" ======================================================== ");
 //====== Limiter Rail ======
 //
 	recipes.remove(<signals:limiter_rail>);
-   recipes.addShaped(<signals:limiter_rail> * 6, [
+   recipes.addShaped("SignalsLimiter", <signals:limiter_rail> * 6, [
       [<ore:ingotIron>, <minecraft:comparator>, <ore:ingotIron>],
       [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>],
       [<ore:ingotIron>, null, <ore:ingotIron>]
@@ -402,12 +402,12 @@ print(" ======================================================== ");
 //
    recipes.remove(<techreborn:lamp_incandescent>);
    recipes.remove(<techreborn:alarm>);
-   recipes.addShaped(<techreborn:lamp_incandescent>,
+   recipes.addShaped("TRLamp", <techreborn:lamp_incandescent>,
       [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
       [<ic2:cable>, <ic2:crafting:13>, <ic2:cable>],
       [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]
       ]);
-   recipes.addShaped(<techreborn:alarm>,
+   recipes.addShaped("TRAlarm", <techreborn:alarm>,
       [[<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>],
       [inscab, <ore:blockRedstone>, inscab],
       [<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>]
@@ -416,8 +416,18 @@ print(" ======================================================== ");
 //====== Iron Frame ======
 //
    recipes.remove(<advgenerators:iron_frame>);
-   recipes.addShaped(<advgenerators:iron_frame> * 2,
+   recipes.addShaped("AdvGenFrame", <advgenerators:iron_frame> * 2,
       [[<ore:ingotIron>, null, <ore:ingotIron>],
       [null, null, null],
       [<ore:ingotIron>, null, <ore:ingotIron>]]);
 	
+//====== Uranium Ingot ======
+//
+	recipes.removeShapeless(<ic2:ingot:8>,<ic2:resource:10>);
+	
+	recipes.addShapeless("UraniumIngot",<ic2:ingot:8> * 10,[<ic2:resource:10>,<ic2:ingot:8>]);
+	recipes.addShaped("UraniumIngotToBlock",<ic2:resource:10>,
+	[[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
+	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
+	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>]
+	]);
