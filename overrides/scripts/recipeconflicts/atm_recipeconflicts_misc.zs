@@ -365,6 +365,33 @@ print(" ======================================================== ");
 		[null, null, null],
 		[null, null, null]
 		]);
+		
+//====== Pork Conflict ======
+//
+	recipes.remove(<birdsfoods:sliced_ham>);
+	recipes.addShaped("Sliced Ham", <birdsfoods:sliced_ham> * 4, [
+	[<minecraft:cooked_porkchop>,<minecraft:cooked_porkchop>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
+	
+//====== Chicken Conflict ======
+//
+	recipes.remove(<xlfoodmod:raw_chicken_wing>);
+	recipes.addShaped("Chicken Wing", <xlfoodmod:raw_chicken_wing> * 2, [
+	[<minecraft:chicken>,<minecraft:feather>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
+
+//====== Beef Conflict ======
+//
+	recipes.remove(<birdsfoods:sliced_steak>);
+	recipes.addShaped("Sliced Steak", <birdsfoods:sliced_steak> * 4, [
+	[<minecraft:cooked_beef>,<minecraft:cooked_beef>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
       
 //====== Relapse/Love Potions ======
 //
