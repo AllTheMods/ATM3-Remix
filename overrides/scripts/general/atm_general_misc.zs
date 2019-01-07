@@ -342,7 +342,7 @@ print(" ============================================================== ");
 //====== TR LED Lamp ======
 //
 recipes.remove(<techreborn:lamp_led>);
-	recipes.addShaped("TRLamp", <techreborn:lamp_led>, [
+	recipes.addShaped("TR Lamp", <techreborn:lamp_led>, [
 		[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
 		[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}), <minecraft:glowstone_dust>, <ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})],
 		[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]

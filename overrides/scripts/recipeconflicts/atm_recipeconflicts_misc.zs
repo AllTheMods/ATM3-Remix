@@ -450,7 +450,7 @@ print(" ======================================================== ");
 	
 //====== Uranium Ingot ======
 //
-	recipes.removeShapeless(<ic2:ingot:8>,<ic2:resource:10>);
+	recipes.removeShapeless(<ic2:ingot:8>,[<ic2:resource:10>]);
 	
 	recipes.addShapeless("UraniumIngot",<ic2:ingot:8> * 10,[<ic2:resource:10>,<ic2:ingot:8>]);
 	recipes.addShaped("UraniumIngotToBlock",<ic2:resource:10>,
