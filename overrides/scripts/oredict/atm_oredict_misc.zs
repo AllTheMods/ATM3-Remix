@@ -128,25 +128,7 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 		[<minecraft:book>, <minecraft:book>, <minecraft:book>],
 		[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
 		]);
-
-	
-//====== NetherEx Chiselling ======
-//
-	// There's probably a better way.
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:0>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:1>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:2>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:3>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:0>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:1>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:2>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:3>);
 	
 //====== IC2 Solar ======
 //
 	<ore:ic2SolarPanel>.addItems([<ic2:te:8>]);
-
-//====== Marble Chiselling ======
-//
-	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:0>);
-	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:1>);

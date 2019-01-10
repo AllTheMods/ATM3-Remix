@@ -7,7 +7,6 @@ overrides/config/Chikachi/discordintegration.json
 
 # Client side or "default" configs not needed
 overrides/config/AppliedEnergistics2/aerecipes
-overrides/config/agricraft/json/defaults
 overrides/config/biomesoplenty/biomes/defaults
 overrides/config/tellme
 overrides/config/wizardry

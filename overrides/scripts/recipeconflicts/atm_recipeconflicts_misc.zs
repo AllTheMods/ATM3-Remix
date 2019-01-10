@@ -232,8 +232,8 @@ print(" ======================================================== ");
 
 //======Minecolony Builder conflict ======
 //
-	recipes.remove(<minecolonies:sceptergold>);
-	recipes.addShaped(<minecolonies:sceptergold>, [
+	recipes.remove(<structurize:sceptergold>);
+	recipes.addShaped(<structurize:sceptergold>, [
 		[null,            <ore:cobblestone>, <ore:cobblestone>],
 		[null,            <ore:stickWood>,   <ore:cobblestone>],
 		[<ore:stickWood>, null,              null]
@@ -248,8 +248,8 @@ print(" ======================================================== ");
 //====== Minecolonies Scan Tool ======
 // conflicting with iron builder's wand
 //
-	recipes.remove(<minecolonies:sceptersteel>);
-	recipes.addShaped(<minecolonies:sceptersteel>, [
+	recipes.remove(<structurize:sceptersteel>);
+	recipes.addShaped(<structurize:sceptersteel>, [
 		[null, <ore:paneGlass>, <ore:ingotIron>],
 		[null, <ore:stickWood>, <ore:paneGlass>],
 		[<ore:stickWood>, null, null]
@@ -365,6 +365,33 @@ print(" ======================================================== ");
 		[null, null, null],
 		[null, null, null]
 		]);
+		
+//====== Pork Conflict ======
+//
+	recipes.remove(<birdsfoods:sliced_ham>);
+	recipes.addShaped("Sliced Ham", <birdsfoods:sliced_ham> * 4, [
+	[<minecraft:cooked_porkchop>,<minecraft:cooked_porkchop>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
+	
+//====== Chicken Conflict ======
+//
+	recipes.remove(<xlfoodmod:raw_chicken_wing>);
+	recipes.addShaped("Chicken Wing", <xlfoodmod:raw_chicken_wing> * 2, [
+	[<minecraft:chicken>,<minecraft:feather>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
+
+//====== Beef Conflict ======
+//
+	recipes.remove(<birdsfoods:sliced_steak>);
+	recipes.addShaped("Sliced Steak", <birdsfoods:sliced_steak> * 4, [
+	[<minecraft:cooked_beef>,<minecraft:cooked_beef>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
       
 //====== Relapse/Love Potions ======
 //
@@ -392,7 +419,7 @@ print(" ======================================================== ");
 //====== Limiter Rail ======
 //
 	recipes.remove(<signals:limiter_rail>);
-   recipes.addShaped(<signals:limiter_rail> * 6, [
+   recipes.addShaped("SignalsLimiter", <signals:limiter_rail> * 6, [
       [<ore:ingotIron>, <minecraft:comparator>, <ore:ingotIron>],
       [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>],
       [<ore:ingotIron>, null, <ore:ingotIron>]
@@ -402,12 +429,12 @@ print(" ======================================================== ");
 //
    recipes.remove(<techreborn:lamp_incandescent>);
    recipes.remove(<techreborn:alarm>);
-   recipes.addShaped(<techreborn:lamp_incandescent>,
+   recipes.addShaped("TRLamp", <techreborn:lamp_incandescent>,
       [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
       [<ic2:cable>, <ic2:crafting:13>, <ic2:cable>],
       [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]
       ]);
-   recipes.addShaped(<techreborn:alarm>,
+   recipes.addShaped("TRAlarm", <techreborn:alarm>,
       [[<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>],
       [inscab, <ore:blockRedstone>, inscab],
       [<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>]
@@ -416,8 +443,18 @@ print(" ======================================================== ");
 //====== Iron Frame ======
 //
    recipes.remove(<advgenerators:iron_frame>);
-   recipes.addShaped(<advgenerators:iron_frame> * 2,
+   recipes.addShaped("AdvGenFrame", <advgenerators:iron_frame> * 2,
       [[<ore:ingotIron>, null, <ore:ingotIron>],
       [null, null, null],
       [<ore:ingotIron>, null, <ore:ingotIron>]]);
 	
+//====== Uranium Ingot ======
+//
+	recipes.removeShapeless(<ic2:ingot:8>,[<ic2:resource:10>]);
+	
+	recipes.addShapeless("UraniumIngot",<ic2:ingot:8> * 10,[<ic2:resource:10>,<ic2:ingot:8>]);
+	recipes.addShaped("UraniumIngotToBlock",<ic2:resource:10>,
+	[[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
+	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
+	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>]
+	]);
