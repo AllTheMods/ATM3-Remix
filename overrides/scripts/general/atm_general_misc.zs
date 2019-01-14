@@ -566,8 +566,11 @@ recipes.remove(<minecraft:chest>);
 		[<botania:manaresource:9>,<botania:manaresource:6>,<botania:rune:0>,<botania:rune:1>,<ore:petalOrange>,<ore:petalBlack>,<ore:petalBrown>
 		], 1000);
 	
+//====== Rod of Lyssa ======
+//
+// Disable for being able to steal items
 	
-	
+	mods.jei.JEI.removeAndHide(<xreliquary:rod_of_lyssa>);
 	
 	
 	
