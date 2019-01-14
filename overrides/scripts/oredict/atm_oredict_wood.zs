@@ -555,3 +555,9 @@ print(" ========================================================== ");
 	recipes.addShapeless("chestoredict1", <minecraft:chest>, [Chest]);
 	recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
   recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
+  
+  
+//====== Specific Furnace Recipes ======
+	furnace.addRecipe(<minecraft:coal:1>,<techreborn:rubber_log>);
+	furnace.addRecipe(<minecraft:coal:1>,<advancedrocketry:alienwood>);
+	furnace.addRecipe(<minecraft:coal:1>,<randomthings:spectrelog>);
