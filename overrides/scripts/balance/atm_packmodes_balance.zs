@@ -327,17 +327,6 @@ print(" ====================================================== ");
 //====== Nerf Recipe for Mek Reactor ======
 //
 	//Oredict depleted rods
-	<ore:nuclearcraftDepletedRod>.addItems([
-		<nuclearcraft:depleted_fuel_rod_americium:*>,
-		<nuclearcraft:depleted_fuel_rod_berkelium:*>,
-		<nuclearcraft:depleted_fuel_rod_californium:*>,
-		<nuclearcraft:depleted_fuel_rod_curium:*>,
-		<nuclearcraft:depleted_fuel_rod_mixed_oxide:*>,
-		<nuclearcraft:depleted_fuel_rod_neptunium:*>,
-		<nuclearcraft:depleted_fuel_rod_plutonium:*>,
-		<nuclearcraft:depleted_fuel_rod_thorium:*>,
-		<nuclearcraft:depleted_fuel_rod_uranium:*>
-		]);
 	<ore:ic2DepletedRod>.addItems([
 		<ic2:nuclear:14>,
 		<ic2:nuclear:15>,
