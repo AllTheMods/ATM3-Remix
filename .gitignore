@@ -10,6 +10,10 @@ overrides/config/AppliedEnergistics2/aerecipes
 overrides/config/biomesoplenty/biomes/defaults
 overrides/config/tellme
 overrides/config/wizardry
+overrides/config/multimob/modInformation
+overrides/config/NetherEx/Biomes
+overrides/config/enderio/recipes
+!overrides/config/enderio/recipes/user/user_recipes\.xml
 overrides/config/jei/worldSettings\.cfg
 overrides/config/betterfps\.json
 overrides/config/LLOverlayReloaded\.cfg
@@ -22,13 +26,3 @@ overrides/config/randomtweaks/data\.json
 overrides/config/thaumicjei_itemstack_aspects\.json
 overrides/config/brandon3055/contributors\.json
 overrides/config/astralsorcery/amulet_enchantments\.cfg
-overrides/config/multimob/modInformation/allBiomes\.txt
-overrides/config/multimob/modInformation/allBiomeTypes\.txt
-overrides/config/multimob/modInformation/allBlocks\.txt
-overrides/config/multimob/modInformation/allBlockStates\.txt
-overrides/config/multimob/modInformation/allEnchantments\.txt
-overrides/config/multimob/modInformation/allEntities\.txt
-overrides/config/multimob/modInformation/allItems\.txt
-overrides/config/multimob/modInformation/allPotions\.txt
-overrides/config/multimob/modInformation/allPotionTypes\.txt
-overrides/config/multimob/modInformation/allVanillaStructures\.txt
