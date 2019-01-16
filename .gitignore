@@ -12,8 +12,6 @@ overrides/config/tellme
 overrides/config/wizardry
 overrides/config/multimob/modInformation
 overrides/config/NetherEx/Biomes
-overrides/config/enderio/recipes
-!overrides/config/enderio/recipes/user/user_recipes\.xml
 overrides/config/jei/worldSettings\.cfg
 overrides/config/betterfps\.json
 overrides/config/LLOverlayReloaded\.cfg
@@ -26,3 +24,8 @@ overrides/config/randomtweaks/data\.json
 overrides/config/thaumicjei_itemstack_aspects\.json
 overrides/config/brandon3055/contributors\.json
 overrides/config/astralsorcery/amulet_enchantments\.cfg
+# Some enderio magic to exclude only user_recipes
+overrides/config/enderio/recipes/*
+!overrides/config/enderio/recipes/user
+overrides/config/enderio/recipes/user/*
+!overrides/config/enderio/recipes/user/user_recipes\.xml
