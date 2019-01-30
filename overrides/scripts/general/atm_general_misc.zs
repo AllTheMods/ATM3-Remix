@@ -201,8 +201,6 @@ print(" ============================================================== ");
 	var blockSkyS = <appliedenergistics2:sky_stone_block>;
 	var dustSkySt = <appliedenergistics2:material:45>;
 	var crystalCertusPure = <appliedenergistics2:material:10>;
-	var siliconAE = <appliedenergistics2:material:5>;
-	var siliconRS = <refinedstorage:silicon>;
 	var siliconEIO = <enderio:item_material:5>;
 	
 	//QoL new ways to get SkyStone Dust
@@ -222,12 +220,9 @@ print(" ============================================================== ");
 	recipes.addShapeless("LogicPress", pressLogi, [pressEngi, dustSkySt, dustSkySt]);
 	recipes.addShapeless("EngPress", pressEngi, [pressCalc, dustSkySt, dustSkySt]);
 	recipes.addShapeless("CalcPress", pressCalc, [pressSili, dustSkySt, dustSkySt]);
-	recipes.addShapeless("AESilicon", siliconAE, [siliconRS]);
-	recipes.addShapeless("RSSilicon", siliconRS, [siliconEIO]);
-	recipes.addShapeless("EIOSilicon", siliconEIO, [siliconAE]);
 	
 	//Empowerer recipes (using function to make 4x recipes to accept any press as input)
-	empPressRecipe(siliconAE,                 pressSili, [48,  55,  73]);
+	empPressRecipe(siliconEIO,                 pressSili, [48,  55,  73]);
 	empPressRecipe(<minecraft:gold_block>,    pressLogi, [255, 195, 5]);
 	empPressRecipe(<minecraft:diamond_block>, pressEngi, [0,   190, 255]);
 	empPressRecipe(crystalCertusPure,         pressCalc, [240, 248, 255]);
