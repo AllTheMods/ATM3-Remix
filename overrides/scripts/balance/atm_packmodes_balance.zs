@@ -26,8 +26,8 @@ print(" ====================================================== ");
 		var normalRing = <extrautils2:angelring:*>;
 		var chestWithTag = <extrautils2:angelring:0>;
 		var baubleRing = <flyringbaublemod:flyingring:*>;
-		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}, No_Place: 1 as byte});
-		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}, No_Place: 1 as byte});
+		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}}).onlyWithTag({Animal: {id: "minecraft:bat"}});
+		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}}).onlyWithTag({Animal: {id: "minecraft:ghast"}});
 	
 	//====== EXU2 ANGEL RING ======
 	//
