@@ -495,30 +495,36 @@ recipes.remove(<minecraft:chest>);
    
 //====== Missing Dusts from Grains ======
 //
-   recipes.addShaped(<thermalfoundation:material:66>,
-      [[<extrabees:misc:8>, <extrabees:misc:8>, null],
+   recipes.addShaped(<thermalfoundation:material:66>, [
       [<extrabees:misc:8>, <extrabees:misc:8>, null],
-      [null, null, null]]);
-   recipes.addShaped(<ic2:crushed:6>,
-      [[<extrabees:misc:27>, <extrabees:misc:27>, null],
+      [<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<ic2:crushed:6>, [
       [<extrabees:misc:27>, <extrabees:misc:27>, null],
-      [null, null, null]]);
-   recipes.addShaped(<ore:dustTin>,
-      [[<extrabees:misc:11>, <extrabees:misc:11>, null],
+      [<extrabees:misc:27>, <extrabees:misc:27>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:65>, [
       [<extrabees:misc:11>, <extrabees:misc:11>, null],
-      [null, null, null]]);
-   recipes.addShaped(<ore:dustPlatinum>,
-      [[<extrabees:misc:9>, <extrabees:misc:9>, null],
+      [<extrabees:misc:11>, <extrabees:misc:11>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:70>, [
       [<extrabees:misc:9>, <extrabees:misc:9>, null],
-      [null, null, null]]);
-   recipes.addShaped(<ore:dustGold>,
-      [[<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [<extrabees:misc:9>, <extrabees:misc:9>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:1>, [
       [<extrabees:misc:7>, <extrabees:misc:7>, null],
-      [null, null, null]]);
-   recipes.addShaped(<ore:dustIron>, 
-      [[<extrabees:misc:6>, <extrabees:misc:6>, null],
+      [<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material>, [
       [<extrabees:misc:6>, <extrabees:misc:6>, null],
-      [null, null, null]]);
+      [<extrabees:misc:6>, <extrabees:misc:6>, null],
+      [null, null, null]
+      ]);
 
 //====== Remove duplicates from jaopca ======
 //
