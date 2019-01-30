@@ -495,39 +495,31 @@ recipes.remove(<minecraft:chest>);
    
 //====== Missing Dusts from Grains ======
 //
-   recipes.addShaped(<thermalfoundation:material:768>,
-      [[<extrabees:misc:18>, <extrabees:misc:18>, null],
-      [<extrabees:misc:18>, <extrabees:misc:18>, null],
-      [null, null, null]]);
-   recipes.addShaped(<techreborn:dust:55>,
-      [[<extrabees:misc:16>, <extrabees:misc:16>, null],
-      [<extrabees:misc:16>, <extrabees:misc:16>, null],
-      [null, null, null]]);
-   recipes.addShaped(<techreborn:dust:54>,
-      [[<extrabees:misc:15>, <extrabees:misc:15>, null],
-      [<extrabees:misc:15>, <extrabees:misc:15>, null], 
-      [null, null, null]]);
-   recipes.addShaped(<techreborn:dust:59>, 
-      [[<extrabees:misc:14>, <extrabees:misc:14>, null],
-      [<extrabees:misc:14>, <extrabees:misc:14>, null],
-      [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:69>,
-      [[<extrabees:misc:12>, <extrabees:misc:12>, null],
-      [<extrabees:misc:12>, <extrabees:misc:12>, null], 
-      [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:64>, 
-      [[<extrabees:misc:10>, <extrabees:misc:10>, null],
-      [<extrabees:misc:10>, <extrabees:misc:10>, null],
-      [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:66>, 
+   recipes.addShaped(<thermalfoundation:material:66>,
       [[<extrabees:misc:8>, <extrabees:misc:8>, null],
       [<extrabees:misc:8>, <extrabees:misc:8>, null],
       [null, null, null]]);
    recipes.addShaped(<ic2:crushed:6>,
       [[<extrabees:misc:27>, <extrabees:misc:27>, null],
-      [<extrabees:misc:27>, <extrabees:misc:27>, null], 
+      [<extrabees:misc:27>, <extrabees:misc:27>, null],
       [null, null, null]]);
-   
+   recipes.addShaped(<ore:dustTin>,
+      [[<extrabees:misc:11>, <extrabees:misc:11>, null],
+      [<extrabees:misc:11>, <extrabees:misc:11>, null],
+      [null, null, null]]);
+   recipes.addShaped(<ore:dustPlatinum>,
+      [[<extrabees:misc:9>, <extrabees:misc:9>, null],
+      [<extrabees:misc:9>, <extrabees:misc:9>, null],
+      [null, null, null]]);
+   recipes.addShaped(<ore:dustGold>,
+      [[<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [null, null, null]]);
+   recipes.addShaped(<ore:dustIron>, 
+      [[<extrabees:misc:6>, <extrabees:misc:6>, null],
+      [<extrabees:misc:6>, <extrabees:misc:6>, null],
+      [null, null, null]]);
+
 //====== Remove duplicates from jaopca ======
 //
    mods.jei.JEI.removeAndHide(<jaopca:block_mysticalcropsquartzblack>);
