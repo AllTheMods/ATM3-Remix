@@ -623,3 +623,7 @@ print(" ====================================================== ");
     recipes.remove(<agricraft:clipper>);
 	<agricraft:clipper>.addTooltip(format.aqua("Disabled by modpack"));
 
+//====== Disable Uncrafting Table ======
+//
+    mods.jei.JEI.removeAndHide(<twilightforest:uncrafting_table>);
+
