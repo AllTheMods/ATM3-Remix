@@ -565,5 +565,8 @@ recipes.remove(<minecraft:chest>);
 	
 	mods.jei.JEI.removeAndHide(<xreliquary:rod_of_lyssa>);
 	
-	
-	
+//====== Empty Cell ======
+// fix recipe that allows tin duplication
+//
+   mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:dynamiccell>);
+   mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:smalldust:53>, <techreborn:dynamiccell>, 2500);
