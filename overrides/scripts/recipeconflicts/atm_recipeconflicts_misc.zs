@@ -416,15 +416,6 @@ print(" ======================================================== ");
 	recipes.remove(<tconstruct:rack:0>);
 	recipes.addShapeless("itemrack",<tconstruct:rack:0>, [<tconstruct:rack:1>]);
 	
-//====== Limiter Rail ======
-//
-	recipes.remove(<signals:limiter_rail>);
-   recipes.addShaped("SignalsLimiter", <signals:limiter_rail> * 6, [
-      [<ore:ingotIron>, <minecraft:comparator>, <ore:ingotIron>],
-      [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>],
-      [<ore:ingotIron>, null, <ore:ingotIron>]
-      ]);
-      	
 //====== Alarm, Incandescent lamp ======
 //
    recipes.remove(<techreborn:lamp_incandescent>);
@@ -458,3 +449,56 @@ print(" ======================================================== ");
 	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
 	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>]
 	]);
+	
+//====== Mystical Agriculture ======
+//
+   var mystsili = <mysticalagriculture:silicon_essence>;
+   var myststeel = <mysticalagriculture:steel_essence>;
+   var mystlead = <mysticalagriculture:lead_essence>;
+   var mystbronze = <mysticalagriculture:bronze_essence>;
+   var mystsilver = <mysticalagriculture:silver_essence>;
+   var mysttin = <mysticalagriculture:tin_essence>;
+   var mystcopper = <mysticalagriculture:copper_essence>;
+   recipes.remove(<nuclearcraft:gem:6>);
+   recipes.remove(<ic2:ingot:5>);
+   recipes.remove(<ic2:ingot:3>);
+   recipes.remove(<ic2:ingot:1>);
+   recipes.remove(<ic2:ingot:4>);
+   recipes.remove(<ic2:ingot:6>);
+   recipes.remove(<ic2:ingot:2>);
+   recipes.addShaped(<enderio:item_material:5> * 8,
+      [[mystsili, mystsili, mystsili],
+      [null, null, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:160> * 3,
+      [[myststeel, myststeel, myststeel],
+      [myststeel, null, myststeel], 
+      [myststeel, myststeel, myststeel]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:131> * 4,
+      [[mystlead, mystlead, mystlead],
+      [mystlead, null, mystlead],
+      [mystlead, mystlead, mystlead]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:163> * 4,
+      [[mystbronze, mystbronze, mystbronze],
+      [mystbronze, null, mystbronze],
+      [mystbronze, mystbronze, mystbronze]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:130> * 4,
+      [[mystsilver, mystsilver, mystsilver],
+      [mystsilver, null, mystsilver],
+      [mystsilver, mystsilver, mystsilver]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:129> * 4,
+      [[mysttin, mysttin, mysttin],
+      [mysttin, null, mysttin],
+      [mysttin, mysttin, mysttin]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:128> * 6,
+      [[mystcopper, mystcopper, mystcopper],
+      [mystcopper, null, mystcopper],
+      [mystcopper, mystcopper, mystcopper]
+      ]);
+      

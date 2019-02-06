@@ -26,8 +26,8 @@ print(" ====================================================== ");
 		var normalRing = <extrautils2:angelring:*>;
 		var chestWithTag = <extrautils2:angelring:0>;
 		var baubleRing = <flyringbaublemod:flyingring:*>;
-		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}, No_Place: 1 as byte});
-		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}, No_Place: 1 as byte});
+		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}}).onlyWithTag({Animal: {id: "minecraft:bat"}});
+		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}}).onlyWithTag({Animal: {id: "minecraft:ghast"}});
 	
 	//====== EXU2 ANGEL RING ======
 	//
@@ -327,17 +327,6 @@ print(" ====================================================== ");
 //====== Nerf Recipe for Mek Reactor ======
 //
 	//Oredict depleted rods
-	<ore:nuclearcraftDepletedRod>.addItems([
-		<nuclearcraft:depleted_fuel_rod_americium:*>,
-		<nuclearcraft:depleted_fuel_rod_berkelium:*>,
-		<nuclearcraft:depleted_fuel_rod_californium:*>,
-		<nuclearcraft:depleted_fuel_rod_curium:*>,
-		<nuclearcraft:depleted_fuel_rod_mixed_oxide:*>,
-		<nuclearcraft:depleted_fuel_rod_neptunium:*>,
-		<nuclearcraft:depleted_fuel_rod_plutonium:*>,
-		<nuclearcraft:depleted_fuel_rod_thorium:*>,
-		<nuclearcraft:depleted_fuel_rod_uranium:*>
-		]);
 	<ore:ic2DepletedRod>.addItems([
 		<ic2:nuclear:14>,
 		<ic2:nuclear:15>,
@@ -633,4 +622,8 @@ print(" ====================================================== ");
 //
     recipes.remove(<agricraft:clipper>);
 	<agricraft:clipper>.addTooltip(format.aqua("Disabled by modpack"));
+
+//====== Disable Uncrafting Table ======
+//
+    mods.jei.JEI.removeAndHide(<twilightforest:uncrafting_table>);
 

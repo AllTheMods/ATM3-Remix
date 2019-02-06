@@ -11,7 +11,8 @@ Does "All The Mods" *really* contain ALL THE MODS? No, of course not.
 + [![All the Mods 3](http://cf.way2muchnoise.eu/269708.svg "ATM3") All The Mods 3](https://mods.curse.com/modpacks/minecraft/269708-all-the-mods-3)  
 + [![All the Mods 3 Lite](http://cf.way2muchnoise.eu/274129.svg "ATM3: Lite") All The Mods 3 Lite](https://minecraft.curseforge.com/projects/atm-3-lite)  
 + [![All the Mods Expert Remastered](http://cf.way2muchnoise.eu/274849.svg "ATMER") All The Mods Expert Remastered](https://mods.curse.com/modpacks/minecraft/252034-all-the-mods-expert)  
-  
++ [![All the Mods: All the Magic](http://cf.way2muchnoise.eu/310346.svg "ATM: All the Magic") All The Mods: All the Magic](https://www.curseforge.com/minecraft/modpacks/atm-all-the-magic)
+
 Need Help?
 ======
 When reporting an issue put the version number before the issue title! Such as [FULL][1.37] My game is broken! Also include any added mods you may have put in, into the description of the issue. 

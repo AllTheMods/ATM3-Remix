@@ -110,9 +110,11 @@
     }
   ],
   "entitymodblacklist": [
-    "botania"
+    "botania",
+	"primitivemobs"
   ],
   "entityblacklist": [
+    "minecraft:evocation_illager",
     "twilightforest:naga",
     "twilightforest:minoshroom",
     "twilightforest:hydra",
