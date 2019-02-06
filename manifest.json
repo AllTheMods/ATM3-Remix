@@ -3,7 +3,7 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2810",
+        "id": "forge-14.23.5.2811",
         "primary": true
       }
     ]
@@ -157,12 +157,12 @@
     },
     {
       "projectID": 237102,
-      "fileID": 2666228,
+      "fileID": 2669287,
       "required": true
     },
     {
       "projectID": 237167,
-      "fileID": 2668495,
+      "fileID": 2669281,
       "required": true
     },
     {
@@ -417,7 +417,7 @@
     },
     {
       "projectID": 296676,
-      "fileID": 2654589,
+      "fileID": 2668982,
       "required": true
     },
     {
@@ -587,7 +587,7 @@
     },
     {
       "projectID": 69162,
-      "fileID": 2623990,
+      "fileID": 2669253,
       "required": true
     },
     {
@@ -927,7 +927,7 @@
     },
     {
       "projectID": 222880,
-      "fileID": 2623991,
+      "fileID": 2669258,
       "required": true
     },
     {
@@ -997,7 +997,7 @@
     },
     {
       "projectID": 271835,
-      "fileID": 2623100,
+      "fileID": 2669255,
       "required": true
     },
     {
@@ -1092,7 +1092,7 @@
     },
     {
       "projectID": 69163,
-      "fileID": 2624855,
+      "fileID": 2669257,
       "required": true
     },
     {
@@ -1137,7 +1137,7 @@
     },
     {
       "projectID": 233564,
-      "fileID": 2667881,
+      "fileID": 2669230,
       "required": true
     },
     {
@@ -1157,7 +1157,7 @@
     },
     {
       "projectID": 227443,
-      "fileID": 2624182,
+      "fileID": 2669256,
       "required": true
     },
     {
@@ -1172,7 +1172,7 @@
     },
     {
       "projectID": 70631,
-      "fileID": 2624342,
+      "fileID": 2669254,
       "required": true
     },
     {
@@ -1242,7 +1242,7 @@
     },
     {
       "projectID": 291737,
-      "fileID": 2623101,
+      "fileID": 2669259,
       "required": true
     },
     {
@@ -1428,6 +1428,16 @@
     {
       "projectID": 253565,
       "fileID": 2654969,
+      "required": true
+    },
+    {
+      "projectID": 313298,
+      "fileID": 2669739,
+      "required": true
+    },
+    {
+      "projectID": 311785,
+      "fileID": 2663855,
       "required": true
     }
   ],
