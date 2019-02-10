@@ -8,4 +8,6 @@
     </enchanting>
   </recipe>
 
+  <recipe name="Ender Dust" disabled="true"/>
+
 </enderio:recipes>

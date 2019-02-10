@@ -335,12 +335,21 @@ print(" ======================================================== ");
 	
 //====== Ender Pearl Powder ======
 //
-	recipes.removeShaped(<techreborn:dust:20>);
-	// This line below doesn't want to work. Recipe stops working, but won't disappear
-	//recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
-	// Work around for the moment, although doesnt want to seem to work either.
-	recipes.removeShaped(<appliedenergistics2:material:46>);
-	recipes.addShapeless("AE2Pearl",<appliedenergistics2:material:46>,[<enderio:item_material:28>*9]);
+//add custom enderio recipe
+   recipes.addShaped(<techreborn:dust:20>, [
+      [<enderio:item_material:28>, <enderio:item_material:28>, <enderio:item_material:28>],
+      [<enderio:item_material:28>, <enderio:item_material:28>, <enderio:item_material:28>], 
+      [<enderio:item_material:28>, <enderio:item_material:28>, <enderio:item_material:28>]
+      ]);
+//fix miniature black hole
+   recipes.remove(<portalgun:item_miniature_black_hole>);
+   recipes.addShaped(<portalgun:item_miniature_black_hole>, [
+      [<ore:dustEnderPearl>, <ore:dustEnderPearl>, <ore:dustEnderPearl>],
+      [<ore:dustEnderPearl>, <minecraft:nether_star>, <ore:dustEnderPearl>], 
+      [<ore:dustEnderPearl>, <ore:dustEnderPearl>, <ore:dustEnderPearl>]
+      ]);
+
+
    
 //====== Birds Food Pita Conflict ======
 //
