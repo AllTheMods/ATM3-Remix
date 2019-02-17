@@ -32,7 +32,7 @@ print(" ====================================================== ");
 
 	//Industrium vars
 	var fluxElectrumThing = <redstonearsenal:material:224>;
-	var ludicriteIngot = <bigreactors:ingotmetals:4>;
+	var ludicriteIngot = <bigreactors:ingotludicrite>;
 	var dracoCore = <draconicevolution:awakened_core>;
 	var beesGoldGrain = <extrabees:misc:7>;
 	var richSlag = <thermalfoundation:material:865>;
