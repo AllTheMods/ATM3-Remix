@@ -542,8 +542,11 @@ print(" ====================================================== ");
 	<pneumaticcraft:creative_compressor>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
 	
 	// Creative Wireless Crafting Terminal
+	// Removed as seems not to currently exist
+	/*
 	recipes.addShapeless("CWCTerm",
 		<wct:wct_creative>, [
 			atmStarReturnOrb, <wct:wct>, <wct:wct>
 		]);
 	<wct:wct_creative>.addTooltip("Does not consume the Orb portion of the ATM Star when crafted");
+	*/

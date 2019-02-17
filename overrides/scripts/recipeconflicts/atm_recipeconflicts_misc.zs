@@ -232,8 +232,8 @@ print(" ======================================================== ");
 
 //======Minecolony Builder conflict ======
 //
-	recipes.remove(<minecolonies:sceptergold>);
-	recipes.addShaped(<minecolonies:sceptergold>, [
+	recipes.remove(<structurize:sceptergold>);
+	recipes.addShaped(<structurize:sceptergold>, [
 		[null,            <ore:cobblestone>, <ore:cobblestone>],
 		[null,            <ore:stickWood>,   <ore:cobblestone>],
 		[<ore:stickWood>, null,              null]
@@ -248,8 +248,8 @@ print(" ======================================================== ");
 //====== Minecolonies Scan Tool ======
 // conflicting with iron builder's wand
 //
-	recipes.remove(<minecolonies:sceptersteel>);
-	recipes.addShaped(<minecolonies:sceptersteel>, [
+	recipes.remove(<structurize:sceptersteel>);
+	recipes.addShaped(<structurize:sceptersteel>, [
 		[null, <ore:paneGlass>, <ore:ingotIron>],
 		[null, <ore:stickWood>, <ore:paneGlass>],
 		[<ore:stickWood>, null, null]
@@ -335,12 +335,21 @@ print(" ======================================================== ");
 	
 //====== Ender Pearl Powder ======
 //
-	recipes.removeShaped(<techreborn:dust:20>);
-	// This line below doesn't want to work. Recipe stops working, but won't disappear
-	//recipes.removeShaped(<portalgun:item_dust_ender_pearl>);
-	// Work around for the moment, although doesnt want to seem to work either.
-	recipes.removeShaped(<appliedenergistics2:material:46>);
-	recipes.addShapeless("AE2Pearl",<appliedenergistics2:material:46>,[<enderio:item_material:28>*9]);
+//add custom enderio recipe
+   recipes.addShaped(<techreborn:dust:20>, [
+      [<enderio:item_material:28>, <enderio:item_material:28>, <enderio:item_material:28>],
+      [<enderio:item_material:28>, <enderio:item_material:28>, <enderio:item_material:28>], 
+      [<enderio:item_material:28>, <enderio:item_material:28>, <enderio:item_material:28>]
+      ]);
+//fix miniature black hole
+   recipes.remove(<portalgun:item_miniature_black_hole>);
+   recipes.addShaped(<portalgun:item_miniature_black_hole>, [
+      [<ore:dustEnderPearl>, <ore:dustEnderPearl>, <ore:dustEnderPearl>],
+      [<ore:dustEnderPearl>, <minecraft:nether_star>, <ore:dustEnderPearl>], 
+      [<ore:dustEnderPearl>, <ore:dustEnderPearl>, <ore:dustEnderPearl>]
+      ]);
+
+
    
 //====== Birds Food Pita Conflict ======
 //
@@ -365,6 +374,33 @@ print(" ======================================================== ");
 		[null, null, null],
 		[null, null, null]
 		]);
+		
+//====== Pork Conflict ======
+//
+	recipes.remove(<birdsfoods:sliced_ham>);
+	recipes.addShaped("Sliced Ham", <birdsfoods:sliced_ham> * 4, [
+	[<minecraft:cooked_porkchop>,<minecraft:cooked_porkchop>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
+	
+//====== Chicken Conflict ======
+//
+	recipes.remove(<xlfoodmod:raw_chicken_wing>);
+	recipes.addShaped("Chicken Wing", <xlfoodmod:raw_chicken_wing> * 2, [
+	[<minecraft:chicken>,<minecraft:feather>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
+
+//====== Beef Conflict ======
+//
+	recipes.remove(<birdsfoods:sliced_steak>);
+	recipes.addShaped("Sliced Steak", <birdsfoods:sliced_steak> * 4, [
+	[<minecraft:cooked_beef>,<minecraft:cooked_beef>,null],
+	[null, null, null],
+	[null, null, null]
+	]);
       
 //====== Relapse/Love Potions ======
 //
@@ -389,25 +425,16 @@ print(" ======================================================== ");
 	recipes.remove(<tconstruct:rack:0>);
 	recipes.addShapeless("itemrack",<tconstruct:rack:0>, [<tconstruct:rack:1>]);
 	
-//====== Limiter Rail ======
-//
-	recipes.remove(<signals:limiter_rail>);
-   recipes.addShaped(<signals:limiter_rail> * 6, [
-      [<ore:ingotIron>, <minecraft:comparator>, <ore:ingotIron>],
-      [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>],
-      [<ore:ingotIron>, null, <ore:ingotIron>]
-      ]);
-      	
 //====== Alarm, Incandescent lamp ======
 //
    recipes.remove(<techreborn:lamp_incandescent>);
    recipes.remove(<techreborn:alarm>);
-   recipes.addShaped(<techreborn:lamp_incandescent>,
+   recipes.addShaped("TRLamp", <techreborn:lamp_incandescent>,
       [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
       [<ic2:cable>, <ic2:crafting:13>, <ic2:cable>],
       [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]
       ]);
-   recipes.addShaped(<techreborn:alarm>,
+   recipes.addShaped("TRAlarm", <techreborn:alarm>,
       [[<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>],
       [inscab, <ore:blockRedstone>, inscab],
       [<ore:ingotIron>, <ic2:cable>, <ore:ingotIron>]
@@ -416,8 +443,71 @@ print(" ======================================================== ");
 //====== Iron Frame ======
 //
    recipes.remove(<advgenerators:iron_frame>);
-   recipes.addShaped(<advgenerators:iron_frame> * 2,
+   recipes.addShaped("AdvGenFrame", <advgenerators:iron_frame> * 2,
       [[<ore:ingotIron>, null, <ore:ingotIron>],
       [null, null, null],
       [<ore:ingotIron>, null, <ore:ingotIron>]]);
 	
+//====== Uranium Ingot ======
+//
+	recipes.removeShapeless(<ic2:ingot:8>,[<ic2:resource:10>]);
+	
+	recipes.addShapeless("UraniumIngot",<ic2:ingot:8> * 10,[<ic2:resource:10>,<ic2:ingot:8>]);
+	recipes.addShaped("UraniumIngotToBlock",<ic2:resource:10>,
+	[[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
+	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>],
+	[<ic2:ingot:8>, <ic2:ingot:8>, <ic2:ingot:8>]
+	]);
+	
+//====== Mystical Agriculture ======
+//
+   var mystsili = <mysticalagriculture:silicon_essence>;
+   var myststeel = <mysticalagriculture:steel_essence>;
+   var mystlead = <mysticalagriculture:lead_essence>;
+   var mystbronze = <mysticalagriculture:bronze_essence>;
+   var mystsilver = <mysticalagriculture:silver_essence>;
+   var mysttin = <mysticalagriculture:tin_essence>;
+   var mystcopper = <mysticalagriculture:copper_essence>;
+   recipes.remove(<nuclearcraft:gem:6>);
+   recipes.remove(<ic2:ingot:5>);
+   recipes.remove(<ic2:ingot:3>);
+   recipes.remove(<ic2:ingot:1>);
+   recipes.remove(<ic2:ingot:4>);
+   recipes.remove(<ic2:ingot:6>);
+   recipes.remove(<ic2:ingot:2>);
+   recipes.addShaped(<enderio:item_material:5> * 8,
+      [[mystsili, mystsili, mystsili],
+      [null, null, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:160> * 3,
+      [[myststeel, myststeel, myststeel],
+      [myststeel, null, myststeel], 
+      [myststeel, myststeel, myststeel]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:131> * 4,
+      [[mystlead, mystlead, mystlead],
+      [mystlead, null, mystlead],
+      [mystlead, mystlead, mystlead]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:163> * 4,
+      [[mystbronze, mystbronze, mystbronze],
+      [mystbronze, null, mystbronze],
+      [mystbronze, mystbronze, mystbronze]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:130> * 4,
+      [[mystsilver, mystsilver, mystsilver],
+      [mystsilver, null, mystsilver],
+      [mystsilver, mystsilver, mystsilver]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:129> * 4,
+      [[mysttin, mysttin, mysttin],
+      [mysttin, null, mysttin],
+      [mysttin, mysttin, mysttin]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:128> * 6,
+      [[mystcopper, mystcopper, mystcopper],
+      [mystcopper, null, mystcopper],
+      [mystcopper, mystcopper, mystcopper]
+      ]);
+      

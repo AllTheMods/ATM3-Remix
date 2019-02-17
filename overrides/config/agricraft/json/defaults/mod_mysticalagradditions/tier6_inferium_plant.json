@@ -1,9 +1,9 @@
 {
   "path": "mod_mysticalagradditions/tier6_inferium_plant.json",
   "enabled": false,
-  "id": "tier6_inferium_plant",
-  "plant_name": "Tier6 Inferium Crop",
-  "seed_name": "Tier6 Inferium Seeds",
+  "id": "mysticalagradditions:tier_six_inferium_plant",
+  "plant_name": "Tier Six Inferium Crop",
+  "seed_name": "Tier Six Inferium Seeds",
   "seed_items": [
     {
       "item": "mysticalagradditions:tier6_inferium_seeds",
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Tier6 Inferium Seeds."
+    "default": "Tier Six Inferium Seeds. Much upgrade. Very wow."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.02,

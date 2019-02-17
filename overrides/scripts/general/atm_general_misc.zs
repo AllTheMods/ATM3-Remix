@@ -201,8 +201,6 @@ print(" ============================================================== ");
 	var blockSkyS = <appliedenergistics2:sky_stone_block>;
 	var dustSkySt = <appliedenergistics2:material:45>;
 	var crystalCertusPure = <appliedenergistics2:material:10>;
-	var siliconAE = <appliedenergistics2:material:5>;
-	var siliconRS = <refinedstorage:silicon>;
 	var siliconEIO = <enderio:item_material:5>;
 	
 	//QoL new ways to get SkyStone Dust
@@ -222,12 +220,9 @@ print(" ============================================================== ");
 	recipes.addShapeless("LogicPress", pressLogi, [pressEngi, dustSkySt, dustSkySt]);
 	recipes.addShapeless("EngPress", pressEngi, [pressCalc, dustSkySt, dustSkySt]);
 	recipes.addShapeless("CalcPress", pressCalc, [pressSili, dustSkySt, dustSkySt]);
-	recipes.addShapeless("AESilicon", siliconAE, [siliconRS]);
-	recipes.addShapeless("RSSilicon", siliconRS, [siliconEIO]);
-	recipes.addShapeless("EIOSilicon", siliconEIO, [siliconAE]);
 	
 	//Empowerer recipes (using function to make 4x recipes to accept any press as input)
-	empPressRecipe(siliconAE,                 pressSili, [48,  55,  73]);
+	empPressRecipe(siliconEIO,                 pressSili, [48,  55,  73]);
 	empPressRecipe(<minecraft:gold_block>,    pressLogi, [255, 195, 5]);
 	empPressRecipe(<minecraft:diamond_block>, pressEngi, [0,   190, 255]);
 	empPressRecipe(crystalCertusPure,         pressCalc, [240, 248, 255]);
@@ -342,7 +337,7 @@ print(" ============================================================== ");
 //====== TR LED Lamp ======
 //
 recipes.remove(<techreborn:lamp_led>);
-	recipes.addShaped("TRLamp", <techreborn:lamp_led>, [
+	recipes.addShaped("TR Lamp", <techreborn:lamp_led>, [
 		[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
 		[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}), <minecraft:glowstone_dust>, <ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})],
 		[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]
@@ -495,39 +490,37 @@ recipes.remove(<minecraft:chest>);
    
 //====== Missing Dusts from Grains ======
 //
-   recipes.addShaped(<thermalfoundation:material:768>,
-      [[<extrabees:misc:18>, <extrabees:misc:18>, null],
-      [<extrabees:misc:18>, <extrabees:misc:18>, null],
-      [null, null, null]]);
-   recipes.addShaped(<techreborn:dust:55>,
-      [[<extrabees:misc:16>, <extrabees:misc:16>, null],
-      [<extrabees:misc:16>, <extrabees:misc:16>, null],
-      [null, null, null]]);
-   recipes.addShaped(<techreborn:dust:54>,
-      [[<extrabees:misc:15>, <extrabees:misc:15>, null],
-      [<extrabees:misc:15>, <extrabees:misc:15>, null], 
-      [null, null, null]]);
-   recipes.addShaped(<techreborn:dust:59>, 
-      [[<extrabees:misc:14>, <extrabees:misc:14>, null],
-      [<extrabees:misc:14>, <extrabees:misc:14>, null],
-      [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:69>,
-      [[<extrabees:misc:12>, <extrabees:misc:12>, null],
-      [<extrabees:misc:12>, <extrabees:misc:12>, null], 
-      [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:64>, 
-      [[<extrabees:misc:10>, <extrabees:misc:10>, null],
-      [<extrabees:misc:10>, <extrabees:misc:10>, null],
-      [null, null, null]]);
-   recipes.addShaped(<thermalfoundation:material:66>, 
-      [[<extrabees:misc:8>, <extrabees:misc:8>, null],
+   recipes.addShaped(<thermalfoundation:material:66>, [
       [<extrabees:misc:8>, <extrabees:misc:8>, null],
-      [null, null, null]]);
-   recipes.addShaped(<ic2:crushed:6>,
-      [[<extrabees:misc:27>, <extrabees:misc:27>, null],
-      [<extrabees:misc:27>, <extrabees:misc:27>, null], 
-      [null, null, null]]);
-   
+      [<extrabees:misc:8>, <extrabees:misc:8>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<ic2:crushed:6>, [
+      [<extrabees:misc:27>, <extrabees:misc:27>, null],
+      [<extrabees:misc:27>, <extrabees:misc:27>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:65>, [
+      [<extrabees:misc:11>, <extrabees:misc:11>, null],
+      [<extrabees:misc:11>, <extrabees:misc:11>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:70>, [
+      [<extrabees:misc:9>, <extrabees:misc:9>, null],
+      [<extrabees:misc:9>, <extrabees:misc:9>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material:1>, [
+      [<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [<extrabees:misc:7>, <extrabees:misc:7>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<thermalfoundation:material>, [
+      [<extrabees:misc:6>, <extrabees:misc:6>, null],
+      [<extrabees:misc:6>, <extrabees:misc:6>, null],
+      [null, null, null]
+      ]);
+
 //====== Remove duplicates from jaopca ======
 //
    mods.jei.JEI.removeAndHide(<jaopca:block_mysticalcropsquartzblack>);
@@ -566,8 +559,14 @@ recipes.remove(<minecraft:chest>);
 		[<botania:manaresource:9>,<botania:manaresource:6>,<botania:rune:0>,<botania:rune:1>,<ore:petalOrange>,<ore:petalBlack>,<ore:petalBrown>
 		], 1000);
 	
+//====== Rod of Lyssa ======
+//
+// Disable for being able to steal items
 	
+	mods.jei.JEI.removeAndHide(<xreliquary:rod_of_lyssa>);
 	
-	
-	
-	
+//====== Empty Cell ======
+// fix recipe that allows tin duplication
+//
+   mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:dynamiccell>);
+   mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:smalldust:53>, <techreborn:dynamiccell>, 2500);

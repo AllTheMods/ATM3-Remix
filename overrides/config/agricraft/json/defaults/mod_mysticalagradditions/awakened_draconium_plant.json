@@ -1,7 +1,7 @@
 {
   "path": "mod_mysticalagradditions/awakened_draconium_plant.json",
   "enabled": false,
-  "id": "awakened_draconium_plant",
+  "id": "mysticalagradditions:awakened_draconium_plant",
   "plant_name": "Awakened Draconium Crop",
   "seed_name": "Awakened Draconium Seeds",
   "seed_items": [

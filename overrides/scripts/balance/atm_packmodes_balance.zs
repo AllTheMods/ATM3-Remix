@@ -26,8 +26,8 @@ print(" ====================================================== ");
 		var normalRing = <extrautils2:angelring:*>;
 		var chestWithTag = <extrautils2:angelring:0>;
 		var baubleRing = <flyringbaublemod:flyingring:*>;
-		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}, No_Place: 1 as byte});
-		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}, No_Place: 1 as byte});
+		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}}).onlyWithTag({Animal: {id: "minecraft:bat"}});
+		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}}).onlyWithTag({Animal: {id: "minecraft:ghast"}});
 	
 	//====== EXU2 ANGEL RING ======
 	//
@@ -283,7 +283,7 @@ print(" ====================================================== ");
 		//Nuclearcraft
 		recipes.addShaped("NuReactorController", <bigreactors:reactorcontroller>, [
 			[<bigreactors:reactorcasing>, <bigreactors:reactorcasing>, <bigreactors:reactorcasing>],
-			[<bigreactors:reactorcasing>, <nuclearcraft:fission_controller_new_idle>, <bigreactors:reactorcasing>],
+			[<bigreactors:reactorcasing>, <nuclearcraft:fission_controller_new_fixed>, <bigreactors:reactorcasing>],
 			[<bigreactors:reactorcasing>, <bigreactors:reactorcasing>, <bigreactors:reactorcasing>]
 			]);
 		//Mek
@@ -327,17 +327,6 @@ print(" ====================================================== ");
 //====== Nerf Recipe for Mek Reactor ======
 //
 	//Oredict depleted rods
-	<ore:nuclearcraftDepletedRod>.addItems([
-		<nuclearcraft:depleted_fuel_rod_americium:*>,
-		<nuclearcraft:depleted_fuel_rod_berkelium:*>,
-		<nuclearcraft:depleted_fuel_rod_californium:*>,
-		<nuclearcraft:depleted_fuel_rod_curium:*>,
-		<nuclearcraft:depleted_fuel_rod_mixed_oxide:*>,
-		<nuclearcraft:depleted_fuel_rod_neptunium:*>,
-		<nuclearcraft:depleted_fuel_rod_plutonium:*>,
-		<nuclearcraft:depleted_fuel_rod_thorium:*>,
-		<nuclearcraft:depleted_fuel_rod_uranium:*>
-		]);
 	<ore:ic2DepletedRod>.addItems([
 		<ic2:nuclear:14>,
 		<ic2:nuclear:15>,
@@ -349,29 +338,11 @@ print(" ====================================================== ");
 		
 	recipes.remove(<mekanismgenerators:reactor>);
 	
-	//Mek
-	recipes.addShaped("MekReactor", <mekanismgenerators:reactor>, [
-		[<ore:circuitUltimate>, <mekanism:basicblock2:3>.withTag({tier: 3}), <ore:circuitUltimate>],
-		[<mekanismgenerators:reactor:2>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:2>],
-		[<mekanismgenerators:reactor:2>, <ore:shardLead>, <mekanismgenerators:reactor:2> ]
-		]);
-	//Nuclearcraft
-	recipes.addShaped("NuMekReactor", <mekanismgenerators:reactor>, [
-		[<ore:nuclearcraftDepletedRod>, <mekanism:energycube>.withTag({tier: 3}), <ore:nuclearcraftDepletedRod>],
-		[<mekanismgenerators:reactor:2>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:2>],
-		[<mekanismgenerators:reactor:2>, <ore:nuclearcraftDepletedRod>, <mekanismgenerators:reactor:2> ]
-		]);
-	//IC2
-	recipes.addShaped("Ic2MekReactor", <mekanismgenerators:reactor>, [
-		[<ore:ic2DepletedRod>, <mekanism:energycube>.withTag({tier: 3}), <ore:ic2DepletedRod>],
-		[<mekanismgenerators:reactor:2>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:2>],
-		[<mekanismgenerators:reactor:2>, <ore:ic2DepletedRod>, <mekanismgenerators:reactor:2> ]
-		]);
-	//BigReactors
+	// Mek Reactor
 	recipes.addShaped("BRMekReactor", <mekanismgenerators:reactor>, [
-		[<bigreactors:ingotmetals:4>, <mekanism:energycube>.withTag({tier: 3}), <bigreactors:ingotmetals:4>],
-		[<mekanismgenerators:reactor:2>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:2>],
-		[<mekanismgenerators:reactor:2>, <bigreactors:reactorcontroller>, <mekanismgenerators:reactor:2> ]
+		[<ore:ic2DepletedRod>, <mekanismgenerators:reactor:2>, <bigreactors:ingotmetals:4>],
+		[<mekanismgenerators:reactor:1>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:1>],
+		[<mekanismgenerators:reactor:1>, <bigreactors:reactorcontroller>, <mekanismgenerators:reactor:1> ]
 		]);
 
 
@@ -651,4 +622,8 @@ print(" ====================================================== ");
 //
     recipes.remove(<agricraft:clipper>);
 	<agricraft:clipper>.addTooltip(format.aqua("Disabled by modpack"));
+
+//====== Disable Uncrafting Table ======
+//
+    mods.jei.JEI.removeAndHide(<twilightforest:uncrafting_table>);
 

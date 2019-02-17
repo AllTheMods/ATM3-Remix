@@ -128,25 +128,18 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 		[<minecraft:book>, <minecraft:book>, <minecraft:book>],
 		[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
 		]);
-
-	
-//====== NetherEx Chiselling ======
-//
-	// There's probably a better way.
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:0>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:1>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:2>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:3>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:0>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:1>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:2>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:netherbrick:3>);
 	
 //====== IC2 Solar ======
 //
 	<ore:ic2SolarPanel>.addItems([<ic2:te:8>]);
-
-//====== Marble Chiselling ======
+	
+//====== Quartz Dust ======
 //
-	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:0>);
-	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:1>);
+	<ore:dustQuartz>.addItems([<enderio:item_material:33>]);
+//manufactory fix
+   mods.nuclearcraft.manufactory.removeRecipeWithOutput([<nuclearcraft:gem_dust:2>]);
+   mods.nuclearcraft.manufactory.addRecipe([<minecraft:quartz>, <enderio:item_material:33>]);
+//grindstone fix
+   mods.astralsorcery.Grindstone.removeRecipe(<nuclearcraft:gem_dust:2>);
+   mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz>, <enderio:item_material:33>, 0.85f);
+

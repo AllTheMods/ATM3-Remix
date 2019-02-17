@@ -8,13 +8,6 @@
     </enchanting>
   </recipe>
 
-  <recipe name="Alloy: Dark Soularium Ingot" required="true" disabled="false">
-    <alloying energy="40000" exp="1.0">
-      <input name="enderio:item_alloy_ingot:6"/>
-      <input name="enderio:item_material:14"/>
-      <input name="enderio:item_alloy_ingot:7"/>
-      <output name="simplyjetpacks:metaitemmods:3"/>
-    </alloying>
-  </recipe>
+  <recipe name="Ender Dust" disabled="true"/>
 
 </enderio:recipes>
