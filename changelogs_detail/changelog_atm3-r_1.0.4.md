@@ -1,6 +1,7 @@
 §2§lAll the Mods 3 - Remix 1.0.4 Changelog
 
 §b§lChanges Made:
+* This update removes Real Filing Cabinet and /dank/null, be sure to empty them before loading your world. 
 * Add InvTweak files to new location
 * Disable cyclic excavation enchant
 * Configure Tinker's Station mod integration
