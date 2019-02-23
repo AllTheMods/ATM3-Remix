@@ -1,0 +1,59 @@
+All the Mods 3 - Remix 1.0.3 to All the Mods 3 - Remix 1.0.4
+
+Updated:
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.3.jar to IntegratedDynamics-1.12.2-1.0.6.jar):
+		IntegratedDynamics-1.12.2-1.0.6.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.0.0 or higher.
+
+			Fixes:
+			* Fix mod version being hardcoded to 1.0.0
+		IntegratedDynamics-1.12.2-1.0.5.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.0.0 or higher.
+
+			Fixes:
+			* Allow NBT values to be converted to string, Closes #697
+			* Fix viewing corrupted variables causing a crash, Closes #691
+		IntegratedDynamics-1.12.2-1.0.4.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.0.0 or higher.
+
+			Additions:
+			* Allow copying variables to multiple cards
+			 This also fixes a duplication exploit when having multiple empty cards.
+
+			Fixes:
+			* Fix getChannelIndex illegally returning null in some cases
+			* Fix "recipe by input" operator incorrectly having a list output type
+			* Properly handle chunk (un)loading in variable caches, CyclopsMC/IntegratedTunnels#148, Closes #683
+			* Fix crash when not all positions are loaded in getMaxQuantity, Closes CyclopsMC/IntegratedTunnels#148
+
+	Integrated Tunnels (went from IntegratedTunnels-1.12.2-1.6.2.jar to IntegratedTunnels-1.12.2-1.6.6.jar):
+		IntegratedTunnels-1.12.2-1.6.6.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.0.0 or higher.
+
+			Fixes:
+			* Fix world fluid exporting voiding fluids if amount < 1000, Closes #155
+		IntegratedTunnels-1.12.2-1.6.5.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.0.0 or higher.
+
+			Fixes:
+			* Fix lombok being included as dependency
+			 This fixes the issue where recent releases would not be published on CurseForge
+
+			Fixes from 1.6.3:
+			* Fix craft jobs requesting before extraction from last tick was observed, CyclopsMC/IntegratedCrafting#11
+			* Don't move ingredients if crafting and a crafting job already exists, CyclopsMC/IntegratedCrafting#11
+
+	Psi (went from Psi-r1.1-70.jar to Psi-r1.1-71.jar):
+		Psi-r1.1-71.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-71](http://psi.vazkii.us/changelog.php#r1.1-71)
+
+Removed:
+	- /dank/null
+	- Real Filing Cabinet
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.11.1)
