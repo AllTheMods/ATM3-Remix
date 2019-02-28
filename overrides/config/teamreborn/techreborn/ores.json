@@ -111,7 +111,7 @@
       "blockNiceName": "Cinnabar",
       "meta": 6,
       "veinSize": 6,
-      "veinsPerChunk": 3,
+      "veinsPerChunk": 7,
       "minYHeight": 10,
       "maxYHeight": 126,
       "shouldSpawn": true
