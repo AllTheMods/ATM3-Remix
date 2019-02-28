@@ -510,7 +510,26 @@ print(" ======================================================== ");
       [mystcopper, null, mystcopper],
       [mystcopper, mystcopper, mystcopper]
       ]);
-      
+
+//======  Bottom Bun ======
+//
+   recipes.remove(<xlfoodmod:bottom_bun>);
+   recipes.addShaped(<xlfoodmod:bottom_bun>,
+      [[<minecraft:wheat>, null, <minecraft:wheat>],
+      [null, <minecraft:wheat>, null],
+      [null, null, null]
+      ]);
+   recipes.remove(<birdsfoods:empty_taco>);
+   recipes.addShaped(<birdsfoods:empty_taco>,
+      [[null, null, null],
+      [<minecraft:wheat>, null, <minecraft:wheat>],
+      [null, <minecraft:wheat>, null]
+      ]);
+   recipes.addShaped(<birdsfoods:empty_taco>,
+      [[null, null, null],
+      [<xlfoodmod:corn>, null, <xlfoodmod:corn>],
+      [null, <xlfoodmod:corn>, null]
+      ]);
    
 //======  Breakfast Sandwich ======
 //
