@@ -511,3 +511,12 @@ print(" ======================================================== ");
       [mystcopper, mystcopper, mystcopper]
       ]);
       
+   
+//======  Breakfast Sandwich ======
+//
+   recipes.remove(<xlfoodmod:breakfast_sandwich>);
+   recipes.addShaped(<xlfoodmod:breakfast_sandwich>,
+      [[<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>],
+      [<xlfoodmod:bacon>, <xlfoodmod:cheese>, <birdsfoods:cooked_egg>],
+      [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>]
+      ]);
