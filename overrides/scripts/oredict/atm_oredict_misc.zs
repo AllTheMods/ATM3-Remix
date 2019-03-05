@@ -142,4 +142,8 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 //grindstone fix
    mods.astralsorcery.Grindstone.removeRecipe(<nuclearcraft:gem_dust:2>);
    mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz>, <enderio:item_material:33>, 0.85f);
-
+	
+//====== Pulverized Coal ======
+//manufactory fix
+   mods.nuclearcraft.manufactory.removeRecipeWithOutput([<ic2:dust:2>]);
+   mods.nuclearcraft.manufactory.addRecipe([<ore:coal>, <thermalfoundation:material:768>]);
