@@ -575,3 +575,8 @@ recipes.remove(<minecraft:chest>);
 //
    mods.initialinventory.InvHandler.addStartingItem(<nuclearcraft:geiger_counter>);
 	
+//====== Project Bench ======
+//
+// Disable for being able to duplicate items
+//
+	mods.jei.JEI.removeAndHide(<projectred-expansion:machine2:10>);
