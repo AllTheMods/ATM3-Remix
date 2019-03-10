@@ -562,7 +562,7 @@ recipes.remove(<minecraft:chest>);
 //====== Rod of Lyssa ======
 //
 // Disable for being able to steal items
-	
+//
 	mods.jei.JEI.removeAndHide(<xreliquary:rod_of_lyssa>);
 	
 //====== Empty Cell ======
@@ -570,3 +570,8 @@ recipes.remove(<minecraft:chest>);
 //
    mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:dynamiccell>);
    mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:smalldust:53>, <techreborn:dynamiccell>, 2500);
+   
+//====== Add Geiger Counter to Initial Inventory ======
+//
+   mods.initialinventory.InvHandler.addStartingItem(<nuclearcraft:geiger_counter>);
+	
