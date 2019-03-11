@@ -1,0 +1,6 @@
+All the Mods 3 - Remix 1.0.4 to All the Mods 3 - Remix 1.1.0
+
+Removed:
+	- Computronics
+	- Flamingo
+	- Nutrition

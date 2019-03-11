@@ -559,14 +559,18 @@ recipes.remove(<minecraft:chest>);
 		[<botania:manaresource:9>,<botania:manaresource:6>,<botania:rune:0>,<botania:rune:1>,<ore:petalOrange>,<ore:petalBlack>,<ore:petalBrown>
 		], 1000);
 	
-//====== Rod of Lyssa ======
-//
-// Disable for being able to steal items
-	
-	mods.jei.JEI.removeAndHide(<xreliquary:rod_of_lyssa>);
-	
 //====== Empty Cell ======
 // fix recipe that allows tin duplication
 //
    mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:dynamiccell>);
    mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:smalldust:53>, <techreborn:dynamiccell>, 2500);
+   
+//====== Add Geiger Counter to Initial Inventory ======
+//
+   mods.initialinventory.InvHandler.addStartingItem(<nuclearcraft:geiger_counter>);
+	
+//====== Project Bench ======
+//
+// Disable for being able to duplicate items
+//
+	mods.jei.JEI.removeAndHide(<projectred-expansion:machine2:10>);
