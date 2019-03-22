@@ -331,6 +331,11 @@
       "id": "OD:oreTitaniumIron"
     },
     {
+      "target": "white",
+      "weight": 223,
+      "id": "OD:oreRutile"
+    },
+    {
       "target": "purple",
       "weight": 333,
       "id": "OD:oreSilicon"
