@@ -549,3 +549,7 @@ print(" ======================================================== ");
       [<xlfoodmod:bacon>, <xlfoodmod:cheese>, <birdsfoods:cooked_egg>],
       [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>]
       ]);
+
+//======  Roasted Cocoa Beans ======
+//
+   mods.nuclearcraft.manufactory.addRecipe([<minecraft:dye:3>, <nuclearcraft:roasted_cocoa_beans>]);
