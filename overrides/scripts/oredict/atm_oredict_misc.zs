@@ -142,3 +142,9 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 //grindstone fix
    mods.astralsorcery.Grindstone.removeRecipe(<nuclearcraft:gem_dust:2>);
    mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz>, <enderio:item_material:33>, 0.85f);
+	
+//====== Mixed Metal Ingot ======
+//
+   recipes.addShapeless(<ic2:ingot>, [<techreborn:ingot:21>]);
+   <ore:ingotMixedMetal>.add(<ic2:ingot>);
+   

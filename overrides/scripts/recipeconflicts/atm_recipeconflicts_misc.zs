@@ -310,8 +310,18 @@ print(" ======================================================== ");
 
 //====== TiCo Moss ======
 //
-	recipes.remove(<tconstruct:materials:18>);
-	recipes.addShapeless("TCMoss", <tconstruct:materials:18>, [<ore:blockMossy>, <ore:blockMossy>, <ore:blockMossy>, <ore:blockMossy>]);
+   recipes.remove(<tconstruct:materials:18>);
+   recipes.remove(<extrautils2:decorativesolid:2>);
+   recipes.addShaped(<tconstruct:materials:18>,
+      [[<ore:blockMossy>, <ore:blockMossy>, null],
+      [<ore:blockMossy>, <ore:blockMossy>, null],
+      [null, null, null]
+      ]);
+   recipes.addShaped(<extrautils2:decorativesolid:2>,
+      [[null, null, null],
+      [null, <minecraft:stonebrick:*>,<minecraft:stonebrick:*>],
+      [null, <minecraft:stonebrick:*>, <minecraft:stonebrick:*>]
+      ]);
 
 
 //====== Iron Stick ======
@@ -539,3 +549,7 @@ print(" ======================================================== ");
       [<xlfoodmod:bacon>, <xlfoodmod:cheese>, <birdsfoods:cooked_egg>],
       [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>]
       ]);
+
+//======  Roasted Cocoa Beans ======
+//
+   mods.nuclearcraft.manufactory.addRecipe([<minecraft:dye:3>, <nuclearcraft:roasted_cocoa_beans>]);

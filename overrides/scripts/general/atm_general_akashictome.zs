@@ -302,6 +302,14 @@ print(" ==================================================== ");
 				},
 				Damage: 0 as short
 			},
+			modcurrency: {
+				id: "modcurrency:guidebook",
+				Count: 1 as byte,
+				tag: {
+					"akashictome:definedMod": "modcurrency"
+				},
+				Damage: 0 as short
+			},
 			gbook: {
 				id: "gbook:guidebook",
 				Count: 1 as byte,
@@ -370,6 +378,7 @@ print(" ==================================================== ");
 		<guideapi:inventorygenerators-guide_book>,
 		<valkyrielib:guide>,
 		<deepresonance:dr_manual>,
+		<modcurrency:guidebook>,
 		<gbook:guidebook>.withTag({Book:"minecolonies:book/minecolonies.xml"})
 		] as IItemStack[];
 
