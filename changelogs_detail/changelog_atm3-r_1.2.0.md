@@ -1,4 +1,4 @@
-§2§lAll the Mods 3 - Remix 1.1.1 Changelog
+§2§lAll the Mods 3 - Remix 1.2.0 Changelog
 
 §b§lChanges Made:
 * Fixed all currently reported recipe conflicts
