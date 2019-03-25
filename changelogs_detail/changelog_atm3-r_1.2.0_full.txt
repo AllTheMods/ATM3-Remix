@@ -1,0 +1,1061 @@
+All the Mods 3 - Remix 1.1.1 to All the Mods 3 - Remix 1.2.0
+
+Added:
+	- Classic Bars
+	- Good Ol' Currency
+	- World Primer
+
+Updated:
+	Mekanica (went from MekanismDz-1.12.2-9.5.0b3.jar to mekanica-1.12.2-1.1.2.jar):
+		mekanica-1.12.2-1.1.2.jar:
+			5a67067f0: Update config to include comments (#108)
+			1b6cfd37e: Address comments on PR
+			1a05fc968: Implement isItemValidForSlot for ItemHandlers and obey it for inserting
+			83d0c8115: Fixes incomplete IItemHandler impl of lots of tile entities closes #102
+			b55fb4245: Fix some tiles outputting gas to the wrong side
+		mekanica-1.12.2-1.1.1.jar:
+			ce8ae9fad: fix untextured break particles on some bins
+			59f4438fb: Fix #101; Unidict has a strong dependence on a more specific type
+			f4ab343da: Add support for adding recipes via Compound Ingredients/OreDict Note: This just automatically adds all the entries for now, rather than requiring you to loop over it yourself.
+			bfe38cc33: Fix potential null pointer closes #96
+			6a7fbfc2f: Fix location of Digital Miner and Laser Fake Players, for BlockBreakEvent Closes #98
+		mekanica-1.12.2-1.1.0.jar:
+			8bb52cc1b: Change lang key to use requested key
+			172bbff10: add config to stop particles spawning on multiblock formation (#61)
+			19fcb31aa: Use isBurning instead of isActive to play sound
+			09c182e25: Merge remote-tracking branch 'origin/master' into lang_entries
+			3e4c777c4: Fix some direct references of Mekanism from lang entries. (Main one being creative tab menu)
+			a2b2cb4a9: Cleanup solars UI
+			610254c5d: Fix using wrong recipe category string in places, and broken IMC
+			e34e92a34: Promote RecipeHandler.Recipe to a generic class
+			b7af20f5f: Fix induction cells not keeping their charge on upgrade. closes #5078
+			66d218a59: Fix #85; make sound so that it keeps running at least 10 ticks after machine stops to better deal with per-tick flipflops. Also revert ccd7ed0; UX got too weird.
+			ad6007a45: Prioritize IItemHandler over IInventory as it is the newer standard
+			21017efc6: Don't reference main class from API package [https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d](https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d)
+			d84e8c7be: clean up bin textures (blockstate/models could probably be cleared up a bit too)
+			d52e98a2f: dedupe enrichment chamber textures
+			0e773f1c8: remove duped overlay textures
+			99b67d9c3: Remove unnecessary logic from Laser
+			7b7132833: Use accessor for getActive
+			7813d39fa: Remove activity tracking in favor of logic in TileEntityEffectsBlock
+			ebfe10395: Move activity/lighting update tracking up into TileEntityEffects block
+			38a007e29: Rename noisy block -> effect block; move activity/block update logic into it
+			d7c1a0ced: Minor cleaning
+			7c6441a41: Cleanup background handling of JEI categories
+			790ce7866: No need to store the temp recipe
+			1c592ec3f: Cleanup some JEI gui code
+			a446777f3: Cleanup JEI registration
+			4b54adc5e: More closely mirror comparator calculations of fluid tank and gas tank
+			a4e453e7d: Fix #53; add support for comparators on bins
+			ccd7ed019: Fix #72; turns out the sound handling in SP has race conditions
+			0f1f4a4b0: Make sure to reset color when rendering fusion reactor
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-1.12.2-1.1.0b2.jar:
+			66d218a59: Fix #85; make sound so that it keeps running at least 10 ticks after machine stops to better deal with per-tick flipflops. Also revert ccd7ed0; UX got too weird.
+			ad6007a45: Prioritize IItemHandler over IInventory as it is the newer standard
+			21017efc6: Don't reference main class from API package [https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d](https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d)
+			d84e8c7be: clean up bin textures (blockstate/models could probably be cleared up a bit too)
+			d52e98a2f: dedupe enrichment chamber textures
+			0e773f1c8: remove duped overlay textures
+			99b67d9c3: Remove unnecessary logic from Laser
+			7b7132833: Use accessor for getActive
+			7813d39fa: Remove activity tracking in favor of logic in TileEntityEffectsBlock
+			ebfe10395: Move activity/lighting update tracking up into TileEntityEffects block
+			38a007e29: Rename noisy block -&gt; effect block; move activity/block update logic into it
+			d7c1a0ced: Minor cleaning
+			7c6441a41: Cleanup background handling of JEI categories
+			790ce7866: No need to store the temp recipe
+			1c592ec3f: Cleanup some JEI gui code
+			a446777f3: Cleanup JEI registration
+			4b54adc5e: More closely mirror comparator calculations of fluid tank and gas tank
+			a4e453e7d: Fix #53; add support for comparators on bins
+			ccd7ed019: Fix #72; turns out the sound handling in SP has race conditions
+			0f1f4a4b0: Make sure to reset color when rendering fusion reactor
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-1.12.2-1.1.0b1.jar:
+			d84e8c7be: clean up bin textures (blockstate/models could probably be cleared up a bit too)
+			d52e98a2f: dedupe enrichment chamber textures
+			0e773f1c8: remove duped overlay textures
+			99b67d9c3: Remove unnecessary logic from Laser
+			7b7132833: Use accessor for getActive
+			7813d39fa: Remove activity tracking in favor of logic in TileEntityEffectsBlock
+			ebfe10395: Move activity/lighting update tracking up into TileEntityEffects block
+			38a007e29: Rename noisy block -> effect block; move activity/block update logic into it
+			d7c1a0ced: Minor cleaning
+			7c6441a41: Cleanup background handling of JEI categories
+			790ce7866: No need to store the temp recipe
+			1c592ec3f: Cleanup some JEI gui code
+			a446777f3: Cleanup JEI registration
+			4b54adc5e: More closely mirror comparator calculations of fluid tank and gas tank
+			a4e453e7d: Fix #53; add support for comparators on bins
+			ccd7ed019: Fix #72; turns out the sound handling in SP has race conditions
+			0f1f4a4b0: Make sure to reset color when rendering fusion reactor
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-1.12.2-1.1.0a2.jar:
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-1.12.2-1.1.0a1.jar:
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-1.12.2-1.0.0.jar:
+			f65682a40: Added a few new constructors to OreGas to make creating them easier
+			84b59eefb: Update color of Iron and Silver slurry to be differentiable from Tin
+			b309312b7: null check FluidStack in turbine vent, closes #45
+			2834ec00a: Add explicit target for uploading to CF
+			227e581bb: Remove dead code (#34)
+			2c6d666b8: Improve performance by reducing unnecessary lighting updates (#32)
+			8c79baccf: Jei tooltips (#33)
+			6ad9a4d23: CraftTweaker mekrecipe command to print all recipes of a machine
+			261d2c3eb: Merge remote-tracking branch 'origin/master'
+			9e9114275: Fixes CrT removal of sawmill and separator. #31
+			67a6e09d8: use oredict in mekanism tools (#29)
+			9b675b80c: Make sure we are checking blacklist on proper event so an initial packet is sent out to client in MP.
+			68fae3e95: Fix #9; add a blacklist for wind generation in the config file
+			ce1e1b32b: Add CraftTweaker infuseType command
+			13f3db86e: CraftTweaker gases sub command. Implements #10
+			6afbd88b9: Improve CraftTweaker logging of gases
+			5a4c86dac: Don't add InventorySlots to ContainerNull Fixes #11
+		mekanica-1.12.2-1.0.0b1.jar:
+			4381be10e: Dss mekanica rename (#50)
+			75c51487e: Fix #40; remove per-client tick check of capes, when donation list wasn't even used
+			dcd440705: Support for removing all built in recipes of a type via CraftTweaker
+			c042185ea: Move recipe registration to the Recipe Registry Event
+			704a9b50a: Fix AdvancedMachineInput CrT JEI stuff being backwards
+			bd5d064bd: Fix error logging of gas stacks.
+			3d6b202bd: Make plank oreDict not hit the same entries multiple times
+			b5240bd1b: Fix gas color rendering in guis
+			c861c5e0b: Fix having broken the acceptance ability of Dissolution chamber
+			54ead15d3: Remove unused method from GuiDoubleElectricMachine
+			d8b6dfbb7: Don't hard code some machines to specific gas types
+			f8b162bc3: Fix a few containers being offset
+			e06076f05: Dedupe a small amount of code for Containers
+			d66a5b9a6: Fix accidentally using wrong subclass
+			a22d39b20: Fix method not using mapped variant.
+			642a28996: Only don't do custom rendering if it would cause a crash (#38)
+			a6f5757fa: Add SideOnly(Side.CLIENT) annotation to gui's missing it (#47)
+			18c4875a2: Remove unused imports
+			c92069f71: Fix #5209; now using FluidStacks everywhere, including all more efficient encodings over network
+			de0ab0d6c: Muffler calculation was backwards in case where the machine is not upgradeable
+			46359bb13: Move entity registration to corresponding RegistryEvent Fixes [https://github.com/aidancbrady/Mekanism/issues/5136](https://github.com/aidancbrady/Mekanism/issues/5136)
+			ebd689a86: Made refined glowstone and obsidian nuggets/ingots use correct ore dict entry Fixes [https://github.com/aidancbrady/Mekanism/issues/5055](https://github.com/aidancbrady/Mekanism/issues/5055)
+			c62da0a05: Remove walkietalkie recipe
+			f4b786661: Only register JEI categories if the machine that they are for is enabled
+			56cc74ae1: Fixes [https://github.com/aidancbrady/Mekanism/issues/5208](https://github.com/aidancbrady/Mekanism/issues/5208)
+			61fd4faab: Use version of registerModEntity that adds egg for testing of baby skeleton
+			d20364253: add eye height for baby skeleton. Fixes #5258
+			f6e13c2e8: Consolidate charging logic for consistency
+			8a1a76230: Fix #5242; if the item supports IC2 energy tier, try to charge it.
+			a28cf073f: Fix #30; pull out the update checkers and clean up related commands
+			e0b7ea62a: The Great Reformat; moving to google-java-style w/ 4 space indent and 120 column line wrap
+			c632cc6af: Move line length to 120
+			a4fb8acd2: Adding Google-style config for IDEA w/ 4 indents
+			7ba682c9b: Overrides correct method for block explosions
+			37977759d: Remove unused hook checks
+			083c764b7: Dedupe a bunch of code (#27)
+			61ed4e8e4: Fix #31; Mekanism mufflers were not taken into account when machine first starts running
+			23ca58442: Transitioning a few files to Google format guidelines
+			c050324f8: Make sure to handle state changes on main world thread
+			43b322170: Add output of release type for visual inspection
+			790216364: Fix spam of Null Pointers
+			937bb92f2: Fix Metallurgic Infuser JEI category being messed up when viewing all recipes
+			af839e702: Fix rendering of brine in ThermalEvaporationPlant
+			5bf3b9f45: Merge pull request #23 from pupnewfster/patch-2
+			95ca29fa1: Squashed commit of the following:
+			c68c8d350: Fix CrT remove running before recipes are added
+			a148f7135: Easier changing of gas colors
+			6d4d6830f: Fix JEI rendering of gasses made of fluids that are only colored through a tint
+			fb14fba25: Cleanup CraftTweaker integration code
+			62aa90db7: Reduce sounds from 30 seconds+ (8 MB!!!) down to 2-3 seconds
+			f67559037: Improvements to fix for #15; smooth out sounds and detect ongoing attempts to muffle
+			c78ae6dd1: Fix #15; completely overhaul the sound system to mirror Minecraft usage
+			d2b905dcd: Remove vestigal voice related stuff; not yet removing walkie talkies as that _could_ break worlds
+			ec52e9f27: Update to depend on more recent (slightly) JEI
+			2bd7bfce0: Fix #5290; do a double-block update for cardboard boxes to ensure double-block structures can update
+			f05391062: Remove voice server functionality; there's plenty of other systems out there that do this (and better)
+			53181aae6: Fix #8; standardize block of charcoal to 16000 tick time
+			8da2d2dae: Fix #12; disable recipes and registration of factory-related blocks when a machine is disable
+			ea30a9462: Fix #5114; enhance ja_jp.lang
+			c6e05db14: Fix #5152; removed markDirty() call from TileEntityBasicBlock::onChunkLoad
+			6cae14fff: Fix #7; standardize bronze to 1 tin, 3 copper = 4 bronze
+			90939ad80: Fix #5285; chunk loader was writing [xyz] as key and reading [xyz]Coord
+			42f1de4fa: Make sure to check for null INSTANCE; world unload event can happen before ANY world is loaded
+			9475b2778: Fix issue #4; when updating function calls for latest forge in 8d3f8df49c4438f3e2c0b877cd2fe8fcfebb7347, API was inadvertently broken
+			a86540a19: Fix #2; another mod tried to apply potion effects to the fake player causing NPE
+			6dda1b36e: supply player arg to getPickBlock in Atomic Disassembler Finder. fixes #5146 & closes #5178
+			b879158a5: move log on cardboard box blacklist outside loop
+			da0497b8f: try to avoid creating an nbt tag where its only going to be read
+			4f7db32e6: don't create a tag compound just to attempt to read from it
+			001a53aa8: Fixed armor spawning checks firing when they shouldn't.
+			8e733cc9b: Add energized smelter to smelting catalyst
+			7f594d76d: use fakeplayer for canSilkHarvest. Fixes #5090
+			390eac1dc: prevent oredictionarificator from receiving a vertical facing. Fixes #5093
+			8d48274ed: fix a missed y level check for security desk
+			aa6fba062: prevent NPE in Thermal Evap Container. Fixes #5089
+			98ec02f00: Add builds for MDZ Generators and Tools
+			241ffb71d: Overhaul build/release to use tags
+			21d515c6b: Tweak name to add Dz suffix; enable passing version in from command-line
+			8d2f22adb: Fix #5269; the CustomItemModelFactory was a wrapper that didn't actually implement all the methods
+			4f5d2a060: Revert fe9a0e660077cc8f374aabfca029f30a1582495e; fixes item rendering on Digital Miner and various other custom item models
+			8d3f8df49: Updating to 14.23.5.2808; naming fixes where necessary
+			a79a3e165: Update applied energistics API reference
+
+	Mekanica: Generators (went from MekanismDzGenerators-1.12.2-9.5.0b3.jar to mekanica-generators-1.12.2-1.1.2.jar):
+		mekanica-tools-1.12.2-1.1.2.jar:
+			5a67067f0: Update config to include comments (#108)
+			1b6cfd37e: Address comments on PR
+			1a05fc968: Implement isItemValidForSlot for ItemHandlers and obey it for inserting
+			83d0c8115: Fixes incomplete IItemHandler impl of lots of tile entities closes #102
+			b55fb4245: Fix some tiles outputting gas to the wrong side
+		mekanica-tools-1.12.2-1.1.1.jar:
+			ce8ae9fad: fix untextured break particles on some bins
+			59f4438fb: Fix #101; Unidict has a strong dependence on a more specific type
+			f4ab343da: Add support for adding recipes via Compound Ingredients/OreDict Note: This just automatically adds all the entries for now, rather than requiring you to loop over it yourself.
+			bfe38cc33: Fix potential null pointer closes #96
+			6a7fbfc2f: Fix location of Digital Miner and Laser Fake Players, for BlockBreakEvent Closes #98
+		mekanica-tools-1.12.2-1.1.0.jar:
+			8bb52cc1b: Change lang key to use requested key
+			172bbff10: add config to stop particles spawning on multiblock formation (#61)
+			19fcb31aa: Use isBurning instead of isActive to play sound
+			09c182e25: Merge remote-tracking branch 'origin/master' into lang_entries
+			3e4c777c4: Fix some direct references of Mekanism from lang entries. (Main one being creative tab menu)
+			a2b2cb4a9: Cleanup solars UI
+			610254c5d: Fix using wrong recipe category string in places, and broken IMC
+			e34e92a34: Promote RecipeHandler.Recipe to a generic class
+			b7af20f5f: Fix induction cells not keeping their charge on upgrade. closes #5078
+			66d218a59: Fix #85; make sound so that it keeps running at least 10 ticks after machine stops to better deal with per-tick flipflops. Also revert ccd7ed0; UX got too weird.
+			ad6007a45: Prioritize IItemHandler over IInventory as it is the newer standard
+			21017efc6: Don't reference main class from API package [https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d](https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d)
+			d84e8c7be: clean up bin textures (blockstate/models could probably be cleared up a bit too)
+			d52e98a2f: dedupe enrichment chamber textures
+			0e773f1c8: remove duped overlay textures
+			99b67d9c3: Remove unnecessary logic from Laser
+			7b7132833: Use accessor for getActive
+			7813d39fa: Remove activity tracking in favor of logic in TileEntityEffectsBlock
+			ebfe10395: Move activity/lighting update tracking up into TileEntityEffects block
+			38a007e29: Rename noisy block -> effect block; move activity/block update logic into it
+			d7c1a0ced: Minor cleaning
+			7c6441a41: Cleanup background handling of JEI categories
+			790ce7866: No need to store the temp recipe
+			1c592ec3f: Cleanup some JEI gui code
+			a446777f3: Cleanup JEI registration
+			4b54adc5e: More closely mirror comparator calculations of fluid tank and gas tank
+			a4e453e7d: Fix #53; add support for comparators on bins
+			ccd7ed019: Fix #72; turns out the sound handling in SP has race conditions
+			0f1f4a4b0: Make sure to reset color when rendering fusion reactor
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-tools-1.12.2-1.1.0b2.jar:
+			66d218a59: Fix #85; make sound so that it keeps running at least 10 ticks after machine stops to better deal with per-tick flipflops. Also revert ccd7ed0; UX got too weird.
+			ad6007a45: Prioritize IItemHandler over IInventory as it is the newer standard
+			21017efc6: Don't reference main class from API package [https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d](https://github.com/mekanism-mod/Mekanism/commit/7c50d1e7cc3dd915979304b46e77a36068ac457d)
+			d84e8c7be: clean up bin textures (blockstate/models could probably be cleared up a bit too)
+			d52e98a2f: dedupe enrichment chamber textures
+			0e773f1c8: remove duped overlay textures
+			99b67d9c3: Remove unnecessary logic from Laser
+			7b7132833: Use accessor for getActive
+			7813d39fa: Remove activity tracking in favor of logic in TileEntityEffectsBlock
+			ebfe10395: Move activity/lighting update tracking up into TileEntityEffects block
+			38a007e29: Rename noisy block -&gt; effect block; move activity/block update logic into it
+			d7c1a0ced: Minor cleaning
+			7c6441a41: Cleanup background handling of JEI categories
+			790ce7866: No need to store the temp recipe
+			1c592ec3f: Cleanup some JEI gui code
+			a446777f3: Cleanup JEI registration
+			4b54adc5e: More closely mirror comparator calculations of fluid tank and gas tank
+			a4e453e7d: Fix #53; add support for comparators on bins
+			ccd7ed019: Fix #72; turns out the sound handling in SP has race conditions
+			0f1f4a4b0: Make sure to reset color when rendering fusion reactor
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-tools-1.12.2-1.1.0b1.jar:
+			d84e8c7be: clean up bin textures (blockstate/models could probably be cleared up a bit too)
+			d52e98a2f: dedupe enrichment chamber textures
+			0e773f1c8: remove duped overlay textures
+			99b67d9c3: Remove unnecessary logic from Laser
+			7b7132833: Use accessor for getActive
+			7813d39fa: Remove activity tracking in favor of logic in TileEntityEffectsBlock
+			ebfe10395: Move activity/lighting update tracking up into TileEntityEffects block
+			38a007e29: Rename noisy block -> effect block; move activity/block update logic into it
+			d7c1a0ced: Minor cleaning
+			7c6441a41: Cleanup background handling of JEI categories
+			790ce7866: No need to store the temp recipe
+			1c592ec3f: Cleanup some JEI gui code
+			a446777f3: Cleanup JEI registration
+			4b54adc5e: More closely mirror comparator calculations of fluid tank and gas tank
+			a4e453e7d: Fix #53; add support for comparators on bins
+			ccd7ed019: Fix #72; turns out the sound handling in SP has race conditions
+			0f1f4a4b0: Make sure to reset color when rendering fusion reactor
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-tools-1.12.2-1.1.0a2.jar:
+			a9451270d: Reference correct gui superclass. Fixes error in compiling
+			cd5fe2040: Gui cleanup (#74)
+			56831edb3: Rework rotors to only track their own number of blades, thus avoiding n^2 packet updates on chunk load, multiblock formation and neighbor block changes
+			04a4cdf36: Remove IChunkLoadHandler interface
+			784c63dff: Remove scanning of every TE on chunk load; only turbine rotors needed it.
+			16d6923c3: Fix crash with bucketmode for fluid tanks.
+			b28eb1e0c: Use getSunBrightnessFactor, not getSunBrightness :/
+			67340175d: add back missing slash
+			1fe381448: fix extra conversions
+			4fa5aa481: remove unnecessary duplication of cable ends, textures are still huge though
+			3fd75404e: Overhaul solar neutron activator to use better sun/rain detection. Reduce network traffic by 50% by ensuring we only send updates every second
+			045358436: Overhaul solar generation to be more realistic; helps with #46
+			a90c9ad47: Use gradle.properties, not build.properties
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-tools-1.12.2-1.1.0a1.jar:
+			0018ac654: Fix various Deprecated method calls
+			e3c182eeb: Add Deprecated annotation to methods overriding a deprecated method
+			10e741ade: Fix depreated method usage for JEI
+			b8787f823: Update dependencies for dev environment to have latest versions
+			a9e96a94f: remove direction options in conversion script as textures must be square
+			3976a9faf: reduce chemical infuser texture
+			8e7938a35: fix file size increase
+			2c912fe17: convert logistical_sorter
+			c2d42adb8: reduce size of pressurised reaction chamber (python does mess up json formatting though...
+			0f1fbfc1e: reduce size of fluid tank texture
+			3d7360431: Cleanup some code in case something gives null fluid stacks
+			6ea88548d: Add support for editing changelog
+			39424224a: Honor client.enableMachineSounds to address [https://github.com/NillerMedDild/Enigmatica2Expert/issues/983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983)
+			ae2619c12: Minor cleanup
+			7257e2e8b: Remove dependence on MTLib for CraftTweaker Integration
+			db1e5b96d: Sort tile entity registration by name
+			7ee510dac: Fixed TE registration Based off of [https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a](https://github.com/aidancbrady/Mekanism/commit/5f676335f091b6355556e66b7e41bf4d8babcd0a)
+			1f9d19677: Update min forge version in proper file this time
+			c1097fb38: Require explicit joules/tesla designation for those units; default is now RF.
+			f2c7abc05: Change info to warn, per review request
+			17c528755: Fix #5110, #3718, #4226; Advanced bounding blocks were setting miner block to air if chunk wasn't loaded :/
+			2634f394a: Use proper AE2 FE attunement
+			640801e0a: Fix #65; some machines generate one-time block events -- updated filter accordingly.
+			368ddf25d: Merge remote-tracking branch 'origin/master' into teleport
+			2e803676c: Use proper forge teleport methods [https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198](https://github.com/aidancbrady/Mekanism/commit/35a25afc2049daba13fbc563b5239ff44f871198)
+			4e9c5a995: Fix #64; remove unnecessary keybindings for voice server
+			f6b13ec73: Fix #67; remove extraneous logging
+			68156113b: Adding chunk flush command to force chunks to unload
+			88b52a6f6: Overhaul /mek commands; add support for teleporting, test rules and chunk watching
+			2b8411bdd: Render Energy Core in Energy Cube Item's that have power
+			5466982c5: Improve rendering of digital miner item outside of gui
+			818cb1304: Make offhand third person render of flamethrower not be as broken looking It still is a little weird but it is much better
+			87588af0e: Improve rendering directions of Security Desk
+			96d0fc9a5: Less duplicate calculations for wind generator rendering
+			7d1350a7a: Pass Transform data to the various item renders
+			75835adbd: Improved rendering of the Wind Generator in spots other than mainhand
+			9d72d83e6: Render digital miner "on" screen if it has power
+			fb98a2889: Make resistive heater, and heat generator glow if they have stored power
+			e1606f872: Pass the stack to the item specific rendering code
+			e2fd77fc1: Make the wind generator item spin
+			a6ac90e8e: Cleanup ClientProxy a bit
+			f796eb5a3: Bump forge slightly further to 2639 as 2638 is a broken build for servers
+			d859dda65: Clean up TEISR registration
+			43c89ac14: Fix fluid tank rendering
+			6876a9fe9: Reference source
+			89cd7079d: Fluid Rendering, works for the most part except height doesn't line up
+			d065249dd: Fix color leaking from ModelFluidTank
+			714a18e7b: Initial pass at killing BakedCustomItemModel and using TEISR Bump Min Req Forge to 14.23.2.2638 Need to clean up the registration, and fix fluid tank rendering
+			b4251d2e3: Fix #57; added dependency on cofhcore so wrenches load properly
+		mekanica-tools-1.12.2-1.0.0.jar:
+			f65682a40: Added a few new constructors to OreGas to make creating them easier
+			84b59eefb: Update color of Iron and Silver slurry to be differentiable from Tin
+			b309312b7: null check FluidStack in turbine vent, closes #45
+			2834ec00a: Add explicit target for uploading to CF
+			227e581bb: Remove dead code (#34)
+			2c6d666b8: Improve performance by reducing unnecessary lighting updates (#32)
+			8c79baccf: Jei tooltips (#33)
+			6ad9a4d23: CraftTweaker mekrecipe command to print all recipes of a machine
+			261d2c3eb: Merge remote-tracking branch 'origin/master'
+			9e9114275: Fixes CrT removal of sawmill and separator. #31
+			67a6e09d8: use oredict in mekanism tools (#29)
+			9b675b80c: Make sure we are checking blacklist on proper event so an initial packet is sent out to client in MP.
+			68fae3e95: Fix #9; add a blacklist for wind generation in the config file
+			ce1e1b32b: Add CraftTweaker infuseType command
+			13f3db86e: CraftTweaker gases sub command. Implements #10
+			6afbd88b9: Improve CraftTweaker logging of gases
+			5a4c86dac: Don't add InventorySlots to ContainerNull Fixes #11
+		mekanica-tools-1.12.2-1.0.0b1.jar:
+			4381be10e: Dss mekanica rename (#50)
+			75c51487e: Fix #40; remove per-client tick check of capes, when donation list wasn't even used
+			dcd440705: Support for removing all built in recipes of a type via CraftTweaker
+			c042185ea: Move recipe registration to the Recipe Registry Event
+			704a9b50a: Fix AdvancedMachineInput CrT JEI stuff being backwards
+			bd5d064bd: Fix error logging of gas stacks.
+			3d6b202bd: Make plank oreDict not hit the same entries multiple times
+			b5240bd1b: Fix gas color rendering in guis
+			c861c5e0b: Fix having broken the acceptance ability of Dissolution chamber
+			54ead15d3: Remove unused method from GuiDoubleElectricMachine
+			d8b6dfbb7: Don't hard code some machines to specific gas types
+			f8b162bc3: Fix a few containers being offset
+			e06076f05: Dedupe a small amount of code for Containers
+			d66a5b9a6: Fix accidentally using wrong subclass
+			a22d39b20: Fix method not using mapped variant.
+			642a28996: Only don't do custom rendering if it would cause a crash (#38)
+			a6f5757fa: Add SideOnly(Side.CLIENT) annotation to gui's missing it (#47)
+			18c4875a2: Remove unused imports
+			c92069f71: Fix #5209; now using FluidStacks everywhere, including all more efficient encodings over network
+			de0ab0d6c: Muffler calculation was backwards in case where the machine is not upgradeable
+			46359bb13: Move entity registration to corresponding RegistryEvent Fixes [https://github.com/aidancbrady/Mekanism/issues/5136](https://github.com/aidancbrady/Mekanism/issues/5136)
+			ebd689a86: Made refined glowstone and obsidian nuggets/ingots use correct ore dict entry Fixes [https://github.com/aidancbrady/Mekanism/issues/5055](https://github.com/aidancbrady/Mekanism/issues/5055)
+			c62da0a05: Remove walkietalkie recipe
+			f4b786661: Only register JEI categories if the machine that they are for is enabled
+			56cc74ae1: Fixes [https://github.com/aidancbrady/Mekanism/issues/5208](https://github.com/aidancbrady/Mekanism/issues/5208)
+			61fd4faab: Use version of registerModEntity that adds egg for testing of baby skeleton
+			d20364253: add eye height for baby skeleton. Fixes #5258
+			f6e13c2e8: Consolidate charging logic for consistency
+			8a1a76230: Fix #5242; if the item supports IC2 energy tier, try to charge it.
+			a28cf073f: Fix #30; pull out the update checkers and clean up related commands
+			e0b7ea62a: The Great Reformat; moving to google-java-style w/ 4 space indent and 120 column line wrap
+			c632cc6af: Move line length to 120
+			a4fb8acd2: Adding Google-style config for IDEA w/ 4 indents
+			7ba682c9b: Overrides correct method for block explosions
+			37977759d: Remove unused hook checks
+			083c764b7: Dedupe a bunch of code (#27)
+			61ed4e8e4: Fix #31; Mekanism mufflers were not taken into account when machine first starts running
+			23ca58442: Transitioning a few files to Google format guidelines
+			c050324f8: Make sure to handle state changes on main world thread
+			43b322170: Add output of release type for visual inspection
+			790216364: Fix spam of Null Pointers
+			937bb92f2: Fix Metallurgic Infuser JEI category being messed up when viewing all recipes
+			af839e702: Fix rendering of brine in ThermalEvaporationPlant
+			5bf3b9f45: Merge pull request #23 from pupnewfster/patch-2
+			95ca29fa1: Squashed commit of the following:
+			c68c8d350: Fix CrT remove running before recipes are added
+			a148f7135: Easier changing of gas colors
+			6d4d6830f: Fix JEI rendering of gasses made of fluids that are only colored through a tint
+			fb14fba25: Cleanup CraftTweaker integration code
+			62aa90db7: Reduce sounds from 30 seconds+ (8 MB!!!) down to 2-3 seconds
+			f67559037: Improvements to fix for #15; smooth out sounds and detect ongoing attempts to muffle
+			c78ae6dd1: Fix #15; completely overhaul the sound system to mirror Minecraft usage
+			d2b905dcd: Remove vestigal voice related stuff; not yet removing walkie talkies as that _could_ break worlds
+			ec52e9f27: Update to depend on more recent (slightly) JEI
+			2bd7bfce0: Fix #5290; do a double-block update for cardboard boxes to ensure double-block structures can update
+			f05391062: Remove voice server functionality; there's plenty of other systems out there that do this (and better)
+			53181aae6: Fix #8; standardize block of charcoal to 16000 tick time
+			8da2d2dae: Fix #12; disable recipes and registration of factory-related blocks when a machine is disable
+			ea30a9462: Fix #5114; enhance ja_jp.lang
+			c6e05db14: Fix #5152; removed markDirty() call from TileEntityBasicBlock::onChunkLoad
+			6cae14fff: Fix #7; standardize bronze to 1 tin, 3 copper = 4 bronze
+			90939ad80: Fix #5285; chunk loader was writing [xyz] as key and reading [xyz]Coord
+			42f1de4fa: Make sure to check for null INSTANCE; world unload event can happen before ANY world is loaded
+			9475b2778: Fix issue #4; when updating function calls for latest forge in 8d3f8df49c4438f3e2c0b877cd2fe8fcfebb7347, API was inadvertently broken
+			a86540a19: Fix #2; another mod tried to apply potion effects to the fake player causing NPE
+			6dda1b36e: supply player arg to getPickBlock in Atomic Disassembler Finder. fixes #5146 & closes #5178
+			b879158a5: move log on cardboard box blacklist outside loop
+			da0497b8f: try to avoid creating an nbt tag where its only going to be read
+			4f7db32e6: don't create a tag compound just to attempt to read from it
+			001a53aa8: Fixed armor spawning checks firing when they shouldn't.
+			8e733cc9b: Add energized smelter to smelting catalyst
+			7f594d76d: use fakeplayer for canSilkHarvest. Fixes #5090
+			390eac1dc: prevent oredictionarificator from receiving a vertical facing. Fixes #5093
+			8d48274ed: fix a missed y level check for security desk
+			aa6fba062: prevent NPE in Thermal Evap Container. Fixes #5089
+			98ec02f00: Add builds for MDZ Generators and Tools
+			241ffb71d: Overhaul build/release to use tags
+			21d515c6b: Tweak name to add Dz suffix; enable passing version in from command-line
+			8d2f22adb: Fix #5269; the CustomItemModelFactory was a wrapper that didn't actually implement all the methods
+			4f5d2a060: Revert fe9a0e660077cc8f374aabfca029f30a1582495e; fixes item rendering on Digital Miner and various other custom item models
+			8d3f8df49: Updating to 14.23.5.2808; naming fixes where necessary
+			a79a3e165: Update applied energistics API reference
+
+	NuclearCraft (went from NuclearCraft-2.13e--1.12.2 to NuclearCraft-2.14c-1.12.2):
+		NuclearCraft-2.14c-1.12.2:
+			* Fixed radiation breaking various recipe systems from other mods
+			* Scrubbers will now work effectively in chunks with no active radiation sources
+
+			* Improved performance of comparator updating for reactors and batteries
+			* Changed various cooler placement rule descriptions to be a little bit clearer
+
+			* All recipes involving buckets of fluid can now use fluid from any container as an ingredient
+
+			+ Added config options to disable registering of TiC tool and ConArm armour materials
+			* Increased the number of fluids considered by the CoFH alternative fluid config
+
+			* Fixed a few localisation issues
+		NuclearCraft-2.14b-1.12.2:
+			+ Added config to customise radiation-induced potion effects
+
+			* Fixed various crashes on world load
+			* Fixed compatibility issue with Prefab
+
+			* Fixed Heat Exchanger Tubes not accepting the correct fluids
+
+			+ Added radiation to more GTCE items
+		NuclearCraft-2.14a-1.12.2:
+			* Fixed Geiger Counter and Radiation Scrubber chunk rendering crash
+			* Fixed possible crashing loop in radiation capability logic on loading the world
+
+			* Updated Russian language file [thanks to Lokuster!]
+		NuclearCraft-2.14-1.12.2:
+			* Speed and Energy Upgrade multipliers now follow a simple power law rather than simplex functions
+
+			+ Added cheap Radiation Badge
+			+ Added Baubles support for the Geiger Counter and Radiation Badge
+
+			* Fixed Radiation Scrubbers not effectively removing the radiation in their chunk
+			* Slightly reduced the radiation generated by placed RTGs
+
+			* Fixed biome radiation compatibility with OpenTerrainGenerator [thanks to utoxin!]
+			* Improved performance of radiation spreading and capability attaching
+			+ Added command to set the radiation levels of chunks
+
+			+ Added configs for dimension, biome and chunk radiation level limits
+			+ Added config for the radiation chunk spread gradient
+			+ Added config blacklist for dimensions without biome background radiation [thanks to utoxin!]
+			+ Added config for entity radiation level decay [thanks to chez4!]
+			+ Added hardcore container radiation and container radiation shielding configs (disabled by default)
+			+ Added config option for Geiger counters and Radiation Scrubbers to show chunk boundaries [thanks to dizzyd!]
+			+ Added config option to display radiation levels in standard form to a specified precision
+
+			+ Added IC2 reactor radiation support
+			+ Added IC2 radiation protection support to the NC Hazmat Suit
+
+			* Fixed various Mekanism power acceptors exploding unexpectedly [thanks to Jack Spedicy!]
+
+			* Hopefully fixed occasional crash on breaking multiblock controllers
+			* Fixed turbine flow direction occasionally not updating correctly [thanks to Kurtchekov!]
+
+			* Fixed Active Coolers in fission reactors occasionally not deactivating correctly
+			* Fixed small fusion active cooling rounding errors
+			* Removed extra heat generated by invalidly-placed moderator blocks
+
+			* Fixed collector blocks causing players to fumble buckets and spill water and nitrogen everywhere
+			* Hopefully fixed Quark piston duping issues with the Fusion Core
+			* Fixed crash caused by other mods registering TiC materials with the same name
+
+			+ Added JEI support for active cooling and the passive collectors
+			+ Added recipe support for alternatively named TechReborn fluids
+			* Improved performance of machine fluid filter generation
+			* Fixed glitchy Liquid Helium Cooler recipe
+			+ Added Endergy support to various machines
+
+			+ Added FourS'more QuadS'mingots
+
+			* Fixed CurseForge maven filename
+			* Possible other things that I have forgotten
+			- Removed Paulobrine and Herobrian
+
+	RandomPatches (went from RandomPatches 1.12.2-1.15.0.0 to RandomPatches 1.12.2-1.15.0.2):
+		RandomPatches 1.12.2-1.15.0.2:
+			Fixed a ClassCastException related to the skull stacking fix.
+		RandomPatches 1.12.2-1.15.0.1:
+			Fixed ReBind compatibility.
+
+Removed:
+	- Overpowered Armor Bar
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)
