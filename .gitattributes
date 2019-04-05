@@ -13,3 +13,4 @@
 *.ogg binary
 *.ttf binary
 *.schematic binary
+*.dat binary
