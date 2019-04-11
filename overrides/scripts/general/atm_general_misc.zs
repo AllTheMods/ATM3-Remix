@@ -465,15 +465,6 @@ recipes.remove(<minecraft:chest>);
 		"Nether Wart can be grown on tilled soul sand with lava nearby to hydrate."
 	));
 
-//====== Fix Map Recipe ======
-//
-   recipes.remove(<minecraft:map>);
-   recipes.addShaped(<minecraft:map>, [
-      [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
-      [<minecraft:paper>, <minecraft:compass>, <minecraft:paper>], 
-      [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
-      ]);
-
 //====== Taako Balance ======
 //
    recipes.remove(<birdsfoods:taako>);

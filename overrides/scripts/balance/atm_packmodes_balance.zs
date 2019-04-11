@@ -25,7 +25,6 @@ print(" ====================================================== ");
 	//
 		var normalRing = <extrautils2:angelring:*>;
 		var chestWithTag = <extrautils2:angelring:0>;
-		var baubleRing = <flyringbaublemod:flyingring:*>;
 		var batLasso = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}}).onlyWithTag({Animal: {id: "minecraft:bat"}});
 		var ghastLasso = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}}).onlyWithTag({Animal: {id: "minecraft:ghast"}});
 	
@@ -39,19 +38,20 @@ print(" ====================================================== ");
 			[batLasso, <minecraft:gold_ingot>, ghastLasso]]);
 		*/
 		recipes.removeShaped(normalRing);
-		recipes.removeShaped(baubleRing);
 		recipes.addShaped("AngelRing2", <extrautils2:angelring:0>, [
-			[<ore:astralGemCrystals>,   <actuallyadditions:item_misc:19>,           <ore:astralGemCrystals>],
-			[<flyringbaublemod:pair:*>, <mekanism:armoredjetpack>,                  <flyringbaublemod:pair:*>],
-			[batLasso,                  <actuallyadditions:item_wings_of_the_bats>, ghastLasso]
+			[<astralsorcery:itemcraftingcomponent:4>,  <actuallyadditions:item_misc:19>,             <astralsorcery:itemcraftingcomponent:4>],
+			[<ore:ingotUnstable>,      <mekanism:armoredjetpack>,                    <ore:ingotUnstable>],
+			[batLasso,                 <actuallyadditions:item_wings_of_the_bats>,   ghastLasso]
 			]);
 			
 		//Making sure the wing-flavor recipes are still present -- should be redundant since we only did removeShaped for the ring recipe
+      /*
 			recipes.addShapeless("NoWing", <extrautils2:angelring>, [<minecraft:glass>, <extrautils2:angelring:*>, <minecraft:glass>]);
 			recipes.addShapeless("FeatherWing", <extrautils2:angelring:1>, [<minecraft:feather:*>, <extrautils2:angelring:*>, <minecraft:feather:*>]);
 			recipes.addShapeless("ColoredWing", <extrautils2:angelring:2>, [<minecraft:dye:5>, <extrautils2:angelring:*>, <minecraft:dye:9>]);
 			recipes.addShapeless("LeatherWing", <extrautils2:angelring:3>, [<minecraft:leather:*>, <extrautils2:angelring:*>, <minecraft:leather:*>]);
 			recipes.addShapeless("GoldWing", <extrautils2:angelring:4>, [<minecraft:gold_nugget>, <extrautils2:angelring:*>, <minecraft:gold_nugget>]);
+         */
 			
 	//====== Mek Jetpack ======
 	//
@@ -72,7 +72,7 @@ print(" ====================================================== ");
 		recipes.removeShaped(<botania:flighttiara:*>);
 		recipes.addShaped("Tiara", <botania:flighttiara>, [
 			[<botania:manaresource:5>, <botania:manaresource:5>,  <botania:manaresource:5>],
-			[<botania:manaresource:7>, <ore:astralGemCrystals>,   <botania:manaresource:7>],
+			[<botania:manaresource:7>, <astralsorcery:itemcraftingcomponent:4>,   <botania:manaresource:7>],
 			[<minecraft:feather>,      <botania:manaresource:15>, <minecraft:feather>]
 			]);
 			
