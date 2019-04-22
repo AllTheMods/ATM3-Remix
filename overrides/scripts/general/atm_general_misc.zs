@@ -565,3 +565,9 @@ recipes.remove(<minecraft:chest>);
 // Disable for being able to duplicate items
 //
 	mods.jei.JEI.removeAndHide(<projectred-expansion:machine2:10>);
+	
+//====== Project Red Bags ======
+//
+// Disable for being able to duplicate items
+//
+	mods.jei.JEI.removeAndHide(<projectred-exploration:backpack:*>);
