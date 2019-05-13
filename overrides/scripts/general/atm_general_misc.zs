@@ -571,3 +571,7 @@ recipes.remove(<minecraft:chest>);
 // Disable for being able to duplicate items
 //
 	mods.jei.JEI.removeAndHide(<projectred-exploration:backpack:*>);
+   		
+//====== Lithium dust furnace ======
+//
+	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);
