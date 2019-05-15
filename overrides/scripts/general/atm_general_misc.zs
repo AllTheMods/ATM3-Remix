@@ -575,3 +575,20 @@ recipes.remove(<minecraft:chest>);
 //====== Lithium dust furnace ======
 //
 	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);
+   
+//====== Chunkloader Rename ======
+//
+	<weirdinggadget:weirding_gadget>.displayName="Weirding Gadget (Chunk loader)"; 
+	<extrautils2:chunkloader>.displayName="Chunk Loading Ward (Chunk loader)"; 
+//	<ic2:te:82>.displayName="Chunk loader"; 
+	<opencomputers:upgrade:4>.displayName="Chunk loader Upgrade"; 
+	<mekanism:anchorupgrade>.displayName="Anchor Upgrade (Chunk loader)"; 
+   
+//====== Wrench Rename ======
+//
+	<thermalfoundation:wrench>.displayName="Crescent Hammer (Wrench)"; 
+	<environmentaltech:tool_multiblock_assembler>.displayName="Assembler (ET Wrench)"; 
+	<mekanism:configurator>.displayName="Configurator (Mekanism Wrench)"; 
+	<appliedenergistics2:network_tool>.displayName="Network Tool (AE2 Wrench)"; 
+	<morphtool:tool>.displayName="Network Tool (Omni-Wrench)"; 
+   mods.jei.JEI.addDescription(<morphtool:tool>, "The Morphing Tool can mimic any wrench, screwdriver, hammer or wand made of twigs and petals you throw at it making it the perfect 'omni-wrench' style item.");
