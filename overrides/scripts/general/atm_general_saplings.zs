@@ -60,3 +60,12 @@ print(" ================================================ ");
 	] as IItemStack[];
 	
 	Sapling.addItems(SaplingsToAdd);
+	
+//====== Sequoia Sapling ======
+//
+
+var sequoia = <forestry:sapling>.withTag({Genome: {Chromosomes: [{UID1: "forestry.treeSequoia", UID0: "forestry.treeSequoia", Slot: 0 as byte}, {UID1: "forestry.heightLargest", UID0: "forestry.heightLargest", Slot: 1 as byte}, {UID1: "forestry.saplingsLower", UID0: "forestry.saplingsLower", Slot: 2 as byte}, {UID1: "forestry.fruitNone", UID0: "forestry.fruitNone", Slot: 3 as byte}, {UID1: "forestry.yieldLowest", UID0: "forestry.yieldLowest", Slot: 4 as byte}, {UID1: "forestry.sappinessLower", UID0: "forestry.sappinessLower", Slot: 5 as byte}, {UID1: "forestry.leavesNone", UID0: "forestry.leavesNone", Slot: 6 as byte}, {UID1: "forestry.maturationSlower", UID0: "forestry.maturationSlower", Slot: 7 as byte}, {UID1: "forestry.i3d", UID0: "forestry.i3d", Slot: 8 as byte}, {UID1: "forestry.fireproofTrue", UID0: "forestry.fireproofTrue", Slot: 9 as byte}]}});
+
+var giant = <forestry:sapling>.withTag({IsAnalyzed: 0 as byte, Genome: {Chromosomes: [{UID1: "forestry.treeGigant", UID0: "forestry.treeGigant", Slot: 0 as byte}, {UID1: "forestry.heightGigantic", UID0: "forestry.heightGigantic", Slot: 1 as byte}, {UID1: "forestry.saplingsLower", UID0: "forestry.saplingsLower", Slot: 2 as byte}, {UID1: "forestry.fruitNone", UID0: "forestry.fruitNone", Slot: 3 as byte}, {UID1: "forestry.yieldLowest", UID0: "forestry.yieldLowest", Slot: 4 as byte}, {UID1: "forestry.sappinessLowest", UID0: "forestry.sappinessLowest", Slot: 5 as byte}, {UID1: "forestry.leavesNone", UID0: "forestry.leavesNone", Slot: 6 as byte}, {UID1: "forestry.maturationSlowest", UID0: "forestry.maturationSlowest", Slot: 7 as byte}, {UID1: "forestry.i4d", UID0: "forestry.i4d", Slot: 8 as byte}, {UID1: "forestry.fireproofTrue", UID0: "forestry.fireproofTrue", Slot: 9 as byte}]}});
+
+recipes.addShapeless("giantTree", giant, [sequoia]);
