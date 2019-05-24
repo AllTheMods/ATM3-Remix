@@ -591,8 +591,17 @@ recipes.remove(<minecraft:chest>);
 	<mekanism:configurator>.displayName="Configurator (Mekanism Wrench)"; 
 	<appliedenergistics2:network_tool>.displayName="Network Tool (AE2 Wrench)"; 
 	<morphtool:tool>.displayName="Network Tool (Omni-Wrench)"; 
-   mods.jei.JEI.addDescription(<morphtool:tool>, "The Morphing Tool can mimic any wrench, screwdriver, hammer or wand made of twigs and petals you throw at it making it the perfect 'omni-wrench' style item.");
+	mods.jei.JEI.addDescription(<morphtool:tool>, "The Morphing Tool can mimic any wrench, screwdriver, hammer or wand made of twigs and petals you throw at it making it the perfect 'omni-wrench' style item.");
    
 //====== Auroralized Glass ======
 //
 	furnace.addRecipe(<twilightforest:auroralized_glass>,<twilightforest:aurora_block>);
+
+//====== Beetroot Seed ======
+//
+	
+	recipes.addShaped("beetrootSeeds",<minecraft:beetroot_seeds>*2,[
+		[<minecraft:beetroot>,<minecraft:beetroot>,null],
+		[null,null,null],
+		[null,null,null]
+]);
