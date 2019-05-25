@@ -175,4 +175,4 @@ print(" ============================================================== ");
 //====== Addition of Dimlet Text ======
 //
 	<rftoolsdim:dimlet_control_circuit:6>.addTooltip(format.aqua("Obtained through dimlet parcels only"));
-	<rftoolsdim:dimlet_parcel>.addTooltip(format.aqua("Obtained as a drop from enderman");
+	<rftoolsdim:dimlet_parcel>.addTooltip(format.aqua("Obtained as a drop from enderman"));
