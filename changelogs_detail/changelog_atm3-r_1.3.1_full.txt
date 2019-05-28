@@ -1,13 +1,16 @@
 All the Mods 3 - Remix 1.3.0 to All the Mods 3 - Remix 1.3.1
 
-Added:
+Added 5 files:
 	- Born in a Barn
 	- Mekanism
 	- Mekanism Generators
 	- Mekanism Tools
+	- Project Intelligence
 
-Updated:
-	Actually Additions (went from ActuallyAdditions-1.12.2-r146.jar to ActuallyAdditions-1.12.2-r147.jar):
+Updated 98 files:
+	Actually Additions (went from ActuallyAdditions-1.12.2-r146.jar to ActuallyAdditions-1.12.2-r148.jar):
+		1.12.2-r148:
+			* Fixed atomic reconstructor not hitting items on pressure plates.
 		1.12.2-r147:
 			* Sacks should no longer duplicate items when used on multi-slot inventories with slot size limits.
 			* Updated systems to use IForgeRarity instead of EnumRarity.
@@ -32,7 +35,25 @@ Updated:
 
 			 * [ re-add support for the 'rodORENAME' oredict convention, should fix #1558](https://github.com/zmaster587/AdvancedRocketry/commit/8ee9abcd315b086)
 
-	Armory Expansion (went from Armory Expansion 1.1.7b to Armory Expansion 1.1.10c):
+	Armory Expansion (went from Armory Expansion 1.1.7b to Armory Expansion WebClient Beta3):
+		Armory Expansion WebClient Beta3:
+			Every single stat a material uses can now be configured through the JSON files
+		Armory Expansion 1.3.0:
+			Every single stat a material uses can now be configured through the JSON files
+		Armory Expansion 1.2.5:
+			Fixes issue #36
+		Armory Expansion WebClient Beta2:
+			Fixes issue #36
+		Armory Expansion WebClient Beta1:
+			Full switch from #.cfg to #.json files for all Integrations.
+			Integration data can now be loaded from a web server, although this is disabled by default.
+			Feel free to try it with the available URL in the config ([https://github.com/YaibaToKen/Armory-Expansion-WebJSON](https://github.com/YaibaToKen/Armory-Expansion-WebJSON)).
+
+			Connection timeout and maximum stream size can be set in armoryexpansion.cfg, defaulting to 60 seconds and 128KB respectively.
+
+			Most Ice and Fire materials now have a different look, due to finally getting sided code to work.
+		Armory Expansion 1.2.4:
+			Full support for custom alloy registration through JSON
 		Armory Expansion 1.1.10c:
 			Fixes issue #33 thanks to GitHub users LemADEC, lamialily, SirAron111 and Nafo.
 		Armory Expansion 1.1.10:
@@ -141,7 +162,11 @@ Updated:
 
 			- Fix inventory misbehavior with ritual pedestal
 
-	AutoRegLib (went from AutoRegLib-1.3-26.jar to AutoRegLib-1.3-28.jar):
+	AutoRegLib (went from AutoRegLib-1.3-26.jar to AutoRegLib-1.3-30.jar):
+		AutoRegLib-1.3-30.jar:
+			- Added an unlisted blockstate property
+		AutoRegLib-1.3-29.jar:
+			- Fixed using right click to add items leaving client artifacts behind.
 		AutoRegLib-1.3-28.jar:
 			- Fixed recipes that resolve in air causing issues with other mods.
 
@@ -164,7 +189,88 @@ Updated:
 			 * Model generator only allowed one mod at a time
 			 * BASE Minecart bounding boxes now set correctly
 
-	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2426-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2439-universal.jar)
+	Baubley Heart Canisters (went from baubley-heart-canisters-1.12.2-1.2.3.jar to baubley-heart-canisters-1.12.2-2.0.2.jar):
+		baubley-heart-canisters-1.12.2-2.0.2.jar:
+			[https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md](https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md)
+		baubley-heart-canisters-1.12.2-2.0.1.jar:
+			I GOOFED! EASY FIX :D
+
+			[https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md](https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md)
+
+	Better Than Mending (went from MC 1.12 - BetterThanMending 1.1.1 to MC 1.12 - BetterThanMending 1.1.2):
+		MC 1.12 - BetterThanMending 1.1.2:
+			Fix a bug with the vanilla /xp command when using the L flag to add levels.
+
+	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2426-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar)
+
+	Blockcraftery (went from blockcraftery-1.12.2-1.2.0.jar to blockcraftery-1.12.2-1.3.0.jar):
+		blockcraftery-1.12.2-1.3.0.jar:
+			There are a lot of bugfixes in this release. Sorry it took so long to get to this, updates should be more stable now.
+
+			This update was supposed to be much bigger with far more content but will be released over the course of a few updates now to get the fixes out earlier.
+
+			New:
+
+			 * Doors - Both the top and bottom half are customisable
+			 * Trapdoors
+			 * Pressure Plates - These come in 4 varieties - All, items, players and mobs. Weighted pressure plates are not yet included
+			Fixes:
+
+			 * Too many to list, see the closed issues on github instead if you want to know.
+
+	Blood Magic (went from BloodMagic-1.12.2-2.4.0-102.jar to BloodMagic-1.12.2-2.4.1-103.jar):
+		BloodMagic-1.12.2-2.4.1-103.jar:
+			Version 2.4.1:
+
+			Nut was too lazy to create a changelog, it's AEon's turn now!
+			Changes made from Feb 02 - now (Fill end date in later)
+
+			Living Armor:
+			 - Fixed "Soft Fall" not preventing damage
+			 - "Nocturnal Prowess" should not flash anymore
+			 - "Trickshot" now ignores HurtResistanceTime
+			 - "Trickshot" now works properly with sentient arrows
+			 - "Step Assist" does not take effect while sneaking
+
+			Sentient Bow:
+			 - Fixed Destructive Will arrows exploding continuously
+			 - Fixed Tipped Arrows getting improved even if no Will can be used
+
+			Sigils:
+			 - Buffed "Sigil of the Fast Miner" to be in accordance to the "Sanguine Scientium"
+			 - Fixed a bug where "Sigil of the Fast Miner" would also cause the whirlwind effect
+			 - Added "Whirlwind" to the potion registry
+			 - Fixed broken Sigil tooltip formatting
+			 - Fixed Sigil of Holding not updating some Sigil data, allowing for exploits
+			 - Greatly improved "Sigil of Compression" performance
+			 - Fixed "Sigil of Compression" bug that would eat leftover items (usually everything between 55 and 64 items for a 3x3 compression)
+
+			Rituals:
+			 - Ported Veil of Evil & Ward of Sacrosanctity
+			 - Fixed "Serenade of the Nether" replacing lava source blocks with lava (fixed underlying function to detect flowing liquids)
+			 - Added configurability to Ritual of the High Jump by modifying a new ritual area with the Ritual Tinkerer
+
+			Misc:
+			 - Fixed routing node oredict filter (crashes)
+			 - Fixed mimic vanishing in some cases
+			 - Fixed "Blood Letter's Pack" and "Coat of Arms" always being used in the main hand slot (action bar/hotbar)
+			 - Stop insertions into Demon Crucible if the inventory is not empty
+			 - Fixed abnormal deaths at your own hands through the sacrificial dagger (hopefully) (Gravestone bugginess)
+			 - Fixed "Unmending" mod incompatibility
+			 - Fixed Teleposers crashing the game if someone force-fed it junk
+			 - added Nut being angery at contributors for messing stuff up
+			 - Added some Russian language strings for the guide book
+			 - Added repair recipes for Sentient Tools & Living Armor to JEI
+
+			Technical Stuff no player cares about:
+			 - Formatted Project code
+			 - Fixed BlockState parsing (mimic vanishing)
+			 - Fixed some and streamlined ritual block ranges
+			 - Mystery drain still mysterious
+			 - Use TextFormatting rather than color codes in block lang names
+			 - Fixed world unload crash (may happen if a world is loaded by world generators or JEI Resource graphing)
+			 - Fixed `/bloodmagic network get` command
+			 - Added translation keys for tickethistory command help strings
 
 	Botania (went from Botania r1.10-360.jar to Botania r1.10-361.jar):
 		Botania r1.10-361.jar:
@@ -203,7 +309,14 @@ Updated:
 
 			Fix a few typos in configuration text (Thanks to Neerwan)
 
-	Classic Bars (went from classicbar-0.1.12a.jar to classicbar-0.3.2.jar):
+	Classic Bars (went from classicbar-0.1.12a.jar to classicbar-0.3.2b.jar):
+		classicbar-0.3.2b.jar:
+			* Fixed some bars being 1 pixel off
+			* Fixed overlapping text when percentage mode is enabled (should probably make a toggle for each bar).
+
+			* Reproduction case for vanishing hunger bar?
+		classicbar-0.3.2a.jar:
+			* Fixed client crash when joining a server.
 		classicbar-0.3.2.jar:
 			* Separated the textures into their own sheet (texture #0 is broken, not sure if to bother fixing or not)
 
@@ -269,7 +382,26 @@ Updated:
 
 			*Fixed issues with tiny armor/armor toughness amounts causing the bars to shift without displaying anything.
 
-	Common Capabilities (went from CommonCapabilities-1.12.2-2.2.0.jar to CommonCapabilities-1.12.2-2.3.0.jar):
+	CoFH Core (went from CoFHCore-1.12.2-4.6.2.25-universal.jar to CoFHCore-1.12.2-4.6.3.27-universal.jar):
+		4.6.3:
+			GENERAL:
+				-Localization!
+
+	CoFH World (went from CoFHWorld-1.12.2-1.3.0.6-universal.jar to CoFHWorld-1.12.2-1.3.1.7-universal.jar):
+		CoFHWorld-1.12.2-1.3.1.7-universal.jar:
+			No changelog provided.
+
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.2.0.jar to CommonCapabilities-1.12.2-2.4.0.jar):
+		CommonCapabilities-1.12.2-2.4.0.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Expand SlotlessItemHandlerWrapper with multiple slots
+
+			Fixes:
+			* Fix Blood Magic orbs not autocompleting in Integrated Terminals JEI
+			 Closes CyclopsMC/IntegratedTerminals#31
 		CommonCapabilities-1.12.2-2.3.0.jar:
 			As always, don't forget to backup your world before updating!
 			Requires CyclopsCore version 1.2.0 or higher.
@@ -362,7 +494,116 @@ Updated:
 		conarm-1.12.2-1.2.3.1.jar:
 			See: [https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md](https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md)
 
-	Corail Tombstone (went from Corail Tombstone 3.3.4 for 1.12.2 to Corail Tombstone 3.4.1 for 1.12.2):
+	Corail Tombstone (went from Corail Tombstone 3.3.4 for 1.12.2 to Corail Tombstone 3.5.2 for 1.12.2):
+		Corail Tombstone 3.5.2 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.2 - Recommended : 3.4.1
+
+			Changes 3.5.2 :
+
+			 * allows the command reviveFamiliar, when there're no backups, to fallback to revive a familiar from a receptacle in the player's inventory
+			 * disables by default the compatibilities with BloodMagic (preventing the bug of sacrificial dagger, as they finally published a fix) and with Aether legacy (auto-equip)
+			 * fix ankh interaction (#63)
+			 * display directly the plate on engraved decorative graves when placed
+			 * decorative graves require a ground for placement
+			 * the duration of the buff sometimes given by the prayer is scaled on the cooldown to pray again
+			 * the custom damage (related to lost tablets & receptacle) is reduced based on the level in knowledge of death (your total perk points)
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.5.1 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.1 - Recommended : 3.4.1
+
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.5.0 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.0 - Recommended : 3.4.1
+
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
 		Corail Tombstone 3.4.1 for 1.12.2:
 			This mod supports mc version from 1.8.9 to 1.13.2
 			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
@@ -383,37 +624,6 @@ Updated:
 			 * minor changes on advancement (#55, #56)
 			 * lollipops can be eaten in creative mode
 			 * avoid to copy itemstacks when not necessary
-		Corail Tombstone 3.4.0 for 1.12.2:
-			This mod supports mc version from 1.8.9 to 1.13.2
-			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
-			Latest : 3.4.0 - Recommended : 3.3.5
-
-			Changes 3.4.0 :
-
-			 * add the compendium to provide infos ingame
-			 * always looks for an existing grave nearby when you die, even if the server has been restarted
-			(was initially done to avoid griefing with graves)
-			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
-			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided in the additional files below with source or on [github](https://github.com/Corail31/tombstone-api))
-			 * minor changes on advancement (#55, #56)
-			 * lollipops can be eaten in creative mode
-			 * avoid to copy itemstacks when not necessary
-			Changes 3.3.6 :
-
-			 * config to activate the halloween event (suggestion #53)
-			 * change the client config option "enableHalloweenGrave" to a new one allowing to set the preference for grave skin (default, force halloween, force normal)
-			 * adapt the gui of knowledge of death to display the provisory perk bonus (ex: halloween, contributor) + display the % kept xp & the % to have an enchanted grave's key in the perk tooltip
-			 * fix the server log about player grave (unformatted correctly)
-			 * fix the perk "memento mori" to provide the good bonus (was lower)
-			 * config to define a cooldown for the reset of the perks with the ânkh (default = 20 minutes)
-			Changes 3.3.5 :
-
-			 * client config option to hide the custom tooltips for enchantments of Tombstone & compat to avoid to display them when some specific mods are presents
-			 * the chance of buff when praying as been adjusted down to fit 1.13.2
-			 * the client config option to showFog is replaced by a new one allowing to set the fog density (default=low)
-			 * change the command tbknowledge to fit 1.13.2 (show|set|give|remove)
-			 * config option to define the loottables having a chance to contain a magic scroll
-			 * add the comments for config options (allowing the description to be visible in cfg)
 		Corail Tombstone 3.3.6 for 1.12.2:
 			This mod supports mc version from 1.8.9 to 1.13.2
 			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
@@ -448,6 +658,18 @@ Updated:
 			 * change the command tbknowledge to fit 1.13.2 (show|set|give|remove)
 			 * config option to define the loottables having a chance to contain a magic scroll
 			 * add the comments for config options (allowing the description to be visible in cfg)
+
+	CraftTweaker (went from CraftTweaker2-1.12-4.1.17 to CraftTweaker2-1.12-4.1.18):
+		CraftTweaker2-1.12-4.1.18:
+			Fixed timeouts when connecting to servers
+
+			added player tick event phases
+
+			Fixed output from /ctgui
+
+			Fixed NBT matching
+
+			Fixed StringIDataParser not accepting String inputs. (Thanks Kindlich!)
 
 	Culinary Construct (went from culinaryconstruct-1.3.2.jar to culinaryconstruct-1.3.2.1.jar):
 		culinaryconstruct-1.3.2.1.jar:
@@ -522,7 +744,17 @@ Updated:
 			 * Wireless energy transfer node no longer claims to have fluid capability (mod compat fix).
 			 * Added block id to some config descriptions.
 
-	Cyclops Core (went from CyclopsCore-1.12.2-1.1.1.jar to CyclopsCore-1.12.2-1.2.1.jar):
+	Cyclops Core (went from CyclopsCore-1.12.2-1.1.1.jar to CyclopsCore-1.12.2-1.3.0.jar):
+		CyclopsCore-1.12.2-1.3.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Changes:
+			* Allow insert/extract in indexed inventories over max stack size
+			 Required for CyclopsMC/IntegratedCrafting#27
+
+			Fixes:
+			* Catch ingredient transfer for out-of-bound slots
+			 Closes CyclopsMC/IntegratedDynamics#730
 		CyclopsCore-1.12.2-1.2.1.jar:
 			As always, don't forget to backup your world before updating!
 
@@ -693,6 +925,10 @@ Updated:
 
 			Also, this version may break expectations of mods that implement FastWorkbench. They can set ContainerFastBench#useNormalTransfer to true to disable this behavior for specific container instances.
 
+	Flat Colored Blocks (went from flatcoloredblocks-mc1.12-6.7.jar to flatcoloredblocks-mc1.12-6.8.jar):
+		flatcoloredblocks-mc1.12-6.8.jar:
+			 * Fix crash in a case where only one shade is assigned to a block id.
+
 	Good Ol' Currency (went from Currency 1.12-1.3.6 to Currency 1.12-1.3.9):
 		Currency 1.12-1.3.9:
 			Bugfix:
@@ -705,7 +941,11 @@ Updated:
 
 			The uploaded 2.9.0 jar seems to have been a development build, which won't work in normal mc instances. This time I made sure the build worked correctly.
 
-	Industrial Craft (went from industrialcraft-2-2.8.116-ex112.jar to industrialcraft-2-2.8.153-ex112.jar):
+	Industrial Craft (went from industrialcraft-2-2.8.116-ex112.jar to industrialcraft-2-2.8.157-ex112.jar):
+		industrialcraft-2-2.8.157-ex112.jar:
+			* Fix locale (estebes)
+		industrialcraft-2-2.8.156-ex112.jar:
+			* Actually fix build (estebes)
 		industrialcraft-2-2.8.153-ex112.jar:
 			* Fix 2541 (estebes)
 		industrialcraft-2-2.8.152-ex112.jar:
@@ -824,7 +1064,15 @@ Updated:
 			* Forced a Forge version so I can properly use those version features with crashes, closes #542 (Buuz135)
 			* Fixed #549 (TomShkurti)
 
-	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.11.jar to IntegratedDynamics-1.12.2-1.0.12.jar):
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.11.jar to IntegratedDynamics-1.12.2-1.0.13.jar):
+		IntegratedDynamics-1.12.2-1.0.13.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Changes:
+			* Make mod compat operator names more consistent
+			 Related to CyclopsMC/IntegratedDynamics#591
+			* Improve text alignment inside Logic Programmer, Closes #591
 		IntegratedDynamics-1.12.2-1.0.12.jar:
 			As always, don't forget to backup your world before updating!
 			Requires CyclopsCore version 1.1.1 or higher.
@@ -854,6 +1102,14 @@ Updated:
 			* Fix crash on operator pipes with invalid second operators
 			 Closes CyclopsMC/IntegratedTunnels#160
 
+	Iron Chests (went from ironchest-1.12.2-7.0.59.842.jar to ironchest-1.12.2-7.0.64.843.jar):
+		ironchest-1.12.2-7.0.64.843.jar:
+			Bugfixes:
+
+			 * Marking the chest as dirty when inserting into a full slot.
+			 * Fix support for VanillaTweaks.
+			 * Language improvements.
+
 	JAOPCA (went from JAOPCA-1.12.2-2.2.8.101.jar to JAOPCA-1.12.2-2.2.8.102.jar):
 		JAOPCA-1.12.2-2.2.8.102.jar:
 			Updated mappings
@@ -863,6 +1119,101 @@ Updated:
 			Changed layer 2 of item models able to be colored
 
 			Fixed GTCE and Sky Compression modules
+
+	JourneyMap (went from journeymap-1.12.2-5.5.4 to journeymap-1.12.2-5.5.5b7):
+		journeymap-1.12.2-5.5.5b7:
+			JourneyMap 1.12.2-5.5.5b7 for Minecraft 1.12.2
+
+			Requirements:
+
+			 * Java 8
+			 * Minecraft 1.12.2
+			 * Forge 14.23.5.2768
+			General Information:
+
+			 * See [http://journeymap.info/](https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252f) for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
+			 * See [http://journeymap.info/Support](https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252fSupport) for information on getting technical support.
+			 * Implements [JourneyMap API v1.12-1.4](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbitbucket.org%252fTeamJM%252fjourneymap-api)
+			CHANGELOG (2019-05-21-19:38:56):
+
+			Beta 7
+
+			 * Improvement: Network rebuild
+			 * Feature: Waypoint options allows custom server teleport command. Can handle {x}{y}{x}{name}{dim} fields.
+			 * Feature: Setting log level to 'OFF' prevents Journeymap log info displaying in the [F3] Debug Screen.
+			 * Feature: Webmap - Visual indication if following player.
+			 * Feature: New Server Admin screen to modify Journeymap's server settings.
+			 * Feature: With server installed player radar shows players outside of local range; Configurable for all players or ops/admins.
+			 * Feature: Changed how configs are sent to the client to work with the new Panel. This means JM will be disabled when connecting to servers that have JM 5.5.4 or lower installed.
+			 * Feature: New mini-map Info Slots: Dimension, Light Level, Region, Game Time 12hr, Game Time 24hr
+			 * Feature: Region info in Fullscreen map following the mouse pointer(only when the mouse is near the player).
+			 * Feature: Enable or Disable all waypoints with a hotkey(Default:KEY_Z).
+			 * Feature: Two new grid options via Grid Editor: Region, Chunk and Region.
+			 * Server-Feature: Admins can now disable or enable teleporting for dimensions. Users cannot teleport to, from, or within if disabled.
+			 * Integration: Pixelmon-Reforged icon retrieval optimizations(Thanks Reforged team!). Pixelmon-Reforged v7.0.6 or higher required.
+			 * Change: Webmap - Port selection is now a text box.
+			 * Locale: Updated ru_RU.(Thanks Vlad Imangulov)
+			 * Locale: Added ru_RU Splash text.(Thanks Vlad Imangulov)
+			 * Locale: Updated fr_FR (Thanks Neerwan)
+			 * Locale: Updated zh_CN (Thanks Rick Zhong)
+			 * Bugfix: Crash when using the chat function on waypoints with names that start with special characters.
+			 * Bugfix: Saving the world with Unicode characters like Chinese using the save folder "~".
+			 * Bugfix: ModInfo respects minecraft snooper settings.
+			 * Bugfix: Webmap: Waypoints not showing up.
+			 * Bugfix: Removed some unneeded error logging.
+			 * Bugfix: Setting topo contour config to false causes NPE.
+			 * Bugfix: Missing small arrow icon when set to small icons if entity has no icon.
+			 * Bugfix: Surface mapping and Topography mapping respect the configs if disabled.
+			 * Bugfix: Webmap - Better handling of browser caching.
+		journeymap-1.12.2-5.5.5b6:
+			JourneyMap 1.12.2-5.5.5b6 for Minecraft 1.12.2
+
+			Requirements:
+
+			 * Java 8
+			 * Minecraft 1.12.2
+			 * Forge 14.23.5.2768
+			General Information:
+
+			 * See [http://journeymap.info/](https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252f) for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
+			 * See [http://journeymap.info/Support](https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252fSupport) for information on getting technical support.
+			 * Implements [JourneyMap API v1.12-1.4](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbitbucket.org%252fTeamJM%252fjourneymap-api)
+			CHANGELOG (2019-05-10-09:40:55):
+
+			Beta 6
+
+			 * Feature: Waypoint options allows custom server teleport command. Can handle {x}{y}{x}{name}{dim} fields.
+			 * Feature: Setting log level to 'OFF' prevents Journeymap log info displaying in the [F3] Debug Screen.
+			 * Feature: Webmap - Visual indication if following player.
+			 * Change: Webmap - Port selection is now a text box.
+			 * Bugfix: Webmap - Better handling of browser caching.
+			Beta 5
+
+			 * Added better thread safety for SMP Player Radar
+			 * Bugfix: ConcurrentModificationException when players log off.
+			Beta 4
+
+			 * Feature: New Server Admin screen to modify Journeymap's server settings.
+			 * Feature: With server installed player radar shows players outside of local range; Configurable for all players or ops/admins.
+			 * Feature: Changed how configs are sent to the client to work with the new Panel. This means JM will be disabled when connecting to servers that have JM 5.5.4 or lower installed.
+			 * Feature: New mini-map Info Slots: Dimension, Light Level, Region, Game Time 12hr, Game Time 24hr
+			 * Feature: Region info in Fullscreen map following the mouse pointer(only when the mouse is near the player).
+			 * Feature: Enable or Disable all waypoints with a hotkey(Default:KEY_Z).
+			 * Feature: Two new grid options via Grid Editor: Region, Chunk and Region.
+			 * Server-Feature: Admins can now disable or enable teleporting for dimensions. Users cannot teleport to, from, or within if disabled.
+			 * Integration: Pixelmon-Reforged icon retrieval optimizations(Thanks Reforged team!). Pixelmon-Reforged v7.0.6 or higher required.
+			 * Locale: Updated ru_RU.(Thanks Vlad Imangulov)
+			 * Locale: Added ru_RU Splash text.(Thanks Vlad Imangulov)
+			 * Locale: Updated fr_FR (Thanks Neerwan)
+			 * Locale: Updated zh_CN (Thanks Rick Zhong)
+			 * Bugfix: Crash when using the chat function on waypoints with names that start with special characters.
+			 * Bugfix: Saving the world with Unicode characters like Chinese using the save folder "~".
+			 * Bugfix: ModInfo respects minecraft snooper settings.
+			 * Bugfix: Webmap: Waypoints not showing up.
+			 * Bugfix: Removed some unneeded error logging.
+			 * Bugfix: Setting topo contour config to false causes NPE.
+			 * Bugfix: Missing small arrow icon when set to small icons if entity has no icon.
+			 * Bugfix: Surface mapping and Topography mapping respect the configs if disabled.
 
 	Just Enough Dimensions (went from justenoughdimensions-1.12.2-1.6.0-dev.20190407.194630.jar to justenoughdimensions-1.12.2-1.6.0-dev.20190505.222902.jar):
 		justenoughdimensions-1.12.2-1.6.0-dev.20190505.222902.jar:
@@ -1045,13 +1396,29 @@ Updated:
 			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
 			 * [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
 
-	LibrarianLib (went from librarianlib-1.12.2-4.15.jar to librarianlib-1.12.2-4.18.jar):
+	LibrarianLib (went from librarianlib-1.12.2-4.15.jar to librarianlib-1.12.2-4.19.1-release.jar):
+		librarianlib-1.12.2-4.19.1-release.jar:
+			No changelog provided.
 		librarianlib-1.12.2-4.18.jar:
 			Reverted some internal changes that caused crashes in Wizardry
 		librarianlib-1.12.2-4.17.jar:
 			Significant overhaul: Several systems internally are completely different.
 
-	McJtyLib (went from McJtyLib - 1.12-3.1.1 to McJtyLib - 1.12-3.5.2):
+	Mantle (went from Mantle-1.12-1.3.3.49.jar to Mantle-1.12-1.3.3.55.jar):
+		Mantle-1.12-1.3.3.55.jar:
+			* Made PulseManager::isPulseLoaded case insensitive
+
+			* Allow PulseManager::isPulseLoaded to check if pulses from other Mantle mods are loaded, instead of just the same mod
+
+			* Added static PulseManager::isPulseLoadedGlobal, checks if a pulse is loaded without a PulseManager instance. Can be used by ModuleFileRepository to instantiate without a pulse manager
+
+			* ModuleFileRepository sections now support attaching a module dependency to pages instead of just sections
+
+	McJtyLib (went from McJtyLib - 1.12-3.1.1 to McJtyLib - 1.12-3.5.3):
+		McJtyLib - 1.12-3.5.3:
+			 - Added withRotation() to BaseBlock making all McJtyLib based blocks rotatable
+			 - Osmium0001 added a way to copy/paste selections in all McJtyLib textfields (use shift arrow keys to make selections)
+			 - Osmium0001 fixed logging for McJtyLib so it is tagged with the correct mod
 		McJtyLib - 1.12-3.5.2:
 			 - Small change for HoloGui
 		McJtyLib - 1.12-3.5.1:
@@ -1063,7 +1430,1012 @@ Updated:
 			 - New methods for rendering quads and general API cleanup in the RenderHelper
 			 - New multipart system (currently only used by Ariente)
 
-	Minecolonies (went from minecolonies-1.12.2-0.10.256-BETA-universal.jar to minecolonies-1.12.2-0.10.259-RELEASE-universal.jar):
+	Minecolonies (went from minecolonies-1.12.2-0.10.256-BETA-universal.jar to minecolonies-1.12.2-0.10.288-ALPHA-universal.jar):
+		minecolonies-1.12.2-0.10.288-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.288-ALPHA
+
+			 * Schematics (#3630)
+			Bunch of schematic fixes * Small fixes (#3631)
+
+			Fix several Issues Add suggestion GUI before manually placing block.
+		minecolonies-1.12.2-0.10.287-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.287-ALPHA
+
+			 * adding child grow message, and reducing initial delay a bit. (#3628)
+			Improve children growth
+		minecolonies-1.12.2-0.10.286-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.286-ALPHA
+
+			 * Fix claim command not claiming center chunk (#3609)
+			Fixes claim command not claiming center chunk
+		minecolonies-1.12.2-0.10.285-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.285-ALPHA
+
+			 * Schematics (#3619)
+			Rescans of Wooden and Stone schematics
+		minecolonies-1.12.2-0.10.284-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.284-ALPHA
+
+			 * Fixes (#3618)
+			Fixes builder loading distant chunks Fixes Dynamic claiming with colony deletion Fixes racks issue
+		minecolonies-1.12.2-0.10.283-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.283-ALPHA
+
+			 * Fixes (#3604)
+			Put a set and not a list, makes this much easier
+		minecolonies-1.12.2-0.10.282-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.282-ALPHA
+
+			 *
+			Fixes (#3601)
+
+			 *
+			fix moving townhalls for dynamic colonies
+
+			 *
+			fix delete colony issue
+
+			 *
+			Fix issue 3577
+		minecolonies-1.12.2-0.10.281-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.281-ALPHA
+
+			 * [HotFix] Attempting to fix the DMan and Crafters being stuck. (#3595)
+		minecolonies-1.12.2-0.10.280-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.280-ALPHA
+
+			 * hotfix colony claim
+		minecolonies-1.12.2-0.10.279-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.279-ALPHA
+
+			 * Fix schematics, 2 hotfixes, fix claim, fix scan command (#3590)
+			Fixes chunks not storing the claim correctly Fixes 2 crashes Adds schematics Fixes issues with scan command
+		minecolonies-1.12.2-0.10.278-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.278-ALPHA
+
+			 * Schematics (#3574)
+			Tons of schematics fixes
+		minecolonies-1.12.2-0.10.277-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.277-ALPHA
+
+			 * fix townhall claim radius
+		minecolonies-1.12.2-0.10.276-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.276-ALPHA
+
+			 * Fix decoration controller
+		minecolonies-1.12.2-0.10.275-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.275-ALPHA
+
+			 *
+			Stop permission spam (#3583)
+
+			 *
+			Stop permission spam
+
+			 *
+			add null check
+		minecolonies-1.12.2-0.10.274-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.274-ALPHA
+
+			 * hotfix #3582
+		minecolonies-1.12.2-0.10.273-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.273-ALPHA
+
+			 * fix lang files
+			 * Merge branch 'translation' into version/1.12
+			 * Merge branch 'version/1.12' into translation
+			 * fix lang files
+			 *
+			New Crowdin translations (#3572)
+
+			 *
+			New translations en_us.lang (Afrikaans)
+
+			 *
+			New translations en_us.lang (Manx)
+
+			 *
+			New translations en_us.lang (Pirate English)
+
+			 *
+			New translations en_us.lang (Persian)
+
+			 *
+			New translations en_us.lang (Occitan)
+
+			 *
+			New translations en_us.lang (Norwegian Nynorsk)
+
+			 *
+			New translations en_us.lang (Norwegian)
+
+			 *
+			New translations en_us.lang (Northern Sami)
+
+			 *
+			New translations en_us.lang (Mongolian)
+
+			 *
+			New translations en_us.lang (Maori)
+
+			 *
+			New translations en_us.lang (Maltese)
+
+			 *
+			New translations en_us.lang (Portuguese)
+
+			 *
+			New translations en_us.lang (Malay)
+
+			 *
+			New translations en_us.lang (Macedonian)
+
+			 *
+			New translations en_us.lang (Luxembourgish)
+
+			 *
+			New translations en_us.lang (Low German)
+
+			 *
+			New translations en_us.lang (Lojban)
+
+			 *
+			New translations en_us.lang (Lithuanian)
+
+			 *
+			New translations en_us.lang (Limburgish)
+
+			 *
+			New translations en_us.lang (Latvian)
+
+			 *
+			New translations en_us.lang (Latin)
+
+			 *
+			New translations en_us.lang (Polish)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Korean)
+
+			 *
+			New translations en_us.lang (Spanish, Uruguay)
+
+			 *
+			New translations en_us.lang (Welsh)
+
+			 *
+			New translations en_us.lang (Vietnamese)
+
+			 *
+			New translations en_us.lang (Valencian)
+
+			 *
+			New translations en_us.lang (Ukrainian)
+
+			 *
+			New translations en_us.lang (Turkish)
+
+			 *
+			New translations en_us.lang (Thai)
+
+			 *
+			New translations en_us.lang (Talossan)
+
+			 *
+			New translations en_us.lang (Swedish)
+
+			 *
+			New translations en_us.lang (Spanish, Venezuela)
+
+			 *
+			New translations en_us.lang (Spanish, Mexico)
+
+			 *
+			New translations en_us.lang (Quenya)
+
+			 *
+			New translations en_us.lang (Spanish, Argentina)
+
+			 *
+			New translations en_us.lang (Spanish)
+
+			 *
+			New translations en_us.lang (Somali)
+
+			 *
+			New translations en_us.lang (Slovenian)
+
+			 *
+			New translations en_us.lang (Slovak)
+
+			 *
+			New translations en_us.lang (Serbian (Cyrillic))
+
+			 *
+			New translations en_us.lang (Scottish Gaelic)
+
+			 *
+			...
+
+			 * Merge remote-tracking branch 'origin/version/1.12' into translation
+			 *
+			New Crowdin translations (#3342)
+
+			 *
+			New translations en_us.lang (Chinese Traditional)
+
+			 *
+			New translations en_us.lang (Faroese)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Serbian (Cyrillic))
+
+			 *
+			New translations en_us.lang (Afrikaans)
+
+			 *
+			New translations en_us.lang (Manx)
+
+			 *
+			New translations en_us.lang (Pirate English)
+
+			 *
+			New translations en_us.lang (Persian)
+
+			 *
+			New translations en_us.lang (Occitan)
+
+			 *
+			New translations en_us.lang (Norwegian Nynorsk)
+
+			 *
+			New translations en_us.lang (Norwegian)
+
+			 *
+			New translations en_us.lang (Northern Sami)
+
+			 *
+			New translations en_us.lang (Mongolian)
+
+			 *
+			New translations en_us.lang (Maori)
+
+			 *
+			New translations en_us.lang (Maltese)
+
+			 *
+			New translations en_us.lang (Portuguese)
+
+			 *
+			New translations en_us.lang (Malay)
+
+			 *
+			New translations en_us.lang (Macedonian)
+
+			 *
+			New translations en_us.lang (Luxembourgish)
+
+			 *
+			New translations en_us.lang (Low German)
+
+			 *
+			New translations en_us.lang (Lojban)
+
+			 *
+			New translations en_us.lang (Lithuanian)
+
+			 *
+			New translations en_us.lang (Limburgish)
+
+			 *
+			New translations en_us.lang (Latvian)
+
+			 *
+			New translations en_us.lang (Latin)
+
+			 *
+			New translations en_us.lang (Polish)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Korean)
+
+			 *
+			New translations en_us.lang (Spanish, Uruguay)
+
+			 *
+			New translations en_us.lang (Welsh)
+
+			 *
+			New translations en_us.lang (Vietnamese)
+
+			 *
+			New translations en_us.lang (Valencian)
+
+			 *
+			New translations en_us.lang (Ukrainian)
+
+			 *
+			New translations en_us.lang (Turkish)
+
+			 *
+			New translations en_us.lang (Thai)
+
+			 *
+			New translations en_us.lang (Talossan)
+
+			 *
+			New translations en_us.lang (Swedish)
+
+			 *
+			New translations en_us.lang (Spanish, Venezuela)
+
+			 *
+			New translations en_us.lang (Spanish, Mexico)
+
+			 *
+			New translations en_us.lang (Quenya)
+
+			 *
+			New translations en_us.lang (Spanish, Argentina)
+
+			 *
+			New translations en_us.lan...
+
+			 * Merge remote-tracking branch 'origin/version/1.12' into translation
+			 *
+			New Crowdin translations (#3341)
+
+			 *
+			New translations en_us.lang (Chinese Traditional)
+
+			 *
+			New translations en_us.lang (Faroese)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Serbian (Cyrillic))
+
+			 *
+			New Crowdin translations (#3241)
+
+			 *
+			New translations en_us.lang (Afrikaans)
+
+			 *
+			New translations en_us.lang (Czech)
+
+			 *
+			New translations en_us.lang (Albanian)
+
+			 *
+			New translations en_us.lang (Faroese)
+
+			 *
+			New translations en_us.lang (Estonian)
+
+			 *
+			New translations en_us.lang (Esperanto)
+
+			 *
+			New translations en_us.lang (English, United Kingdom)
+
+			 *
+			New translations en_us.lang (English, New Zealand)
+
+			 *
+			New translations en_us.lang (English, Canada)
+
+			 *
+			New translations en_us.lang (English, Arabia)
+
+			 *
+			New translations en_us.lang (English (upside down))
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Danish)
+
+			 *
+			New translations en_us.lang (English, Australia)
+
+			 *
+			New translations en_us.lang (Croatian)
+
+			 *
+			New translations en_us.lang (Belarusian)
+
+			 *
+			New translations en_us.lang (Arabic)
+
+			 *
+			New translations en_us.lang (Cornish)
+
+			 *
+			New translations en_us.lang (Armenian)
+
+			 *
+			New translations en_us.lang (Asturian)
+
+			 *
+			New translations en_us.lang (Azerbaijani)
+
+			 *
+			New translations en_us.lang (Basque)
+
+			 *
+			New translations en_us.lang (Breton)
+
+			 *
+			New translations en_us.lang (Bulgarian)
+
+			 *
+			New translations en_us.lang (Catalan)
+
+			 *
+			New translations en_us.lang (Chinese Simplified)
+
+			 *
+			New translations en_us.lang (Chinese Traditional)
+
+			 *
+			New translations en_us.lang (Portuguese)
+
+			 *
+			New translations en_us.lang (Russian)
+
+			 *
+			New translations en_us.lang (Romanian)
+
+			 *
+			New translations en_us.lang (Quenya)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Northern Sami)
+
+			 *
+			New translations en_us.lang (Polish)
+
+			 *
+			New translations en_us.lang (Pirate English)
+
+			 *
+			New translations en_us.lang (Persian)
+
+			 *
+			New translations en_us.lang (Occitan)
+
+			 *
+			New translations en_us.lang (Norwegian Nynorsk)
+
+			 *
+			New translations en_us.lang (Norwegian)
+
+			 *
+			New translations en_us.lang (Serbian (Cyrillic))
+
+			 *
+			New translations en_us.lang (Scottish Gaelic)
+
+			 *
+			New translations en_us.lang (Valenc...
+
+			 * Merge remote-tracking branch 'origin/version/1.12' into translation
+			 * removed wrong case file
+			 * removed wrong case file
+			 * removed wrong case files
+			 * Merge remote-tracking branch 'remotes/origin/version/1.12' into translation
+			 *
+			New Crowdin translations (#3223)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Russian)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Chinese Traditional)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (French)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Italian)
+
+			 *
+			New translations en_us.lang (Portuguese)
+
+			 *
+			New translations en_us.lang (Russian)
+
+			 *
+			New translations en_us.lang (Spanish, Mexico)
+
+			 *
+			New translations en_us.lang (Spanish, Venezuela)
+
+			 *
+			New Crowdin translations (#3201)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (Russian)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			New translations en_us.lang (German)
+
+			 *
+			New translations en_us.lang (Dutch)
+
+			 *
+			L10n translation (#3199)
+
+			 *
+			New translations en_us.lang (Afrikaans)
+
+			 *
+			New translations en_us.lang (Manx)
+
+			 *
+			New translations en_us.lang (Pirate English)
+
+			 *
+			New translations en_us.lang (Persian)
+
+			 *
+			New translations en_us.lang (Occitan)
+
+			 *
+			New translations en_us.lang (Norwegian Nynorsk)
+
+			 *
+			New translations en_us.lang (Norwegian)
+
+			 *
+			New translations en_us.lang (Northern Sami)
+
+			 *
+			New translations en_us.lang (Mongolian)
+
+			 *
+			New translations en_us.lang (Maori)
+
+			 *
+			New translations en_us.lang (Maltese)
+
+			 *
+			New translations en_us.lang (Portuguese)
+
+			 *
+			New translations en_us.lang (Malay)
+
+			 *
+			New translations en_us.lang (Macedonian)
+
+			 *
+			New translations en_us.lang (Luxembourgish)
+
+			 *
+			New translations en_us.lang (Low German)
+
+			 *
+			New translations en_us.lang (Lojban)
+
+			 *
+			New translations en_us.lang (Lithuanian)
+
+			 *
+			New translations en_us.lang (Limburgish)
+
+			 *
+			New translations en_us.lang (Latvian)
+
+			 *
+			New translations en_us.lang (Latin)
+
+			 *
+			New translations en_us.lang (Polish)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Korean)
+
+			 *
+			New translations en_us.lang (Spanish, Uruguay)
+
+			 *
+			New translations en_us.lang (Welsh)
+
+			 *
+			New translations en_us.lang (Vietnamese)
+
+			 *
+			New translations en_us.lang (Valencian)
+
+			 *
+			New translations en_us.lang (Ukrainian)
+
+			 *
+			New translations en_us.lang (Turkish)
+
+			 *
+			New translations en_us.lang (Thai)
+
+			 *
+			New translations en_us.lang (Talossan)
+
+			 *
+			New translations en_us.lang (Swedish)
+
+			 *
+			New translations en_us.lang (Spanish, Venezuela)
+
+			 *
+			New translations en_us.lang (Spanish, Mexico)
+
+			 *
+			New translations en_us.lang (Quenya)
+
+			 *
+			New translations en_us.lang (Spanish, Argentina)
+
+			 *
+			New translations en_us.lang (Spanish)
+
+			 *
+			New translations en_us.lang (Somali)
+
+			 *
+			New translations en_us.lang (Slovenian)
+
+			 *
+			New translations en_us.lang (Slovak)
+
+			 *
+			New translations en_us.lang (Serbian (Cyrillic))
+
+			 *
+			New translations en_us.lang (Scottish Gaelic)
+
+			 *
+			New tran...
+
+			 * add crowdin config
+			 * update russian
+			 * Add all lang files from crowdin
+		minecolonies-1.12.2-0.10.272-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.272-ALPHA
+
+			 * Dynamic colony claiming (#3580)
+			Creates a way colony ranges are claimed dynamically and not fixed Improves postbox performance a bit Structurize integration improvements
+		minecolonies-1.12.2-0.10.271-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.271-ALPHA
+
+			 * Added current raid to Barracks hut (#3576)
+			Changed the Barracks hut to display the current raid apart from the list of raids to reduce confusion.
+		minecolonies-1.12.2-0.10.270-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.270-ALPHA
+
+			 *
+			Translation (#3573)
+
+			 *
+			New translations en_us.lang (Afrikaans)
+
+			 *
+			New translations en_us.lang (Manx)
+
+			 *
+			New translations en_us.lang (Pirate English)
+
+			 *
+			New translations en_us.lang (Persian)
+
+			 *
+			New translations en_us.lang (Occitan)
+
+			 *
+			New translations en_us.lang (Norwegian Nynorsk)
+
+			 *
+			New translations en_us.lang (Norwegian)
+
+			 *
+			New translations en_us.lang (Northern Sami)
+
+			 *
+			New translations en_us.lang (Mongolian)
+
+			 *
+			New translations en_us.lang (Maori)
+
+			 *
+			New translations en_us.lang (Maltese)
+
+			 *
+			New translations en_us.lang (Portuguese)
+
+			 *
+			New translations en_us.lang (Malay)
+
+			 *
+			New translations en_us.lang (Macedonian)
+
+			 *
+			New translations en_us.lang (Luxembourgish)
+
+			 *
+			New translations en_us.lang (Low German)
+
+			 *
+			New translations en_us.lang (Lojban)
+
+			 *
+			New translations en_us.lang (Lithuanian)
+
+			 *
+			New translations en_us.lang (Limburgish)
+
+			 *
+			New translations en_us.lang (Latvian)
+
+			 *
+			New translations en_us.lang (Latin)
+
+			 *
+			New translations en_us.lang (Polish)
+
+			 *
+			New translations en_us.lang (Portuguese, Brazilian)
+
+			 *
+			New translations en_us.lang (Korean)
+
+			 *
+			New translations en_us.lang (Spanish, Uruguay)
+
+			 *
+			New translations en_us.lang (Welsh)
+
+			 *
+			New translations en_us.lang (Vietnamese)
+
+			 *
+			New translations en_us.lang (Valencian)
+
+			 *
+			New translations en_us.lang (Ukrainian)
+
+			 *
+			New translations en_us.lang (Turkish)
+
+			 *
+			New translations en_us.lang (Thai)
+
+			 *
+			New translations en_us.lang (Talossan)
+
+			 *
+			New translations en_us.lang (Swedish)
+
+			 *
+			New translations en_us.lang (Spanish, Venezuela)
+
+			 *
+			New translations en_us.lang (Spanish, Mexico)
+
+			 *
+			New translations en_us.lang (Quenya)
+
+			 *
+			New translations en_us.lang (Spanish, Argentina)
+
+			 *
+			New translations en_us.lang (Spanish)
+
+			 *
+			New translations en_us.lang (Somali)
+
+			 *
+			New translations en_us.lang (Slovenian)
+
+			 *
+			New translations en_us.lang (Slovak)
+
+			 *
+			New translations en_us.lang (Serbian (Cyrillic))
+
+			 *
+			New translations en_us.lang (Scottish Gaelic)
+
+			 *
+			New translati...
+		minecolonies-1.12.2-0.10.269-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.269-ALPHA
+
+			 * Added message if a village it too close (#3570)
+			Sends a message to the player, if they try to place the town hall too close to a village.
+		minecolonies-1.12.2-0.10.268-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.268-ALPHA
+
+			 * Prohibit Workers From gong to work right after a raid (#3565)
+			Citizen now continue sleeping after a raid until the next daytime/weather check
+		minecolonies-1.12.2-0.10.267-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.267-ALPHA
+
+			 * add bold and italic
+		minecolonies-1.12.2-0.10.266-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.266-ALPHA
+
+			 * Faster builder (#3564)
+			Allows pathing through passable blocks
+		minecolonies-1.12.2-0.10.265-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.265-ALPHA
+
+			 * Fixes Builds being too high or low. (#3559)
+			Checks if the build will exceed the build limit
+		minecolonies-1.12.2-0.10.264-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.264-ALPHA
+
+			 * Schematics (#3548)
+			fix a bunch of schematics * faster builder (#3560)
+		minecolonies-1.12.2-0.10.263-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.263-ALPHA
+
+			 * Fixed Guards not removing armor and weapons when fired. (#3558)
+			Removes the equiped items on a Guard when they are fired
+		minecolonies-1.12.2-0.10.262-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.262-ALPHA
+
+			 * Removed logging from AbstractEntityAIInteract.java (#3555)
+			*Removed ForgeHook out of sync error
+		minecolonies-1.12.2-0.10.261-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.261-ALPHA
+
+			 * Update WindowHutSifter.java (#3554)
+			Change the Sifter Gui Title from Crusher to Sifter
+		minecolonies-1.12.2-0.10.260-ALPHA-universal.jar:
+			Minecolonies Changelog
+
+			Version: 1.12.2-0.10.260-ALPHA
+
+			 * hotfix free blocks
 		minecolonies-1.12.2-0.10.259-RELEASE-universal.jar:
 			Minecolonies Changelog
 
@@ -1126,8 +2498,17 @@ Updated:
 
 			 * hotfix crafting bug (#3551)
 			Fixes a crafting bug which consumed too many items per recipe.
+			
+	Minecraft Forge (went from 1.12.2-14.23.5.2825 to 1.12.2-14.23.5.2838)
 
-	Minecraft Forge (went from 1.12.2-14.23.5.2825 to 1.12.2-14.23.5.2836)
+	Modpack Configuration Checker (went from Modpack Configuration Checker-1.12.2-v1.7.jar to Modpack Configuration Checker-1.12.2-v1.8.1.jar):
+		Modpack Configuration Checker-1.12.2-v1.8.1.jar:
+			 * Chat messages will now only display when loading a world, not for each dimension change.
+		Modpack Configuration Checker-1.12.2-v1.8.jar:
+			 * Added the ability to check the checksum of files.
+			 * Added the ability to check the last modified date of files.
+			 * THESE FEATURES ARE NOT YET DOCUMENTED AND ARE IN ALPHA TESTING.
+			 * Fixed a bug which meant unnecessary options appear in the mod's config file. (This fields will be removed)
 
 	Mystical Agradditions (went from MysticalAgradditions-1.12.2-1.3.1.jar to MysticalAgradditions-1.12.2-1.3.2.jar):
 		MysticalAgradditions-1.12.2-1.3.2.jar:
@@ -1146,6 +2527,12 @@ Updated:
 			 * Added a config option to disable the Ultimate Seed Reprocessor
 			 * This fixes an issue where disabling the Ultimate Furnace would break things
 
+	MysticalLib (went from mysticallib-1.12.2-1.1.1.jar to mysticallib-1.12.2-1.2.1.jar):
+		mysticallib-1.12.2-1.2.1.jar:
+			Fixed major crash on servers
+		mysticallib-1.12.2-1.2.0.jar:
+			Updated for blockcraftery base classes, including baked models for doors, trapdoors and pressure plates.
+
 	Not Enough Wands (went from NotEnoughWands - 1.12-1.7.3 to NotEnoughWands - 1.12-1.8.1):
 		NotEnoughWands - 1.12-1.8.1:
 			NotEnoughWands 1.12-1.8.1
@@ -1156,7 +2543,36 @@ Updated:
 
 			 - Depends on McJtyLib 3.5.0!
 
-	NuclearCraft (went from NuclearCraft-2.15-1.12.2 to NuclearCraft-2.16f-1.12.2):
+	NuclearCraft (went from NuclearCraft-2.15-1.12.2 to NuclearCraft-2.17-1.12.2):
+		NuclearCraft-2.17-1.12.2:
+			* Fixed not being able to extract depleted fuel from solid-fuel Fission Ports
+			+ Added config option to force solid-fuel Fission Controller into heat-based comparator mode
+
+			* Updated fusion combo stats to be more accurate to real data
+
+			* Changed form of MSR cooling rate configs from units of H/t/mB to H/t, fixing the base heating rate
+			* Fluid clear buttons in multiblock GUIs are now only visible when shift is held
+
+			* Updated and improved radiation system and ore-dict caching [thanks to Shadows-of-Fire!]
+			+ Added config options for meltdown radiation multipliers
+			+ Added warning message for clients with radiation disabled joining servers with it enabled
+			* Fixed radiation-related bug which caused the game to crash with certain other mods installed
+			* Fixed some shielding recipes not showing correctly in JEI or not working with enchanted armour
+
+			* Changed GTCE machine integration config to be per-machine [thanks to LordPINE!]
+			* Infuser recipes are now added to the GTCE Chemical Bath instead of the Fluid Canning Machine
+
+			+ Added Hazmat Suit armour configs
+			* A full Hazmat Suit now protects fully against IC2 radiation
+
+			* Fixed machines sometimes not quite waiting long enough to have the energy to complete the next process
+			* Slightly modified machine textures
+			* Ingot Formers no longer produce flame particles
+
+			* Updated Russian language file [thanks to B45E!]
+
+			* Many minor refactors
+			* Updated MCP mappings
 		NuclearCraft-2.16f-1.12.2:
 			* Fixed crashes with various multi-input recipes
 		NuclearCraft-2.16e-1.12.2:
@@ -1240,6 +2656,100 @@ Updated:
 		OreExcavation-1.4.140.jar:
 			Added the ability to stage shape mining separately
 
+	Overloaded (went from Overloaded-1.12.2-0.0.55.jar to Overloaded-1.12.2-0.0.56.jar):
+		Overloaded-1.12.2-0.0.56.jar:
+			Version: 0.0.56 (RELEASE)
+
+			 * Multi-Armor Helmet now looks forward when on armor stands.
+			 * Updated Gradle build system
+			 * Correct Spelling Error (Fixes #68)
+			 * Add countermeasure for invalid state changes of Overloaded's power items (Fixes #65)
+			 * Change Render format to block for ghost blocks (changes text render posistion)
+			Version: 0.0.55 (RELEASE)
+
+			 * Added Waila (Hwyla) support for Hyper Energy Capability (Infinity Capacitor)
+			Version: 0.0.54 (RELEASE)
+
+			 * Update to new Forge and Mapping snapshots.
+			 * Fix default compressed netherrack looking like Cobblestone. Will have to manually reset config to see change (or apply change yourself).
+			 * Improve Multi-Armor rendering on Non-player entities
+			 * Add config entry to make Infinity Container have two slots. This is to help with Vanilla but is a performance decrease. Default to disabled.
+			 * Update invalid fingerprint message to say report to cjm721
+			 * Forgot to do sided checks for some Tile Entities (cause weirdness in single player only)
+			 * Wrote a test (Really wish I could write tests for everything, but Minecraft makes it very annoying)
+			Version: 0.0.53 (RELEASE)
+
+			 * Refactor ItemMultiTool (Code cleanup)
+			 * Add lang file for zn_cn (provided by DazzleCool)
+			Version: 0.0.52 (RELEASE)
+
+			 * Multi-Tool now gives better error message when unable to break / place
+			 * Multi-Tool now also respect's server's range limits
+			 *  Code Cleanup
+			 * Dynamic Registration now in single place
+			 * Abstracted multi-armor rendering
+			 * New config entry for item texture size. Before item texture size was tied to block resolution
+			 * Config is now synced from server to client
+			 * Config rewrite - physical files are the same though
+			 * Can now upload to Curse from command line (No mod changes)
+			 * Forge version compiled against bumped up to 2611, should still be compatible with old versions
+			Version: 0.0.51 (RELEASE)
+
+			 * Enable ground speed modifier again. (Why can't flight and walk speed be done the same way... to many one offs for my liking, although I like how ground speed is done now, might make some more features out of it)
+			Version: 0.0.50.1 (RELEASE)
+
+			Hotfix to disable ground speed modifications
+
+			 * jar is now signed (Because why not?)
+			 * Disable ground speed modifications as the way I am currently doing it breaks servers
+			Version: 0.0.50 (RELEASE)
+
+			Mostly quality of life changes / just getting the code base in a better state.
+
+			 * Changelog will now be appended with previous info (pulled changelogs from last two days also)
+			 * Added One Probe Integration for Item Interface / Player Interface / Hyper * Senders / Infinity Capacitor
+			 * Linking Card will no longer forget the receiver when binding
+			 * Nether Star Block is now Ore Dictionaryed to blockNetherStar
+			 * Code Cleanup using IDEA's automated tasks
+			 * Added charged variants of all powered items to creative menu.
+			Fixed: * NPE if you somehow placed a Player Interface without setting the placer
+
+			Version: 0.0.49 (RELEASE)
+
+			 *  Multi-Armor Settings Editor Implemented (+Recipe)
+			 * Right Click in GUI to change to more precise input mode for sliders.
+			 *  Multi-Armor Changes
+			 * Ground speed increase now uses power
+			 * Has config options for balancing
+			 * Flight has additional config options for balancing.
+			 * Max Speed limits are also in config
+			 * Most features can now be enabled/disabled via the settings editor.
+			 * Settings are saved to the helmet.
+			Fixed: * Compressed Block now have blast resistance that corresponds to their hardness.
+
+			Version: 0.0.48 (BETA)
+
+			Making build as beta as most likely will also push an update within next 24 hours to move settings GUI out of Dev Mode. All changes should be stable.
+
+			 *  Railgun implemented and moved out of dev only mode
+			 * Has recipe (that needs balancing)
+			 * Many config options for balancing
+			 *  Sneak Scroll to change by Power Delta
+			 * Ctrl + Sneak to change by 100 * Power Delta
+			 * Cleaned up Generic Data Storage to be more efficient and persist settings (used by armor and railgun)
+			 * Cleaned up locale file as it had old entires
+			Dev Mode: * Working on Settings GUI for the Multi-Armor
+		Overloaded-1.12.2-0.0.55-debug.jar V2:
+			Version with extra logging for debugging a resetting issue on 31 bit barrier.
+
+			Has logging on the extractor as well.
+
+			THIS IS FOR TESTING ONLY. IE THIS IS NOT FOR USE IN MOD PACKS.
+		Overloaded-1.12.2-0.0.55-debug.jar:
+			Version with extra logging for debugging a resetting issue on 31 bit barrier.
+
+			THIS IS NOT FOR USE IN MOD PACKS.
+
 	Phosphor (went from Phosphor 0.2.0 to Phosphor 0.2.4):
 		Phosphor 0.2.4:
 			- [Fixes an issue where some world generators would deadlock the server](https://github.com/jellysquid3/Phosphor/issues/13)
@@ -1264,14 +2774,61 @@ Updated:
 
 			- Added version requirements for NotEnoughIDs and SpongeForge to prevent users from using incompatible or broken versions
 
-	PlusTiC (went from plustic-7.0.5.2.jar to plustic-7.0.6.1.jar):
+	PlusTiC (went from plustic-7.0.5.2.jar to plustic-7.0.7.0.jar):
+		plustic-7.0.7.0.jar:
+			 * Add Peridot ConArm support
+			 * Several bugfixes
 		plustic-7.0.6.1.jar:
 			Fix shulker box disappearing into itself (Global Traveler)
 		plustic-7.0.6.0.jar:
 			 * Add Sapphire and Ruby ConArm support
 			 * Fix dupe bug with FTBUtils claimed chunks and laser gun block smelting
 
-	PneumaticCraft: Repressurized (went from pneumaticcraft-repressurized-1.12.2-0.9.4-1.jar to pneumaticcraft-repressurized-1.12.2-0.10.5-346.jar):
+	PneumaticCraft: Repressurized (went from pneumaticcraft-repressurized-1.12.2-0.9.4-1.jar to pneumaticcraft-repressurized-1.12.2-0.11.0-357.jar):
+		pneumaticcraft-repressurized-1.12.2-0.11.0-357.jar:
+			New
+
+			 * Added the Redstone Module, a tube module that allows redstone signals to be transmitted along pressure tubes.
+			 * Toggle a module between input and output by right-clicking with a wrench.
+			 * 16 independent channels are available; right-click with a dye to set a module's channel (the dye will not be used up by default, but see useUpDyesWhenColoring config setting)).
+			 * Add an Advanced PCB to the module to gain some extra signal processing, e.g. integrated logic gates, timers, toggle latches, comparators...
+			 * Tough As Nails support:
+			 * PneumaticCraft heat (and cold!) sources will have an effect on your body temperature. Take care!
+			 * Added the Air Conditioning Upgrade for the Pneumatic Chestplate. This will use pressure to try and regulate your body temperature, protecting from Tough As Nails temperature extremes. Up to 4 upgrades can be added (although the max of 4 would only be needed for the most extreme conditions).
+			 * See tanHeatDivider and tanRefreshInterval config settings.
+			 * Added the Thermal Compressor, a machine which converts temperature differences on opposite sides directly to air pressure.
+			 * Heat will attempt to equalize across sides, so effort is needed to maintain a temperature gradient across the compressor.
+			 * See thermalCompressorThermalResistance config setting.
+			[](https://github.com/TeamPneumatic/pnc-repressurized/blob/master/Changelog.md#updates)Updates
+
+			 * Plastic Mixer CraftTweaker support has been heavily reworked:
+			 * There is now far more extensive CraftTweaker support, allowing melting or solidifying more than just plastic. E.g. you could add a recipe to convert Thermal Foundation Rockwool to/from Blazing Pyrotheum.
+			 * Fluid->solid ratio (mB per item) can be defined on a per-recipe basis.
+			 * Conversions can be melt-only, solidify-only, or both melt & solidify. E.g. you could add a recipe to melt Lapis into IC2 Coolant, but not allow resolidification.
+			 * Since the Plastic Mixer also colourizes items/blocks, this is primarily intended for those which can have one of 16 colours (Wool, Concrete, Terracotta...). However, melting-only recipes (such as Lapis->Coolant) will work. Trying to solidify to items/blocks which aren't colourizable does work, but still uses dye.
+			 * See [https://github.com/TeamPneumatic/pnc-repressurized/issues/343](https://github.com/TeamPneumatic/pnc-repressurized/issues/343) for CT docs until [https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized/](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fcrafttweaker.readthedocs.io%252fen%252flatest%252f%2523Mods%252fPneumaticCraft_Repressurized%252fPneumaticCraft_Repressurized%252f) is updated.
+			 * This breaks the CT methods added in 0.10.4 - sorry! But the new system is far more powerful.
+			 * General Plastic Mixer changes:
+			 * Quality of Life: The item selection GUI side tab now auto-opens if the Plastic Mixer has fluid in the tank
+			 * If there's no fluid in the tank which can be solidified, the item selection side tab now hides the buttons (since they don't do anything). The Lock Selection checkbox remains usable, though.
+			 * The misleading GUI arrow from input item to output item is gone, replaced by arrows from the input item to the fluid tank, and from the fluid tank to the output item.
+			 * The above arrow has been replaced by a small "book" icon, which can be used to show all recipes for the Plastic Mixer in JEI.
+			 * The Item Temperature gauge now shows the required temperature to melt an item in its tooltip, if applicable.
+			 * When moving Pneumatic Armor stat windows, the move GUI now shows other open stat windows too (with a grey border) to make it easier to line things up, avoid overlaps etc.
+			 * Performance: tile entity data syncing now causes far fewer block/chunk updates, which should improve performance in general.
+			 * Performance: player jet boots particles are now all handled client-side; only player jet boots state needs to be synced from server to clients when it changes - much less network traffic.
+			 * Performance: crop sticks growth particles are now done client-side, reducing server->client traffic.
+			 * Crop stick growth tick chance is now configurable: see cropSticksGrowthBoostChance.
+			 * Custom air particle density (used in many places: pressure chamber, leaking tubes, jet boots...) now respects the clientside particle density setting.
+			 * Dyed Aphorism Tiles now keep their colours when the block is broken.
+			 * Added a self-craft recipe which resets the colour of a dyed Aphorism Tile item.
+			 * Made drone area sorting more deterministic (see [https://github.com/TeamPneumatic/pnc-repressurized/issues/342](https://github.com/TeamPneumatic/pnc-repressurized/issues/342)).
+			 * JEI now shows an info tab for all items & blocks which have tooltip information (same info as the item tooltip is shown here - just another way to view it)
+			 * Dyeing drones no longer uses the dye by default (but see useUpDyesWhenColoring config setting)
+			[](https://github.com/TeamPneumatic/pnc-repressurized/blob/master/Changelog.md#fixes)Fixes
+
+			 * Restored the Thermopneumatic Processing Plant "Dump Input Tank" button. Was a mistake to remove that.
+			 * Added missing Patchouli docs page for the "Pick Up Item" programming widget.
 		pneumaticcraft-repressurized-1.12.2-0.10.5-346.jar:
 			0.10.5-346 (29 Apr 2019)
 
@@ -1351,7 +2908,39 @@ Updated:
 		Psi-r1.1-73.jar:
 			See [http://psi.vazkii.us/changelog.php#r1.1-73](http://psi.vazkii.us/changelog.php#r1.1-73)
 
-	Quark (went from Quark-r1.5-146.jar to Quark-r1.5-151.jar):
+	Quark (went from Quark-r1.5-146.jar to Quark-r1.5-154.jar):
+		Quark-r1.5-154.jar:
+			- General: Fixed bad ASM leading to a startup crash.
+		Quark-r1.5-153.jar:
+			- General: Fixed a server crash.
+			- General: Tried to fix Chisel compatibility again.
+			- Building: Added carved variants for world stone bricks.
+			- Client: Fixed the Highlight Invalid Slots feature highlighting the wrong position in the Tinkers Construct Crafting Station.
+			- Decoration: Added the ability to tie leads to fences.
+			- Decoration: Fixed Flat Item Frames not extending their model when non vanilla maps are placed in them.
+			- Experimental: Added Framed Blocks.
+			- Experimental: Added wednesday.
+			- Management: Fixed right click to add to shulkers not working.
+			- Misc: Added the Pickarang.
+			- Oddities: Fixed a dupe with backpacks.
+			- Oddities: Fixed pipes accepting items if they're disabled.
+			- Oddities: Fixed some model weirdness with pipes.
+			- Tweaks: Added Springy Slime.
+			- Tweaks: Fixed Improved Sleeping not sending the list of sleeping players to chat.
+			- World: Added a config option to make stonelings run away if the player moves quickly even if sneaking.
+			- World: Added brick variants for Permafrost and Brimstone.
+			- World: Fixed a tiling issue with Limestone Bricks.
+			- World: Fixed cave roots spawning in dimensions other than the overworld.
+			- World: Fixed Stonelings crashing the game when put in an EnderIO Powered Spawner.
+			- World: Fixed tamed Stonelings being able to despawn.
+			- World: Fixed underground features spawning in superflat worlds.
+			- World: Stonelings are now immune to cactus, arrows, drowning, and fall damage.
+			- World: Stonelings can now be fed stone types to change their look.
+			- World: Stonelings can now be tamed with Diamonds.
+			- World: Stonelings now have a sound effect on damage.
+			- World: Stonelings now have Basalt and Marble variants.
+		Quark-r1.5-152.jar:
+			- Management: Fixed a crash when opening the player's inventory under certain circumstances.
 		Quark-r1.5-151.jar:
 			- General: Added a proper AutoRegLib dep so people know to use the proper version.
 			- General: Added proper subtitles to quark's sound effects.
@@ -1502,18 +3091,28 @@ Updated:
 			Fixed the faster language switching patch.
 			Changed the End portal and End gateway break particle textures to obsidian to match Minecraft 1.13+.
 
-	RandomTweaks (went from RandomTweaks 1.12.2-2.5.0.3 to RandomTweaks 1.12.2-2.5.0.5):
+	RandomTweaks (went from RandomTweaks 1.12.2-2.5.0.3 to RandomTweaks 1.12.2-2.5.0.6):
+		RandomTweaks 1.12.2-2.5.0.6:
+			Fixed spawn points for the Void and Void Islands world types.
 		RandomTweaks 1.12.2-2.5.0.5:
 			Fixed the squid spawn configuration affecting non-squid spawns.
 		RandomTweaks 1.12.2-2.5.0.4:
 			Improved pet protection.
 
-	Reborn Storage (went from RebornStorage-1.12.2-3.3.2.79.jar to RebornStorage-1.12.2-3.3.3.83.jar):
+	Reborn Storage (went from RebornStorage-1.12.2-3.3.2.79.jar to RebornStorage-1.12.2-3.3.4.85.jar):
+		RebornStorage-1.12.2-3.3.4.85.jar:
+			(github) #releaseBuild
+			(modmuss50) fix crash when breaking connected multiblock (#151)
 		RebornStorage-1.12.2-3.3.3.83.jar:
 			(github) #releaseBuild
 			(modmuss50) Cache cpu speed and multiblock isValid until broken fixes 144 (#149)
 			(modmuss50) Add alternative disk recipe (#139)
 			(modmuss50) Create de_de.lang (#141)
+
+	Redstone Arsenal (went from RedstoneArsenal-1.12.2-2.6.2.17-universal.jar to RedstoneArsenal-1.12.2-2.6.3.18-universal.jar):
+		2.6.3:
+			GENERAL:
+				-Reduced damage of Flux-Infused Bow a bit. Multiplier was unintentionally high.
 
 	Simply Jetpacks 2 (went from SimplyJetpacks2-1.12.2-2.2.11.64.jar to SimplyJetpacks2-1.12.2-2.2.12.65.jar):
 		SimplyJetpacks2-1.12.2-2.2.12.65.jar:
@@ -1657,7 +3256,49 @@ Updated:
 
 			Increases logging to try to get to the bottom of an NPE when placing the weirding gadget.
 
-	ThermalLogistics (went from Thermal Logistics 0.2-18 to Thermal Logistics 0.2-23):
+	Thermal Cultivation (went from ThermalCultivation-1.12.2-0.3.2.11-universal.jar to ThermalCultivation-1.12.2-0.3.3.12-universal.jar):
+		0.3.3:
+			GENERAL:
+				-Backend adjustments for CoFH Core compat.
+
+	Thermal Dynamics (went from ThermalDynamics-1.12.2-2.5.4.18-universal.jar to ThermalDynamics-1.12.2-2.5.5.21-universal.jar):
+		2.5.5:
+			GENERAL:
+				-Some mods are really stupid. This hopefully makes them less stupid.
+
+	Thermal Expansion (went from ThermalExpansion-1.12.2-5.5.3.41-universal.jar to ThermalExpansion-1.12.2-5.5.4.43-universal.jar):
+		5.5.4:
+			GENERAL:
+				-Localization! Also fixes a couple of minor issues such as tank rendering.
+
+	Thermal Foundation (went from ThermalFoundation-1.12.2-2.6.2.26-universal.jar to ThermalFoundation-1.12.2-2.6.3.27-universal.jar):
+		2.6.3:
+			GENERAL:
+				-Localization update!
+
+	Thermal Innovation (went from ThermalInnovation-1.12.2-0.3.2.11-universal.jar to ThermalInnovation-1.12.2-0.3.3.12-universal.jar):
+		0.3.3:
+			GENERAL:
+				-Backend adjustments for CoFH Core compat.
+
+	ThermalLogistics (went from Thermal Logistics 0.2-18 to Thermal Logistics 0.2-25):
+		Thermal Logistics 0.2-25:
+			Bugs fixed
+
+			 * When linking three or more crafters, not every crafter would be linked to each other
+			 * Large stacks in barrels or caches would be displayed as "Air" in the Terminal
+			 * The linking tab would crash the game when hovering over an output
+		Thermal Logistics 0.2-24:
+			Enhancements:
+
+			 * Terminal - Item look-up algorithm has been improved so it is faster
+			 * Terminal - Dumping acts like a distributor instead of like a servo
+			 * Terminal - New button to dump all internal items into the network
+			Fixes:
+
+			 * Fluid requesters and crafters not doing anything
+			 * #28 - Recipes get bugged when craft in the Terminal
+			 * #29 - Terminal cannot be used without JEI installed
 		Thermal Logistics 0.2-23:
 			Fix item dupe bug
 		Thermal Logistics 0.2-22:
@@ -1674,11 +3315,49 @@ Updated:
 			 * More compatibility with JEI
 			 * Distributor doesn't send to itself anymore
 
+	Tinker's JEI (went from tinkersjei-1.0.jar to tinkersjei-1.2.jar):
+		tinkersjei-1.2.jar:
+			No changelog provided.
+		tinkersjei-1.1.jar:
+			Sorry for like completely abandoning this mod for a year. I know it's not an important mod at all, but I probably would be annoyed anyways if it would look like it did and the author would not update it.
+
+			But... I did now. This version contains:
+
+			 - An interface not looking awful with the newest JEI version
+			 - No text overflow anymore
+
 	Toast Control (went from Toast Control-1.12.2-1.8.0.jar to Toast Control-1.12.2-1.8.1.jar):
 		Toast Control-1.12.2-1.8.1.jar:
 			Fixed a crash when dealing with unusual keyboards.
 
-	Wizardry Mod (went from wizardry-0.9.9.jar to wizardry-0.10.0.jar):
+	Wizardry Mod (went from wizardry-0.9.9.jar to wizardry-0.10.2.jar):
+		wizardry-0.10.2.jar:
+			0.10.2
+
+			 * Added new recipes
+			 * Fixed invalid recipes
+			 * Changed recipes to use oredict if possible
+			0.10.1
+
+			 * Better fairy jar rendering
+			 * Fixed some sounds
+			 * Fixed worktable model in guis
+			 * Fixed modifiers not working at all and being calculated completely wrong
+			 * Add fatigue to time slow for a more punchy slowness effect
+			 * Fixed lightning spell and fix it's sounds
+			 * Fixed jars. They now exist properly
+			 * Pearl swap ui completely redone. Now actually works
+			 * Fixed light spell crashing
+			 * Fixed world lighting issue when accessing the worktable
+			 * Fixed a bug where lingering spells casted from lingering spells couldn't coexist
+			 * Fixed bug where lingering spells of the same type couldn't co-exist (yes, this is different)
+			 * Fixed spells not working on servers
+			 * Fixed vulnerability with spell book syncing
+			 * Redid /wizardry command
+			 * Added levitation orbs for funsies
+			 * Fixed a crash with IC2
+			 * Fixed a freeze from the phase spell
+			 * Made cosmetics (like capes) downloadable so they're version agnostic
 		wizardry-0.10.0.jar:
 			0.10.0
 			Fixed unicorns not spawning
@@ -1698,7 +3377,47 @@ Updated:
 			Fix Break spell Enchantment crash
 			Fix teleport sounds for the substitute spell
 
-	Worley's Caves (went from worleycaves-1.3.0.jar to worleycaves-1.4.0.jar):
+	Woot (went from woot-1.12.2-1.4.10.jar to woot-1.12.2-1.4.11.jar):
+		woot-1.12.2-1.4.11.jar:
+			# 1.12.2-1.4.11
+			### Fixes
+			- [----] Headhunter enchantability and overlevelling fixes by Lykrast
+			- [#413] Fix incorrect rune count displayed for Blood Magic LE tank - visual bug only
+
+			### Features
+			- [#406] Ender Dragon now 100% drops 1 Quark dragon scale
+			- [#415] Add entitygenerateonlylist to disable capture of a mob via an ender shard - default is empty
+
+	World Primer (went from worldprimer-1.12.2-0.6.0-dev.20190309.202458.jar to worldprimer-1.12.2-0.6.0-dev.20190525.121747.jar):
+		worldprimer-1.12.2-0.6.0-dev.20190525.121747.jar:
+			 * Add a new config option to change the default command sender name used by the commands ran by World Primer
+			 * Add a new command prefix for changing the command sender name per-command, if needed
+
+	Worley's Caves (went from worleycaves-1.3.0.jar to worleycaves-1.4.1.jar):
+		worleycaves-1.4.1.jar:
+			1.4.1
+
+			----------
+
+			Shut up some log spam
+
+			Possibly fix random crash with BoP
+
+
+
+			1.4.0
+
+			----------
+
+			Fix weird dot pattern & caves not breaking through biomes that have modded top blocks
+
+			Improve water detection when used with subterranean water
+
+			Add configs for changing what block use to as lava below y level 10
+
+			Add configs for setting minHeight that caves won't generate below
+
+			Add config for what y level the deep lava pools start generating at
 		worleycaves-1.4.0.jar:
 			1.4.0
 
@@ -1758,7 +3477,7 @@ Updated:
 	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.0.36.jar to p455w0rdslib-1.12.2-2.1.44.jar):
 		p455w0rdslib-1.12.2-2.1.44.jar:
 			Reverted all recent changes except for TEISR rendering
-
+			
 Downgraded:
 	IE Cloche Compat (went from ieclochecompat-2.1.7-dev.454.jar to ieclochecompat-2.0.6.jar):
 		ieclochecompat-2.1.7-dev.454.jar:
@@ -1768,9 +3487,9 @@ Downgraded:
 
 			Note: This is a Beta release. Expect bugs or issues!
 
-Removed:
+Removed 3 files:
 	- Mekanica
 	- Mekanica: Generators
 	- Mekanica: Tools
 
-* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.14)
