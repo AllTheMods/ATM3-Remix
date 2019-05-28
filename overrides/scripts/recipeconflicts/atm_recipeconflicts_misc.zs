@@ -559,7 +559,7 @@ print(" ======================================================== ");
 // Other have of recipe is in general_misc
 
 	recipes.remove(<birdsfoods:sliced_beets>);
-	recipes.addShaped("Beets", <birdsfoods:sliced_beets>, [
+	recipes.addShaped("Beets", <birdsfoods:sliced_beets>*6, [
 		[<minecraft:beetroot>,<minecraft:beetroot>,<minecraft:beetroot>],
 		[null,null,null],
 		[null,null,null]
