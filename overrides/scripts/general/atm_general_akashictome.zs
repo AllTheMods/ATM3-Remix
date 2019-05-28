@@ -385,3 +385,9 @@ print(" ==================================================== ");
 	for itemBook in addedBooks {
 		itemBook.addTooltip(format.aqua("Included within the \"default\" Akashic Tome"));
 	}
+
+//====== DE/Enderio Tooltip ======
+//
+	
+	<draconicevolution:info_tablet>.addTooltip(format.aqua("Includes knowledge of Enderio");
+	
