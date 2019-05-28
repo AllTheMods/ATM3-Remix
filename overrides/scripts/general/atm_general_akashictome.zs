@@ -389,5 +389,5 @@ print(" ==================================================== ");
 //====== DE/Enderio Tooltip ======
 //
 	
-	<draconicevolution:info_tablet>.addTooltip(format.aqua("Includes knowledge of Enderio");
+	<draconicevolution:info_tablet>.addTooltip(format.aqua("Includes knowledge of Enderio"));
 	
