@@ -564,3 +564,13 @@ print(" ======================================================== ");
 		[null,null,null],
 		[null,null,null]
 	]);
+	
+//====== Block of Sticks ======
+//
+
+	recipes.remove(<randomthings:blockofsticks>);
+	recipes.addShaped("BlockOfSticks", <randomthings:blockofsticks>*18, [
+		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],
+		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],
+		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]
+	]);
