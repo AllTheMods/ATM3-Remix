@@ -11,6 +11,8 @@
 * Enabled vanilla crafting recipes for Woot to use instead its anvil (easier automation)
 * Vending Machines can no longer be moved by any items or means
 * Added few textures with reduced size for better atlas performance
+* Fixed recipe conflict for roasted cocoa beans
+* Added one-way conversion for mixed metal ingot
 
 §b§lMods Added:
 * ChatFlow

@@ -485,37 +485,37 @@ print(" ======================================================== ");
    recipes.remove(<ic2:ingot:4>);
    recipes.remove(<ic2:ingot:6>);
    recipes.remove(<ic2:ingot:2>);
-   recipes.addShaped(<enderio:item_material:5> * 8,
+   recipes.addShaped("MASili", <enderio:item_material:5> * 8,
       [[mystsili, mystsili, mystsili],
       [null, null, null],
       [null, null, null]
       ]);
-   recipes.addShaped(<thermalfoundation:material:160> * 3,
+   recipes.addShaped("MASteel", <thermalfoundation:material:160> * 3,
       [[myststeel, myststeel, myststeel],
       [myststeel, null, myststeel], 
       [myststeel, myststeel, myststeel]
       ]);
-   recipes.addShaped(<thermalfoundation:material:131> * 4,
+   recipes.addShaped("MALead", <thermalfoundation:material:131> * 4,
       [[mystlead, mystlead, mystlead],
       [mystlead, null, mystlead],
       [mystlead, mystlead, mystlead]
       ]);
-   recipes.addShaped(<thermalfoundation:material:163> * 4,
+   recipes.addShaped("MABronze", <thermalfoundation:material:163> * 4,
       [[mystbronze, mystbronze, mystbronze],
       [mystbronze, null, mystbronze],
       [mystbronze, mystbronze, mystbronze]
       ]);
-   recipes.addShaped(<thermalfoundation:material:130> * 4,
+   recipes.addShaped("MASilver", <thermalfoundation:material:130> * 4,
       [[mystsilver, mystsilver, mystsilver],
       [mystsilver, null, mystsilver],
       [mystsilver, mystsilver, mystsilver]
       ]);
-   recipes.addShaped(<thermalfoundation:material:129> * 4,
+   recipes.addShaped("MATin", <thermalfoundation:material:129> * 4,
       [[mysttin, mysttin, mysttin],
       [mysttin, null, mysttin],
       [mysttin, mysttin, mysttin]
       ]);
-   recipes.addShaped(<thermalfoundation:material:128> * 6,
+   recipes.addShaped("MACopper", <thermalfoundation:material:128> * 6,
       [[mystcopper, mystcopper, mystcopper],
       [mystcopper, null, mystcopper],
       [mystcopper, mystcopper, mystcopper]
@@ -524,18 +524,18 @@ print(" ======================================================== ");
 //======  Bottom Bun ======
 //
    recipes.remove(<xlfoodmod:bottom_bun>);
-   recipes.addShaped(<xlfoodmod:bottom_bun>,
+   recipes.addShaped("XLBun", <xlfoodmod:bottom_bun>,
       [[<minecraft:wheat>, null, <minecraft:wheat>],
       [null, <minecraft:wheat>, null],
       [null, null, null]
       ]);
    recipes.remove(<birdsfoods:empty_taco>);
-   recipes.addShaped(<birdsfoods:empty_taco>,
+   recipes.addShaped("XLTaco1", <birdsfoods:empty_taco>,
       [[null, null, null],
       [<minecraft:wheat>, null, <minecraft:wheat>],
       [null, <minecraft:wheat>, null]
       ]);
-   recipes.addShaped(<birdsfoods:empty_taco>,
+   recipes.addShaped("XLTaco2", <birdsfoods:empty_taco>,
       [[null, null, null],
       [<xlfoodmod:corn>, null, <xlfoodmod:corn>],
       [null, <xlfoodmod:corn>, null]
@@ -544,7 +544,7 @@ print(" ======================================================== ");
 //======  Breakfast Sandwich ======
 //
    recipes.remove(<xlfoodmod:breakfast_sandwich>);
-   recipes.addShaped(<xlfoodmod:breakfast_sandwich>,
+   recipes.addShaped("XLBreak", <xlfoodmod:breakfast_sandwich>,
       [[<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>],
       [<xlfoodmod:bacon>, <xlfoodmod:cheese>, <birdsfoods:cooked_egg>],
       [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>]
@@ -553,3 +553,24 @@ print(" ======================================================== ");
 //======  Roasted Cocoa Beans ======
 //
    mods.nuclearcraft.manufactory.addRecipe([<minecraft:dye:3>, <nuclearcraft:roasted_cocoa_beans>]);
+   
+//====== Beet Recipe ======
+//
+// Other have of recipe is in general_misc
+
+	recipes.remove(<birdsfoods:sliced_beets>);
+	recipes.addShaped("Beets", <birdsfoods:sliced_beets>*6, [
+		[<minecraft:beetroot>,<minecraft:beetroot>,<minecraft:beetroot>],
+		[null,null,null],
+		[null,null,null]
+	]);
+	
+//====== Block of Sticks ======
+//
+
+	recipes.remove(<randomthings:blockofsticks>);
+	recipes.addShaped("BlockOfSticks", <randomthings:blockofsticks>*18, [
+		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],
+		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],
+		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]
+	]);

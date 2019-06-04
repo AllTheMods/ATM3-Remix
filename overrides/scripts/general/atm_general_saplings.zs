@@ -41,44 +41,6 @@ print(" ================================================ ");
 	var SaplingsToAdd = [
 		//<evilcraft:undead_sapling:32767>,
 		<forestry:sapling_ge:32767>,
-		/*
-		<harvestcraft:almond_sapling:32767>,
-		<harvestcraft:apple_sapling:32767>,
-		<harvestcraft:apricot_sapling:32767>,
-		<harvestcraft:avocado_sapling:32767>,
-		<harvestcraft:banana_sapling:32767>,
-		<harvestcraft:cashew_sapling:32767>,
-		<harvestcraft:cherry_sapling:32767>,
-		<harvestcraft:chestnut_sapling:32767>,
-		<harvestcraft:cinnamon_sapling:32767>,
-		<harvestcraft:coconut_sapling:32767>,
-		<harvestcraft:date_sapling:32767>,
-		<harvestcraft:dragonfruit_sapling:32767>,
-		<harvestcraft:durian_sapling:32767>,
-		<harvestcraft:fig_sapling:32767>,
-		<harvestcraft:gooseberry_sapling:32767>,
-		<harvestcraft:grapefruit_sapling:32767>,
-		<harvestcraft:lemon_sapling:32767>,
-		<harvestcraft:lime_sapling:32767>,
-		<harvestcraft:mango_sapling:32767>,
-		<harvestcraft:maple_sapling:32767>,
-		<harvestcraft:nutmeg_sapling:32767>,
-		<harvestcraft:olive_sapling:32767>,
-		<harvestcraft:orange_sapling:32767>,
-		<harvestcraft:papaya_sapling:32767>,
-		<harvestcraft:paperbark_sapling:32767>,
-		<harvestcraft:peach_sapling:32767>,
-		<harvestcraft:pear_sapling:32767>,
-		<harvestcraft:pecan_sapling:32767>,
-		<harvestcraft:peppercorn_sapling:32767>,
-		<harvestcraft:persimmon_sapling:32767>,
-		<harvestcraft:pistachio_sapling:32767>,
-		<harvestcraft:plum_sapling:32767>,
-		<harvestcraft:pomegranate_sapling:32767>,
-		<harvestcraft:starfruit_sapling:32767>,
-		<harvestcraft:vanillabean_sapling:32767>,
-		<harvestcraft:walnut_sapling:32767>,
-		*/
 		<integrateddynamics:menril_sapling:32767>,
 		//<luckybeans:bean_sapling:32767>,
 		//<rainboaks:rainboak_sapling:32767>,
@@ -98,3 +60,12 @@ print(" ================================================ ");
 	] as IItemStack[];
 	
 	Sapling.addItems(SaplingsToAdd);
+	
+//====== Sequoia Sapling ======
+//
+
+var sequoia = <forestry:sapling>.withTag({Genome: {Chromosomes: [{UID1: "forestry.treeSequoia", UID0: "forestry.treeSequoia", Slot: 0 as byte}, {UID1: "forestry.heightLargest", UID0: "forestry.heightLargest", Slot: 1 as byte}, {UID1: "forestry.saplingsLower", UID0: "forestry.saplingsLower", Slot: 2 as byte}, {UID1: "forestry.fruitNone", UID0: "forestry.fruitNone", Slot: 3 as byte}, {UID1: "forestry.yieldLowest", UID0: "forestry.yieldLowest", Slot: 4 as byte}, {UID1: "forestry.sappinessLower", UID0: "forestry.sappinessLower", Slot: 5 as byte}, {UID1: "forestry.leavesNone", UID0: "forestry.leavesNone", Slot: 6 as byte}, {UID1: "forestry.maturationSlower", UID0: "forestry.maturationSlower", Slot: 7 as byte}, {UID1: "forestry.i3d", UID0: "forestry.i3d", Slot: 8 as byte}, {UID1: "forestry.fireproofTrue", UID0: "forestry.fireproofTrue", Slot: 9 as byte}]}});
+
+var giant = <forestry:sapling>.withTag({IsAnalyzed: 0 as byte, Genome: {Chromosomes: [{UID1: "forestry.treeGigant", UID0: "forestry.treeGigant", Slot: 0 as byte}, {UID1: "forestry.heightGigantic", UID0: "forestry.heightGigantic", Slot: 1 as byte}, {UID1: "forestry.saplingsLower", UID0: "forestry.saplingsLower", Slot: 2 as byte}, {UID1: "forestry.fruitNone", UID0: "forestry.fruitNone", Slot: 3 as byte}, {UID1: "forestry.yieldLowest", UID0: "forestry.yieldLowest", Slot: 4 as byte}, {UID1: "forestry.sappinessLowest", UID0: "forestry.sappinessLowest", Slot: 5 as byte}, {UID1: "forestry.leavesNone", UID0: "forestry.leavesNone", Slot: 6 as byte}, {UID1: "forestry.maturationSlowest", UID0: "forestry.maturationSlowest", Slot: 7 as byte}, {UID1: "forestry.i4d", UID0: "forestry.i4d", Slot: 8 as byte}, {UID1: "forestry.fireproofTrue", UID0: "forestry.fireproofTrue", Slot: 9 as byte}]}});
+
+recipes.addShapeless("giantTree", giant, [sequoia]);
