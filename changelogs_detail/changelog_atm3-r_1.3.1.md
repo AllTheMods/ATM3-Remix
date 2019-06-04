@@ -1,7 +1,15 @@
 §2§lAll the Mods 3 - Remix 1.3.1 Changelog
 
+§b§lServer Changes Made:
+* Updated serverstart files
+
 §b§lChanges Made:
 * Updated forge to 2838
+* Remove project red enchant from quark enchanting table
+* Fix recipe conflict (Block of sticks)
+* Lower skeleton warrior spawns
+* Lower weed rates
+* Enderio guide information added
 * Added beetroot recipe
 * Allow more dimensions to have nuclearcraft ores
 * Added information on how to get dimlet parts
