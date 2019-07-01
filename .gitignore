@@ -5,6 +5,7 @@ overrides/config/Chikachi/discordintegration.json
 # no mod binaries, beside overrides mods
 *.jar
 overrides/mods/*.jar
+overrides/mods/memory_repo/*
 !overrides/mods/Flamingo-1\.12-v1\.11\.jar
 !overrides/mods/Nutrition-1\.12\.2-4\.3\.0\.jar
 !overrides/mods/Computronics-1\.12\.2-1\.6\.6\.jar
@@ -44,4 +45,7 @@ overrides/config/agricraft/json/defaults/vanilla/*
 overrides/config/agricraft/json/defaults/vanilla/plants/*
 !overrides/config/agricraft/json/defaults/vanilla/plants\.json
 
-
+overrides/config/brandon3055/ProjectIntelligence/GuiConfig\.json
+overrides/config/brandon3055/ProjectIntelligence/GuiStyle/ActiveStyle\.json
+overrides/config/brandon3055/ProjectIntelligence/GuiStyle/DefaultPresets/darcula\.json
+overrides/config/brandon3055/ProjectIntelligence/GuiStyle/DefaultPresets/vanilla\.json
