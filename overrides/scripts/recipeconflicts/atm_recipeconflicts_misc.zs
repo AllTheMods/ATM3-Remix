@@ -574,3 +574,13 @@ print(" ======================================================== ");
 		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],
 		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]
 	]);
+
+//====== Paper Cup ======
+//
+
+	recipes.remove(<xlfoodmod:paper_cup>);
+	recipes.addShaped("PaperCup", <xlfoodmod:paper_cup>*3, [
+		[null, null, null],
+		[<minecraft:paper>, null, <minecraft:paper>],
+		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
+	]);
