@@ -302,7 +302,7 @@ print(" ====================================================== ");
 		
 	// Creative Builder's Wand
 	recipes.addShapeless("CreativeWand", <extrautils2:itemcreativebuilderswand>, [
-		<atmtweaks:item_material>.reuse(), <extrautils2:itembuilderswand>, <betterbuilderswands:wandunbreakable>
+		<atmtweaks:item_material>.reuse(), <extrautils2:itembuilderswand>, <betterbuilderswands:wandunbreakable:14>
 		]);
 	<extrautils2:itemcreativebuilderswand>.addTooltip("Does not consume the ATM Star at all when crafted");
 	

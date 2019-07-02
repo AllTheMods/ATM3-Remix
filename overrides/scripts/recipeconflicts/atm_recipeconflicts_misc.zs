@@ -574,3 +574,23 @@ print(" ======================================================== ");
 		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],
 		[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]
 	]);
+
+//====== Paper Cup ======
+//
+
+	recipes.remove(<xlfoodmod:paper_cup>);
+	recipes.addShaped("PaperCup", <xlfoodmod:paper_cup>*3, [
+		[null, null, null],
+		[<minecraft:paper>, null, <minecraft:paper>],
+		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
+	]);
+	
+//====== Weather Sensor ======
+//
+
+	recipes.remove(<quark:rain_detector>);
+	recipes.addShaped("WeatherSensor", <quark:rain_detector>, [
+		[<minecraft:glass>, <minecraft:glass>, <minecraft:glass>],
+		[<minecraft:quartz>, <minecraft:quartz>, <minecraft:quartz>],
+		[<minecraft:purpur_slab>, <minecraft:purpur_slab>, <minecraft:purpur_slab>]
+	]);
