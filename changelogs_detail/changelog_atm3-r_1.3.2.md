@@ -11,6 +11,7 @@
 * Config changes/addition to help prevent client disconnects
 * Disable auto-3rd person view when flying
 * Disable Quark's enchanting system
+* One less oil in world for oil unification
 
 §b§lMods Added:
 * ChickenChunks 1.8.+
