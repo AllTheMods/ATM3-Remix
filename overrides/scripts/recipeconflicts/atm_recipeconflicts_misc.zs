@@ -232,12 +232,12 @@ print(" ======================================================== ");
 
 //======Minecolony Builder conflict ======
 //
-	recipes.remove(<structurize:sceptergold>);
-	recipes.addShaped(<structurize:sceptergold>, [
-		[null,            <ore:cobblestone>, <ore:cobblestone>],
-		[null,            <ore:stickWood>,   <ore:cobblestone>],
-		[<ore:stickWood>, null,              null]
-		]);
+//	recipes.remove(<structurize:sceptergold>);
+//	recipes.addShaped(<structurize:sceptergold>, [
+//		[null,            <ore:cobblestone>, <ore:cobblestone>],
+//		[null,            <ore:stickWood>,   <ore:cobblestone>],
+//		[<ore:stickWood>, null,              null]
+//		]);
 
 //====== diamond nugget =====
 // conflicts with open computers diamond chip
@@ -248,12 +248,12 @@ print(" ======================================================== ");
 //====== Minecolonies Scan Tool ======
 // conflicting with iron builder's wand
 //
-	recipes.remove(<structurize:sceptersteel>);
-	recipes.addShaped(<structurize:sceptersteel>, [
-		[null, <ore:paneGlass>, <ore:ingotIron>],
-		[null, <ore:stickWood>, <ore:paneGlass>],
-		[<ore:stickWood>, null, null]
-		]);
+//	recipes.remove(<structurize:sceptersteel>);
+//	recipes.addShaped(<structurize:sceptersteel>, [
+//		[null, <ore:paneGlass>, <ore:ingotIron>],
+//		[null, <ore:stickWood>, <ore:paneGlass>],
+//		[<ore:stickWood>, null, null]
+//		]);
 
 
 //====== Interchangeable TR/IC2 machine frames ======
