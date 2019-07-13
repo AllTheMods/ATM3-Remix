@@ -271,6 +271,46 @@
       "id": "environmentalmaterials:alabaster:15"
     },
     {
+      "target": "white",
+      "weight": 4,
+      "id": "quark:crystal:0"
+    },
+    {
+      "target": "red",
+      "weight": 4,
+      "id": "quark:crystal:1"
+    },
+    {
+      "target": "orange",
+      "weight": 4,
+      "id": "quark:crystal:2"
+    },
+    {
+      "target": "yellow",
+      "weight": 4,
+      "id": "quark:crystal:3"
+    },
+    {
+      "target": "lime",
+      "weight": 4,
+      "id": "quark:crystal:4"
+    },
+    {
+      "target": "cyan",
+      "weight": 4,
+      "id": "quark:crystal:5"
+    },
+    {
+      "target": "blue",
+      "weight": 4,
+      "id": "quark:crystal:6"
+    },
+    {
+      "target": "purple",
+      "weight": 4,
+      "id": "quark:crystal:7"
+    },
+    {
       "target": "black",
       "weight": 30,
       "id": "environmentalmaterials:basalt"

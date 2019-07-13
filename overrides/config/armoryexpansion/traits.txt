@@ -139,6 +139,7 @@
   "lightweight",
   "heavy_armor",
   "poisonous_armor",
+  "tom_and_jerry_armor",
   "vengeful_armor",
   "hearts",
   "superheat",
