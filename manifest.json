@@ -10,8 +10,8 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "All the Mods 3 - Remix",
-  "version": "1.3.2",
+  "name": "All the Mods 3 - Remix 1.4alpha1",
+  "version": "1.4.0",
   "author": "atmteam",
   "projectID": 301845,
   "files": [
@@ -137,7 +137,7 @@
     },
     {
       "projectID": 250277,
-      "fileID": 2648892,
+      "fileID": 2722271,
       "required": true
     },
     {
@@ -1076,11 +1076,6 @@
       "required": true
     },
     {
-      "projectID": 309136,
-      "fileID": 2666556,
-      "required": true
-    },
-    {
       "projectID": 293505,
       "fileID": 2624118,
       "required": true
@@ -1128,11 +1123,6 @@
     {
       "projectID": 273430,
       "fileID": 2459131,
-      "required": true
-    },
-    {
-      "projectID": 245506,
-      "fileID": 2733167,
       "required": true
     },
     {
@@ -1231,8 +1221,8 @@
       "required": true
     },
     {
-      "projectID": 282415,
-      "fileID": 2658551,
+      "projectID": 283525,
+      "fileID": 2732828,
       "required": true
     },
     {
@@ -1246,13 +1236,13 @@
       "required": true
     },
     {
-      "projectID": 293602,
-      "fileID": 2718638,
+      "projectID": 228816,
+      "fileID": 2699056,
       "required": true
     },
     {
-      "projectID": 228816,
-      "fileID": 2699056,
+      "projectID": 293602,
+      "fileID": 2718638,
       "required": true
     },
     {
@@ -1397,7 +1387,7 @@
     },
     {
       "projectID": 247921,
-      "fileID": 2648891,
+      "fileID": 2670570,
       "required": true
     },
     {
