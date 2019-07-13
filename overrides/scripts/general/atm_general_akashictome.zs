@@ -126,22 +126,6 @@ print(" ==================================================== ");
 				},
 				Damage: 0 as short
 			},
-			roots1: {
-				id: "roots:spellcraft_book",
-				Count: 1 as byte,
-				tag: {
-					"akashictome:definedMod": "roots1"
-				},
-				Damage: 0 as short
-			},
-			roots2: {
-				id: "roots:ritual_book",
-				Count: 1 as byte,
-				tag: {
-					"akashictome:definedMod": "roots2"
-				},
-				Damage: 0 as short
-			},
 			opencomputers: {
 				id: "opencomputers:tool",
 				Count: 1 as byte,
@@ -195,14 +179,6 @@ print(" ==================================================== ");
 				Count: 1 as byte,
 				tag: {
 					"akashictome:definedMod": "rftoolsdim"
-				},
-				Damage: 0 as short
-			},
-			roots: {
-				id: "roots:herblore_book",
-				Count: 1 as byte,
-				tag: {
-					"akashictome:definedMod": "roots"
 				},
 				Damage: 0 as short
 			},
@@ -302,6 +278,22 @@ print(" ==================================================== ");
 				},
 				Damage: 0 as short
 			},
+			roots: {
+				id: "patchouli:guide_book",
+				Count: 1 as byte,
+				tag: {
+					"patchouli:book": "roots:roots_guide"
+				},
+				Damage: 0 as short
+			},
+			pneumaticcraft: {
+				id: "patchouli:guide_book",
+				Count: 1 as byte,
+				tag: {
+					"patchouli:book": "pneumaticcraft:book"
+				},
+				Damage: 0 as short
+			},
 			modcurrency: {
 				id: "modcurrency:guidebook",
 				Count: 1 as byte,
@@ -309,19 +301,9 @@ print(" ==================================================== ");
 					"akashictome:definedMod": "modcurrency"
 				},
 				Damage: 0 as short
-			},
-			gbook: {
-				id: "gbook:guidebook",
-				Count: 1 as byte,
-				tag: {
-					"akashictome:defineMod": "gbook",
-					Book: "minecolonies:book/minecolonies.xml"
-				},
-				Damage: 0 as short
 			}
 		}
 	}
-	
 	);
 
 	//metadata to item
@@ -355,16 +337,13 @@ print(" ==================================================== ");
 		<thermalfoundation:tome_lexicon>, 
 		<guideapi:bloodmagic-guide>, 
 		<actuallyadditions:item_booklet>, 
-		<roots:spellcraft_book>, 
-		<roots:ritual_book>, 
 		<opencomputers:tool:4>, 
 		<cookingforblockheads:recipe_book:1>, 
 		<xnet:xnet_manual>, 
 		<rftoolscontrol:rftoolscontrol_manual>, 
 		<integrateddynamics:on_the_dynamics_of_integration>, 
 		<wizardry:book>, 
-		<rftoolsdim:rftoolsdim_manual>, 
-		<roots:herblore_book>, 
+		<rftoolsdim:rftoolsdim_manual>,  
 		<embers:codex>, 
 		<rftools:rftools_shape_manual>, 
 		<guideapi:mobtotems-mobtotems_guide>, 
@@ -378,8 +357,9 @@ print(" ==================================================== ");
 		<guideapi:inventorygenerators-guide_book>,
 		<valkyrielib:guide>,
 		<deepresonance:dr_manual>,
+		<patchouli:guide_book>.withTag({"patchouli:book": "roots:roots_guide"}),
+		<patchouli:guide_book>.withTag({"patchouli:book": "pneumaticcraft:book"}),
 		<modcurrency:guidebook>,
-		<gbook:guidebook>.withTag({Book:"minecolonies:book/minecolonies.xml"})
 		] as IItemStack[];
 
 	for itemBook in addedBooks {
