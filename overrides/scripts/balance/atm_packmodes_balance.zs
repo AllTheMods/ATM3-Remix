@@ -319,7 +319,6 @@ print(" ====================================================== ");
 	
 	//Blutonium Processing
 		recipes.removeShaped(BRBlutonium);
-		recipes.addShapeless("crtBRblufix", BRBlutonium * 9, [<bigreactors:ingotblutonium>]);
 		mods.thermalexpansion.Crucible.addRecipe(lCyanite, BRCyanDust, 200000);
 		mods.thermalexpansion.Refinery.addRecipe(lMenril, BRBlueDust, lCyanite, 200000);
 		BRBlueDust.addTooltip("Extracted from fluid cyanite");
