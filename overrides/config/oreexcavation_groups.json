@@ -12,5 +12,9 @@
     "cropPotato",
     "cropCarrot",
     "cropNetherWart"
-  ]
+  ],
+  "gamestages": {
+    "examplemod:example_block1": "example_stage1",
+    "examplemod:example_block2": "example_stage2"
+  }
 }
