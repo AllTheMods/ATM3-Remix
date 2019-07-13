@@ -1,1 +1,14 @@
-[]
+[ 
+  {	
+	"dimension": 0,
+	"block": "minecraft:grass",
+	"biome": "Roofed Forest",
+    "mobs": [
+      {
+        "mob": "minecraft:evocation_illager",
+        "weight": 1,
+        "groupcountmax": 1
+      }
+    ]
+  }
+ ][]
