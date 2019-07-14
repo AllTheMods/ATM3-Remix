@@ -3,7 +3,8 @@
 	"dimension": 0,
 	"block": "minecraft:grass",
 	"biome": "Roofed Forest",
-    "mobs": [
+	"maxlight":1,
+	"mobs": [
       {
         "mob": "minecraft:evocation_illager",
         "weight": 1,
