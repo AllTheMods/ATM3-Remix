@@ -289,7 +289,7 @@
         </planet>
     </star>
     <star name="Norse Mythology" temp="170" x="-200" y="80" size="1.0" numPlanets="0" numGasGiants="0" blackHole="true">
-        <planet name="Asgard" DIMID="34">
+        <planet name="Asgard" DIMID="70">
             <isKnown>false</isKnown>
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>0.37350494,0.9763119,1.0</skyColor>
