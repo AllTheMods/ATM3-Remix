@@ -17,6 +17,7 @@ overrides/config/tellme
 overrides/config/wizardry
 overrides/config/multimob/modInformation
 overrides/config/NetherEx/Biomes
+!overrides/config/NetherEx/Biomes/nex/*
 overrides/config/jei/worldSettings\.cfg
 overrides/config/betterfps\.json
 overrides/config/LLOverlayReloaded\.cfg
