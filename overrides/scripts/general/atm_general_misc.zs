@@ -555,10 +555,6 @@ recipes.remove(<minecraft:chest>);
 //
    mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:dynamiccell>);
    mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:smalldust:53>, <techreborn:dynamiccell>, 2500);
-   
-//====== Add Geiger Counter to Initial Inventory ======
-//
-   mods.initialinventory.InvHandler.addStartingItem(<nuclearcraft:geiger_counter>);
 	
 //====== Project Bench ======
 //
