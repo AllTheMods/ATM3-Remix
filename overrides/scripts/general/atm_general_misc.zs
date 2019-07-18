@@ -574,7 +574,6 @@ recipes.remove(<minecraft:chest>);
    
 //====== Chunkloader Rename ======
 //
-	<weirdinggadget:weirding_gadget>.displayName="Weirding Gadget (Chunk loader)"; 
 	<extrautils2:chunkloader>.displayName="Chunk Loading Ward (Chunk loader)"; 
 //	<ic2:te:82>.displayName="Chunk loader"; 
 	<opencomputers:upgrade:4>.displayName="Chunk loader Upgrade"; 

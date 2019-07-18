@@ -54,9 +54,6 @@ print(" ========================================================================
 //====== Chunkloaders ======
 //This will disable crafting for chunkloaders. This is to limit players from loading too many chunks. Use discretion. 
 
-	//Weirding Gadget
-		recipes.remove(<weirdinggadget:weirding_gadget>);
-		
 	//Chunk Loader (Industrial Craft 2)
 		recipes.remove(<ic2:te:82>);		
 		
