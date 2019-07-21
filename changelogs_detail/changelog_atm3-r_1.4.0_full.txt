@@ -1,0 +1,1093 @@
+All the Mods 3 - Remix 1.3.2 to All the Mods 3 - Remix 1.4beta 1.4.0
+
+Added 4 files:
+	- In Control!
+	- LagGoggles
+	- Millénaire
+	- Mystic World
+
+Updated 52 files:
+	 The Betweenlands (went from The Betweenlands v3.4.9 to The Betweenlands v3.4.10):
+		The Betweenlands v3.4.10:
+			Fixes:
+
+			- Fixed Repeller not repelling fireballs and pyrad flames
+
+			- Fixed some datawatcher errors that may have caused some mod incompatibilities
+
+			- Fixed portals not respecting world borders
+
+			- Fixed Rings sometimes not consuming XP correctly
+
+			- Fixed a rare crash caused by Wights' Volatile Souls
+
+			- Fixed Dreadful Peat Mummy being able to attack while dying
+
+			- Fixed a rare genlayer crash
+
+			- Fixed an incompatibility with OptiFine's "Render Quality" option, causing the screen to be halved (more or less)
+
+			- Fixed Lurker Skin Raft dupe
+
+			- Fixed Sulfur Furnace to consume lava buckets and similar items that don't usually get consumed
+
+	Actually Additions (went from ActuallyAdditions-1.12.2-r148.jar to ActuallyAdditions-1.12.2-r149.jar):
+		1.12.2-r149:
+			* Items can now be removed from the bio reactor.
+			* Mining lens energy use is now a config.
+			* Items converted by the atomic reconstructor can no longer be further converted until being picked up.
+
+	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.5.0-139-UNSTABLE build -139 for 1.12.2 to AdvancedRocketry 1.12.2-1.6.0-160-UNSTABLE build -160 for 1.12.2):
+		AdvancedRocketry 1.12.2-1.6.0-160-UNSTABLE build -160 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-160
+
+			 * [ Fix crash on initial game creation load, fixes #1636](https://github.com/zmaster587/AdvancedRocketry/commit/52b631e6a4c1cc2)
+		AdvancedRocketry 1.12.2-1.6.0-159-UNSTABLE build -159 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-159
+
+			 * [ Fix crash on initial game creation load, fixes #1636](https://github.com/zmaster587/AdvancedRocketry/commit/52b631e6a4c1cc2)
+		AdvancedRocketry 1.12.2-1.6.0-158-UNSTABLE build -158 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-158
+
+			 * [ missed space village file](https://github.com/zmaster587/AdvancedRocketry/commit/7062d9a77e2081f)
+		AdvancedRocketry 1.12.2-1.6.0-157-UNSTABLE build -157 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-157
+
+			 * [ missed space village file](https://github.com/zmaster587/AdvancedRocketry/commit/7062d9a77e2081f)
+		AdvancedRocketry 1.12.2-1.6.0-155-UNSTABLE build -155 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-155
+
+			 * [ fix lag caused by checking every possible entity to spawn and creating a new entity each time, fixes #1624](https://github.com/zmaster587/AdvancedRocketry/commit/943f031e9dae066)
+		AdvancedRocketry 1.12.2-1.6.0-154-UNSTABLE build -154 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-154
+
+			 * [ fix lag caused by checking every possible entity to spawn and creating a new entity each time, fixes #1624](https://github.com/zmaster587/AdvancedRocketry/commit/943f031e9dae066)
+			 * [ Fix recipes loading before registering to the ore dict](https://github.com/zmaster587/AdvancedRocketry/commit/03ff5a9519cf0c2)
+		AdvancedRocketry 1.12.2-1.6.0-153-UNSTABLE build -153 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-153
+
+			 * [ add compat other bed mods, see #1568](https://github.com/zmaster587/AdvancedRocketry/commit/026cc629b572647)
+		AdvancedRocketry 1.12.2-1.6.0-152-UNSTABLE build -152 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-152
+
+			 * [ unbreak JEI interaction bug introduced in build 140, fixes #1610](https://github.com/zmaster587/AdvancedRocketry/commit/7ab1aa17cf88b83)
+		AdvancedRocketry 1.12.2-1.6.0-151-UNSTABLE build -151 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-151
+
+			 * [ update basalt texture, thanks ??-???](https://github.com/zmaster587/AdvancedRocketry/commit/d637eb5e5f443fd)
+			 * [ add language entry to the entity itself](https://github.com/zmaster587/AdvancedRocketry/commit/955279f1d542853)
+		AdvancedRocketry 1.12.2-1.6.0-150-UNSTABLE build -150 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-150
+
+			 * [ make sure to grab the correct obfuscated name too. Fixes #1611](https://github.com/zmaster587/AdvancedRocketry/commit/88bc6a108b598c2)
+		AdvancedRocketry 1.12.2-1.6.0-149-UNSTABLE build -149 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-1.6.0-149
+
+			 * [ update forge](https://github.com/zmaster587/AdvancedRocketry/commit/eff36116c3207c9)
+
+	Brandon's Core (went from BrandonsCore-1.12.2-2.4.12.205-universal to BrandonsCore-1.12.2-2.4.17.208-universal):
+		BrandonsCore-1.12.2-2.4.17.208-universal:
+			No changelog provided.
+		BrandonsCore-1.12.2-2.4.16.207-universal:
+			Hot fix for server crash introduced by the last update.
+
+	Classic Bars (went from classicbar-0.3.4c.jar to classicbar-0.3.5.jar):
+		classicbar-0.3.5.jar:
+			* Fixes #32 - hunger bar not syncing correctly when eating an always edible item when iblis is installed
+
+			* Implements #33 - individual number config bars
+
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.4.1.jar to CommonCapabilities-1.12.2-2.4.4.jar):
+		CommonCapabilities-1.12.2-2.4.4.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Store counts in PrototypedIngredientAlternativesItemStackOredictionary
+			 Required for CyclopsMC/IntegratedDynamics#752
+
+			Fixes:
+			* Fix IngredientComponent registry crash when CommonCaps is not available
+		CommonCapabilities-1.12.2-2.4.3.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Improve performance of storage wrapping by avoiding hasCapability calls
+		CommonCapabilities-1.12.2-2.4.2.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Additions:
+
+			Changes:
+
+			Fixes:
+			* Add slotless item handler for Thermal Expansion caches
+			 This fixes Integrated Crafting not being able to craft
+			 with 64+ items at a time when extracting from caches.
+			 Closes CyclopsMC/IntegratedCrafting#27
+			* Fix slotted extraction from slotless item handler emitting wrong items
+			 This fixes a dupe exploit when AE2 is used over IT item tunnels.
+			 Closes CyclopsMC/IntegratedTunnels#166
+
+	Cooking for Blockheads (went from CookingForBlockheads_1.12.2-6.4.70.jar to CookingForBlockheads_1.12.2-6.4.71.jar):
+		CookingForBlockheads_1.12.2-6.4.71.jar:
+			Fixed custom 2x2 recipes (e.g. by CraftTweaker) not working correctly in the Cooking Table / Recipe Book
+
+			Fixed Cow in a Jar recipe showing up in JEI even if it is disabled
+
+			Fixed InventoryTweaks sorting buttons being aligned incorrectly in fridge and large counter GUIs
+
+			Fixed fridge not rendering items when it's flipped (by Skydragonsz)
+
+			Added Korean Translation (by cs8minty)
+
+	Cyclops Core (went from CyclopsCore-1.12.2-1.3.0.jar to CyclopsCore-1.12.2-1.4.0.jar):
+		CyclopsCore-1.12.2-1.4.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Lib changes:
+			* Throw exception instead of warning on lost ingred during movement
+			 This fixed the problem where items could silently go lost
+			 in Integrated Tunnels network upon movement failures.
+
+			Lib additions:
+			* Add getter for scroll position in GuiScrollBar
+
+	Draconic Evolution (went from Draconic-Evolution-1.12.2-2.3.22.343-universal to Draconic-Evolution-1.12.2-2.3.23.345-universal):
+		Draconic-Evolution-1.12.2-2.3.23.345-universal:
+			######## 2.3.23.345 ########
+			-ReFixed Baubles crash. (Seems last fix got lost in the mail)
+			-Fixed broken creative flux capacitor
+
+			######## 2.3.22.343 ########
+			-Fixed crash when Baubles is not installed.
+			-Optimized retro gen a little.
+			-Fixed some compounding residual particle lag.
+
+			######## 2.3.21.342 ########
+			-Fixed impossible null pointer exception in ExplosionFX
+			-Added compatibility between ICustomArmor and Baubles (Allows other mods to add baubles DE armor abilities)
+			-Fixed capacitor only charging baubles when in a baubles slot.
+			-Fixed capacitor always charging baubles when in a baubles slot. (even when disabled)
+			-Added optional key bindings to cycle tool AOE.
+			-Added fully upgraded versions of all tools and armor to creative menu (and JEI).
+			-Added item blacklist for draconium chest.
+			-Particle gen render distance now depends on particle sale.
+			-Fixed Particle gen tile not getting removed when the tile is destroyed.
+			-Fixed upgrading tools not copying enchantments.
+			-Shift clicking to add fuel to a Dislocator now adds 64 at a time.
+			-Fixed out of order rows in GuiToolConfig
+			-Fixed ore generating in chaos island rings when ore gen is disabled.
+			-Fixed fusion crafter comparator output not accounting for injector tier.
+
+	Extreme Reactors (went from ExtremeReactors-1.12.2-0.4.5.50.jar to ExtremeReactors-1.12.2-0.4.5.67.jar):
+		ExtremeReactors-1.12.2-0.4.5.67.jar:
+			- Reworked steam distribution to coolant ports in output mode: each port will get an equal amount of steam. If any port don't accept the full amount of their share the left over steam is available to the remaining ports.
+			- Fix Turbine Bearing collision bounding box. Close #205
+			- Bumped version to 0.4.5.67
+		ExtremeReactors-1.12.2-0.4.5.66.jar:
+			- I've changed the way Reactors and Turbines send out the available power each tick. They will do it now in only one go, by assigning an equal amount of power to each power tap. Each power tap will then send their share to the linked cable/machine up to the amount that the cable/machine accept. Any amount of power not accepted by the cable/machine will remain in the internal buffer of the Reactor or Turbine. In the end you may need more power taps in your Reactor or Turbine. Close #201
+
+			- Bumped version to 0.4.5.66
+		ExtremeReactors-1.12.2-0.4.5.65.jar:
+			!!! BACKUP YOUR WORLDS BEFORE UPDATING !!!
+
+			With support for 1.13.x coming soon, I've made the first step and flattened all my blocks and items. This are the blocks/items affected:
+
+			- Yellorite ore, Benitoite ore, Anglesite ore
+			- Yellorium / Cyanite / Graphite / Blutonium / Ludicrite / Steel metal blocks (and their item forms)
+			- Yellorium / Cyanite / Graphite / Blutonium / Ludicrite / Steel ingots and dusts
+			- Benitoite and Anglesite crystals
+
+			If you have those items in chests/storage/machines other then vanillas one YOU MUST move them to vanilla chests before updating or you end up loosing them.
+
+			Many mods do not use the system vanilla have in place to address this kind of changes. Iron Chests form the Iron Chest mod are OK (if you are using version 1.12.2-7.0.59.842 or newer of Iron Chest the other chest types should be OK too)
+
+			The full changelog is following
+
+			Z
+
+			!!! BACKUP YOUR WORLDS BEFORE UPDATING !!!
+
+			1.12.2-0.4.5.65
+
+			- Updated language files. Thanks to kellixon for some additional Russian translations
+
+			- Fixed Simplified Chinese language file
+
+			- Fixed the size of some icons
+			- Switched to ZeroCore generic Data Fixes / Data Walker support & code cleanup
+			- Switched to stable MCP mappings for MC 1.12.2
+			- Updated ZeroCore version to 1.12.2-0.1.2.8 with more strict version ranges
+			- Bumped version to 1.12.2-0.4.5.65
+
+			1.12.2-0.4.5.63
+
+			- This is an ALPHA relase. Backup your worlds and be safe!
+
+			- Items and block flattening to prepare for the jump to 1.13.x:
+
+			 - the 3 ore blocks and their items (yellorite ore, benitoite ore, anglesite ore)
+
+			 - the metal blocks and their items (Yellorium, Cyanite, Graphite, Blutonium, Ludicrite, Steel)
+
+			 - ingots (Yellorium, Cyanite, Graphite, Blutonium, Ludicrite, Steel)
+
+			 - dusts (Yellorium, Cyanite, Graphite, Blutonium, Ludicrite, Steel)
+
+			 - minerals (benitoite and anglesite crystals)
+
+			- DataFixer are in place so you should not loose any in-world blocks or items placed in inventories (if fellow mods play nice)
+
+			- Fixed TileEntities registration to use the, correct, ResourceLocation form. Converters are in place so you should not loose any state or configuration of the Reactor/Turbine blocks
+
+			- Moved ALL shaped/shapeless recipes to JSON files so pack makers could change my recipes more easily
+
+			- Tweaked some recipes a bit. When applicaple, I replaced items with their Ore Dictionary rappresentation
+
+			- Tweaked the models for the Reactor/Turbine casing cores and the Turbine shaft and blades. Now the are 3.141592% more cool
+
+			- For more informations, please check [https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2731713-extreme-reactors-a-big-reactors-port-to-mc-1-9-4-1?page=9#c202](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2731713-extreme-reactors-a-big-reactors-port-to-mc-1-9-4-1?page=9#c202)
+		ExtremeReactors-1.12.2-0.4.5.63.jar:
+
+
+			- This is an ALPHA relase. Backup your worlds and be safe!
+
+			- Items and block flattening to prepare for the jump to 1.13.x:
+
+			- the 3 ore blocks and their items (yellorite ore, benitoite ore, anglesite ore)
+
+			- the metal blocks and their items (Yellorium, Cyanite, Graphite, Blutonium, Ludicrite, Steel)
+
+			- ingots (Yellorium, Cyanite, Graphite, Blutonium, Ludicrite, Steel)
+
+			- dusts (Yellorium, Cyanite, Graphite, Blutonium, Ludicrite, Steel)
+
+			- minerals (benitoite and anglesite crystals)
+
+			- DataFixer are in place so you should not loose any in-world blocks or items placed in inventories (if fellow mods play nice)
+
+			- Fixed TileEntities registration to use the, correct, ResourceLocation form. Converters are in place so you should not loose any state or configuration of the Reactor/Turbine blocks
+			- Moved ALL shaped/shapeless recipes to JSON files so pack makers could change my recipes more easily
+			- Tweaked some recipes a bit. When applicaple, I replaced items with their Ore Dictionary rappresentation
+
+			- Tweaked the models for the Reactor/Turbine casing cores and the Turbine shaft and blades. Now the are 3.141592% more cool
+
+			- For more informations, please check [https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2731713-extreme-reactors-a-big-reactors-port-to-mc-1-9-4-1?page=9#c202](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2731713-extreme-reactors-a-big-reactors-port-to-mc-1-9-4-1?page=9#c202)
+
+	FTB Library (went from FTBLib-5.4.3.124.jar to FTBLib-5.4.3.129.jar):
+		FTBLib-5.4.3.129.jar:
+			No changelog provided.
+		FTBLib-5.4.3.127.jar:
+			 * Added minimum width to button list base gui - LatvianModder
+		FTBLib-5.4.3.126.jar:
+			 * Improved runLater(), no longer cancer code - LatvianModder
+		FTBLib-5.4.3.125.jar:
+			 * Added better tooltips in config GUI - LatvianModder
+			 * Added better helper methods in NameMap - LatvianModder
+			 * Added #hex number parsing in int config - LatvianModder
+
+	FTB Utilities (went from FTBUtilities-5.4.0.99.jar to FTBUtilities-5.4.0.100.jar):
+		FTBUtilities-5.4.0.100.jar:
+			 * Updated links to new curseforge - LatvianModder
+			 * FTB Library changes - LatvianModder
+
+	Good Ol' Currency (went from Currency 1.12-1.3.9 to Currency 1.12-1.3.11):
+		Currency 1.12-1.3.11:
+			Bugfix:
+
+			 * ACTUALLY fixed the ATM recipe issue.
+
+	Industrial Craft (went from industrialcraft-2-2.8.164-ex112.jar to industrialcraft-2-2.8.169-ex112.jar):
+		industrialcraft-2-2.8.169-ex112.jar:
+			* Fix a few things regarding the Classic profile. (estebes)
+		industrialcraft-2-2.8.168-ex112.jar:
+			* Create OreDictionary entry for the iridium ore (ingotIridium) (estebes)
+		industrialcraft-2-2.8.167-ex112.jar:
+			* Fix some entries (estebes)
+		industrialcraft-2-2.8.166-ex112.jar:
+			* Fix missing ; (estebes)
+
+	Industrial Foregoing (went from industrialforegoing-1.12.2-1.12.12-236.jar to industrialforegoing-1.12.2-1.12.13-237.jar):
+		1.12.13:
+			* Increased Version (Buuz135)
+			* Just pink gets highlighted, closes #576 (Buuz135)
+			* Fixed fluid pump thinking that flowing fluids were a full fluid, closes #514 and closes #568 (Buuz135)
+			* Fluid Dictionary Converter now renders the name of fluids without a bucket, closes #557 (Buuz135)
+			* Fertilizer now works inside dispensers, closes #570 (Buuz135)
+			* Fixed Enchantment Applicator accepting stack sizes bigger than 1, closes #571 (Buuz135)
+			* Fixed Oredictionary issues, closes #585 (Buuz135)
+			* Fixed Plant interactor not harvesting plants if the bottom block in the area couldnt be broken, closes #573 (Buuz135)
+			* Infinity drill's mining/digging level is max now, closes #560 (Buuz135)
+			* Create CODEOFCONDUCT.md (Buuz135)
+			* Update contributors.json (Buuz135)
+			* Create FUNDING.yml (Buuz135)
+			* Update contributors.json (Coded)
+
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.14.jar to IntegratedDynamics-1.12.2-1.0.17.jar):
+		IntegratedDynamics-1.12.2-1.0.17.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Fix oredict recipe item input quantities being lost, Closes #752
+			* Fix crash when applying more variables than an operator can accept
+			 This can be required in complex currying situations
+			 where variables that don't fit into the inputs of one operator
+			 should be delegated to the resulting operator.
+			 Closes #754
+			* Gracefully throw an evaluation error when building infinite operators, Closes #755
+		IntegratedDynamics-1.12.2-1.0.16.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Fix performance issue when importing/exporting in IT
+			 Closes CyclopsMC/IntegratedTunnels#170
+			* Add type check when using combined operators with operators, Closes #749
+		IntegratedDynamics-1.12.2-1.0.15.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Additions:
+			* Expose slotted ingredient networks
+			 This significantly improves performance when external handlers are
+			 interacting with networks, such as hoppers inserting or extracting
+			 items.
+			 Closes CyclopsMC/IntegratedTunnels#167
+
+			Fixes:
+			* Fix ingredients duping when externals are interacting with IT interfaces
+			 Fixes dupe bug with Thermal Expansion Item Allocator
+			 Closes CyclopsMC/IntegratedTunnels#169
+			* Fix counting in infinite lists causing infinite loop and crashing, Closes #748
+			* Fix LP list creation incorrectly remembering values after deselecting, Closes #739
+			* Improve Named and Uniquely Named value type categories, Closes #741, Closes #742
+			* Fix mechanical machines not working if internal energy buffer too small
+			 Even if there is a valid energy network available., Closes #743
+			* Set default ingredientNetworkObserverFrequencyForced to 0
+			 This fixes a problem where IT networks would not get re-indexed
+			 by AE2 storage terminals.
+			 This requires a config reset!
+			 Related to CyclopsMC/IntegratedTunnels#166
+
+	Integrated Tunnels (went from IntegratedTunnels-1.12.2-1.6.9.jar to IntegratedTunnels-1.12.2-1.6.10.jar):
+		IntegratedTunnels-1.12.2-1.6.10.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.4.0 or higher.
+
+			Fixes:
+			* Improve handling of inconsistent simulation-mode transfer failures
+
+			 No more console warning will be logged.
+			 Instead, the error will be shown in the respective part.
+
+			 Items will be emitted into the world (disableable),
+			 and other ingredient types will be voided
+			 upon such errors.
+
+			 Parts will now go in error-mode once such an error occurs
+			 to avoid ingredients continuously going lost.
+
+			 Related to #169
+
+	Iron Chests (went from ironchest-1.12.2-7.0.69.845.jar to ironchest-1.12.2-7.0.71.846.jar):
+		ironchest-1.12.2-7.0.71.846.jar:
+			Bugfixes:
+
+			 * The long time bug of inventories disappearing when the chests are in the same chunk as a tinker's smeltery should FINALLY be fixed.
+			 * Hopefully fix the TPS issue regarding hoppers.
+
+	JourneyMap (went from journeymap-1.12.2-5.5.5b7 to journeymap-1.12.2-5.5.5b9):
+		journeymap-1.12.2-5.5.5b9:
+			JourneyMap 1.12.2-5.5.5b9 for Minecraft 1.12.2
+
+			Requirements:
+
+			 * Java 8
+			 * Minecraft 1.12.2
+			 * Forge 14.23.5.2768
+			General Information:
+
+			 * See [http://journeymap.info/](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252f) for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
+			 * See [http://journeymap.info/Support](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252fSupport) for information on getting technical support.
+			 * Implements [JourneyMap API v1.12-1.4](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbitbucket.org%252fTeamJM%252fjourneymap-api)
+			CHANGELOG (2019-07-09-11:58:50):
+
+			Beta 9
+
+			 * Fix: Changed how CCL integration is handled. Previous solution broke mapping if ConnectedTexturesMod is installed.
+			Beta 1-8
+
+			 * Feature: Waypoint options allows custom server teleport command. Can handle {x}{y}{x}{name}{dim} fields.
+			 * Feature: Setting log level to 'OFF' prevents Journeymap log info displaying in the [F3] Debug Screen.
+			 * Feature: Webmap - Visual indication if following player.
+			 * Feature: New Server Admin screen to modify Journeymap's server settings.
+			 * Feature: With server installed player radar shows players outside of local range; Configurable for all players or ops/admins.
+			 * Feature: Changed how configs are sent to the client to work with the new Panel. This means JM will be disabled when connecting to servers that have JM 5.5.4 or lower installed.
+			 * Feature: New mini-map Info Slots: Dimension, Light Level, Region, Game Time 12hr, Game Time 24hr
+			 * Feature: Region info in Fullscreen map following the mouse pointer(only when the mouse is near the player).
+			 * Feature: Enable or Disable all waypoints with a hotkey(Default:KEY_Z).
+			 * Feature: Two new grid options via Grid Editor: Region, Chunk and Region.
+			 * Server-Feature: Admins can now disable or enable teleporting for dimensions. Users cannot teleport to, from, or within if disabled.
+			 * Integration: Pixelmon-Reforged icon retrieval optimizations(Thanks Reforged team!). Pixelmon-Reforged v7.0.6 or higher required.
+			 * Integration: Proper handling of block rendering done by CodeChickenLib.
+			 * Change: Death waypoint 'X' will display at y:2 if player dies below y:2.
+			 * Change: Webmap - Port selection is now a text box.
+			 * Locale: Updated ru_RU.(Thanks Vlad Imangulov)
+			 * Locale: Added ru_RU Splash text.(Thanks Vlad Imangulov)
+			 * Locale: Updated fr_FR (Thanks Neerwan)
+			 * Locale: Updated zh_CN (Thanks Rick Zhong)
+			 * Bugfix: Crash when using the chat function on waypoints with names that start with special characters.
+			 * Bugfix: Saving the world with Unicode characters like Chinese using the save folder "~".
+			 * Bugfix: ModInfo respects minecraft snooper settings.
+			 * Bugfix: Webmap: Waypoints not showing up.
+			 * Bugfix: Removed some unneeded error logging.
+			 * Bugfix: Setting topo contour config to false causes NPE.
+			 * Bugfix: Missing small arrow icon when set to small icons if entity has no icon.
+			 * Bugfix: Surface mapping and Topography mapping respect the configs if disabled.
+			 * Bugfix: Webmap - Better handling of browser caching.
+			 * Bugfix: Waypoint Editor dimension list not scrollable.
+		journeymap-1.12.2-5.5.5b8:
+			JourneyMap 1.12.2-5.5.5b8 for Minecraft 1.12.2
+
+			Requirements:
+
+			 * Java 8
+			 * Minecraft 1.12.2
+			 * Forge 14.23.5.2768
+			General Information:
+
+			 * See [http://journeymap.info/](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252f) for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
+			 * See [http://journeymap.info/Support](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252fSupport) for information on getting technical support.
+			 * Implements [JourneyMap API v1.12-1.4](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbitbucket.org%252fTeamJM%252fjourneymap-api)
+			CHANGELOG (2019-07-06-13:30:45):
+
+			Beta 8
+
+			 * Change: Death waypoint 'X' will display at y:2 if player dies below y:2.
+			 * Change: Changed how players are sent to the client to prevent too large of packets. (Server and clients must be at least beta 8 for this feature to work)
+			 * Config: Added all ops have access to server admin ui. Default: 'True' -- Adjust via minecraft/configs/journeymap_server.cfg
+			 * Integration: Proper handling of block rendering done by CodeChickenLib.
+			 * Bugfix: Waypoint Editor dimension list not scrollable.
+			Beta 1-7
+
+			 * Feature: Waypoint options allows custom server teleport command. Can handle {x}{y}{x}{name}{dim} fields.
+			 * Feature: Setting log level to 'OFF' prevents Journeymap log info displaying in the [F3] Debug Screen.
+			 * Feature: Webmap - Visual indication if following player.
+			 * Feature: New Server Admin screen to modify Journeymap's server settings.
+			 * Feature: With server installed player radar shows players outside of local range; Configurable for all players or ops/admins.
+			 * Feature: Changed how configs are sent to the client to work with the new Panel. This means JM will be disabled when connecting to servers that have JM 5.5.4 or lower installed.
+			 * Feature: New mini-map Info Slots: Dimension, Light Level, Region, Game Time 12hr, Game Time 24hr
+			 * Feature: Region info in Fullscreen map following the mouse pointer(only when the mouse is near the player).
+			 * Feature: Enable or Disable all waypoints with a hotkey(Default:KEY_Z).
+			 * Feature: Two new grid options via Grid Editor: Region, Chunk and Region.
+			 * Server-Feature: Admins can now disable or enable teleporting for dimensions. Users cannot teleport to, from, or within if disabled.
+			 * Integration: Pixelmon-Reforged icon retrieval optimizations(Thanks Reforged team!). Pixelmon-Reforged v7.0.6 or higher required.
+			 * Change: Webmap - Port selection is now a text box.
+			 * Locale: Updated ru_RU.(Thanks Vlad Imangulov)
+			 * Locale: Added ru_RU Splash text.(Thanks Vlad Imangulov)
+			 * Locale: Updated fr_FR (Thanks Neerwan)
+			 * Locale: Updated zh_CN (Thanks Rick Zhong)
+			 * Bugfix: Crash when using the chat function on waypoints with names that start with special characters.
+			 * Bugfix: Saving the world with Unicode characters like Chinese using the save folder "~".
+			 * Bugfix: ModInfo respects minecraft snooper settings.
+			 * Bugfix: Webmap: Waypoints not showing up.
+			 * Bugfix: Removed some unneeded error logging.
+			 * Bugfix: Setting topo contour config to false causes NPE.
+			 * Bugfix: Missing small arrow icon when set to small icons if entity has no icon.
+			 * Bugfix: Surface mapping and Topography mapping respect the configs if disabled.
+			 * Bugfix: Webmap - Better handling of browser caching.
+
+	Just Enough Dimensions (went from justenoughdimensions-1.12.2-1.6.0-dev.20190505.222902.jar to justenoughdimensions-1.12.2-1.6.0-dev.20190711.220109.jar):
+		justenoughdimensions-1.12.2-1.6.0-dev.20190711.220109.jar:
+			 * Moved the DataTracker and jed_level.dat saving to the I/O thread
+			 * Added a 'chunkgenerator' option to select the ChunkGenerator to use in a dimension (requires a JED WorldProvider, and only supports a fixed number of constructor argument formats)
+			 * Added a ChunkGeneratorFlatJED custom flat world generator, which supports caves ('caves' in generatorOptions), and disabling modded population ('no_mod_population' in generatorOptions)
+
+	Just Enough Items (JEI) (went from jei_1.12.2-4.15.0.283.jar to jei_1.12.2-4.15.0.287.jar):
+		4.15.0:
+			* Fix #1635 Bookmark button leaks color state on hover
+			* Fix #1621 Enchanted book tooltip compatibility with other mods
+			* Fix #1611 Rare crash when cycling items
+			* Updated Polish translation (#1610)
+			* Fix #1576 Unable to view IE Metal Press recipes
+			* Fix typo in French localization (#1593)
+			* Updated Polish translation (#1587)
+			* Fix #1567 Fix #1575 Improve display of wildcard items with no creative menu subtypes
+			* Add warning log when a mod GUI does not draw the dark background layer
+			* Update French Localization (#1557)
+			* Make defensive copies of gui exclusion areas to prevent a bug when they are mutated
+			* Fix #1549 Add support for Forge IRarity for item tooltip colors
+			* Fix #1518 Add support for Crafttweaker removing brewing recipes
+			* Update sv_se.lang (#1535)
+			* Updated Polish translation (#1533)
+			* Add shortcut key for item edit/hide mode (#1530)
+			* Fix #1524 RecipeCategory tabs are not always sorted properly
+			* Fix #1523 Recipe transfer button texture issues with transparency
+			* Update to latest Forge in dev
+			* Fix #1507 Memory is wasted by UID cache after loading
+			* Close #1491 Add API to get ingredients hovered in the bookmark overlay
+			* Fix #1482 Enchanted Books not being hidden
+			* Fix renamed recipe background texture
+			* Fix #1497 Rename recipe_background to avoid texture name conflict (sorry texture pack devs)
+			* Reduce memory used by anvil recipe wrappers
+			* Fix #1473 Avoid posting texture stitching events from JeiTextureMap
+			* Fix #1471 Remove texture pack sizing restrictions
+			* Fix #1472 Crash when using recipe transfer into astral sorcery table
+			* Fix #1464 Recipe transfer into Artisan Worktables voids items (#1466)
+			* Update pt_br.lang (#1469)
+			* Automatic code style reformatting
+			* Revert "Pass a null player to getTooltip (#1388)" This reverts commit e20c3a588c20e41b44794b1909b11c7c840a497b.
+			* Simplify texture scaling
+			* Show multiple columns of recipe catalysts when there are too many for one column
+			* Fix #1463 Improve custom texture map to work with scaled resource packs
+			* Move bookmarks out of the way of the recipe book
+			* Fix #1412 Shift-clicking recipe into a Slice'N'Splice can void items
+			* Update de_de.lang (#1461)
+			* Update ja_jp.lang (#1458)
+			* Fix recipe transfer button transparency
+
+	KleeSlabs (went from KleeSlabs_1.12.2-5.4.11.jar to KleeSlabs_1.12.2-5.4.12.jar):
+		KleeSlabs_1.12.2-5.4.12.jar:
+			Fixed some Botania slabs erroring in log and not functioning correctly
+
+			Fixed block highlight for slabs not being positioned correctly depending on player position (by InsomniaKitten)
+
+	LibVulpes (went from LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2 to LibVulpes 1.12.2-0.4.1-60-UNSTABLE build -60 for 1.12.2):
+		LibVulpes 1.12.2-0.4.1-60-UNSTABLE build -60 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-0.4.1-60
+
+			 * [ Fix items registering before registering recipes, fixes https://github.com/zmaster587/AdvancedRocketry/issues/1626](https://github.com/zmaster587/LibVulpes/commit/81621d4df218dda)
+			 * [ add missing event file](https://github.com/zmaster587/LibVulpes/commit/07f81a32a1b60f4)
+			 * [ update revision](https://github.com/zmaster587/LibVulpes/commit/20bfd62c31c43cf)
+			 * [ Fix bucket handling. See https://github.com/zmaster587/AdvancedRocketry/issues/1601](https://github.com/zmaster587/LibVulpes/commit/f0254bb83f3680b)
+			 * [ Volcano processing stuff](https://github.com/zmaster587/LibVulpes/commit/73cc9cd44ca508b)
+			 * [ deprecation warning](https://github.com/zmaster587/LibVulpes/commit/c51b3d5d5500a59)
+			 * [ fix broken default machine recipies](https://github.com/zmaster587/LibVulpes/commit/9e638ca5005933e)
+			 * [ Add support for full screen centered interfaces](https://github.com/zmaster587/LibVulpes/commit/523b06c66681410)
+			 * [ Fix issues where a stack with a damage of 32767 was not being consumed](https://github.com/zmaster587/LibVulpes/commit/82b0dfbd3dbf608)
+			 * [ make sure we support data values on the input](https://github.com/zmaster587/LibVulpes/commit/c30e70037d61fb9)
+			 * [ Add tooltips to multiblock machines](https://github.com/zmaster587/LibVulpes/commit/4ec17772a0e4add)
+			 * [ fix motor recipe](https://github.com/zmaster587/LibVulpes/commit/e94307c210f3175)
+			 * [ Should probably simulate fluid insertion before committing, leads to dupe if the bottom slot is full. Resolves https://github.com/zmaster587/AdvancedRocketry/issues/1502](https://github.com/zmaster587/LibVulpes/commit/3c079e1fa798cb9)
+			 * [ possible fix for https://github.com/zmaster587/AdvancedRocketry/issues/1501](https://github.com/zmaster587/LibVulpes/commit/7dbc75ce439eebd)
+			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.4.0-48.](https://github.com/zmaster587/LibVulpes/commit/8eadbce9177acd6)
+			 * [ Switch recipes over to the 1.12+ JSON system](https://github.com/zmaster587/LibVulpes/commit/1ef1c6daca73805)
+			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.3.0-45.](https://github.com/zmaster587/LibVulpes/commit/f63521bb9de6f7e)
+			 * [ when item decrmented out of existance, retain NBT data long enough to assign to the dropped item, fixes #1451](https://github.com/zmaster587/LibVulpes/commit/b6f0ff4cf1f28bd)
+			 * [ finish adding GT support](https://github.com/zmaster587/LibVulpes/commit/5737145e805c6a5)
+			 * [ add minimal GT files needed for compile](https://github.com/zmaster587/LibVulpes/commit/d15119025c8f034)
+			 * [ Refactor power stuff, add GT support](https://github.com/zmaster587/LibVulpes/commit/4a4ca41b89eb66e)
+			 * [ fix some language issues (I hope), fix issues with chunk boundries and multiblock machines](https://github.com/zmaster587/LibVulpes/commit/6ca703fe1dd8711)
+			 * [ fixes #30](https://github.com/zmaster587/LibVulpes/commit/d49963cc8859ce0)
+			 * [ Update IC2 support for 1.12 https://github.com/zmaster587/AdvancedRocketry/issues/1197](https://github.com/zmaster587/LibVulpes/commit/ded8c6dae2e6d4a)
+			 * [ prevent machines from being too greedy, fixes #1359](https://github.com/zmaster587/LibVulpes/commit/2fa75ac9df07933)
+			 * [ Don't print 'air' as a required block in the holoprojector](https://github.com/zmaster587/LibVulpes/commit/490614f2d1bab1f)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1331](https://github.com/zmaster587/LibVulpes/commit/bf354dfa6fe9966)
+			 * [ Fluid machines will start processing when a fluid is added by bucket instead of requiring manual restart, https://github.com/zmaster587/AdvancedRocketry/issues/1313](https://github.com/zmaster587/LibVulpes/commit/77950a4c6253519)
+			 * [ update dilithium texture](https://github.com/zmaster587/LibVulpes/commit/03cc9fd03231d9a)
+			 * [ fix textures with lootbags, etc](https://github.com/zmaster587/LibVulpes/commit/9ec4208a755a1b7)
+			 * [ fix items not dropping](https://github.com/zmaster587/LibVulpes/commit/d9918b1904b9854)
+			 * [ support for https://github.com/zmaster587/AdvancedRocketry/issues/1068](https://github.com/zmaster587/LibVulpes/commit/09cfdea529c9ff0)
+			 * [ fix for https://github.com/zmaster587/AdvancedRocketry/issues/1069](https://github.com/zmaster587/LibVulpes/commit/9af291ee939dd5a)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1039](https://github.com/zmaster587/LibVulpes/commit/33632836dac0ef8)
+			 * [ Add locale overrides for #1012](https://github.com/zmaster587/LibVulpes/commit/182587bc99b89b2)
+			 * [ Fixes jetpack toggle key #26](https://github.com/zmaster587/LibVulpes/commit/fc7f6413f69e433)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/977](https://github.com/zmaster587/LibVulpes/commit/a47c9e24e25b1e5)
+			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/991](https://github.com/zmaster587/LibVulpes/commit/970f3ced89b8171)
+			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/938#issuecomment-351028819](https://github.com/zmaster587/LibVulpes/commit/baf62e827720d18)
+			 * [ add getters for outputs](https://github.com/zmaster587/LibVulpes/commit/f603dbb45bd2941)
+			 * [ add getters for outputs, update build num](https://github.com/zmaster587/LibVulpes/commit/5c39a00e823ef8d)
+			 * [ fix itemHandler, https://github.com/zmaster587/AdvancedRocketry/issues/954](https://github.com/zmaster587/LibVulpes/commit/f052c4110d22306)
+			 * [ disable curse builds temporarily](https://github.com/zmaster587/LibVulpes/commit/c237fc105fd7ad9)
+			 * [ update artefact location for git](https://github.com/zmaster587/LibVulpes/commit/b620c33dd67e3d6)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
+			 * [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
+		LibVulpes 1.12.2-0.4.1-59-UNSTABLE build -59 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-0.4.1-59
+
+			 * [ add missing event file](https://github.com/zmaster587/LibVulpes/commit/07f81a32a1b60f4)
+			 * [ update revision](https://github.com/zmaster587/LibVulpes/commit/20bfd62c31c43cf)
+			 * [ Fix bucket handling. See https://github.com/zmaster587/AdvancedRocketry/issues/1601](https://github.com/zmaster587/LibVulpes/commit/f0254bb83f3680b)
+			 * [ Volcano processing stuff](https://github.com/zmaster587/LibVulpes/commit/73cc9cd44ca508b)
+			 * [ deprecation warning](https://github.com/zmaster587/LibVulpes/commit/c51b3d5d5500a59)
+			 * [ fix broken default machine recipies](https://github.com/zmaster587/LibVulpes/commit/9e638ca5005933e)
+			 * [ Add support for full screen centered interfaces](https://github.com/zmaster587/LibVulpes/commit/523b06c66681410)
+			 * [ Fix issues where a stack with a damage of 32767 was not being consumed](https://github.com/zmaster587/LibVulpes/commit/82b0dfbd3dbf608)
+			 * [ make sure we support data values on the input](https://github.com/zmaster587/LibVulpes/commit/c30e70037d61fb9)
+			 * [ Add tooltips to multiblock machines](https://github.com/zmaster587/LibVulpes/commit/4ec17772a0e4add)
+			 * [ fix motor recipe](https://github.com/zmaster587/LibVulpes/commit/e94307c210f3175)
+			 * [ Should probably simulate fluid insertion before committing, leads to dupe if the bottom slot is full. Resolves https://github.com/zmaster587/AdvancedRocketry/issues/1502](https://github.com/zmaster587/LibVulpes/commit/3c079e1fa798cb9)
+			 * [ possible fix for https://github.com/zmaster587/AdvancedRocketry/issues/1501](https://github.com/zmaster587/LibVulpes/commit/7dbc75ce439eebd)
+			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.4.0-48.](https://github.com/zmaster587/LibVulpes/commit/8eadbce9177acd6)
+			 * [ Switch recipes over to the 1.12+ JSON system](https://github.com/zmaster587/LibVulpes/commit/1ef1c6daca73805)
+			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.3.0-45.](https://github.com/zmaster587/LibVulpes/commit/f63521bb9de6f7e)
+			 * [ when item decrmented out of existance, retain NBT data long enough to assign to the dropped item, fixes #1451](https://github.com/zmaster587/LibVulpes/commit/b6f0ff4cf1f28bd)
+			 * [ finish adding GT support](https://github.com/zmaster587/LibVulpes/commit/5737145e805c6a5)
+			 * [ add minimal GT files needed for compile](https://github.com/zmaster587/LibVulpes/commit/d15119025c8f034)
+			 * [ Refactor power stuff, add GT support](https://github.com/zmaster587/LibVulpes/commit/4a4ca41b89eb66e)
+			 * [ fix some language issues (I hope), fix issues with chunk boundries and multiblock machines](https://github.com/zmaster587/LibVulpes/commit/6ca703fe1dd8711)
+			 * [ fixes #30](https://github.com/zmaster587/LibVulpes/commit/d49963cc8859ce0)
+			 * [ Update IC2 support for 1.12 https://github.com/zmaster587/AdvancedRocketry/issues/1197](https://github.com/zmaster587/LibVulpes/commit/ded8c6dae2e6d4a)
+			 * [ prevent machines from being too greedy, fixes #1359](https://github.com/zmaster587/LibVulpes/commit/2fa75ac9df07933)
+			 * [ Don't print 'air' as a required block in the holoprojector](https://github.com/zmaster587/LibVulpes/commit/490614f2d1bab1f)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1331](https://github.com/zmaster587/LibVulpes/commit/bf354dfa6fe9966)
+			 * [ Fluid machines will start processing when a fluid is added by bucket instead of requiring manual restart, https://github.com/zmaster587/AdvancedRocketry/issues/1313](https://github.com/zmaster587/LibVulpes/commit/77950a4c6253519)
+			 * [ update dilithium texture](https://github.com/zmaster587/LibVulpes/commit/03cc9fd03231d9a)
+			 * [ fix textures with lootbags, etc](https://github.com/zmaster587/LibVulpes/commit/9ec4208a755a1b7)
+			 * [ fix items not dropping](https://github.com/zmaster587/LibVulpes/commit/d9918b1904b9854)
+			 * [ support for https://github.com/zmaster587/AdvancedRocketry/issues/1068](https://github.com/zmaster587/LibVulpes/commit/09cfdea529c9ff0)
+			 * [ fix for https://github.com/zmaster587/AdvancedRocketry/issues/1069](https://github.com/zmaster587/LibVulpes/commit/9af291ee939dd5a)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1039](https://github.com/zmaster587/LibVulpes/commit/33632836dac0ef8)
+			 * [ Add locale overrides for #1012](https://github.com/zmaster587/LibVulpes/commit/182587bc99b89b2)
+			 * [ Fixes jetpack toggle key #26](https://github.com/zmaster587/LibVulpes/commit/fc7f6413f69e433)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/977](https://github.com/zmaster587/LibVulpes/commit/a47c9e24e25b1e5)
+			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/991](https://github.com/zmaster587/LibVulpes/commit/970f3ced89b8171)
+			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/938#issuecomment-351028819](https://github.com/zmaster587/LibVulpes/commit/baf62e827720d18)
+			 * [ add getters for outputs](https://github.com/zmaster587/LibVulpes/commit/f603dbb45bd2941)
+			 * [ add getters for outputs, update build num](https://github.com/zmaster587/LibVulpes/commit/5c39a00e823ef8d)
+			 * [ fix itemHandler, https://github.com/zmaster587/AdvancedRocketry/issues/954](https://github.com/zmaster587/LibVulpes/commit/f052c4110d22306)
+			 * [ disable curse builds temporarily](https://github.com/zmaster587/LibVulpes/commit/c237fc105fd7ad9)
+			 * [ update artefact location for git](https://github.com/zmaster587/LibVulpes/commit/b620c33dd67e3d6)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
+			 * [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
+
+	Mekanism (went from Mekanism-1.12.2-9.7.8.379.jar to Mekanism-1.12.2-9.7.9.380.jar):
+		Mekanism-1.12.2-9.7.9.380.jar:
+			[9e181fa](https://github.com/mekanism-mod/Mekanism/commit/9e181fae36c06c8096f0f84c9201da4ac3ad9166)- es_es.lang update and fixes ([#5528](https://github.com/mekanism-mod/Mekanism/issues/5528))[a122434](https://github.com/mekanism-mod/Mekanism/commit/a122434d6a3a9686120df01705795f0d3b8c3652)- add more debugging info for bad itemhandler  assertion[f00fe44](https://github.com/mekanism-mod/Mekanism/commit/f00fe441242bbf87c020bf4dad22b5e33bbe6125)- Prevent OreDict queries from creating empty entries since some mods don't check that. Closes[#5524](https://github.com/mekanism-mod/Mekanism/issues/5524)[5d17d70](https://github.com/mekanism-mod/Mekanism/commit/5d17d706c0f54da7997110bd7c1c4e3b43897dee)- Reworked PipeUtils and GasUtils side access ([#5529](https://github.com/mekanism-mod/Mekanism/issues/5529))[d217a54](https://github.com/mekanism-mod/Mekanism/commit/d217a545ca9e2484ebeb283e771f629298ee7ddc)- Ignore amounts for inputItemMatches ([#5532](https://github.com/mekanism-mod/Mekanism/issues/5532))[de705af](https://github.com/mekanism-mod/Mekanism/commit/de705af5467edb09dfcf213c4fbf4c3f46082599)- Added checks for is block loaded to several methods ([#5533](https://github.com/mekanism-mod/Mekanism/issues/5533))[c3be258](https://github.com/mekanism-mod/Mekanism/commit/c3be258c4685ecdef1c34148ce99d6d23872c251)- Overwrite getBlockFaceShape for various blocks ([#5539](https://github.com/mekanism-mod/Mekanism/issues/5539))[3750d42](https://github.com/mekanism-mod/Mekanism/commit/3750d42c3e135c58faa4c6be756bdfc2c08c3671)- Fix null tile warnings from logistical sorters not connected to things on both sides when set to auto.[0557a8b](https://github.com/mekanism-mod/Mekanism/commit/0557a8bd232d6473cc401130234afb16ebfe9519)- Fix various height checks for the different solar devices[05166ee](https://github.com/mekanism-mod/Mekanism/commit/05166ee916542a66d1eb453d3e02d7cd25b63d8a)- Assemblicator Fixes for Transforming recipes ([#5542](https://github.com/mekanism-mod/Mekanism/issues/5542))[7a726f3](https://github.com/mekanism-mod/Mekanism/commit/7a726f3695cf70d11f6fe6eb4d0f3457a21eb5c6)- Merge PR IFluidHandlerWrapper implementation cleanup. Closes[#5551](https://github.com/mekanism-mod/Mekanism/issues/5551)[ac70101](https://github.com/mekanism-mod/Mekanism/commit/ac70101edf54532e21d3f973970d1868b99d8d17)- Merge PR Optimized Component Ejector. Closes[#5537](https://github.com/mekanism-mod/Mekanism/issues/5537)Additional: half tickDelay in ejector component since we're only ejecting on a timer now[f34ecd4](https://github.com/mekanism-mod/Mekanism/commit/f34ecd4836d33cea9012c662323a50e3a962e8ff)- bump version to 9.7.9
+
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.8.379.jar to MekanismGenerators-1.12.2-9.7.9.380.jar):
+		MekanismGenerators-1.12.2-9.7.9.380.jar:
+			[9e181fa](https://github.com/mekanism-mod/Mekanism/commit/9e181fae36c06c8096f0f84c9201da4ac3ad9166)- es_es.lang update and fixes ([#5528](https://github.com/mekanism-mod/Mekanism/issues/5528))[a122434](https://github.com/mekanism-mod/Mekanism/commit/a122434d6a3a9686120df01705795f0d3b8c3652)- add more debugging info for bad itemhandler  assertion[f00fe44](https://github.com/mekanism-mod/Mekanism/commit/f00fe441242bbf87c020bf4dad22b5e33bbe6125)- Prevent OreDict queries from creating empty entries since some mods don't check that. Closes[#5524](https://github.com/mekanism-mod/Mekanism/issues/5524)[5d17d70](https://github.com/mekanism-mod/Mekanism/commit/5d17d706c0f54da7997110bd7c1c4e3b43897dee)- Reworked PipeUtils and GasUtils side access ([#5529](https://github.com/mekanism-mod/Mekanism/issues/5529))[d217a54](https://github.com/mekanism-mod/Mekanism/commit/d217a545ca9e2484ebeb283e771f629298ee7ddc)- Ignore amounts for inputItemMatches ([#5532](https://github.com/mekanism-mod/Mekanism/issues/5532))[de705af](https://github.com/mekanism-mod/Mekanism/commit/de705af5467edb09dfcf213c4fbf4c3f46082599)- Added checks for is block loaded to several methods ([#5533](https://github.com/mekanism-mod/Mekanism/issues/5533))[c3be258](https://github.com/mekanism-mod/Mekanism/commit/c3be258c4685ecdef1c34148ce99d6d23872c251)- Overwrite getBlockFaceShape for various blocks ([#5539](https://github.com/mekanism-mod/Mekanism/issues/5539))[3750d42](https://github.com/mekanism-mod/Mekanism/commit/3750d42c3e135c58faa4c6be756bdfc2c08c3671)- Fix null tile warnings from logistical sorters not connected to things on both sides when set to auto.[0557a8b](https://github.com/mekanism-mod/Mekanism/commit/0557a8bd232d6473cc401130234afb16ebfe9519)- Fix various height checks for the different solar devices[05166ee](https://github.com/mekanism-mod/Mekanism/commit/05166ee916542a66d1eb453d3e02d7cd25b63d8a)- Assemblicator Fixes for Transforming recipes ([#5542](https://github.com/mekanism-mod/Mekanism/issues/5542))[7a726f3](https://github.com/mekanism-mod/Mekanism/commit/7a726f3695cf70d11f6fe6eb4d0f3457a21eb5c6)- Merge PR IFluidHandlerWrapper implementation cleanup. Closes[#5551](https://github.com/mekanism-mod/Mekanism/issues/5551)[ac70101](https://github.com/mekanism-mod/Mekanism/commit/ac70101edf54532e21d3f973970d1868b99d8d17)- Merge PR Optimized Component Ejector. Closes[#5537](https://github.com/mekanism-mod/Mekanism/issues/5537)Additional: half tickDelay in ejector component since we're only ejecting on a timer now[f34ecd4](https://github.com/mekanism-mod/Mekanism/commit/f34ecd4836d33cea9012c662323a50e3a962e8ff)- bump version to 9.7.9
+
+	Mekanism Tools (went from MekanismTools-1.12.2-9.7.8.379.jar to MekanismTools-1.12.2-9.7.9.380.jar):
+		MekanismTools-1.12.2-9.7.9.380.jar:
+			[9e181fa](https://github.com/mekanism-mod/Mekanism/commit/9e181fae36c06c8096f0f84c9201da4ac3ad9166)- es_es.lang update and fixes ([#5528](https://github.com/mekanism-mod/Mekanism/issues/5528))[a122434](https://github.com/mekanism-mod/Mekanism/commit/a122434d6a3a9686120df01705795f0d3b8c3652)- add more debugging info for bad itemhandler  assertion[f00fe44](https://github.com/mekanism-mod/Mekanism/commit/f00fe441242bbf87c020bf4dad22b5e33bbe6125)- Prevent OreDict queries from creating empty entries since some mods don't check that. Closes[#5524](https://github.com/mekanism-mod/Mekanism/issues/5524)[5d17d70](https://github.com/mekanism-mod/Mekanism/commit/5d17d706c0f54da7997110bd7c1c4e3b43897dee)- Reworked PipeUtils and GasUtils side access ([#5529](https://github.com/mekanism-mod/Mekanism/issues/5529))[d217a54](https://github.com/mekanism-mod/Mekanism/commit/d217a545ca9e2484ebeb283e771f629298ee7ddc)- Ignore amounts for inputItemMatches ([#5532](https://github.com/mekanism-mod/Mekanism/issues/5532))[de705af](https://github.com/mekanism-mod/Mekanism/commit/de705af5467edb09dfcf213c4fbf4c3f46082599)- Added checks for is block loaded to several methods ([#5533](https://github.com/mekanism-mod/Mekanism/issues/5533))[c3be258](https://github.com/mekanism-mod/Mekanism/commit/c3be258c4685ecdef1c34148ce99d6d23872c251)- Overwrite getBlockFaceShape for various blocks ([#5539](https://github.com/mekanism-mod/Mekanism/issues/5539))[3750d42](https://github.com/mekanism-mod/Mekanism/commit/3750d42c3e135c58faa4c6be756bdfc2c08c3671)- Fix null tile warnings from logistical sorters not connected to things on both sides when set to auto.[0557a8b](https://github.com/mekanism-mod/Mekanism/commit/0557a8bd232d6473cc401130234afb16ebfe9519)- Fix various height checks for the different solar devices[05166ee](https://github.com/mekanism-mod/Mekanism/commit/05166ee916542a66d1eb453d3e02d7cd25b63d8a)- Assemblicator Fixes for Transforming recipes ([#5542](https://github.com/mekanism-mod/Mekanism/issues/5542))[7a726f3](https://github.com/mekanism-mod/Mekanism/commit/7a726f3695cf70d11f6fe6eb4d0f3457a21eb5c6)- Merge PR IFluidHandlerWrapper implementation cleanup. Closes[#5551](https://github.com/mekanism-mod/Mekanism/issues/5551)[ac70101](https://github.com/mekanism-mod/Mekanism/commit/ac70101edf54532e21d3f973970d1868b99d8d17)- Merge PR Optimized Component Ejector. Closes[#5537](https://github.com/mekanism-mod/Mekanism/issues/5537)Additional: half tickDelay in ejector component since we're only ejecting on a timer now[f34ecd4](https://github.com/mekanism-mod/Mekanism/commit/f34ecd4836d33cea9012c662323a50e3a962e8ff)- bump version to 9.7.9
+
+	Mod Name Tooltip (went from 1.10.0 to 1.10.1):
+		1.10.1:
+			Created Polish translation
+
+	More Overlays (went from moreoverlays-1.14-mc1.12.2.jar to moreoverlays-1.15.0-mc1.12.2.jar):
+		moreoverlays-1.15.0-mc1.12.2.jar:
+			 * Updated Forge to 14.23.5.2768
+			 * Updated JEI to 4.15.0.268
+			 * Added ability to search for EnchantmentData (JEI results contain EnchantmentData if you search for enchanted books, More Overlays can now also use that to search for enchanted tools)
+			 * Added Region Overlay as 4th option to chunk overlays with support for CubicChunks (thanks to Foghrye4)
+			 * Added support for DrZharks Custom Mob Spawner (thanks to xs2007 and chickenbones)
+			 * Added config option to ignore mobs spawn list for light overlay (disables the Custom Mob Spawner integration and stops checking biome spawn list)
+			 * Changed item search to use JEI Subtype interpreter for NBT matching (Fixes some issues with wrong results for Items that use NBT)
+			 * Changed: Item search will now also work in the creative inventory
+			 * Changed version system to semantic versioning (needed for ports to newer minecraft versions)
+			 *
+			 *
+			 *
+
+	MrTJPCore (went from MrTJPCore-1.12.2-2.1.3.35-universal.jar to MrTJPCore-1.12.2-2.1.4.43-universal.jar):
+		MrTJPCore-1.12.2-2.1.4.43-universal.jar:
+			No changelog provided.
+
+	MysticalLib (went from mysticallib-1.12.2-1.2.1.jar to mysticallib-1.12.2-1.3.1.jar):
+		mysticallib-1.12.2-1.3.1.jar:
+			1.3.1
+
+			- Fixed flipped operation (addition instead of subtraction) that was inflating the damage output of knives. They should now be 1 less than swords as intended.
+		mysticallib-1.12.2-1.3.0.jar:
+			Anything roots 3 needs is in this version.
+
+	NuclearCraft (went from NuclearCraft-2.17a-1.12.2 to NuclearCraft-2.17b-1.12.2):
+		NuclearCraft-2.17b-1.12.2:
+			+ Added config option for food radiation and rad resistance effects
+			* The Geiger Counter now displays the true radiation level and can read entities
+			* Fixed ConArm armour rad shielding recipes modifying the armour materials
+
+			* Fixed radiation-related crash with various mods' machines
+			* Fixed radiation building up in chunks with no loaded neighbours
+
+			* Fixed Feral Ghouls spawning in very large numbers
+			* Fixed disabling Feral Ghouls leading to strange bugs
+
+			* Improved Mekanism gas capability support performance
+
+			+ Added liquid nitrogen
+
+			* Various useful changes for those writing NC addons
+
+			* Improved formatting of various printed numbers
+			* Other minor additions, changes and fixes
+
+	Project Intelligence (went from ProjectIntelligence-1.12.2-1.0.5.21-universal to ProjectIntelligence-1.12.2-1.0.7.24-universal):
+		ProjectIntelligence-1.12.2-1.0.7.24-universal:
+			######## 1.0.7.24 ########
+			-Fixed issue with text wrapping and random unintended spaces in the middle of sentences.
+			-Added button to go to previous page to the top of the page list.
+
+			######## 1.0.6.22 ########
+			-Fixed broken language selection list. (filter was broken)
+			-Added ability to override mod documentation version.
+			-Fixed error when loading a default style preset with unsaved changes to current preset.
+			-Fixed minor issue with invalid page list scroll bar under certain circumstances.
+		ProjectIntelligence-1.12.2-1.0.6.22-universal:
+			######## 1.0.6.22 ########
+			-Fixed broken language selection list. (filter was broken)
+			-Added ability to override mod documentation version.
+			-Fixed error when loading a default style preset with unsaved changes to current preset.
+			-Fixed minor issue with invalid page list scroll bar under certain circumstances.
+			Note: Issue with SmoothFont will most likely be fixed by the next SmoothFont update.
+
+			######## 1.0.5.20 ########
+			-Fixed broken "Override Mod Language" option.
+			-Fixed broken file encoding causing issues with certain characters in other languages.
+			-Added JEI plugin to move bookmarks out of the way of the PI doc window.
+			-Theoretically fixed not being able to close the docs window when the close button conflicts with a button from another mod.
+
+	Project Red - Base (went from ProjectRed-1.12.2-4.9.0.86-Base.jar to ProjectRed-1.12.2-4.9.3.116-Base):
+		ProjectRed-1.12.2-4.9.3.116-Base:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-Base.jar:
+			No changelog provided.
+
+	Project Red - Compat (went from ProjectRed-1.12.2-4.9.0.86-compat.jar to ProjectRed-1.12.2-4.9.3.116-compat):
+		ProjectRed-1.12.2-4.9.3.116-compat:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-compat.jar:
+			No changelog provided.
+
+	Project Red - Fabrication (went from ProjectRed-1.12.2-4.9.0.86-fabrication.jar to ProjectRed-1.12.2-4.9.3.116-fabrication):
+		ProjectRed-1.12.2-4.9.3.116-fabrication:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-fabrication.jar:
+			No changelog provided.
+
+	Project Red - Integration (went from ProjectRed-1.12.2-4.9.0.86-integration.jar to ProjectRed-1.12.2-4.9.3.116-integration):
+		ProjectRed-1.12.2-4.9.3.116-integration:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-integration.jar:
+			No changelog provided.
+
+	Project Red - Lighting (went from ProjectRed-1.12.2-4.9.0.86-lighting.jar to ProjectRed-1.12.2-4.9.3.116-lighting):
+		ProjectRed-1.12.2-4.9.3.116-lighting:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-lighting.jar:
+			No changelog provided.
+
+	Project Red - Mechanical (went from ProjectRed-1.12.2-4.9.0.86-mechanical.jar to ProjectRed-1.12.2-4.9.3.116-mechanical):
+		ProjectRed-1.12.2-4.9.3.116-mechanical:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-mechanical.jar:
+			No changelog provided.
+
+	Project Red - World (went from ProjectRed-1.12.2-4.9.0.86-world.jar to ProjectRed-1.12.2-4.9.3.116-world):
+		ProjectRed-1.12.2-4.9.3.116-world:
+			No changelog provided.
+		ProjectRed-1.12.2-4.9.1.92-world.jar:
+			No changelog provided.
+
+	Quark (went from Quark-r1.5-167.jar to Quark-r1.5-168.jar):
+		Quark-r1.5-168.jar:
+			- Client: Items now render when sent in chat.
+			- Client: Visual Stat Display now applies to potion items.
+			- Decoration: Iron Ladders no longer are broken by water.
+			- Management: Added Arrow Scrolling. Sneak-scrolling while holding a bow will rotate the positions of arrows in your inventory.
+			- Misc: Added a Horse Whistle. This lets you call your horse to you, within a given range.
+			- Misc: Fix Ancient Tomes acting as if they were enchanted, instead of like enchanted books.
+			- Misc: Pickarangs got an aesthetic overhaul, getting sound effects and lots of flair.
+			- Oddities: Matrix Enchanting has been rebalanced, giving you no duplicate enchantments.
+			- Tweaks: Added Right Click Harvesting. If Hoe Harvesting is enabled, hoes can harvest larger areas than your bare hand.
+			- Tweaks: Archaeologists now follow emerald and bone blocks.
+			- World: Added Frogs. They're cute, spawn in swamps, are bred using spider eyes or raw fish, and can be used for brewing jump boost.
+			- World: Curse no longer affects players in spectator mode.
+			- World: Floors can now be set to be entirely water when generating underground biomes.
+			- World: Stonelings are now better at spotting players in tight environments.
+
+	Random Things (went from RandomThings-MC1.12.2-4.2.7.1.jar to RandomThings-MC1.12.2-4.2.7.2.jar):
+		RandomThings-MC1.12.2-4.2.7.2.jar:
+			 * Fixed: Dupe Bug using [Portkeys](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252flumien.net%252frtwiki%252fitems%252fportkey%252f)
+			 * Fixed: Thaumcraft Golems not harvesting [Lotus Plants](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252flumien.net%252frtwiki%252fblocks%252flotus%252f)
+			 * Fixed: Crash with Sponge
+
+	RandomPatches (went from RandomPatches 1.12.2-1.16.3.1 to RandomPatches 1.12.2-1.17.2.1):
+		RandomPatches 1.12.2-1.17.2.1:
+			The window icon and title configuration options now work alongside It's the little things.
+		RandomPatches 1.12.2-1.17.2.0:
+			Implemented an invisible player model fix.
+			Fixed /rpreload and /rpreloadclient.
+		RandomPatches 1.12.2-1.17.1.0:
+			The packet size limit patch no longer loads when LittleTiles is installed.
+			Hopefully fixed the window icons not working on Mac OS X.
+		RandomPatches 1.12.2-1.17.0.0:
+			Optimized the "TickNextTick out of synch" IllegalStateException fix and made it enabled by default.
+			Backported the smooth eye level change animation from Minecraft 1.13 and newer.
+
+	RandomTweaks (went from RandomTweaks 1.12.2-2.6.0.0 to RandomTweaks 1.12.2-2.7.0.1):
+		RandomTweaks 1.12.2-2.7.0.1:
+			Fixed void island spawn points.
+
+			From 1.12.2-2.7.0.0:
+
+			Added an option to make nearby monsters glow when a player attempts to sleep.
+			Added an option to make torches reorient themselves when the block they are attached to is broken.
+			Added an option to force mobs to drop all of their armor and equipment along with their loot on death.
+			Wet sponges now dry when placed in the Nether.
+			Fixed the armor equip sounds not playing when the inventory is not open.
+			Players can now swap their armor with armor stands by right-clicking on them while sneaking.
+			Fixed skeleton arrows not picking up.
+			Burning arrows can now set blocks on fire.
+		RandomTweaks 1.12.2-2.7.0.0:
+			Added an option to make nearby monsters glow when a player attempts to sleep.
+			Added an option to make torches reorient themselves when the block they are attached to is broken.
+			Added an option to force mobs to drop all of their armor and equipment along with their loot on death.
+			Wet sponges now dry when placed in the Nether.
+			Fixed the armor equip sounds not playing when the inventory is not open.
+			Players can now swap their armor with armor stands by right-clicking on them while sneaking.
+			Fixed skeleton arrows not picking up.
+			Burning arrows can now set blocks on fire.
+
+	Reborn Core (went from RebornCore-1.12.2-3.13.12.447-universal.jar to RebornCore-1.12.2-3.14.1.457-universal.jar):
+		RebornCore-1.12.2-3.14.1.457-universal.jar:
+			(estebes) #releaseBuild
+		RebornCore-1.12.2-3.14.1.456-universal.jar:
+			(estebes) #releaseBuild
+			(estebes) Fix FluidUtils container handling.
+		RebornCore-1.12.2-3.14.0.455-universal.jar:
+			(estebes) #releaseBuild
+			(estebes) Merge branch '1.12' of github.com:TechReborn/RebornCore into 1.12
+			(estebes) #releaseBuild
+			(drcrazy) Fix license
+			(estebes) Forgotten texture.
+			(estebes) Improve the several util classes.
+			(estebes) Improve the Redstone mode button.
+			(modmuss50) Fix guielements texture and tooltip positioning (#117)
+			(modmuss50) New drawEnergyStorageRedstoneModeButton in GuiBuilder (#115)
+			(modmuss50) Fix typo (#113)
+
+	Roots (went from roots-2-0.104.jar to Roots-1.12.2-3.0.4.jar):
+		Roots-1.12.2-3.0.4.jar:
+			3.0.4
+
+			- Fixed issue with missing client-side annotation that caused the mod to fail on servers.
+		Roots-1.12.2-3.0.3.jar:
+			Changes
+
+			- CraftTweaker now full supports and is fully documented. Documentation should be available soon on docs.blamejared.org
+
+			- Resolve #141: sure-footed stone now requires an unending bowl for the recipe, and it will no longer cause crashes when placed near water. However, if water flows over it, it will act as a source block and water will continue to flow.
+
+			- Resolve #145: snow-men spawned by the Frost Lands ritual are now correctly spawned on the server-side only, snow is only placed on the appropriate surfaces, and a particle is fired every time an event happens.
+
+			- CraftTweaker can now be used to modify the ingredients of rituals.
+
+			- CraftTweaker can now be used to modify the use of Runic Shears on blocks & entities.
+
+			- Elemental soil has a tool (shovel) associated with it now.
+
+			- Wildwood is now flammable.
+
+			- The unending bowl will now attempt to fill adjacent apothecary (#93)
+
+			- Sylvan Armor and Wildwood Armor now no longer require the complete set to wear, but the bonus scales depending on the number of pieces you are wearing.
+
+			- The Flower Growth ritual no longer has a time component requirement.
+
+			- There is now a multiblock structure demonstrating the use of terra spores (#143)
+
+			- Wildwood armor now heals for less, potentially resolving #144
+
+			- Players are extinguished when returning from Light Drifter (#143)
+
+			- The wording of the Wildwood Quiver entry has been updated to indicate that you need to sneak near arrows to pick them up again
+
+			- Aubergines have been moved into Mystical World.
+
+			- New effects for elemental soil:
+
+			 - Magmatic soil now cooks some of the items you plant (i.e., potatoes -> baked potatoes)
+
+			 - Caelic soil now increases the speed at which crops grow
+
+			 - Aquatic soil automatically harvests & replants them. It deposits the items into the area below it, if that area is unoccupied (such as a hopper), otherwise placing the item on the surface.
+
+			 - Terran soil will increase the yield of the crop.
+
+			- New spell:
+
+			 - Iced Touch: turns water into ice, extinguishes fire and converts lava to obsidian.
+
+			 - With the touch module (iron boots), automatically applies the effect to things they touch.
+		Roots-1.12.2-3.0.2.jar:
+			Changes
+
+			- Fix the Imbuer recipe to use ore dictionary components.
+			- The Wildwood Bow now has increased durability, enchantability, and auto-repairs at a significantly slower rate than other living tools.
+			- Fix #129: Grove Stones no longer destroy farmland or fertile soil. Instead, they just plant pretty flowers and let grass grow how it will.
+			- Fix #131: Fix the unlock requirements for Sense Danger (Spell), Windwall (Ritual).
+			- Fix #127: The ritual of Purity no longer causes a concurrent modification error when removing potion effects.
+			- Partially address #125: Rustic crops are specifically excluded from the Harvest spell.
+			- Fix #128: Elemental soil converted into Magmatic soil in flowing lava is no longer immediately destroyed.
+			- Fix #126: Upgrading the Component Pouch to the Apothecary Pouch once again retains the items, herbs & metadata of the original Component Pouch.
+			- Note that, for the Wild Growth ritual, fully grown Wildroot crop is required.
+			- Fix #124: Living arrows will now be picked up as living arrows, instead of "downgrading" them into normal arrows. This applies for those you shoot and those anyone else shoots. In addition, the break chance while picking up living arrows with the quiver is reduced to 0.
+			- Fix #130: Properly set the new name of the Pyre Crafting Ritual so that serialisation functions correctly.
+		Roots-1.12.2-3.0.1.jar:
+			3.0.1
+
+			Fixes
+
+			- Fixed #121: Craft Tweaker integration for Pyre Crafting Rituals & Fey Crafting should now function as expected.
+
+			- Fixed #123: Sure-Footed Stone no longer causes Server Crashes when placed near water; its functionality has now changed significantly (to be noticeable), in that it will moisturize faster but will not stop dry land from immediately turning back to dirt.
+
+			- Fixed #120: al132mc: Fix some broken localisations.
+		Roots-1.12.2-3.0.0.jar:
+			- Initial Release of Roots 3
+
+	Soul Shards Respawn (went from SoulShardsRespawn-1.12.2-1.1.0-12.jar to SoulShardsRespawn-1.12.2-1.1.1-13.jar):
+		SoulShardsRespawn-1.12.2-1.1.1-13.jar:
+			Version 1.1.1:
+
+			- Fixed a crash on Sponge
+			 - See [https://git.io/fjXz1](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgit.io%252ffjXz1) for more information
+
+	Steve's Carts Reborn (went from StevesCarts-1.12.2-2.4.30.134.jar to StevesCarts-1.12.2-2.4.31.135.jar):
+		StevesCarts-1.12.2-2.4.31.135.jar:
+			(gorymoon) Updated mappings
+			(gorymoon) Fixed placeholder render aabb compatability with Better Portals. Fixes #185
+
+	Tech Reborn (went from TechReborn-1.12.2-2.22.1.979-universal.jar to TechReborn-1.12.2-2.23.1.1003-universal.jar):
+		TechReborn-1.12.2-2.23.1.1003-universal.jar:
+			(estebes) #releaseBuild
+			(estebes) Fix #1733
+		TechReborn-1.12.2-2.23.0.1001-universal.jar:
+			(estebes) #releaseBuild
+			(estebes) Merge branch '1.12' of github.com:TechReborn/TechReborn into 1.12
+			(estebes) Tentative fix to #1732.
+			(drcrazy) Revert change and warning suppressed
+			(drcrazy) Warnings and License
+			(estebes) Use the util methods in RebornCore. Small recipe changes. New textures.
+			(estebes) Some refactoring. Fix #1731
+			(estebes) Fix wrong textures.
+			(estebes) New textures for several things. New translations.
+			(estebes) Rebalanced the Blst Furnace and its recipes. Blast Furnace now supports the coils. Improved Iridium processing on the industrial grinder.
+			(estebes) Fix #1727
+			(estebes) Improve Nanosaber code. Buff to damage (#1714) and add config option for it.
+			(estebes) Fix #1723
+			(estebes) Energy Storage blocks now have several redstone modes.
+			(modmuss50) Eu support for cables (#1730)
+			(modmuss50) Implement IMiningDrill for IC2 miner compatibility with TR Drills (#1729)
+			(drcrazy) Dedupe for iron fence #1665
+			(drcrazy) Dedupe carbon plates for #1665
+			(drcrazy) Lapotron Crystal dedupe for #1665
+			(drcrazy) Energy Crystal dedupe for #1665
+			(drcrazy) De-dupe for re-battery. Some work on #1665
+			(drcrazy) Updated rubber log usage. Some work on #1706
+			(drcrazy) Filter compressor and extractor recipes from JEI if IC2 dedupe is true
+
+	Waystones (went from Waystones_1.12.2-4.0.67.jar to Waystones_1.12.2-4.0.72.jar):
+		Waystones_1.12.2-4.0.72.jar:
+			Fixed "Warp Stone Costs XP" and "Short Travel is Free" option not being synced to clients, causing incorrect XP cost display on clients
+
+			Added "Short Travel is Free" option, enabled by default
+
+			- Currently, if XP cost is enabled, the first 500 blocks (by default, see distance-per-level option) will not cost any experience.
+
+			- By disabling the option, the XP cost is shifted, so the first 500 blocks already cost one level, then the next 500 blocks another, etc.
+
+			Fixed bound scrolls binding a whole stack of items instead of just one
+
+			Fixed boudn scrolls not working when the player has not activated the waystone they're bound to (by Laike-Endaril)
+
+			Added Korean Translation (by cs8minty)
+
+			Added Dutch Translation (by Skydragonsz)
+		Waystones_1.12.2-4.0.71.jar:
+			Added "Short Travel is Free" option, enabled by default
+
+			- Currently, if XP cost is enabled, the first 500 blocks (by default, see distance-per-level option) will not cost any experience.
+
+			- By disabling the option, the XP cost is shifted, so the first 500 blocks already cost one level, then the next 500 blocks another, etc.
+
+			Fixed bound scrolls binding a whole stack of items instead of just one
+
+			Fixed boudn scrolls not working when the player has not activated the waystone they're bound to (by Laike-Endaril)
+
+			Added Korean Translation (by cs8minty)
+
+			Added Dutch Translation (by Skydragonsz)
+
+	XL Food Mod (went from XL-Food-Mod-1.12.2-1.9.1 to XL-Food-Mod-1.12.2-1.9.2):
+		XL-Food-Mod-1.12.2-1.9.2:
+			Built using Minecraft Forge 1.12.2-14.23.5.2768
+
+			Changelog:
+
+			-added Brazilian Portuguese translation - thanks to [Focamacho](https://github.com/Focamacho)
+
+	ZeroCore (went from zerocore-1.12-0.1.2.3.jar to zerocore-1.12.2-0.1.2.8.jar):
+		zerocore-1.12.2-0.1.2.8.jar:
+			 1.12.2-0.1.2.8
+
+			Added generic Data Fixer / Walker support handlers
+			Switched to stable MCP mappings for MC 1.12.2
+			Bumped version to 1.12.2-0.1.2.8
+
+			1.12-0.1.2.7 (alpha)
+
+			- Base support for DataFixers/DataWalkers
+			- Added JSON recipes custom conditionals
+			- Default Ore Dictionary names and model registration
+		zerocore-1.12-0.1.2.7.jar:
+			- This is an ALPHA relase. Backup your worlds and be safe!
+			- Base support for DataFixers/DataWalkers
+			- Added JSON recipes custom conditionals
+			- Default Ore Dictionary names and model registration
+			- For more informations, please check [https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2731713-extreme-reactors-a-big-reactors-port-to-mc-1-9-4-1?page=9#c202](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2731713-extreme-reactors-a-big-reactors-port-to-mc-1-9-4-1?page=9#c202)
+
+	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.2.151.jar to p455w0rdslib-1.12.2-2.2.156.jar):
+		p455w0rdslib-1.12.2-2.2.156.jar:
+			Fixed tons of stuff:
+
+			removed the block implementation of the shader
+
+			vanilla item effects are off by default
+
+			fixed CME bug and blockstate getCapability bug
+
+Removed 7 files:
+	- Ceramics
+	- Minecolonies
+	- Multi Mob Library
+	- Primitive Mobs
+	- Quark Oddities
+	- SimpleHarvest
+	- The Weirding Gadget
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)
