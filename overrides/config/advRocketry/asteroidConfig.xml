@@ -23,5 +23,5 @@
 		<ore itemStack="thermalfoundation:ore 4" chance="5" />
 		<ore itemStack="thermalfoundation:ore 5" chance="10" />
 		<ore itemStack="thermalfoundation:ore 6" chance="5" />
-		
+	</asteroid>
 </Asteroids>
