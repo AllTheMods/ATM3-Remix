@@ -3,9 +3,25 @@
 		<ore itemStack="minecraft:iron_ore" chance="15" />
 		<ore itemStack="minecraft:gold_ore" chance="10" />
 		<ore itemStack="minecraft:redstone_ore" chance="10" />
+		<ore itemStack="thermalfoundation:ore 0" chance="15" />
+		<ore itemStack="thermalfoundation:ore 1" chance="15" />
+		<ore itemStack="thermalfoundation:ore 3" chance="10" />
 	</asteroid>
 	<asteroid name="Iridium Enriched asteroid" distance="100" mass="25" massVariability="0.5" minLevel="0" probability="0.75" richness="0.2" richnessVariability="0.3">
 		<ore itemStack="minecraft:iron_ore" chance="25" />
-		<ore itemStack="libvulpes:ore0 10" chance="5" />
+		<ore itemStack="thermalfoundation:ore 7" chance="5" />
 	</asteroid>
+	<asteroid name="Large Asteroid" distance="60" mass="200" massVariability="0.5" minLevel="0" probability="2.5" richness="0.2" richnessVariability="0.5">
+		<ore itemStack="minecraft:iron_ore" chance="15" />
+		<ore itemStack="minecraft:gold_ore" chance="10" />
+		<ore itemStack="minecraft:redstone_ore" chance="10" />
+		<ore itemStack="minecraft:diamond_ore" chance="3" />
+		<ore itemStack="thermalfoundation:ore 0" chance="15" />
+		<ore itemStack="thermalfoundation:ore 1" chance="15" />
+		<ore itemStack="thermalfoundation:ore 2" chance="5" />
+		<ore itemStack="thermalfoundation:ore 3" chance="10" />
+		<ore itemStack="thermalfoundation:ore 4" chance="5" />
+		<ore itemStack="thermalfoundation:ore 5" chance="10" />
+		<ore itemStack="thermalfoundation:ore 6" chance="5" />
+		
 </Asteroids>
