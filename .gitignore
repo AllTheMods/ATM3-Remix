@@ -7,7 +7,7 @@ overrides/config/Chikachi/discordintegration.json
 overrides/mods/*.jar
 overrides/mods/memory_repo/*
 !overrides/mods/Flamingo-1\.12-v1\.11\.jar
-!overrides/mods/Nutrition-1\.12\.2-4\.3\.0\.jar
+!overrides/mods/Nutrition-1\.12\.2-4\.4\.0\.jar
 !overrides/mods/Computronics-1\.12\.2-1\.6\.6\.jar
 
 # Client side or "default" configs not needed
