@@ -54,23 +54,9 @@
                 <biomeIds>advancedrocketry:alien forest</biomeIds>
             </planet>
         </planet>
-        <planet name="Saturn" DIMID="19">
+        <planet name="Mercury" DIMID="4">
             <isKnown>false</isKnown>
-            <fogColor>1.0,1.0,1.0</fogColor>
-            <skyColor>0.8,0.6596607,0.11383283</skyColor>
-            <gravitationalMultiplier>126</gravitationalMultiplier>
-            <orbitalDistance>90</orbitalDistance>
-            <orbitalPhi>-2</orbitalPhi>
-            <rotationalPeriod>11997</rotationalPeriod>
-            <atmosphereDensity>155</atmosphereDensity>
-            <biomeIds>advancedrocketry:alien forest</biomeIds>
-        </planet>
-        <planet name="Mercery" DIMID="4">
-            <isKnown>false</isKnown>
-            <GasGiant>true</GasGiant>
-            <gas>nitrogen</gas>
-            <gas>hydrogen</gas>
-            <gas>oxygen</gas>
+
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>1.0,1.0,1.0</skyColor>
             <gravitationalMultiplier>130</gravitationalMultiplier>
@@ -93,6 +79,10 @@
         </planet>
         <planet name="Jupiter" DIMID="21">
             <isKnown>false</isKnown>
+            <GasGiant>true</GasGiant>
+            <gas>nitrogen</gas>
+            <gas>hydrogen</gas>
+            <gas>oxygen</gas>
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>0.5878742,0.89389074,1.0</skyColor>
             <gravitationalMultiplier>104</gravitationalMultiplier>
@@ -117,6 +107,10 @@
         </planet>
         <planet name="Uranus" DIMID="26">
             <isKnown>false</isKnown>
+            <GasGiant>true</GasGiant>
+            <gas>nitrogen</gas>
+            <gas>hydrogen</gas>
+            <gas>oxygen</gas>
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>0.8,0.5622388,0.620012</skyColor>
             <gravitationalMultiplier>112</gravitationalMultiplier>
@@ -128,6 +122,10 @@
         </planet>
         <planet name="Neptune" DIMID="12">
             <isKnown>false</isKnown>
+            <GasGiant>true</GasGiant>
+            <gas>nitrogen</gas>
+            <gas>hydrogen</gas>
+            <gas>oxygen</gas>
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>0.8,0.85336864,0.0</skyColor>
             <gravitationalMultiplier>95</gravitationalMultiplier>
