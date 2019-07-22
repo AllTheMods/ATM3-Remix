@@ -1,0 +1,15 @@
+{
+    "name": "Nuclearcraft",
+    "icon": "nuclearcraft:rad_x",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },        
+		{
+            "type": "text",
+            "text": "$(li)Radiation is enabled by default. $(li)**VERIFY CONFIGS**"
+        }
+    ]
+}

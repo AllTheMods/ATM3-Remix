@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "text",
-            "text": "Meteors will not spawn in the overworld. Instead, they can be found in Armoas Mining Dimension."
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "$(li) Meteors will not spawn in the overworld. Instead, they can be found in Armoas Mining Dimension."
         }
     ]
 }

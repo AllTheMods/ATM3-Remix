@@ -1,0 +1,35 @@
+{
+    "name": "Crop Harvesters",
+    "icon": "immersiveengineering:metal_device1:13",
+    "category": "guides_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": "List of crop harvesters"
+        },
+		{
+            "type": "spotlight",
+			"title": "Cyclic Harvester",
+			"item": "cyclicmagic:harvester_block",
+            "text": "Crops!"
+        },
+		{
+            "type": "spotlight",
+			"title": "EnderIO Farming Station",
+			"item": "enderio:block_farm_station",
+            "text": "Crops!"
+        },
+		{
+            "type": "spotlight",
+			"title": "IE Garden Cloche",
+			"item": "immersiveengineering:metal_device1:13",
+            "text": "Crops!"
+        },
+		{
+            "type": "spotlight",
+			"title": "Actually Additions Farmer",
+			"item": "actuallyadditions:block_farmer",
+            "text": "Crops!"
+        }
+    ]
+}

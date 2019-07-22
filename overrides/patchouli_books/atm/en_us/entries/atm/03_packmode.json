@@ -2,6 +2,7 @@
     "name": "Pack Mode",
     "icon": "minecraft:dragon_egg",
     "category": "atm_category",
+	"sortnum" : "3",
     "pages": [
         {
             "type": "text",
