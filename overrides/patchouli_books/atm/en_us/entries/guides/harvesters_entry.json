@@ -1,0 +1,17 @@
+{
+    "name": "Crop Harvesters",
+    "icon": "immersiveengineering:metal_device1:13",
+    "category": "guides_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": "List of crop harvesters"
+        },
+		{
+            "type": "spotlight",
+			"title": "Cyclic Harvester",
+			"item": "cyclicmagic:harvester_block",
+            "text": "Crops!"
+        }
+    ]
+}

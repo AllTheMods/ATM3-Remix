@@ -1,0 +1,11 @@
+{
+    "name": "Beginners Guide",
+    "icon": "minecraft:writable_book",
+    "category": "atm_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": "If you are new to modded Minecraft and need some help figuring out what to do, please have a look at this general modded Minecraft guide. Do note that not everything will apply exactly, but there should be similar items in the pack you may use."
+        }
+    ]
+}
