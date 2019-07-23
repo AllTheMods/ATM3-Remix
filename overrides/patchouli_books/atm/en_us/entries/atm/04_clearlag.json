@@ -1,6 +1,6 @@
 {
     "name": "Clearlag",
-    "icon": "<extrautils2:trashcan>",
+    "icon": "extrautils2:trashcan",
     "category": "atm_category",
 	"sortnum" : "4",
     "pages": [

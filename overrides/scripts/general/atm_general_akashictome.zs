@@ -301,6 +301,15 @@ print(" ==================================================== ");
 					"akashictome:definedMod": "modcurrency"
 				},
 				Damage: 0 as short
+			},
+			patchouli: {
+				id: "patchouli:guide_book",
+				Count: 1 as byte,
+				tag: {
+					"akashictome:definedMod": "patchouli",
+					"patchouli:book":"patchouli:atm"
+				},
+				Damage: 0 as short
 			}
 		}
 	}
@@ -360,6 +369,7 @@ print(" ==================================================== ");
 		<patchouli:guide_book>.withTag({"patchouli:book": "roots:roots_guide"}),
 		<patchouli:guide_book>.withTag({"patchouli:book": "pneumaticcraft:book"}),
 		<modcurrency:guidebook>,
+		<patchouli:guide_book>.withTag({"patchouli:book": "patchouli:atm"})
 		] as IItemStack[];
 
 	for itemBook in addedBooks {
