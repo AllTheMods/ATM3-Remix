@@ -1,0 +1,41 @@
+{
+    "name": "Item Transfer",
+    "icon": "thermaldynamics:duct_0:4",
+    "category": "guides_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Item transfer methods."
+        },
+		{
+            "type": "spotlight",
+			"title": "Xnet",
+			"item": "xnet:controller",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "EnderIO",
+			"item": "enderio:item_item_conduit",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "Thermal Dynamics",
+			"item": "thermaldynamics:duct_32",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "Mekanism",
+			"item": "mekanism:transmitter:1",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "Integrated Dynamics",
+			"item": "integrateddynamics:cable",
+            "text": ""
+        }
+    ]
+}
