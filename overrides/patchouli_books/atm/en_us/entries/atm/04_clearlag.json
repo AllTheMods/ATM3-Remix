@@ -3,6 +3,7 @@
     "icon": "extrautils2:trashcan",
     "category": "atm_category",
 	"sortnum" : "4",
+	"read_by_default": true,
     "pages": [
         {
             "type": "text",

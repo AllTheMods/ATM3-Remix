@@ -3,6 +3,7 @@
     "icon": "stevescarts:cartmodule:40",
     "category": "atm_category",
 	"sortnum" : "100",
+	"read_by_default": true,
     "pages": [
         {
             "type": "text",

@@ -2,6 +2,7 @@
     "name": "Crop Growth Accelerators",
     "icon": "actuallyadditions:block_greenhouse_glass",
     "category": "guides_category",
+	"read_by_default": true,
     "pages": [
         {
             "type": "text",
@@ -23,19 +24,19 @@
             "type": "spotlight",
 			"title": "Lilypad Of Fertility",
 			"item": "xreliquary:fertile_lilypad",
-            "text": "Increases crop growth speed in a ?x? area around it. Must be placed on water. Stackable."
+            "text": "Increases crop growth speed in a 7x7 area around it. Must be placed on water. Stackable."
         },
 		{
             "type": "spotlight",
 			"title": "Cyclic Sprinkler",
 			"item": "cyclicmagic:sprinkler",
-            "text": "Increases crop growth speed in a ?x? area around it. Must be placed on water. Stackable."
+            "text": "Increases crop growth speed in a 9x9 area around it. Must be placed on water. Stackable."
         },
 		{
             "type": "spotlight",
 			"title": "OpenBlocks Sprinkler",
 			"item": "openblocks:sprinkler",
-            "text": "Waters and increases crop growth speed in a ?x? area around it."
+            "text": "Waters and increases crop growth speed in a 9x9 area around it. Requires a tank filled with water below it. Also grows grass."
         },
 		{
             "type": "spotlight",

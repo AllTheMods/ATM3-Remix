@@ -2,10 +2,11 @@
     "name": "Chunk Loaders",
     "icon": "chickenchunks:chunk_loader",
     "category": "guides_category",
+	"read_by_default": true,
     "pages": [
         {
             "type": "text",
-            "text": "List of chunk loaders"
+            "text": "List of chunk loaders. $(br2)For servers, it is recommended to disable crafting of all loaders."
         },
 		{
             "type": "text",

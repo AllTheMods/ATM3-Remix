@@ -3,6 +3,7 @@
     "icon": "opencomputers:component:11",
     "category": "atm_category",
 	"sortnum" : "5",
+	"read_by_default": true,
     "pages": [
         {
             "type": "text",
@@ -14,7 +15,7 @@
         },
 		{
             "type": "text",
-            "text": "Also provided are a number of debugging tools. $(li)Spark $(li)LagGoggles $(li)Blood Debug $(li)ChickenChunks"
+            "text": "Also provided are a number of debugging tools. $(li)Spark $(li)LagGoggles $(li)Blood Debug $(li)ChickenChunks $(li)Sampler"
         }
 		]
 }

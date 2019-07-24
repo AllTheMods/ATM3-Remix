@@ -2,6 +2,7 @@
     "name": "Power Transfer",
     "icon": "rftoolsdim:dimlet_energy_module:2",
     "category": "guides_category",
+	"read_by_default": true,
     "pages": [
         {
             "type": "text",

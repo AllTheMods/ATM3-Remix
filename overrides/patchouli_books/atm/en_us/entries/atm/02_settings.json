@@ -3,7 +3,8 @@
     "icon": "opencomputers:component:11",
     "category": "atm_category",
 	"sortnum" : "2",
-    "pages": [
+	"read_by_default": true,
+	"pages": [
         {
             "type": "text",
             "text": ""
