@@ -1,0 +1,20 @@
+{
+    "name": "JEI - Search Bar",
+    "icon": "thebetweenlands:items_misc:40",
+    "category": "guides_category",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "When you open your inventory there is a search bar below the main window. You can use this to see crafting recipes for any item in the game. $(li)Left clicking on an item will show how to make it. $(li)Right clicking on an item will show what it can be used to make. $(br)This can be done in the recipe window as well. $(br2)Pressing the + sign will move the items from your inventory into a crafting table if one is open."
+        },
+		{
+            "type": "text",
+            "text": "You can also use the search bar to look up mod names @<modname>, or by tooltip #<tooltip>. $(br)You can bookmark items to the left side of the screen by pressing A while pointing to them. "
+        }
+    ]
+}
