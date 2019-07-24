@@ -326,6 +326,9 @@ print(" ==================================================== ");
 	//1 dirt = book
 	recipes.addShapeless(completeTome, [<minecraft:dirt>]);
 	
+	// Starting item(ATM3R Book)
+	mods.initialinventory.InvHandler.addStartingItem(<patchouli:guide_book>.withTag({"patchouli:book": "patchouli:atm"}));
+	
 	// Starting item
 	mods.initialinventory.InvHandler.addStartingItem(completeTome);
 
