@@ -1,0 +1,27 @@
+{
+    "name": "Power Generation",
+    "icon": "mekanismgenerators:generator:6",
+    "category": "guides_category",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": "Not a complete list, just a few suggestions."
+        },
+		{
+            "type": "text",
+			"title": "Early Game",
+            "text": "$(li)Coal Generators $(li)Lava Generators $(li)Canola $(li)Water Wheel $(li)Windmill $(li)Wind Generator"
+        },
+		{
+            "type": "text",
+			"title": "Mid Game",
+            "text": "$(li)Steam $(li)Syngas $(li)Deep Resonance $(li)Ethylene $(li)Solar $(li)Lightning $(li)Nuclearcraft $(li)Extreme Reactors $(li)Enviromental Tech Solar"
+        },
+		{
+            "type": "text",
+			"title": "Late Game",
+            "text": "$(li)Draconic Reactor $(li)Rainbow Generator $(li)Mek Steam"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "name": "Mob Farming",
-    "icon": "rftoolsdim:dimlet_energy_module:2",
+    "icon": "minecraft:skull",
     "category": "guides_category",
 	"read_by_default": true,
     "pages": [
