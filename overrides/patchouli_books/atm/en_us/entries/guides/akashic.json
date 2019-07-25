@@ -1,0 +1,18 @@
+{
+    "name": "Akashic Tome",
+    "icon": "akashictome:tome",
+    "category": "guides_category",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "Akashic Tome",
+			"item": "akashictome:tome",
+            "text": "The Akashic Tome is used to contain the various guide books that mods provide. It even contains a copy of this book! If lost, the Akashic Tome can be crafted with just a piece of dirt."
+        }
+    ]
+}

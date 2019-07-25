@@ -1,0 +1,17 @@
+{
+    "name": "Clearlag",
+    "icon": "extrautils2:trashcan",
+    "category": "atm_category",
+	"sortnum" : "4",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "Clearlag is a set of commands that run automatically and will remove items and hostile mobs on a 30 minute basis. It is disabled by default but you can enable it in Mod Options (for SSP) or worldprimer.cfg (on server).$(br2)$(#f00)WARNING: THIS WILL CLEAR BOSS ENTITIES!!"
+        }
+		]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Beginners Guide",
+    "icon": "minecraft:writable_book",
+    "category": "guides_category",
+ 	"sortnum" : "-1",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "link",
+            "text": "If you are new to modded Minecraft and need some help figuring out what to do, please have a look at this general modded Minecraft guide. Do note that not everything will apply exactly, but there should be similar items in the pack you may use.",
+			"url": "https://borg286.github.io/minecraft2/",
+            "link_text": "Beginner Guide"
+        }
+    ]
+}

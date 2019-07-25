@@ -1,0 +1,59 @@
+{
+    "name": "Chunk Loaders",
+    "icon": "chickenchunks:chunk_loader",
+    "category": "guides_category",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "List of chunk loaders. $(br2)For servers, it is recommended to disable crafting of all loaders."
+        },
+		{
+            "type": "text",
+			"title": "FTBU",
+            "text": "FTBU is able to claim chunks as well as chunk load them. $(br)To do this you must open your inventory, look for the map icon at the left side of the screen and click it. $(br2)$(li)Left clicking on the map will claim or unclaim chunks. $(li)Shift + left clicking will chunkload. $(br2)This may be altered on servers."
+        },
+		{
+            "type": "spotlight",
+			"title": "CC Chunkloader",
+			"item": "chickenchunks:chunk_loader",
+            "text": "Chickenchunks Chunkloader is a configurable loader with a deactivation time. Max claim per loader is 3x3. By default it will turn off after 48 hours inactivity."
+        },
+		{
+            "type": "spotlight",
+			"title": "CC Spotloader",
+			"item": "chickenchunks:chunk_loader:1",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "Exu2 Chunk Loading Ward",
+			"item": "extrautils2:chunkloader",
+            "text": "This chunkloader requires GP to keep active and loads a 3x3 area."
+        },
+		{
+            "type": "spotlight",
+			"title": "IC2 Chunk Loader",
+			"item": "ic2:te:82",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "TR Industrial Chunkloader",
+			"item": "techreborn:chunk_loader",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "Mek Anchor Upgrade",
+			"item": "mekanism:anchorupgrade",
+            "text": "Chunkloads the machine this is installed in."
+        },
+		{
+            "type": "spotlight",
+			"title": "OC Chunkloader Upgrade",
+			"item": "opencomputers:upgrade:4",
+            "text": "Consumes power to load the chunk which the device is located."
+        }
+    ]
+}

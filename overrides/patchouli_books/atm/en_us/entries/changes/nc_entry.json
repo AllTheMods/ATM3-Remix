@@ -1,0 +1,15 @@
+{
+    "name": "Nuclearcraft",
+    "icon": "nuclearcraft:rad_x",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },        
+		{
+            "type": "text",
+            "text": "$(li)Radiation is enabled by default. $(br)accelerator_electromagnet_power=5000 (was 20000) $(br)accelerator_supercooler_coolant=1 (was 4) $(br)fusion_base_power=5.0 (was 1.0) $(br)fusion_electromagnet_power=1000 (was 4000) $(br)heat_exchanger_coolant_mult=30.0 (was 125.0) $(br)salt_fission_power=5.0 (was 1.0)"
+        }
+    ]
+}

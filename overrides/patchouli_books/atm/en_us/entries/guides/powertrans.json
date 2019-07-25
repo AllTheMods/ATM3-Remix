@@ -1,0 +1,36 @@
+{
+    "name": "Power Transfer",
+    "icon": "rftoolsdim:dimlet_energy_module:2",
+    "category": "guides_category",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "RF transfer methods."
+        },
+		{
+            "type": "spotlight",
+			"title": "RFTools Powercell",
+			"item": "rftools:powercell",
+            "text": "A wireless 'multiblock' for early to mid game storage and transfer. Can also be upgraded."
+        },
+		{
+            "type": "spotlight",
+			"title": "Quantum Entangloporter",
+			"item": "mekanism:machineblock3",
+            "text": "A wireless transporter that can handle power, items, fluids, and gasses."
+        },
+		{
+            "type": "spotlight",
+			"title": "Dimensional Transceiver",
+			"item": "enderio:block_transceiver",
+            "text": "Transfers power, items, and fluids."
+        },
+		{
+            "type": "spotlight",
+			"title": "Integrated Dynamics",
+			"item": "integrateddynamics:part_connector_omni_directional_item",
+            "text": "Transfers power, items, and fluids."
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "name": "Mob Farming",
+    "icon": "minecraft:skull",
+    "category": "guides_category",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "RF transfer methods."
+        },
+		{
+            "type": "spotlight",
+			"title": "Spawner",
+			"item": "minecraft:mob_spawner",
+            "text": "Spawners spawn monsters. They can be picked up with a moving wand or a sack of holding. Spawners can also be broken for crafting ingredients. A spawner can be changed by using a spawner changer on it. Spawners will follow normal mob spawn rules."
+        },
+		{
+            "type": "spotlight",
+			"title": "Spawner Changer",
+			"item": "actuallyadditions:item_spawner_changer",
+            "text": "A spawner changer is used to change the mob inside a vanilla spawner. Right click a mob to capture it, then right click a spawner to use it."
+        },
+		{
+            "type": "spotlight",
+			"title": "Cursed Earth",
+			"item": "extrautils2:ingredients:10",
+            "text": "Using a drop of evil on dirt will create cursed earth. It will spread for a large distance and cause stronger and faster mobs to spawn. Good for forcing rare mobs to spawn."
+        },
+		{
+            "type": "spotlight",
+			"title": "Nocturnal Powder",
+			"item": "astralsorcery:itemusabledust:1",
+            "text": "Spawns biome specific mobs. Will continue producing mobs until it dissipates."
+        },
+		{
+            "type": "spotlight",
+			"title": "Resturbed Spawner",
+			"item": "extrautils2:supermobspawner",
+            "text": "This spawner is made when using a drop of evil on a normal spawner. The spawner will become placable and upgradable, but the mobs spawned will eventually despawn if not killed after a short amount of time."
+        },
+		{
+            "type": "spotlight",
+			"title": "Soul Bead",
+			"item": "quark:soul_bead",
+            "text": "Soul beads are obtained by wraiths in the nether. Using a soul bead will give a 20 minute curse which will cause mobs to spawn without restriction."
+        },
+		{
+            "type": "spotlight",
+			"title": "Woot",
+			"item": "woot:factory",
+            "text": "Woot is a multiblock structure and is configured to be the preferred  mob farm. To capture a mob, use an ender shard on a mob, and then kill 4 of that mob to program it. Then craft the shard into a factory heart and place it on the multiblock. Factory hearts are interchangeable. $(br)Can be used for Ender Dragon and Chaos Guardian."
+        },
+		{
+            "type": "spotlight",
+			"title": "Mob Duplicator",
+			"item": "industrialforegoing:mob_duplicator",
+            "text": "Insert a mob imprisonment tool containing the mob to spawn. Can be upgraded."
+        },
+		{
+            "type": "spotlight",
+			"title": "Eio Powered Spawner",
+			"item": "enderio:block_powered_spawner",
+            "text": "Crafted from a broken spawner. Mob type can be changed by combining with a soul vial. Can be upgraded with capacitors."
+        },
+		{
+            "type": "spotlight",
+			"title": "Stabilized Spawner",
+			"item": "draconicevolution:awakened_core",
+            "text": "This is made by crafting a broken spawner with a core. The type of core used will determine the number of spawned mobs as well as what spawning rules are in place."
+        },
+		{
+            "type": "spotlight",
+			"title": "Soul Shards",
+			"item": "soulshardsrespawn:soul_shard",
+            "text": "Using a Vile Sword or and weapon enchanted with Soul Stealer an Unbound Soul Shard can be programmed by killing a mob. Leveling the shards with more kills allows for increased spawn rate and ignoring mob spawning rules."
+        },
+		{
+            "type": "spotlight",
+			"title": "Monolith of Spawning",
+			"item": "darkutils:monolith:1",
+            "text": "Increases spawn rate within the chunk. Mobs will have extra health and damage."
+        },
+		{
+            "type": "spotlight",
+			"title": "RFtools Spawner",
+			"item": "rftools:spawner",
+            "text": "Maybe just avoid this one."
+        }
+    ]
+}

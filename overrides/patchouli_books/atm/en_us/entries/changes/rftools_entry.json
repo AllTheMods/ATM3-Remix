@@ -1,0 +1,15 @@
+{
+    "name": "RFTools Dims & Dimlets",
+    "icon": "rftools:infused_diamond",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "$(li)Dimlets houses do not spawn in RFTools dimensions, instead they are a random drop from Endermen. $(br2)$(li)Dimension creation has been limited to 2 per player. If you want to make new dimensions you will need to remove old ones."
+        }
+    ]
+}

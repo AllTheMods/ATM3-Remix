@@ -1,0 +1,17 @@
+{
+    "name": "Pack Mode",
+    "icon": "minecraft:dragon_egg",
+    "category": "atm_category",
+	"sortnum" : "3",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "ATM3 - Remix comes with a number of changes that attempt to balance different mods in the pack. Some users may feel this is too time consuming or grindy and therefor there is an option to disable these changes."
+        },
+		{
+            "type": "text",
+            "text": "You may change the packmode in-game with the command $(#f00)/packmode simplified$(). $(br2)Alternatively, you may change this in $(#00F)config/packmode.cfg"
+        }
+		]
+}

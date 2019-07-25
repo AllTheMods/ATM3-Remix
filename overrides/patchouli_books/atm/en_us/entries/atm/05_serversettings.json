@@ -1,0 +1,21 @@
+{
+    "name": "Server Settings",
+    "icon": "opencomputers:component:11",
+    "category": "atm_category",
+	"sortnum" : "5",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "A custom script has been provided for server owners which allows being able to quickly remove crafting chunkloaders(to limit lag) and other problem items. $(br)There is also a spot that shows how to adjust starting items. $(br2)You can find this in the scripts folder."
+        },
+		{
+            "type": "text",
+            "text": "Also provided are a number of debugging tools. $(li)Spark $(li)LagGoggles $(li)Blood Debug $(li)ChickenChunks $(li)Sampler"
+        }
+		]
+}

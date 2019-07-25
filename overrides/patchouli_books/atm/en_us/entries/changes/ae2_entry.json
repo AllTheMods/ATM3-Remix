@@ -1,0 +1,15 @@
+{
+    "name": "AE2 Meteor Spawning",
+    "icon": "appliedenergistics2:sky_compass",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "$(li) Meteors will not spawn in the overworld. Instead, they can be found in Armoas Mining Dimension."
+        }
+    ]
+}

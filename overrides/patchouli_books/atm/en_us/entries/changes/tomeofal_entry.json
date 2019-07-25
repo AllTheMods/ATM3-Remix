@@ -1,0 +1,15 @@
+{
+    "name": "Tome of Alkahestry",
+    "icon": "xreliquary:alkahestry_tome:10000",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "The Tome of Alkahestry can only be charged by an ATM Star."
+        }
+    ]
+}

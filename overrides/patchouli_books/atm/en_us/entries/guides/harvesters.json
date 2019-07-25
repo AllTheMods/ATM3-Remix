@@ -1,0 +1,36 @@
+{
+    "name": "Crop Harvesters",
+    "icon": "immersiveengineering:metal_device1:13",
+    "category": "guides_category",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "List of crop harvesters"
+        },
+		{
+            "type": "spotlight",
+			"title": "Cyclic Harvester",
+			"item": "cyclicmagic:harvester_block",
+            "text": "Configurable harvester with up to 15x15 range. If used for various seed types, it is recommended to have an item collector set up near it as any extra drops will come out."
+        },
+		{
+            "type": "spotlight",
+			"title": "EnderIO Farming Station",
+			"item": "enderio:block_farm_station",
+            "text": "Range depends on capacitor installed, up to 23x23."
+        },
+		{
+            "type": "spotlight",
+			"title": "IE Garden Cloche",
+			"item": "immersiveengineering:metal_device1:13",
+            "text": "Grows 1 crop, but has accelerated growth speed. Can also take fertilizer for added effect."
+        },
+		{
+            "type": "spotlight",
+			"title": "Actually Additions Farmer",
+			"item": "actuallyadditions:block_farmer",
+            "text": "9x9 area. Has issues with some crops."
+        }
+    ]
+}

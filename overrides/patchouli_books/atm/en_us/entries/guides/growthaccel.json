@@ -1,0 +1,48 @@
+{
+    "name": "Crop Growth Accelerators",
+    "icon": "actuallyadditions:block_greenhouse_glass",
+    "category": "guides_category",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "List of crop growth accelerators"
+        },
+		{
+            "type": "spotlight",
+			"title": "Fertile Soil",
+			"item": "rustic:fertile_soil",
+            "text": "Increases crop growth speed and doesn't need to be watered!"
+        },
+		{
+            "type": "spotlight",
+			"title": "Greenhouse Glass",
+			"item": "actuallyadditions:block_greenhouse_glass",
+            "text": "Increases growth speed of crops placed below. Requires direct line of sight to the sky."
+        },
+		{
+            "type": "spotlight",
+			"title": "Lilypad Of Fertility",
+			"item": "xreliquary:fertile_lilypad",
+            "text": "Increases crop growth speed in a 7x7 area around it. Must be placed on water. Stackable."
+        },
+		{
+            "type": "spotlight",
+			"title": "Cyclic Sprinkler",
+			"item": "cyclicmagic:sprinkler",
+            "text": "Increases crop growth speed in a 9x9 area around it. Must be placed on water. Stackable."
+        },
+		{
+            "type": "spotlight",
+			"title": "OpenBlocks Sprinkler",
+			"item": "openblocks:sprinkler",
+            "text": "Waters and increases crop growth speed in a 9x9 area around it. Requires a tank filled with water below it. Also grows grass."
+        },
+		{
+            "type": "spotlight",
+			"title": "MA Growth Accelerator",
+			"item": "mysticalagriculture:growth_accelerator",
+            "text": "Accelerates the crops on dirt directly above it. Can be stacked up to 64 below."
+        }
+    ]
+}

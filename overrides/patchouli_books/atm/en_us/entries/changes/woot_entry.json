@@ -1,0 +1,15 @@
+{
+    "name": "Woot Power Costs",
+    "icon": "woot:prism",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "$(li)The number of kills required to fill a shard is 4. $(br2)$(li)Woot's power cost for Tier 1, 2 and 3 factories is set at 1 RF/T for all mobs allowed. Power cost for Tier 4 will be significantly higher. Only use T4 to farm the bosses that can't be used in T3."
+        }
+    ]
+}

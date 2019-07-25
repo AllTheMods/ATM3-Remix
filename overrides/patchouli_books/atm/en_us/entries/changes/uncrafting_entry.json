@@ -1,0 +1,15 @@
+{
+    "name": "Uncrafting",
+    "icon": "botania:manaresource:11",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "All tools that allow uncrafting of items have been disabled and removed."
+        }
+    ]
+}

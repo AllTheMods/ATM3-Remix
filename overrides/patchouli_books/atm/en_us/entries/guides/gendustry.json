@@ -1,0 +1,18 @@
+{
+    "name": "Gendustry Guide",
+    "icon": "gendustry:waste",
+    "category": "guides_category",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "link",
+            "text": "Think bees are boring and tedious? Have a look at gendustry to simplify your bee life. $(br2)$(br2)$(br2)Youtube link.",
+			"url": "https://www.youtube.com/watch?v=p9tTtNGFFIE",
+            "link_text": "Gendustry Guide"
+        }
+    ]
+}

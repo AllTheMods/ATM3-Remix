@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
 #packmode normal
+#priority 1
 
 print(" =================== Balance Tweaks =================== ");
 print(" ====================================================== ");
@@ -220,14 +221,14 @@ print(" ====================================================== ");
 //====== EXTREME REACTORS BALANCE ======
 	//====== Variables ======
 	//
-		var BRAngelsite = <bigreactors:minerals:0>;
-		var BRBentonite = <bigreactors:minerals:1>;
-		var BRGraphite = <bigreactors:ingotmetals:2>;
+		var BRAngelsite = <bigreactors:mineralanglesite>;
+		var BRBentonite = <bigreactors:mineralbenitoite>;
+		var BRGraphite = <bigreactors:ingotgraphite>;
 		var MAGraphite = <mysticalagriculture:graphite_essence>;
-		var BRLudicrite = <bigreactors:blockmetals:4>;
-		var BRCyanDust = <bigreactors:dustmetals:1>;
-		var BRBlueDust = <bigreactors:dustmetals:3>;
-		var BRBlutonium = <bigreactors:ingotmetals:3>;
+		var BRLudicrite = <bigreactors:blockludicrite>;
+		var BRCyanDust = <bigreactors:dustcyanite>;
+		var BRBlueDust = <bigreactors:dustblutonium>;
+		var BRBlutonium = <bigreactors:ingotblutonium>;
 		var TRAdvAlloy = <ore:plateAdvancedAlloy>;
 		var ImmersiveElectrode = <immersiveengineering:graphite_electrode>; // Electrode
 		var ImmersiveSteelRod = <ore:stickSteel>;
@@ -300,7 +301,7 @@ print(" ====================================================== ");
 			[<ore:blockEnderium>, gaiaIngot, <ore:blockEnderium>],
 			[BRBlutonium, <ore:blockInsanium>, BRBlutonium]
 			]);
-		recipes.addShapeless("ludricriteShapeless", <bigreactors:ingotmetals:4>*9, [BRLudicrite]);
+		recipes.addShapeless("ludricriteShapeless", <bigreactors:ingotludicrite>*9, [BRLudicrite]);
 		recipes.addShapeless("LudicriteBlock", BRLudicrite, [
 			<ore:ingotLudicrite>, <ore:ingotLudicrite>, <ore:ingotLudicrite>,
 			<ore:ingotLudicrite>, <ore:ingotLudicrite>, <ore:ingotLudicrite>,
@@ -318,7 +319,6 @@ print(" ====================================================== ");
 	
 	//Blutonium Processing
 		recipes.removeShaped(BRBlutonium);
-		recipes.addShapeless("crtBRblufix", BRBlutonium * 9, [<bigreactors:blockmetals:3>]);
 		mods.thermalexpansion.Crucible.addRecipe(lCyanite, BRCyanDust, 200000);
 		mods.thermalexpansion.Refinery.addRecipe(lMenril, BRBlueDust, lCyanite, 200000);
 		BRBlueDust.addTooltip("Extracted from fluid cyanite");
@@ -340,7 +340,7 @@ print(" ====================================================== ");
 	
 	// Mek Reactor
 	recipes.addShaped("BRMekReactor", <mekanismgenerators:reactor>, [
-		[<ore:ic2DepletedRod>, <mekanismgenerators:reactor:2>, <bigreactors:ingotmetals:4>],
+		[<ore:ic2DepletedRod>, <mekanismgenerators:reactor:2>, <bigreactors:ingotludicrite>],
 		[<mekanismgenerators:reactor:1>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:1>],
 		[<mekanismgenerators:reactor:1>, <bigreactors:reactorcontroller>, <mekanismgenerators:reactor:1> ]
 		]);
@@ -489,57 +489,6 @@ print(" ====================================================== ");
 	recipes.addShapeless("IEScaffoldingShapeless", <immersiveengineering:metal_decoration1:1>, [<immersiveengineering:metal_decoration1_slab:1>, <immersiveengineering:metal_decoration1_slab:1>]);
 
 
-//====== CHUNK LOADER BALANCE ======
-//
-	//Disabled outright
-	recipes.remove(<techreborn:chunk_loader>);
-	recipes.remove(<stevescarts:cartmodule:49>);
-	recipes.remove(<mekanism:anchorupgrade>);
-
-	//Recipe Gating:
-	//First level, OC chunkloader upgrade
-	recipes.remove(<opencomputers:upgrade:4>);
-	recipes.addShaped("OCChunkloader", <opencomputers:upgrade:4>, [
-		[<ic2:plate:11>, <thermalfoundation:material:833>, <ic2:plate:11>],
-		[<opencomputers:component:15>, <minecraft:nether_star:*>, <opencomputers:component:15>],
-		[<ic2:plate:11>, <thermalfoundation:material:833>, <ic2:plate:11>]
-		]);
-
-	//First level, MEK Anchor Upgrade
-	recipes.remove(<mekanism:anchorupgrade>);
-	recipes.addShaped("MekChunkloader", <mekanism:anchorupgrade>, [
-		[<opencomputers:upgrade:14>, <ic2:plate:17>, <opencomputers:upgrade:14>],
-		[<ic2:plate:17>, <minecraft:nether_star:*>, <ic2:plate:17>],
-		[<thermalfoundation:material:295>, <ic2:plate:17>, <thermalfoundation:material:295>]
-		]);
-	
-	<ore:chunkloaderUpgrade>.addItems([<opencomputers:upgrade:4>, <mekanism:anchorupgrade>]);
-
-	//Second level, IC2 chunkloader
-	recipes.remove(<ic2:te:82>);
-	recipes.addShaped("Ic2Chunkloader", <ic2:te:82>, [
-		[<atmtweaks:item_material:2>, <rftools:infused_enderpearl>, <atmtweaks:item_material:2>],
-		[<ore:chunkloaderUpgrade>, <techreborn:machine_casing:2>, <ore:chunkloaderUpgrade>],
-		[<atmtweaks:item_material:2>, <rftools:infused_enderpearl>, <atmtweaks:item_material:2>]
-		]);
-	<ic2:te:82>.addTooltip(
-					format.underline(format.aqua(
-					"Needs high quantity of EU per loaded chunk per tick -- see transformer and energy upgrades"
-					)));
-	mods.jei.JEI.addDescription(<ic2:te:82>, "This chunkloader has been configured to require massive amounts of power per chunk loaded",
-											 "Energy Storage upgrades are mandatory and so are Transformer Upgrades most likely",
-											 "If the chunkloader is 'flashing' red/green it does not have enough power -- reduce number of chunks loaded or provide more power");
-	
-	//Third, Exu2 chunkloader
-	var contractLasso = <extrautils2:goldenlasso>.withTag({Animal: {ForgeData: {Contracted: 1 as byte}, id: "minecraft:villager"}, No_Place: 1 as byte});
-	recipes.remove(<extrautils2:chunkloader>);
-	recipes.addShaped("Exu2Chunkloader", <extrautils2:chunkloader>, [
-		[<ic2:te:82>,                  <botania:thirdeye>,                 <ic2:te:82>],
-		[<extrautils2:ingredients:16>, contractLasso,                      <extrautils2:ingredients:16>],
-		[<magicbees:resource:7>,       <notenoughwands:advanced_wandcore>, <magicbees:resource:7>]
-		]);
-		
-		
 //====== Slight Env. Tech Solar Nerf ======
 //
 	var photo = <environmentaltech:photovoltaic_cell>;

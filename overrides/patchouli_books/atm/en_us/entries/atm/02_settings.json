@@ -1,0 +1,19 @@
+{
+    "name": "Performance",
+    "icon": "opencomputers:component:11",
+    "category": "atm_category",
+	"sortnum" : "2",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "link",
+            "text": "If you are experiencing poor performance, lag or other issues, please see this settings guide.",
+			"url": "https://www.reddit.com/r/allthemods/comments/968r4k/how_to_fix_modpack_wont_load_fps/",
+            "link_text": "Settings Guide"
+        }
+		]
+}

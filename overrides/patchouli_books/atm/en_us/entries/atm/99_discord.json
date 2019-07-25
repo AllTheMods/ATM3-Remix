@@ -1,0 +1,19 @@
+{
+    "name": "Discord",
+    "icon": "stevescarts:cartmodule:40",
+    "category": "atm_category",
+	"sortnum" : "100",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "link",
+            "text": "You may join our discord by clicking on the link below. Come chat, report bugs, find servers, or check out any new packs we're making!",
+			"url": "https://discord.gg/K5FBPYa",
+            "link_text": "ATM Discord"
+		}
+		]
+}

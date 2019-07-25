@@ -1,0 +1,16 @@
+{
+    "name": "Mining Fatigue?",
+    "icon": "minecraft:stone_pickaxe",
+    "category": "guides_category",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "If you have constant mining fatigue, it is likely due to one of two things: $(li)Nutrition $(br)Press $(#f00)N$(), if any of your nutrients are at 20% or below you will have debuffs. $(li) Radiation $(br)Being too close to a wastelands biome, or carrying radioactive ores will increase your radiation and cause debuffs or death."
+        }
+    ]
+}

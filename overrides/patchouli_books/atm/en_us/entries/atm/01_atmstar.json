@@ -1,0 +1,19 @@
+{
+    "name": "ATM Star",
+    "icon": "atmtweaks:item_material",
+    "category": "atm_category",
+ 	"sortnum" : "1",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "spotlight",
+			"title": "ATM Star",
+			"item": "atmtweaks:item_material",
+            "text": "The ATM Star is the ultimate end game goal! You can use the ATM star to craft creative level items within the pack. Be sure to check JEI for details and good luck!"
+			}
+    ]
+}

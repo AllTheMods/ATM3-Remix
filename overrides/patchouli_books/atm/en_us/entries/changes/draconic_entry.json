@@ -1,0 +1,15 @@
+{
+    "name": "DE Energy Core",
+    "icon": "draconicevolution:awakened_core",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "Hard mode is enabled, meaning the core will require 672 Awakened Draconium and 492 Draconium for the tier 8 structure."
+        }
+    ]
+}

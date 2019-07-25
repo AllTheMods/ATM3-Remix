@@ -1,0 +1,27 @@
+
+//; 
+auto_convert_profiles=false
+
+//; 
+generate_travel_book_export=false
+
+//; 
+travel_book_learning=true
+
+//; 
+generate_help_data=false
+
+//Unique random identifier to count unique players if statistics are enabled
+random_uid=6181729668730927104
+
+//Advancement completed for anonymous statistics
+advancements_creative=firstcontact
+
+//Advancement completed for anonymous statistics
+advancements_survival=
+
+validation=346190887
+
+display_start=false
+
+send_statistics=false

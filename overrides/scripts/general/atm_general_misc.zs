@@ -555,10 +555,6 @@ recipes.remove(<minecraft:chest>);
 //
    mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:dynamiccell>);
    mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:smalldust:53>, <techreborn:dynamiccell>, 2500);
-   
-//====== Add Geiger Counter to Initial Inventory ======
-//
-   mods.initialinventory.InvHandler.addStartingItem(<nuclearcraft:geiger_counter>);
 	
 //====== Project Bench ======
 //
@@ -578,7 +574,6 @@ recipes.remove(<minecraft:chest>);
    
 //====== Chunkloader Rename ======
 //
-	<weirdinggadget:weirding_gadget>.displayName="Weirding Gadget (Chunk loader)"; 
 	<extrautils2:chunkloader>.displayName="Chunk Loading Ward (Chunk loader)"; 
 //	<ic2:te:82>.displayName="Chunk loader"; 
 	<opencomputers:upgrade:4>.displayName="Chunk loader Upgrade"; 

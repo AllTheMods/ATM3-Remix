@@ -1,0 +1,48 @@
+{
+    "name": "Item Transfer",
+    "icon": "thermaldynamics:duct_0:4",
+    "category": "guides_category",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "Item transfer methods. $(br2)To avoid lag, design systems that don't try to fill a container that is full."
+        },
+		{
+            "type": "spotlight",
+			"title": "Xnet",
+			"item": "xnet:controller",
+            "text": "Highly configurable transfer system that can handle items, fluids, gasses and power. Also contains logic systems for configuration. Allows stack transfer and transfer rate adjustment to reduce lag."
+        },
+		{
+            "type": "spotlight",
+			"title": "EnderIO",
+			"item": "enderio:item_item_conduit",
+            "text": "A variety of conduits that handle items, fluids, power, and redstone."
+        },
+		{
+            "type": "spotlight",
+			"title": "Thermal Dynamics",
+			"item": "thermaldynamics:duct_32",
+            "text": "A variety of ducts that handle items, fluids, power, and redstone."
+        },
+		{
+            "type": "spotlight",
+			"title": "Mekanism",
+			"item": "mekanism:transmitter:1",
+            "text": "A variety of cables that handle items, fluids, gasses, and power"
+        },
+		{
+            "type": "spotlight",
+			"title": "Integrated Dynamics",
+			"item": "integrateddynamics:cable",
+            "text": "Highly configurable transfer system that can handle items, fluids, gasses and power. Also contains logic systems for configuration."
+        },
+		{
+            "type": "spotlight",
+			"title": "XU2 Transfer Pipes",
+			"item": "extrautils2:grocket",
+            "text": "Pipes that transfer items, fluids and power. Only good early game. Slow transfer rate."
+        }
+    ]
+}

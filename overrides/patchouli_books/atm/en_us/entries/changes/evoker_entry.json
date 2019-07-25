@@ -1,0 +1,15 @@
+{
+    "name": "Evoker Spawning",
+    "icon": "bhc:blue_heart",
+    "category": "changes_category",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "$(li) Evokers are allowed to spawn in any roofed forest biome."
+        }
+    ]
+}

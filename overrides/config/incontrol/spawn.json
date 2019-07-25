@@ -1,0 +1,19 @@
+[ 
+	{
+    "dimension": 0,
+	"block": "minecraft:grass",
+	"biome": "Roofed Forest",
+    "mob": "minecraft:evocation_illager",
+	"random": 0.9,
+    "result": "deny"
+  },
+
+
+  {
+    "dimension": 0,
+	"block": "minecraft:grass",
+	"biome": "Roofed Forest",
+    "mob": "minecraft:evocation_illager",
+    "result": "allow"
+  }
+]
