@@ -1,0 +1,6 @@
+All the Mods 3 - Remix 1.4.0 to All the Mods 3 - Remix 1.4.9
+
+Removed 1 files:
+	- Millénaire
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)

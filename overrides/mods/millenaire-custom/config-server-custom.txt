@@ -1,3 +1,0 @@
-send_statistics=false
-
-keep_active_radius=150
