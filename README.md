@@ -7,11 +7,12 @@ This is the official repository and issue-tracker for All The Mods 3 Remix
 Does "All The Mods" *really* contain ALL THE MODS? No, of course not.
   
 #### Curse Links: 
-+ [![All the Mods 1](http://cf.way2muchnoise.eu/242462.svg "ATM1") All The Mods](https://mods.curse.com/modpacks/minecraft/242462-all-the-mods)  
-+ [![All the Mods 3](http://cf.way2muchnoise.eu/269708.svg "ATM3") All The Mods 3](https://mods.curse.com/modpacks/minecraft/269708-all-the-mods-3)  
++ [![All the Mods 1](http://cf.way2muchnoise.eu/242462.svg "ATM1") All The Mods](https://minecraft.curseforge.com/projects/all-the-mods)  
++ [![All the Mods 3](http://cf.way2muchnoise.eu/269708.svg "ATM3") All The Mods 3](https://minecraft.curseforge.com/projects/all-the-mods-3)  
++ [![All the Mods 3 Remix](http://cf.way2muchnoise.eu/301845.svg "ATM3: Remix") All The Mods 3 Remix](https://minecraft.curseforge.com/projects/all-the-mods-3-remix)  
 + [![All the Mods 3 Lite](http://cf.way2muchnoise.eu/274129.svg "ATM3: Lite") All The Mods 3 Lite](https://minecraft.curseforge.com/projects/atm-3-lite)  
-+ [![All the Mods Expert Remastered](http://cf.way2muchnoise.eu/274849.svg "ATMER") All The Mods Expert Remastered](https://mods.curse.com/modpacks/minecraft/252034-all-the-mods-expert)  
-+ [![All the Mods: All the Magic](http://cf.way2muchnoise.eu/310346.svg "ATM: All the Magic") All The Mods: All the Magic](https://www.curseforge.com/minecraft/modpacks/atm-all-the-magic)
++ [![All the Mods Expert Remastered](http://cf.way2muchnoise.eu/274849.svg "ATMER") All The Mods Expert Remastered](https://minecraft.curseforge.com/projects/all-the-mods-expert-remastered)  
++ [![All the Mods: All the Magic](http://cf.way2muchnoise.eu/310346.svg "ATM: All the Magic") All The Mods: All the Magic](https://minecraft.curseforge.com/projects/atm-all-the-magic)
 
 Need Help?
 ======

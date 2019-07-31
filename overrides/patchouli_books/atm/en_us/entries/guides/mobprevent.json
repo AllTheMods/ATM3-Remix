@@ -1,0 +1,16 @@
+{
+    "name": "Mob Blocking",
+    "icon": "randomthings:peacecandle",
+    "category": "guides_category",
+	"read_by_default": true,
+	"pages": [
+        {
+            "type": "text",
+            "text": ""
+        },
+		{
+            "type": "text",
+            "text": "$(li)Peaceful Candle $(li)Enviromental Controller with Peaceful Modifier (RFT) $(li)Interdiction Torch $(li)Aversion Obelisk (Eio) $(li)Lucerna Ritual (AS) $(li)Powered Lantern (IE) $(li)Ward of Sacrosanctity (BM)"
+        }
+    ]
+}
