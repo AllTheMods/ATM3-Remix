@@ -147,4 +147,10 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 //
    recipes.addShapeless(<ic2:ingot>, [<techreborn:ingot:21>]);
    <ore:ingotMixedMetal>.add(<ic2:ingot>);
+
+//====== Food ======
+//
+
+	<ore:foodCheese>.add(<actuallyadditions:item_food:0>);
+
    
