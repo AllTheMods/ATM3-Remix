@@ -158,6 +158,7 @@ print(" ========================================================== ");
 		]);
 	recipes.addShapeless("sapphireconvert", <techreborn:ore:3>*2, [<ore:oreSapphire>, <ore:oreSapphire>]);
 	//AMBER
+    recipes.remove(<thaumcraft:amber_block>);
 	<ore:blockAmber>.addItems([
 		<biomesoplenty:gem_block:7>,
 		<thaumcraft:amber_block>
