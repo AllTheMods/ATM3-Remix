@@ -55,6 +55,9 @@ print(" ========================================================================
 //		recipes.remove(<portalgun:item_portalgun>);
 
 
+	//Piston Scepter (Cyclic)[Claim Bypass]
+//		recipes.remove(<cyclicmagic:tool_push>);
+
 
 
 //====== Ban List (Chunkloaders) ======
