@@ -9,5 +9,6 @@
   </recipe>
 
   <recipe name="Ender Dust" disabled="true"/>
-
+  <recipe name="Tweak: Wood Hopper" disabled="true" />
+  
 </enderio:recipes>
