@@ -600,12 +600,17 @@ print(" ======================================================== ");
 		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
 	]);
 	
-//====== Weather Sensor ======
+//Black Quartz Rod
 //
 
-	recipes.remove(<quark:rain_detector>);
-	recipes.addShaped("WeatherSensor", <quark:rain_detector>, [
-		[<minecraft:glass>, <minecraft:glass>, <minecraft:glass>],
-		[<minecraft:quartz>, <minecraft:quartz>, <minecraft:quartz>],
-		[<minecraft:purpur_slab>, <minecraft:purpur_slab>, <minecraft:purpur_slab>]
+	recipes.remove(<jaopca:item_stickquartzblack>);
+	recipes.addShaped("Black Quartz Rod", <jaopca:item_stickquartzblack>*4, [
+		[null, <ore:gemQuartzBlack>, null],
+		[<ore:gemQuartzBlack>, null, null],
+		[null, null, null]
 	]);
+	
+//Diamond Nuggets
+//	
+	
+	recipes.addShapeless("Diamond Nugget Convert", <thermalfoundation:material:16>*9, [<ore:gemDiamond>]);
