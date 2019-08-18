@@ -158,12 +158,12 @@ print(" ========================================================== ");
 		]);
 	recipes.addShapeless("sapphireconvert", <techreborn:ore:3>*2, [<ore:oreSapphire>, <ore:oreSapphire>]);
 	//AMBER
-    recipes.remove(<thaumcraft:amber_block>);
+	recipes.removeByRecipeName("thaumcraft:ambertoblock");
 	<ore:blockAmber>.addItems([
 		<biomesoplenty:gem_block:7>,
 		<thaumcraft:amber_block>
 		]);
-	recipes.addShapeless("amberblockconvert", <thaumcraft:amber_block>*2, [<ore:blockAmber>, <ore:blockAmber>]);
+	recipes.addShapeless("amberblockconvert", <biomesoplenty:gem_block:7>*2, [<ore:blockAmber>, <ore:blockAmber>]);
 	recipes.addShapeless("amberconvert", <thaumcraft:amber>*2, [<ore:gemAmber>, <ore:gemAmber>]);
 	//MISC
 	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:32767>);
