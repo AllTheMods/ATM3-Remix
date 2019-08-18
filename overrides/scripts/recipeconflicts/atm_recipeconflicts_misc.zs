@@ -605,9 +605,8 @@ print(" ======================================================== ");
 
 	recipes.remove(<jaopca:item_stickquartzblack>);
 	recipes.addShaped("Black Quartz Rod", <jaopca:item_stickquartzblack>*4, [
-		[null, <ore:gemQuartzBlack>, null],
-		[<ore:gemQuartzBlack>, null, null],
-		[null, null, null]
+		[null, <ore:gemQuartzBlack>],
+		[<ore:gemQuartzBlack>, null]
 	]);
 	
 //Diamond Nuggets
