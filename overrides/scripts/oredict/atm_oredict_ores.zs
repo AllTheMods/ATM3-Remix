@@ -165,6 +165,7 @@ print(" ========================================================== ");
 		]);
 	recipes.addShapeless("amberblockconvert", <biomesoplenty:gem_block:7>*2, [<ore:blockAmber>, <ore:blockAmber>]);
 	recipes.addShapeless("amberconvert", <thaumcraft:amber>*2, [<ore:gemAmber>, <ore:gemAmber>]);
+	recipes.addShapeless("amberbrick", <thaumcraft:amber_brick>*4, [<ore:blockAmber>*4]);
 	//MISC
 	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:32767>);
 
