@@ -1,0 +1,8 @@
+{
+  "input": {
+    "item": "contenttweaker:bloody_mana_infused_time_dust"
+  },
+  "output": {
+    "item": "contenttweaker:roasted_time_dust"
+  }
+}

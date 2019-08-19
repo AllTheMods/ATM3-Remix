@@ -2,6 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.thaumcraft.Infusion;
+import crafttweaker.data.IData;
 
 #packmode normal
 #priority 1
@@ -18,6 +20,7 @@ print(" ====================================================== ");
 	"balance" changes to this one file so it is easy to remove for
 	anyone that would like to play a "simplified" version of the pack.
 */
+
 
 
 //====== FLIGHT BALANCE ======
@@ -364,7 +367,36 @@ print(" ====================================================== ");
 		[null, <actuallyadditions:item_crystal_empowered:4>, <notenoughwands:advanced_wandcore>]
 		]);
 
-
+//====== Time in a Bottle =========
+//
+	recipes.remove(<randomthings:timeinabottle>);
+	
+	//time in a bottle recipe
+	mods.thaumcraft.Infusion.registerRecipe("bottledtime", "", <randomthings:timeinabottle>.withTag({timeData: {storedTime: 72000}}), 5,
+	[<aspect:vitreus>*50,  <aspect:praecantatio>*20]
+	,<wizardry:mana_battery>,
+	[<wizardry:sky_dust>,<astralsorcery:itemcraftingcomponent:3>, <bloodmagic:arcane_ashes>, <astralsorcery:itemcraftingcomponent:3>,
+	<botania:manaresource:23>, <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:2>, <botania:lens:17>]);
+	
+	//time in a bottle refueling
+	mods.botania.ManaInfusion.addInfusion(<contenttweaker:mana_infused_time_dust>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_time_stop"}}), 1000);
+	mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:bloody_mana_infused_time_dust>, <contenttweaker:mana_infused_time_dust>, 0, 1000,100,20);
+	mods.bloodmagic.AlchemyArray.addRecipe(<contenttweaker:sands_of_time_acceleration>, <contenttweaker:roasted_time_dust>, <minecraft:potion>.withTag({Potion: "minecraft:strong_swiftness"}));
+	
+	recipes.addShapeless("chargebottle", <randomthings:timeinabottle>,
+	[ <randomthings:timeinabottle>.marked("mark"),<contenttweaker:sands_of_time_acceleration>],
+	function(out,ins,cInfo){
+	val i = ins.mark.tag as IData;
+	val s = (i.timeData.storedTime as IData).asInt();
+	return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s+720000}});
+	},null);
+	
+	<contenttweaker:sands_of_time_acceleration>.addTooltip(format.aqua("Adds 10 Hours to the Time in a Bottle"));
+	<randomthings:timeinabottle>.addTooltip(format.red("Does not charge over Time!"));
+	<randomthings:timeinabottle>.addTooltip("Use " + format.aqua("Sands of Time Acceleration") + format.gray(" to charge"));
+	
+	
+	
 //====== Slightly Balance EXU2 Water Mill ======
 //
 	recipes.addShaped("EXU2WaterMill", <extrautils2:passivegenerator:3>, [
