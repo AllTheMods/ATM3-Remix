@@ -608,3 +608,11 @@ print(" ====================================================== ");
 //
     mods.jei.JEI.removeAndHide(<twilightforest:uncrafting_table>);
 
+//====== Buildinggadgets Exchanger ======
+
+	recipes.remove(<buildinggadgets:exchangertool>);
+	recipes.addShaped("New Exchanger",<buildinggadgets:exchangertool>, [
+		[<minecraft:emerald>, <draconicevolution:draconic_core>, <minecraft:emerald>],
+		[<botania:endereyeblock>, <notenoughwands:swapping_wand>.withTag({Energy: 500000}), <botania:endereyeblock>],
+		[<minecraft:emerald>, <draconicevolution:draconic_core>, <minecraft:emerald>]
+		]);	
