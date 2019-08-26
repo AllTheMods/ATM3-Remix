@@ -55,11 +55,6 @@ print(" ========================================================================
 //		recipes.remove(<portalgun:item_portalgun>);
 
 
-	//Piston Scepter (Cyclic)[Claim Bypass]
-//		recipes.remove(<cyclicmagic:tool_push>);
-
-
-
 //====== Ban List (Chunkloaders) ======
 //This will disable crafting for chunkloaders. This is to limit players from loading too many chunks.
 //Reccommend enabling all removals and giving players chunkloaders with starting inv.
