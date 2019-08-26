@@ -10,5 +10,14 @@
 
   <recipe name="Ender Dust" disabled="true"/>
   <recipe name="Tweak: Wood Hopper" disabled="true" />
-  
+  <recipe name="Quartz Dust" disabled="true" />
+
+
+  <recipe name="Quartz Dust2">
+    <sagmilling bonus="none" energy="2400">
+      <input name="gemQuartz"/>
+      <output name="POWDER_QUARTZ"/>
+    </sagmilling>
+  </recipe>
+
 </enderio:recipes>
