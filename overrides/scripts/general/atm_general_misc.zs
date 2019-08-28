@@ -596,3 +596,12 @@ recipes.remove(<minecraft:chest>);
 		[null,null,null],
 		[null,null,null]
 ]);
+
+//====== Beer Mug ======
+//
+   mods.forestry.ThermionicFabricator.removeCast(<extratrees:drink>);
+   recipes.addShaped(<extratrees:drink> * 8, [
+      [null, null, null],
+      [null, <forestry:beeswax>, null],
+      [null, <minecraft:glass>, null]
+      ]);
