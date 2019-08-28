@@ -1,0 +1,29 @@
+{
+  "integrationMaterials": {
+    "DEFAULT": {
+      "name": "DEFAULT",
+      "material": true,
+      "fluid": true,
+      "traits": true,
+      "armorOptions": {
+        "enableArmor": true,
+        "enableCore": true,
+        "enablePlates": true,
+        "enableTrim": true
+      },
+      "toolOptions": {
+        "enableTool": true,
+        "enableHead": true,
+        "enableHandle": true,
+        "enableExtra": true
+      },
+      "rangedOptions": {
+        "enableRanged": true,
+        "enableBow": true,
+        "enableShaft": true,
+        "enableFletching": true,
+        "enableProjectile": true
+      }
+    }
+  }
+}

@@ -1,0 +1,982 @@
+//  {
+//    The material's durability is this value multiplied by 8
+//    "durability": 36,
+//    The material's mining speed is this value multiplied by 0.65
+//    "miningSpeed": 0.0,
+//    The material's attack is this value | The material's bonus damage is this value divided by 3
+//    "damage": 0.0,
+//    The material's modifier is this value divided by 6 plus 0.1
+//    "magicAffinity": 15.0,
+//    The material's harvest level is this value
+//    "harvestLevel": 0,
+//    The material's range is this value
+//    "range": 0.0,
+//    The material's accuracy is this value with 1.0 being 100%
+//    "accuracy": 0.0,
+//    The material's defense is this value multiplied by 2
+//    "defense": 9.0,
+//    The material's toughness is this value multiplied by 1.5
+//    "toughness": 2.0,
+//    The material's traits
+//    "traits": [
+//      {
+//        The trait's identifier
+//        "traitName": "rough_armor",
+//        The tool part to have the trait
+//        "traitPart": "core"
+//      }
+//    ],
+//    The material's oreDict entry and identifier
+//    "identifier": "scalesilverdragon",
+//    The item to be added to the material's oreDict entry
+//    "itemName": "iceandfire:dragonscales_silver",
+//    The item's meta value
+//    "meta": 0,
+//    The material's color
+//    "color": 11184810,
+//    The material render info to be used for the material's aspect (unused at the moment)
+//    "type": "METAL",
+//    If the material should be castable with a casting table or casting basin (no fluids are added to the materials at the moment)
+//    "isCastable": false,
+//    If the material should be craftable in the part crafter
+//    "isCraftable": true,
+//    If the material should be useable for tool parts
+//    "isToolMaterial": false,
+//    If the material should be useable for bow limbs
+//    "isBowMaterial": false,
+//    If the material should be useable for fletchings
+//    "isFletchingMaterial": false,
+//    If the material should be useable for projectile parts
+//    "isProjectileMaterial": false,
+//    If the material should be useable for armor parts
+//    "isArmorMaterial": true
+//  }
+[
+  {
+    "durability": 20,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 10.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 1.0,
+    "traits": [],
+    "identifier": "leatherfrosttroll",
+    "itemName": "iceandfire:troll_leather_frost",
+    "meta": 0,
+    "color": 3228222,
+    "type": "DEFAULT",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 20,
+    "miningSpeed": 6.0,
+    "damage": -1.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 3,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 0.0,
+    "traits": [],
+    "identifier": "chitindesertmyrmex",
+    "itemName": "iceandfire:myrmex_desert_chitin",
+    "meta": 0,
+    "color": 5847042,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": true,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": true,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 15,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 5.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 1.5,
+    "traits": [],
+    "identifier": "chitintandeathworm",
+    "itemName": "iceandfire:deathworm_chitin",
+    "meta": 0,
+    "color": 12895428,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 20,
+    "miningSpeed": 6.0,
+    "damage": -1.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 3,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 0.0,
+    "traits": [],
+    "identifier": "chitinjunglemyrmex",
+    "itemName": "iceandfire:myrmex_jungle_chitin",
+    "meta": 0,
+    "color": 153931,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": true,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": true,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "prideful_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalebronzedragon",
+    "itemName": "iceandfire:dragonscales_bronze",
+    "meta": 0,
+    "color": 8674606,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scaleblueseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_blue",
+    "meta": 0,
+    "color": 5592575,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scalepurpleseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_purple",
+    "meta": 0,
+    "color": 11141290,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "writable2",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalewhitedragon",
+    "itemName": "iceandfire:dragonscales_white",
+    "meta": 0,
+    "color": 16777215,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 15,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 5.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 1.5,
+    "traits": [],
+    "identifier": "chitinwhitedeathworm",
+    "itemName": "iceandfire:deathworm_chitin",
+    "meta": 1,
+    "color": 16777215,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 15,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 5.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 1.5,
+    "traits": [],
+    "identifier": "chitinbrowndeathworm",
+    "itemName": "iceandfire:deathworm_chitin",
+    "meta": 2,
+    "color": 8005929,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "steady_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalegraydragon",
+    "itemName": "iceandfire:dragonscales_gray",
+    "meta": 0,
+    "color": 5592405,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalesapphiredragon",
+    "itemName": "iceandfire:dragonscales_sapphire",
+    "meta": 0,
+    "color": 5592575,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scaletealseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_teal",
+    "meta": 0,
+    "color": 43690,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "lightweight_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalebluedragon",
+    "itemName": "iceandfire:dragonscales_blue",
+    "meta": 0,
+    "color": 14809072,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 20,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 10.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 1.0,
+    "traits": [],
+    "identifier": "leatherforesttroll",
+    "itemName": "iceandfire:troll_leather_forest",
+    "meta": 0,
+    "color": 3752497,
+    "type": "DEFAULT",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 10.0,
+    "damage": 8.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 4,
+    "range": 1.25,
+    "accuracy": 0.0,
+    "defense": 0.0,
+    "toughness": 0.0,
+    "traits": [],
+    "identifier": "bonedragon",
+    "itemName": "iceandfire:dragonbone",
+    "meta": 0,
+    "color": 11184810,
+    "type": "DEFAULT",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": true,
+    "isBowMaterial": true,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": true,
+    "isArmorMaterial": false
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "shielding_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalegreendragon",
+    "itemName": "iceandfire:dragonscales_green",
+    "meta": 0,
+    "color": 43520,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 20,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 10.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 1.0,
+    "traits": [],
+    "identifier": "leathermountaintroll",
+    "itemName": "iceandfire:troll_leather_mountain",
+    "meta": 0,
+    "color": 3883584,
+    "type": "DEFAULT",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scalebronzeseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_bronze",
+    "meta": 0,
+    "color": 16755200,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "autoforge_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "infernal_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalereddragon",
+    "itemName": "iceandfire:dragonscales_red",
+    "meta": 0,
+    "color": 11141120,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": true,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scaledeepblueseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_deepblue",
+    "meta": 0,
+    "color": 170,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scaleredseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_red",
+    "meta": 0,
+    "color": 16733525,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 30,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 25.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 7.0,
+    "toughness": 2.5,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "aquaspeed_armor",
+        "traitPart": "plates"
+      }
+    ],
+    "identifier": "scalegreenseaserpent",
+    "itemName": "iceandfire:sea_serpent_scales_green",
+    "meta": 0,
+    "color": 43520,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  },
+  {
+    "durability": 36,
+    "miningSpeed": 0.0,
+    "damage": 0.0,
+    "magicAffinity": 15.0,
+    "harvestLevel": 0,
+    "range": 0.0,
+    "accuracy": 0.0,
+    "defense": 9.0,
+    "toughness": 2.0,
+    "traits": [
+      {
+        "traitName": "rough_armor",
+        "traitPart": "core"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "trim"
+      },
+      {
+        "traitName": "rough_armor",
+        "traitPart": "plates"
+      },
+      {
+        "traitName": "blessed_armor",
+        "traitPart": "core"
+      }
+    ],
+    "identifier": "scalesilverdragon",
+    "itemName": "iceandfire:dragonscales_silver",
+    "meta": 0,
+    "color": 11184810,
+    "type": "METAL",
+    "isCastable": false,
+    "isCraftable": true,
+    "isToolMaterial": false,
+    "isBowMaterial": false,
+    "isFletchingMaterial": false,
+    "isProjectileMaterial": false,
+    "isArmorMaterial": true
+  }
+]
