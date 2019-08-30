@@ -7,34 +7,28 @@
         "whitelist": "",
         "blacklist": "minecraft:hell, minecraft:sky",
         "depth_min": 0,
-        "depth_max": 255,
+        "depth_max": 10,
         "weight": 1
       }
     ]
   },
   {
-    "item" : "astralsorcery:blockcustomore:1",
-    "color" : 11,
-    "rarity" : [
-      {
-        "whitelist": "",
-        "blacklist": "minecraft:hell, minecraft:sky",
-        "depth_min": 0,
-        "depth_max": 255,
-        "weight": 1
-      }
-    ]
-  },
-  {
-    "item" : "astralsorcery:blockcustomsandore:0",
+    "item" : "oreAquamarine",
     "color" : 3,
     "rarity" : [
       {
+        "whitelist": "minecraft:beach, minecraft:river, minecraft:ocean, minecraft:stone_beach, minecraft:cold_beach",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 3
+      },
+      {
         "whitelist": "",
         "blacklist": "minecraft:hell, minecraft:sky",
         "depth_min": 0,
         "depth_max": 255,
-        "weight": 2
+        "weight": 1
       }
     ]
   }
