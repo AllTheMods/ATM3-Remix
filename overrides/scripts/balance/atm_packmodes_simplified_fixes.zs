@@ -13,7 +13,9 @@ print(" ======================================================== ");
 /*
     Fixes a few issues to make "simplified" mode work or make more sense
 */
-
+//====== Sands of time recipe (charges Time in a bottle) ======
+//
+recipes.addShapeless("sandsoftimeSimple", <contenttweaker:sands_of_time_acceleration>, [<ore:dyeGreen>,<minecraft:redstone>,<ore:gemLapis>,<ore:dustGold>]);
 
 //====== Extreme Reactor's Graphite ======
 //

@@ -3,7 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.thaumcraft.Infusion;
-import crafttweaker.data.IData;
+
 
 #packmode normal
 #priority 1
@@ -383,17 +383,7 @@ print(" ====================================================== ");
 	mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:bloody_mana_infused_time_dust>, <contenttweaker:mana_infused_time_dust>, 0, 1000,100,20);
 	mods.bloodmagic.AlchemyArray.addRecipe(<contenttweaker:sands_of_time_acceleration>, <contenttweaker:roasted_time_dust>, <minecraft:potion>.withTag({Potion: "minecraft:strong_swiftness"}));
 	
-	recipes.addShapeless("chargebottle", <randomthings:timeinabottle>,
-	[ <randomthings:timeinabottle>.marked("mark"),<contenttweaker:sands_of_time_acceleration>],
-	function(out,ins,cInfo){
-	val i = ins.mark.tag as IData;
-	val s = (i.timeData.storedTime as IData).asInt();
-	return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s+720000}});
-	},null);
 	
-	<contenttweaker:sands_of_time_acceleration>.addTooltip(format.aqua("Adds 10 Hours to the Time in a Bottle"));
-	<randomthings:timeinabottle>.addTooltip(format.red("Does not charge over Time!"));
-	<randomthings:timeinabottle>.addTooltip("Use " + format.aqua("Sands of Time Acceleration") + format.gray(" to charge"));
 	
 	
 	
