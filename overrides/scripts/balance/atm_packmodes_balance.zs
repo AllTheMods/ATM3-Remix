@@ -379,8 +379,8 @@ print(" ====================================================== ");
 	<botania:manaresource:23>, <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:2>, <botania:lens:17>]);
 	
 	//time in a bottle refueling
-	mods.botania.ManaInfusion.addInfusion(<contenttweaker:mana_infused_time_dust>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_time_stop"}}), 1000);
-	mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:bloody_mana_infused_time_dust>, <contenttweaker:mana_infused_time_dust>, 0, 1000,100,20);
+	mods.botania.ManaInfusion.addInfusion(<contenttweaker:mana_infused_time_dust>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_time_stop"}}), 500000);
+	mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:bloody_mana_infused_time_dust>, <contenttweaker:mana_infused_time_dust>, 0, 5000,10,20);
 	mods.bloodmagic.AlchemyArray.addRecipe(<contenttweaker:sands_of_time_acceleration>, <contenttweaker:roasted_time_dust>, <minecraft:potion>.withTag({Potion: "minecraft:strong_swiftness"}));
 	
 	

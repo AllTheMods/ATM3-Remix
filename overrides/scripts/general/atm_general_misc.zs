@@ -616,10 +616,14 @@ recipes.remove(<minecraft:chest>);
 	val i = ins.mark.tag as IData;
 	val x = (i.timeData.storedTime as IData);
 	if (isNull(x)) {
-	return <randomthings:timeinabottle>.withTag({timeData: {storedTime: 720000}});
+		return <randomthings:timeinabottle>.withTag({timeData: {storedTime: 720000}});
 	} else {
 		val s = x.asInt();
-		return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s+720000}});
+		if(s > 2000000000) {
+			return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s}});
+		} else {
+			return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s+720000}});
+		}
 	}
 	},null);
 	
