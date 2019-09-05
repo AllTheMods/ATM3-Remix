@@ -2,6 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.data.IData;
 
 #packmode normal simplified
 
@@ -595,7 +596,7 @@ recipes.remove(<minecraft:chest>);
 		[<minecraft:beetroot>,<minecraft:beetroot>,null],
 		[null,null,null],
 		[null,null,null]
-]);
+	]);
 
 //====== Beer Mug ======
 //
@@ -605,3 +606,27 @@ recipes.remove(<minecraft:chest>);
       [null, <forestry:beeswax>, null],
       [null, <minecraft:glass>, null]
       ]);
+	  
+//====== Time In a Bottle recharging ======
+// 
+
+	recipes.addShapeless("chargebottle", <randomthings:timeinabottle>,
+	[ <randomthings:timeinabottle>.marked("mark"),<contenttweaker:sands_of_time_acceleration>],
+	function(out,ins,cInfo){
+	val i = ins.mark.tag as IData;
+	val x = (i.timeData.storedTime as IData);
+	if (isNull(x)) {
+		return <randomthings:timeinabottle>.withTag({timeData: {storedTime: 720000}});
+	} else {
+		val s = x.asInt();
+		if(s > 2000000000) {
+			return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s}});
+		} else {
+			return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s+720000}});
+		}
+	}
+	},null);
+	
+	<contenttweaker:sands_of_time_acceleration>.addTooltip(format.aqua("Adds 10 Hours to the Time in a Bottle"));
+	<randomthings:timeinabottle>.addTooltip(format.red("Does not charge over Time!"));
+	<randomthings:timeinabottle>.addTooltip("Use " + format.aqua("Sands of Time Acceleration") + format.gray(" to charge"));
