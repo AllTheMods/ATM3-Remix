@@ -630,3 +630,10 @@ recipes.remove(<minecraft:chest>);
 	<contenttweaker:sands_of_time_acceleration>.addTooltip(format.aqua("Adds 10 Hours to the Time in a Bottle"));
 	<randomthings:timeinabottle>.addTooltip(format.red("Does not charge over Time!"));
 	<randomthings:timeinabottle>.addTooltip("Use " + format.aqua("Sands of Time Acceleration") + format.gray(" to charge"));
+	
+//====== Remove ExtraCells Terminals ======
+//
+
+	mods.jei.JEI.removeAndHide(<extracells:terminal.fluid.wireless>);
+	mods.jei.JEI.removeAndHide(<extracells:terminal.universal.wireless>);
+	mods.jei.JEI.removeAndHide(<extracells:terminal.gas.wireless>);
