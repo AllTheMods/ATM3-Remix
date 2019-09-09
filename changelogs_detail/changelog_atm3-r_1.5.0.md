@@ -2,10 +2,11 @@
 
 §b§lChanges Made:
 * Updated Forge to 2844
+* §b§lNetherEX update changed some of it blocks, Nether dimension needs to be wiped
 * Fixed missing chaotic tools from Tinkers' Construct
 * Disabled Agricraft Weeds
 * Time in a Bottle balances and fixes
-* Incerased Astral Sorcery level cap to 100 (from 30)
+* Increased Astral Sorcery level cap to 100 (from 30)
 * Whitelist Forestry Beehives to main worlds only
 * Made sure to disable Piston Scepter entirely
 * Changed Torikki dim ID to 134
