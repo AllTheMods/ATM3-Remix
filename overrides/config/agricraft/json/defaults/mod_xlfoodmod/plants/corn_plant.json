@@ -57,7 +57,7 @@
   },
   "texture": {
     "render_type": "hash",
-    "seed_texture": "minecraft:items/corn_seeds",
+    "seed_texture": "xlfoodmod:items/corn_seeds",
     "plant_textures": [
       "xlfoodmod:blocks/corn_plant0",
       "xlfoodmod:blocks/corn_plant1",
