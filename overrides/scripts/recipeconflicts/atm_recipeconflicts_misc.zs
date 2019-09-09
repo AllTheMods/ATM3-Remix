@@ -21,6 +21,21 @@ print(" ======================================================== ");
 	var marble = <ore:stoneMarble>;
 	var inscab = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte});
 
+//====== Tech Reborn Rolling Machine Dupes ===================
+	//these are cheaper recipes for vanilla items. 
+	//They can be melted down in a smeltery back to vanilla amounts doubling it.
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:iron_bars>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:tripwire_hook>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:iron_door>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:detector_rail>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:minecart>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:heavy_weighted_pressure_plate>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:rail>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:light_weighted_pressure_plate>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:activator_rail>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:golden_rail>);
+	mods.techreborn.rollingMachine.removeRecipe(<minecraft:bucket>);
+
 
 //====== Misc Tool/Armor Conflicts ======
 //
@@ -585,12 +600,16 @@ print(" ======================================================== ");
 		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
 	]);
 	
-//====== Weather Sensor ======
+//Black Quartz Rod
 //
 
-	recipes.remove(<quark:rain_detector>);
-	recipes.addShaped("WeatherSensor", <quark:rain_detector>, [
-		[<minecraft:glass>, <minecraft:glass>, <minecraft:glass>],
-		[<minecraft:quartz>, <minecraft:quartz>, <minecraft:quartz>],
-		[<minecraft:purpur_slab>, <minecraft:purpur_slab>, <minecraft:purpur_slab>]
+	recipes.remove(<jaopca:item_stickquartzblack>);
+	recipes.addShaped("Black Quartz Rod", <jaopca:item_stickquartzblack>*4, [
+		[null, <ore:gemQuartzBlack>],
+		[<ore:gemQuartzBlack>, null]
 	]);
+	
+//Diamond Nuggets
+//	
+	
+	recipes.addShapeless("Diamond Nugget Convert", <thermalfoundation:material:16>*9, [<ore:gemDiamond>]);

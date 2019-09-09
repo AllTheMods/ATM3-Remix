@@ -146,11 +146,6 @@
       "id": "OD:oreMithril"
     },
     {
-      "target": "light_blue",
-      "weight": 203,
-      "id": "OD:oreOsmium"
-    },
-    {
       "target": "black",
       "weight": 128,
       "id": "OD:oreClathrateOilSand"
@@ -261,7 +256,7 @@
       "id": "OD:oreTungsten"
     },
     {
-      "target": "silver",
+      "target": "light_blue",
       "weight": 251,
       "id": "OD:oreOsmium"
     },
@@ -296,29 +291,19 @@
       "id": "OD:oreBrainstone"
     },
     {
+      "target": "white",
+      "weight": 111,
+      "id": "thaumcraft:crystal_ordo"
+    },
+    {
       "target": "yellow",
       "weight": 111,
-      "id": "thaumcraft:crystal_aer"
+      "id": "thaumcraft:crystal_air"
     },
     {
       "target": "orange",
       "weight": 111,
-      "id": "thaumcraft:crystal_ignis"
-    },
-    {
-      "target": "light_blue",
-      "weight": 111,
-      "id": "thaumcraft:crystal_aqua"
-    },
-    {
-      "target": "lime",
-      "weight": 111,
-      "id": "thaumcraft:crystal_terra"
-    },
-    {
-      "target": "white",
-      "weight": 111,
-      "id": "thaumcraft:crystal_ordo"
+      "id": "thaumcraft:crystal_fire"
     },
     {
       "target": "black",
@@ -331,6 +316,16 @@
       "id": "thaumcraft:crystal_vitium"
     },
     {
+      "target": "blue",
+      "weight": 111,
+      "id": "thaumcraft:crystal_aqua"
+    },
+    {
+      "target": "green",
+      "weight": 111,
+      "id": "thaumcraft:crystal_terra"
+    },
+    {
       "target": "lime",
       "weight": 223,
       "id": "OD:oreBrainstone"
@@ -339,11 +334,6 @@
       "target": "white",
       "weight": 223,
       "id": "OD:oreTitaniumIron"
-    },
-    {
-      "target": "white",
-      "weight": 223,
-      "id": "OD:oreRutile"
     },
     {
       "target": "purple",

@@ -1,6 +1,6 @@
 [
   {
-    "item" : "mysticalagriculture:inferium_ore:0",
+    "item" : "oreInferium",
     "color" : 4,
     "rarity" : [
       {
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "item" : "mysticalagriculture:prosperity_ore:0",
+    "item" : "oreProsperity",
     "color" : 3,
     "rarity" : [
       {
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "item" : "mysticalagriculture:nether_inferium_ore:0",
+    "item" : "oreNetherInferium",
     "color" : 4,
     "rarity" : [
       {
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "item" : "mysticalagriculture:nether_prosperity_ore:0",
+    "item" : "oreNetherProsperity",
     "color" : 3,
     "rarity" : [
       {
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "item" : "mysticalagriculture:end_inferium_ore:0",
+    "item" : "oreEndInferium",
     "color" : 4,
     "rarity" : [
       {
@@ -65,7 +65,7 @@
     ]
   },
   {
-    "item" : "mysticalagriculture:end_prosperity_ore:0",
+    "item" : "oreEndProsperity",
     "color" : 3,
     "rarity" : [
       {

@@ -116,23 +116,24 @@ print("Chisel Fixes partially disabled");
 
 // When I get time later, make into for loop - Fallen
 
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:0>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:1>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:2>);
-	mods.chisel.Carving.addVariation("netherrack", <nex:netherrack:3>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:nether_brick:0>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:nether_brick:1>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:nether_brick:2>);
-	mods.chisel.Carving.addVariation("netherbrick", <nex:nether_brick:3>);
+	mods.chisel.Carving.addVariation("netherrack", <netherex:gloomy_netherrack>);
+	mods.chisel.Carving.addVariation("netherrack", <netherex:lively_netherrack>);
+	mods.chisel.Carving.addVariation("netherrack", <netherex:fiery_netherrack>);
+	mods.chisel.Carving.addVariation("netherrack", <netherex:icy_netherrack>);
+	mods.chisel.Carving.addVariation("netherbrick", <netherex:gloomy_nether_brick>);
+	mods.chisel.Carving.addVariation("netherbrick", <netherex:lively_nether_brick>);
+	mods.chisel.Carving.addVariation("netherbrick", <netherex:fiery_nether_brick>);
+	mods.chisel.Carving.addVariation("netherbrick", <netherex:icy_nether_brick>);
 	
 	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:0>);
 	mods.chisel.Carving.addVariation("marble", <projectred-exploration:stone:1>);
 	
-	mods.chisel.Carving.addVariation("basalt", <nex:basalt:0>);
-	mods.chisel.Carving.addVariation("basalt", <nex:basalt:1>);
-	mods.chisel.Carving.addVariation("basalt", <nex:basalt:2>);
-	mods.chisel.Carving.addVariation("basalt", <nex:basalt:3>);
+	mods.chisel.Carving.addVariation("basalt", <netherex:basalt>);
+	mods.chisel.Carving.addVariation("basalt", <netherex:smooth_basalt>);
+	mods.chisel.Carving.addVariation("basalt", <netherex:basalt_brick>);
+	mods.chisel.Carving.addVariation("basalt", <netherex:basalt_pillar>);
 	mods.chisel.Carving.addVariation("basalt", <projectred-exploration:stone:3>);
 	mods.chisel.Carving.addVariation("basalt", <projectred-exploration:stone:4>);
+	mods.chisel.Carving.addVariation("basalt", <advancedrocketry:basalt>);
 
 	

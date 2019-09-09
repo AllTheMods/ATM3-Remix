@@ -14,7 +14,10 @@ overrides/mods/memory_repo/*
 overrides/config/AppliedEnergistics2/aerecipes
 overrides/config/biomesoplenty/biomes/defaults
 overrides/config/tellme
-overrides/config/wizardry
+overrides/config/wizardry/*
+!overrides/config/wizardry/fire_recipes
+overrides/config/wizardry/fire_recipes/*
+!overrides/config/wizardry/fire_recipes/roasted_time_dust.json
 overrides/config/multimob/modInformation
 overrides/config/NetherEx/Biomes
 !overrides/config/NetherEx/Biomes/nex/*

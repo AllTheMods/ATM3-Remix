@@ -13,7 +13,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:0",
+    "item" : "oreAmethyst",
     "color" : 2,
     "rarity" : [
       {
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:1",
+    "item" : "oreRuby",
     "color" : 14,
     "rarity" : [
       {
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:2",
+    "item" : "orePeridot",
     "color" : 5,
     "rarity" : [
       {
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:3",
+    "item" : "oreTopaz",
     "color" : 1,
     "rarity" : [
       {
@@ -65,7 +65,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:4",
+    "item" : "oreTanzanite",
     "color" : 10,
     "rarity" : [
       {
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:5",
+    "item" : "oreMalachite",
     "color" : 9,
     "rarity" : [
       {
@@ -91,7 +91,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:6",
+    "item" : "oreSapphire",
     "color" : 11,
     "rarity" : [
       {
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "item" : "biomesoplenty:gem_ore:7",
+    "item" : "oreAmber",
     "color" : 1,
     "rarity" : [
       {

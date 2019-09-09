@@ -2,6 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.thaumcraft.Infusion;
+
 
 #packmode normal
 #priority 1
@@ -18,6 +20,7 @@ print(" ====================================================== ");
 	"balance" changes to this one file so it is easy to remove for
 	anyone that would like to play a "simplified" version of the pack.
 */
+
 
 
 //====== FLIGHT BALANCE ======
@@ -364,7 +367,26 @@ print(" ====================================================== ");
 		[null, <actuallyadditions:item_crystal_empowered:4>, <notenoughwands:advanced_wandcore>]
 		]);
 
-
+//====== Time in a Bottle =========
+//
+	recipes.remove(<randomthings:timeinabottle>);
+	
+	//time in a bottle recipe
+	mods.thaumcraft.Infusion.registerRecipe("bottledtime", "", <randomthings:timeinabottle>.withTag({timeData: {storedTime: 72000}}), 5,
+	[<aspect:vitreus>*50,  <aspect:praecantatio>*20]
+	,<wizardry:mana_battery>,
+	[<wizardry:sky_dust>,<astralsorcery:itemcraftingcomponent:3>, <bloodmagic:arcane_ashes>, <astralsorcery:itemcraftingcomponent:3>,
+	<botania:manaresource:23>, <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:2>, <botania:lens:17>]);
+	
+	//time in a bottle refueling
+	mods.botania.ManaInfusion.addInfusion(<contenttweaker:mana_infused_time_dust>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_time_stop"}}), 50000);
+	mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:bloody_mana_infused_time_dust>, <contenttweaker:mana_infused_time_dust>, 0, 10000,8,20);
+	mods.bloodmagic.AlchemyArray.addRecipe(<contenttweaker:sands_of_time_acceleration>, <contenttweaker:roasted_time_dust>, <minecraft:potion>.withTag({Potion: "minecraft:strong_swiftness"}));
+	
+	
+	
+	
+	
 //====== Slightly Balance EXU2 Water Mill ======
 //
 	recipes.addShaped("EXU2WaterMill", <extrautils2:passivegenerator:3>, [
@@ -576,3 +598,11 @@ print(" ====================================================== ");
 //
     mods.jei.JEI.removeAndHide(<twilightforest:uncrafting_table>);
 
+//====== Buildinggadgets Exchanger ======
+
+	recipes.remove(<buildinggadgets:exchangertool>);
+	recipes.addShaped("New Exchanger",<buildinggadgets:exchangertool>, [
+		[<minecraft:emerald>, <draconicevolution:draconic_core>, <minecraft:emerald>],
+		[<botania:endereyeblock>, <notenoughwands:swapping_wand>.withTag({Energy: 500000}), <botania:endereyeblock>],
+		[<minecraft:emerald>, <draconicevolution:draconic_core>, <minecraft:emerald>]
+		]);	

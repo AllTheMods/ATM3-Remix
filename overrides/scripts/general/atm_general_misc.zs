@@ -2,6 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.data.IData;
 
 #packmode normal simplified
 
@@ -414,7 +415,7 @@ recipes.remove(<minecraft:chest>);
 	var invar_block = <thermalfoundation:storage_alloy:2>;
 	var molten_invar = <liquid:invar>;
 	mods.tconstruct.Casting.addTableRecipe(invar, ingot_cast, molten_invar, 144);
-	mods.tconstruct.Casting.addBasinRecipe(invar_block, invar_block, molten_invar, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(invar_block, null, molten_invar, 1296);
 	
 //====== Add Iridium Casting Recipes ======
 //
@@ -422,7 +423,7 @@ recipes.remove(<minecraft:chest>);
 	var iridium_block = <thermalfoundation:storage:7>;
 	var molten_iridium = <liquid:iridium>;
 	mods.tconstruct.Casting.addTableRecipe(iridium, ingot_cast, molten_iridium, 144);
-	mods.tconstruct.Casting.addBasinRecipe(iridium_block, iridium_block, molten_iridium, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(iridium_block, null, molten_iridium, 1296);
 	
 //====== Add Xnet Description ======
 //	
@@ -520,10 +521,6 @@ recipes.remove(<minecraft:chest>);
    mods.jei.JEI.removeAndHide(<jaopca:item_essenceastralstarmetal>);
    mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsquartzblack>);
    mods.jei.JEI.removeAndHide(<jaopca:item_mysticalseedsastralstarmetal>);
-
-//====== Remove Time in a Bottle ======
-//
-	recipes.remove(<randomthings:timeinabottle>);
    
 //====== Ordify Horse Armors ======
 //
@@ -599,4 +596,44 @@ recipes.remove(<minecraft:chest>);
 		[<minecraft:beetroot>,<minecraft:beetroot>,null],
 		[null,null,null],
 		[null,null,null]
-]);
+	]);
+
+//====== Beer Mug ======
+//
+   mods.forestry.ThermionicFabricator.removeCast(<extratrees:drink>);
+   recipes.addShaped(<extratrees:drink> * 8, [
+      [null, null, null],
+      [null, <forestry:beeswax>, null],
+      [null, <minecraft:glass>, null]
+      ]);
+	  
+//====== Time In a Bottle recharging ======
+// 
+
+	recipes.addShapeless("chargebottle", <randomthings:timeinabottle>,
+	[ <randomthings:timeinabottle>.marked("mark"),<contenttweaker:sands_of_time_acceleration>],
+	function(out,ins,cInfo){
+	val i = ins.mark.tag as IData;
+	val x = (i.timeData.storedTime as IData);
+	if (isNull(x)) {
+		return <randomthings:timeinabottle>.withTag({timeData: {storedTime: 720000}});
+	} else {
+		val s = x.asInt();
+		if(s > 2000000000) {
+			return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s}});
+		} else {
+			return <randomthings:timeinabottle>.withTag({timeData: {storedTime: s+720000}});
+		}
+	}
+	},null);
+	
+	<contenttweaker:sands_of_time_acceleration>.addTooltip(format.aqua("Adds 10 Hours to the Time in a Bottle"));
+	<randomthings:timeinabottle>.addTooltip(format.red("Does not charge over Time!"));
+	<randomthings:timeinabottle>.addTooltip("Use " + format.aqua("Sands of Time Acceleration") + format.gray(" to charge"));
+	
+//====== Remove ExtraCells Terminals ======
+//
+
+	mods.jei.JEI.removeAndHide(<extracells:terminal.fluid.wireless>);
+	mods.jei.JEI.removeAndHide(<extracells:terminal.universal.wireless>);
+	mods.jei.JEI.removeAndHide(<extracells:terminal.gas.wireless>);

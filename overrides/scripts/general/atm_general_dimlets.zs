@@ -6,7 +6,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 #modloaded rftoolsdim
 
-print(" =================== All The Mods - Dimlets =================== ");
+print(" =================== All The Mods - Sky Dimlets =================== ");
 print(" ============================================================== ");
 /*
 	Originally created by @Rei Da Tecnologia#8860 (Discord), modified by Ordinator
@@ -96,7 +96,7 @@ print(" ============================================================== ");
 		bodyBrightNight : sky.withTag({dkey:"bright.night"}), 
 		bodyRedSun : sky.withTag({dkey:"body.red.sun"}), 
 		bodyRedMoon : sky.withTag({dkey:"body.red.moon"}) 
-    } as IItemStack[string];
+	} as IItemStack[string];
 
 
     // Associative array for INGREDIENTS for dimlet recipes
@@ -176,3 +176,48 @@ print(" ============================================================== ");
 //
 	<rftoolsdim:dimlet_control_circuit:6>.addTooltip(format.aqua("Obtained through dimlet parcels only"));
 	<rftoolsdim:dimlet_parcel>.addTooltip(format.aqua("Obtained as a drop from enderman"));
+
+
+print(" =================== All The Mods - Weather Dimlets =================== ");
+print(" ============================================================== ");
+//Weather Dimlet (Hard Rain)
+		recipes.addShaped("Weather Dimlet (Hard Rain)", <rftoolsdim:known_dimlet:13>.withTag({dkey: "hard.rain"}), [
+			[<wizardry:cloud>, <roots:cloud_berry>, <wizardry:cloud>],
+			[<forge:bucketfilled>.withTag({FluidName: "heavywater", Amount: 1000}), <rftoolsdim:known_dimlet:13>.withTag({dkey: "Default"}), <forge:bucketfilled>.withTag({FluidName: "heavywater", Amount: 1000})],
+			[<rftoolsdim:dimlet_energy_module:2>, <rftoolsdim:dimlet_control_circuit:3>, <rftoolsdim:dimlet_energy_module:2>]
+		]);
+
+//Weather Dimlet (Light Rain)		
+				recipes.addShaped("Weather Dimlet (Light Rain)", <rftoolsdim:known_dimlet:13>.withTag({dkey: "light.rain"}), [
+			[<wizardry:cloud>, <roots:cloud_berry>, <wizardry:cloud>],
+			[<minecraft:water_bucket>, <rftoolsdim:known_dimlet:13>.withTag({dkey: "Default"}), <minecraft:water_bucket>],
+			[<rftoolsdim:dimlet_energy_module:2>, <rftoolsdim:dimlet_control_circuit:3>, <rftoolsdim:dimlet_energy_module:2>]
+		]);
+
+//Weather Dimlet (No Rain)		
+				recipes.addShaped("Weather Dimlet (No Rain)", <rftoolsdim:known_dimlet:13>.withTag({dkey: "no.rain"}), [
+			[<wizardry:cloud>, <minecraft:dragon_breath>, <wizardry:cloud>],
+			[<enderio:block_decoration1:15>, <rftoolsdim:known_dimlet:13>.withTag({dkey: "Default"}), <enderio:block_decoration1:15>],
+			[<appliedenergistics2:material:48>, <rftoolsdim:dimlet_control_circuit:5>, <appliedenergistics2:material:48>]
+		]);
+		
+//Weather Dimlet (Hard Thunder)
+		recipes.addShaped("Weather Dimlet (Hard Thunder)", <rftoolsdim:known_dimlet:13>.withTag({dkey: "hard.thunder"}), [
+			[<actuallyadditions:item_battery_quintuple>.withTag({Energy: 2000000}), <environmentaltech:lightning_rod>, <actuallyadditions:item_battery_quintuple>.withTag({Energy: 2000000})],
+			[<randomthings:weatheregg:2>, <rftoolsdim:known_dimlet:13>.withTag({dkey: "Default"}), <randomthings:weatheregg:2>],
+			[<rftoolsdim:dimlet_energy_module:2>, <rftoolsdim:dimlet_control_circuit:3>, <rftoolsdim:dimlet_energy_module:2>]
+		]);
+		
+//Weather Dimlet (Light Thunder)
+		recipes.addShaped("Weather Dimlet (Light Thunder)", <rftoolsdim:known_dimlet:13>.withTag({dkey: "light.thunder"}), [
+			[<actuallyadditions:item_battery_double>.withTag({Energy: 350000}), <environmentaltech:lightning_rod>, <actuallyadditions:item_battery_double>.withTag({Energy: 350000})],
+			[<randomthings:weatheregg:2>, <rftoolsdim:known_dimlet:13>.withTag({dkey: "Default"}), <randomthings:weatheregg:2>],
+			[<rftoolsdim:dimlet_energy_module:2>, <rftoolsdim:dimlet_control_circuit:3>, <rftoolsdim:dimlet_energy_module:2>]
+		]);
+		
+//Weather Dimlet (No Thunder)
+		recipes.addShaped("Weather Dimlet (No Thunder)", <rftoolsdim:known_dimlet:13>.withTag({dkey: "no.thunder"}), [
+			[<environmentaltech:lightning_rod_insulated>, <overloaded:hyper_energy_receiver>, <environmentaltech:lightning_rod_insulated>],
+			[<enderio:block_decoration1:15>, <rftoolsdim:known_dimlet:13>.withTag({dkey: "Default"}), <enderio:block_decoration1:15>],
+			[<minecraft:dragon_breath>, <rftoolsdim:dimlet_control_circuit:5>, <minecraft:dragon_breath>]
+		]);

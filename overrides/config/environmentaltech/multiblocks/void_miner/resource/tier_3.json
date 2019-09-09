@@ -323,12 +323,12 @@
     {
       "target": "yellow",
       "weight": 30,
-      "id": "chisel:limestone2:7"
+      "id": "OD:stoneLimestone"
     },
     {
       "target": "white",
       "weight": 30,
-      "id": "chisel:marble2:7"
+      "id": "OD:stoneMarble"
     },
     {
       "target": "brown",

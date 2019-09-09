@@ -13,14 +13,16 @@ print(" ======================================================== ");
 /*
     Fixes a few issues to make "simplified" mode work or make more sense
 */
-
+//====== Sands of time recipe (charges Time in a bottle) ======
+//
+recipes.addShapeless("sandsoftimeSimple", <contenttweaker:sands_of_time_acceleration>, [<ore:dyeGreen>,<minecraft:redstone>,<ore:gemLapis>,<ore:dustGold>]);
 
 //====== Extreme Reactor's Graphite ======
 //
-	furnace.addRecipe(<bigreactors:dustmetals:2>, <ore:dustCoal>, 1);
-	furnace.addRecipe(<bigreactors:dustmetals:2>, <ore:dustCharcoal>, 1);
-	furnace.addRecipe(<bigreactors:blockmetals:2>, <ore:blockCoal>, 1);
-	furnace.addRecipe(<bigreactors:blockmetals:2>, <ore:blockCharcoal>, 1);
+	furnace.addRecipe(<bigreactors:dustgraphite>, <ore:dustCoal>, 1);
+	furnace.addRecipe(<bigreactors:dustgraphite>, <ore:dustCharcoal>, 1);
+	furnace.addRecipe(<bigreactors:blockgraphite>, <ore:blockCoal>, 1);
+	furnace.addRecipe(<bigreactors:blockgraphite>, <ore:blockCharcoal>, 1);
 	
 	
 //====== Custom "growth essence" ======
