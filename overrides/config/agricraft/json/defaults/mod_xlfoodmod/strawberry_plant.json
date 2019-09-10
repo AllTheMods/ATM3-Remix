@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Strawberry"
+    "default": "Neither straws nor berries. Yeah, seriously."
   },
   "growth_chance": 1.0,
   "growth_bonus": 0.025,

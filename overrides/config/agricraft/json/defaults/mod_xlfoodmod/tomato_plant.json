@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Tomato"
+    "default": "Tomato, tomato, potato, potato. ...I guess that doesn\u0027t work as well in text format."
   },
   "growth_chance": 1.0,
   "growth_bonus": 0.025,
