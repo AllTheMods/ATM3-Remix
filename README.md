@@ -13,6 +13,7 @@ Does "All The Mods" *really* contain ALL THE MODS? No, of course not.
 + [![All the Mods 3 Lite](http://cf.way2muchnoise.eu/274129.svg "ATM3: Lite") All The Mods 3 Lite](https://minecraft.curseforge.com/projects/atm-3-lite)  
 + [![All the Mods Expert Remastered](http://cf.way2muchnoise.eu/274849.svg "ATMER") All The Mods Expert Remastered](https://minecraft.curseforge.com/projects/all-the-mods-expert-remastered)  
 + [![All the Mods: All the Magic](http://cf.way2muchnoise.eu/310346.svg "ATM: All the Magic") All The Mods: All the Magic](https://minecraft.curseforge.com/projects/atm-all-the-magic)
++ [![All the Mods 4](http://cf.way2muchnoise.eu/316059.svg "ATM4") All The Mods 4](https://www.curseforge.com/minecraft/modpacks/all-the-mods-4)
 
 Need Help?
 ======

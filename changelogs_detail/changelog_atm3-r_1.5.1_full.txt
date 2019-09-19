@@ -1,0 +1,78 @@
+All the Mods 3 - Remix 1.5.0 to All the Mods 3 - Remix 1.5.1
+
+Updated 8 files:
+	Classic Bars (went from classicbar-0.3.8.jar to classicbar-0.4.1.jar):
+		classicbar-0.4.1.jar:
+			* Decay bar no longer displays outside of the betweenlands
+
+			* Decay bar display is reversed
+
+			* Cached some isModLoaded calls to save on perfomance
+		classicbar-0.4.0.jar:
+			* Rolled all vanilla overlays into 1 eventhandler for higher perfomance
+
+			* Disabling toughness bar no longer requires mc restart
+
+			* Added support for betweenlands decay
+
+	Corail Tombstone (went from Corail Tombstone 3.5.7 for 1.12.2 to Corail Tombstone 3.5.8 for 1.12.2)
+
+	Electroblob's Wizardry (went from Electroblob's Wizardry - 4.2.2 - MC 1.12.2 to Electroblob's Wizardry - 4.2.3 - MC 1.12.2)
+
+	FTB Library (went from FTBLib-5.4.3.134.jar to FTBLib-5.4.3.138.jar):
+		FTBLib-5.4.3.138.jar:
+			 * Updated CurseForge pages URL - LatvianModder
+		FTBLib-5.4.3.137.jar:
+			 * Added ForgeTeam.getOnlineMembers() - LatvianModder
+		FTBLib-5.4.3.136.jar:
+			 * Fixed server crash - LatvianModder
+		FTBLib-5.4.3.135.jar:
+			 * Allow to use playernames for teams when none is found - LatvianModder
+			 * Added FTB Quests' Custom Icon rendering in item selector GUI - LatvianModder
+
+	FTB Utilities (went from FTBUtilities-5.4.0.102.jar to FTBUtilities-5.4.0.105.jar):
+		FTBUtilities-5.4.0.105.jar:
+			 * KubeJS changes - LatvianModder
+		FTBUtilities-5.4.0.104.jar:
+			 * Moved client config to Mod Options GUI, fixed /shrug, added /tableflip, /unflip, removed /scan_items - LatvianModder
+			 * Disabled config reloading to see if it works for #1023 - LatvianModder
+		FTBUtilities-5.4.0.103.jar:
+			 * Fixed wrong integration being loaded - LatvianModder
+			 * Added KubeJS integration - LatvianModder
+
+	NetherEx (went from NetherEx-1.12.2-2.0.13.jar to NetherEx-1.12.2-2.0.15.jar):
+		NetherEx-1.12.2-2.0.15.jar:
+			Fixed crash caused by invalid json configs
+
+			Previous change to be aware of:
+
+			NetherEx has changed mod id from "nex" to "netherex" and has also flattened all of its items and blocks. I've made sure that old worlds would carry over, but be sure to back them up as a precaution.
+		NetherEx-1.12.2-2.0.14.jar:
+			Fixed blank configs causing crashes
+
+			Fixed Better Nether compatibility
+
+			Previous change to be aware of:
+
+			NetherEx has changed mod id from "nex" to "netherex" and has also flattened all of its items and blocks. I've made sure that old worlds would carry over, but be sure to back them up as a precaution.
+
+	Shadowfacts' Forgelin (went from Forgelin-1.8.3.jar to Forgelin-1.8.4.jar)
+
+	Worley's Caves (went from worleycaves-1.5.0.jar to worleycaves-1.5.1.jar):
+		worleycaves-1.5.1.jar:
+			1.5.1
+
+			----------
+
+			Fixed issue with layers of stone generating in lava lakes near bedrock
+
+			1.5.0
+
+			----------
+			Noise library speed improvements, about ~5% faster chunk generation (Thanks Blargerist)
+
+			Allow cave generation to dig through more types of blocks, allows for better compatibility with mods like TFC and Advanced Rocketry (Thanks alcatrazEscapee)
+
+			Improve water checks to also detect other fluid blocks like lava and modded fluids
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15.1)
