@@ -1,0 +1,27 @@
+{
+    "name": "thebetweenlands:hearthgrove",
+    "mod": "thebetweenlands",
+    "sapling": {
+        "name": "thebetweenlands:sapling_hearthgrove",
+        "data": 0
+    },
+    "growTimeMultiplier": 1.5,
+    "drops": [
+        {
+            "name": "thebetweenlands:log_hearthgrove",
+            "data": 1,
+            "type": "WOOD"
+        },
+        {
+            "name": "thebetweenlands:leaves_hearthgrove_tree",
+            "data": 0,
+            "type": "LEAVES"
+        },
+        {
+            "name": "thebetweenlands:sapling_hearthgrove",
+            "data": 0,
+            "type": "SAPLING"
+		}
+    ],
+	"compatibleSoilTags": ["dirt"]
+}

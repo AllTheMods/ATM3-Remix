@@ -1,0 +1,150 @@
+{
+  "type": "plants2:sapling_3",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "plants2:leaves_0",
+      "meta": 14
+    },
+    "b": {
+      "name": "plants2:log_0",
+      "meta": 8
+    },
+    "c": {
+      "name": "plants2:log_0",
+      "meta": 3
+    },
+    "d": {
+      "name": "plants2:log_0",
+      "meta": 13
+    }
+  },
+  "shape": [
+    [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   a   ",
+      "   a   ",
+      "  aaa  ",
+      "  aaa  ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   a   ",
+      "  aaa  ",
+      "  aaa  ",
+      " aaaaa ",
+      " aaaaa ",
+      " aacaa ",
+      " aaaaa ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "   a   ",
+      "  aaa  ",
+      "  aaa  ",
+      " aaaaa ",
+      " aaaaa ",
+      " aaaaa ",
+      "aaaaaaa",
+      "aaacaaa",
+      "aaaaaaa",
+      " aaaaa ",
+      "  aaa  ",
+      "   a   ",
+      "       ",
+      "       "
+    ],
+    [
+      "   a   ",
+      "   a   ",
+      "  aaa  ",
+      "  aba  ",
+      " aabaa ",
+      " aabaa ",
+      "aaabaaa",
+      "aaabaaa",
+      "aaabaaa",
+      "addbdda",
+      "aaabaaa",
+      " aabaa ",
+      "  aba  ",
+      "  aba  ",
+      "   b   ",
+      "   b   "
+    ],
+    [
+      "       ",
+      "       ",
+      "   a   ",
+      "  aaa  ",
+      "  aaa  ",
+      " aaaaa ",
+      " aaaaa ",
+      " aaaaa ",
+      "aaaaaaa",
+      "aaacaaa",
+      "aaaaaaa",
+      " aaaaa ",
+      "  aaa  ",
+      "   a   ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   a   ",
+      "  aaa  ",
+      "  aaa  ",
+      " aaaaa ",
+      " aaaaa ",
+      " aacaa ",
+      " aaaaa ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   a   ",
+      "   a   ",
+      "  aaa  ",
+      "  aaa  ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

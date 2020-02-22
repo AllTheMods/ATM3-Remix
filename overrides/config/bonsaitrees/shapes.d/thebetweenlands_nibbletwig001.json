@@ -1,0 +1,136 @@
+{
+  "type": "thebetweenlands:nibbletwig",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "thebetweenlands:log_nibbletwig",
+      "meta": 12
+    },
+    "b": {
+      "name": "thebetweenlands:leaves_nibbletwig_tree",
+      "meta": 0
+    },
+    "c": {
+      "name": "thebetweenlands:poison_ivy",
+      "meta": 1
+    },
+    "d": {
+      "name": "thebetweenlands:poison_ivy",
+      "meta": 2
+    }
+  },
+  "shape": [
+    [
+      "      ",
+      "      ",
+      "      ",
+      "cbd   ",
+      "cbd   ",
+      "c d   ",
+      "c     ",
+      "c     ",
+      "c     ",
+      "      ",
+      "   b  ",
+      "   b  ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "      ",
+      " bbb  ",
+      " bbb  ",
+      "  b   ",
+      "  b   ",
+      "      ",
+      "      ",
+      "      ",
+      "   b  ",
+      "  bbb ",
+      "      ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "  b   ",
+      "bbbbb ",
+      "bbbbb ",
+      "  a   ",
+      "  a   ",
+      "   a  ",
+      "   a  ",
+      "   a  ",
+      "  bab ",
+      " bbabb",
+      " b a b",
+      " b a b",
+      "   a  "
+    ],
+    [
+      "  b   ",
+      " bbb  ",
+      "bbabb ",
+      "bbabb ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "   b  ",
+      "  bbb ",
+      "      ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "  b   ",
+      "bbbbb ",
+      "bbbbb ",
+      "    b ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "   b  ",
+      "   b  ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "      ",
+      " bbb  ",
+      " bbb  ",
+      "   b  ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "      ",
+      "      ",
+      "  b   ",
+      "  b   ",
+      "  b   ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      "
+    ]
+  ]
+}

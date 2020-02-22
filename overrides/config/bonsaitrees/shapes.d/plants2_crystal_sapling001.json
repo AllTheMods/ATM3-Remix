@@ -1,0 +1,65 @@
+{
+  "type": "plants2:crystal_sapling",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "plants2:crystal_leaves",
+      "meta": 2
+    },
+    "b": {
+      "name": "plants2:crystal_log",
+      "meta": 5
+    },
+    "c": {
+      "name": "plants2:crystal_leaves",
+      "meta": 3
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " aaaa",
+      "aaaaa",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      " aa  ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " caa ",
+      " aba ",
+      "aabaa",
+      "aabca",
+      "  b  ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      " aca ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "aaaaa",
+      " aaaa",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

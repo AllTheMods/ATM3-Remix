@@ -1,0 +1,109 @@
+{
+  "type": "plants2:nether_sapling0",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "plants2:nether_leaves",
+      "meta": 2
+    },
+    "b": {
+      "name": "plants2:nether_log",
+      "meta": 5
+    },
+    "c": {
+      "name": "plants2:nether_leaves",
+      "meta": 3
+    }
+  },
+  "shape": [
+    [
+      "          ",
+      "      aaa ",
+      "          ",
+      "          ",
+      "          ",
+      "          ",
+      "          ",
+      "          "
+    ],
+    [
+      "       a  ",
+      "     aaaaa",
+      "       a  ",
+      "          ",
+      "          ",
+      "          ",
+      "          ",
+      "          "
+    ],
+    [
+      "      aaa ",
+      "     aacaa",
+      " aaa aaaa ",
+      "          ",
+      "          ",
+      "          ",
+      "          ",
+      "          "
+    ],
+    [
+      "      aa  ",
+      "  a aaaaaa",
+      "aaaaaaaba ",
+      "  a   a   ",
+      "    aaa   ",
+      "          ",
+      "          ",
+      "          "
+    ],
+    [
+      "     aaa  ",
+      " aaaaaaac ",
+      "aabaccbac ",
+      " aab aca  ",
+      "   cbcaa  ",
+      "     c    ",
+      "          ",
+      "          "
+    ],
+    [
+      "    a a   ",
+      "  aaaaaaa ",
+      "aaaacbaaa ",
+      "  a cab   ",
+      "   abbba  ",
+      "    baa   ",
+      "          ",
+      "          "
+    ],
+    [
+      "   aaa    ",
+      "  aabaaa  ",
+      " aaabcaa  ",
+      "    bb    ",
+      "   aabaa  ",
+      "    bbb   ",
+      "     b    "
+    ],
+    [
+      "    a     ",
+      "  aaaaa   ",
+      "    a     ",
+      "          ",
+      "    aaa   ",
+      "          ",
+      "          ",
+      "          "
+    ],
+    [
+      "          ",
+      "   aaa    ",
+      "          ",
+      "          ",
+      "          ",
+      "          ",
+      "          ",
+      "          "
+    ]
+  ]
+}

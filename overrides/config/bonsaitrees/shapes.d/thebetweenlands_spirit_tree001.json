@@ -1,0 +1,115 @@
+{
+  "type": "thebetweenlands:Spirit_tree",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "thebetweenlands:leaves_spirit_tree_top",
+      "meta": 0
+    },
+    "b": {
+      "name": "thebetweenlands:leaves_spirit_tree_middle",
+      "meta": 0
+    },
+    "c": {
+      "name": "thebetweenlands:leaves_spirit_tree_bottom",
+      "meta": 0
+    },
+    "d": {
+      "name": "thebetweenlands:log_spirit_tree",
+      "meta": 12
+    }
+  },
+  "shape": [
+    [
+      "        ",
+      "     a  ",
+      "     b  ",
+      "     b  ",
+      "     b  ",
+      "     c  ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "     a  ",
+      "    ada ",
+      " a abab ",
+      " b bcbb ",
+      " c c cc ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "     a  ",
+      " a aada ",
+      "adadada ",
+      "b b b b ",
+      "b c b c ",
+      "c   c   ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "   d d  "
+    ],
+    [
+      "        ",
+      "   a a  ",
+      " aadaa  ",
+      " bdddb  ",
+      " c   a  ",
+      "     ba ",
+      "     cb ",
+      "      c ",
+      "        ",
+      "   d    ",
+      "   dd   "
+    ],
+    [
+      "        ",
+      " aa     ",
+      "adda    ",
+      "b  dda  ",
+      "b  dada ",
+      "c  ddada",
+      "   d b b",
+      "   d c c",
+      "   d    ",
+      "   dd   ",
+      "   dd   "
+    ],
+    [
+      "        ",
+      "        ",
+      " aa a   ",
+      " bbada  ",
+      " cadab  ",
+      "  b bca ",
+      "  c c b ",
+      "      b ",
+      "      c ",
+      "   d    ",
+      "   d    "
+    ],
+    [
+      "        ",
+      "        ",
+      "        ",
+      "    a   ",
+      "   ab   ",
+      "   bc   ",
+      "   c    ",
+      "        ",
+      "        ",
+      "        ",
+      "  d     "
+    ]
+  ]
+}

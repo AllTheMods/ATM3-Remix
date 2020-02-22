@@ -1,0 +1,106 @@
+{
+  "type": "plants2:sapling_2",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "plants2:log_0",
+      "meta": 7
+    },
+    "b": {
+      "name": "plants2:leaves_0",
+      "meta": 10
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "  b  ",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "  b  ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      " bab ",
+      "  a  ",
+      "bbabb",
+      "  a  ",
+      "bbabb",
+      "  a  ",
+      "bbabb",
+      "  a  ",
+      "bbabb",
+      "  a  ",
+      "bbabb",
+      "  a  ",
+      " bab ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "  b  ",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "bbbbb",
+      "     ",
+      "  b  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      " bbb ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

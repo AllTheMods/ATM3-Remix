@@ -1,0 +1,163 @@
+{
+	"biome": "netherex:arctic_abyss",
+	"generationWeight": 2,
+	"useDefaultDecorations": true,
+	"isSubBiome": false,
+	"isEnabled": true,
+	"blocks": {
+		"surfaceBlock": {
+			"block": "netherex:frostburn_ice"
+		},
+		"subsurfaceBlock": {
+			"block": "netherex:icy_netherrack"
+		},
+		"caveCeilingBlock": {
+			"block": "netherex:icy_netherrack"
+		},
+		"caveWallBlock": {
+			"block": "netherex:icy_netherrack"
+		},
+		"caveFloorBlock": {
+			"block": "netherex:icy_netherrack"
+		},
+		"fluidBlock": {
+			"block": "minecraft:magma"
+		}
+	},
+	"entities": [
+		{
+			"entity": "netherex:frost",
+			"spawnWeight": 10,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 3
+		}, 
+		{
+			"entity": "netherex:coolmar_spider",
+			"spawnWeight": 35,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "netherex:wight",
+			"spawnWeight": 100,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "netherex:brute",
+			"spawnWeight": 15,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}, 
+		{
+			"entity": "ebwizardry:lightning_wraith",
+			"spawnWeight": 1,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}, 
+		{
+			"entity": "ebwizardry:evil_wizard",
+			"spawnWeight": 3,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}
+	],
+	"traits": [
+		{
+			"trait": "libraryex:pool",
+			"generationAttempts": 2,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 0.125,
+			"minimumGenerationHeight": 36,
+			"maximumGenerationHeight": 108,
+			"blockToSurround": {
+				"block": "netherex:frostburn_ice"
+			},
+			"blockToSpawn": {
+				"block": "netherex:ichor"
+			},
+			"generationStage": "terrain_alteration"
+		}, 
+		{
+			"trait": "libraryex:scatter",
+			"generationAttempts": 5,
+			"randomizeGenerationAttempts": true,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 4,
+			"maximumGenerationHeight": 124,
+			"blockToSpawn": {
+				"block": "netherex:blue_fire"
+			},
+			"blockToTarget": {
+				"block": "netherex:frostburn_ice"
+			},
+			"placement": "on_ground",
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:cluster",
+			"generationAttempts": 10,
+			"randomizeGenerationAttempts": true,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 4,
+			"maximumGenerationHeight": 124,
+			"direction": "down",
+			"blockToAttachTo": {
+				"block": "netherex:icy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:glowstone"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:cluster",
+			"generationAttempts": 10,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 1,
+			"maximumGenerationHeight": 128,
+			"direction": "down",
+			"blockToAttachTo": {
+				"block": "netherex:icy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:glowstone"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:ore",
+			"generationAttempts": 16,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 10,
+			"maximumGenerationHeight": 108,
+			"veinSize": 14,
+			"blockToReplace": {
+				"block": "netherex:icy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "netherex:quartz_ore"
+			},
+			"generationStage": "ore"
+		}, 
+		{
+			"trait": "libraryex:ore",
+			"generationAttempts": 16,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 10,
+			"maximumGenerationHeight": 108,
+			"veinSize": 7,
+			"blockToReplace": {
+				"block": "netherex:icy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "netherex:rime_ore"
+			},
+			"generationStage": "ore"
+		}
+	],
+	"subBiomes": []
+}

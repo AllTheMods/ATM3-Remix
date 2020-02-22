@@ -177,3 +177,7 @@ print(" ========================================================== ");
 	<ore:crushedUranium>.addAll(<ore:dustUranium>);
 	recipes.addShapeless("IEUranium", <immersiveengineering:metal:14>, [<ore:dustUranium>]);
 	recipes.addShapeless("Ic2Uranium", <ic2:crushed:6>*2, [<ore:dustUranium>, <ore:dustUranium>]);
+	
+//====== Oredict Thorium ======
+//
+	mods.mekanism.smelter.addRecipe(<techreborn:dust:65>, <techreborn:ingot:23>);

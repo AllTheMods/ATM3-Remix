@@ -1,0 +1,27 @@
+{
+    "name": "plants2:nether_sapling0",
+    "mod": "plants2",
+    "sapling": {
+        "name": "plants2:nether_sapling",
+        "data": 0
+    },
+    "growTimeMultiplier": 1.5,
+    "drops": [
+        {
+            "name": "plants2:nether_log",
+            "data": 0,
+            "type": "WOOD"
+        },
+        {
+            "name": "plants2:nether_leaves",
+            "data": 0,
+            "type": "LEAVES"
+        },
+        {
+            "name": "plants2:nether_sapling",
+            "data": 0,
+            "type": "SAPLING"
+		}
+    ],
+	"compatibleSoilTags": ["netherrack"]
+}

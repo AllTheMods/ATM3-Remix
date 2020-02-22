@@ -1,0 +1,27 @@
+{
+    "name": "plants2:sapling_2",
+    "mod": "plants2",
+    "sapling": {
+        "name": "plants2:sapling_0",
+        "data": 2
+    },
+    "growTimeMultiplier": 1.5,
+    "drops": [
+        {
+            "name": "plants2:log_0",
+            "data": 2,
+            "type": "WOOD"
+        },
+        {
+            "name": "plants2:leaves_0",
+            "data": 2,
+            "type": "LEAVES"
+        },
+        {
+            "name": "plants2:sapling_0",
+            "data": 2,
+            "type": "SAPLING"
+		}
+    ],
+	"compatibleSoilTags": ["dirt"]
+}

@@ -1,0 +1,151 @@
+{
+	"biome": "netherex:ruthless_sands",
+	"generationWeight": 8,
+	"useDefaultDecorations": true,
+	"isSubBiome": false,
+	"isEnabled": true,
+	"blocks": {
+		"surfaceBlock": {
+			"block": "minecraft:soul_sand"
+		},
+		"subsurfaceBlock": {
+			"block": "netherex:gloomy_netherrack"
+		},
+		"caveCeilingBlock": {
+			"block": "netherex:gloomy_netherrack"
+		},
+		"caveWallBlock": {
+			"block": "netherex:gloomy_netherrack"
+		},
+		"caveFloorBlock": {
+			"block": "netherex:gloomy_netherrack"
+		},
+		"fluidBlock": {
+			"block": "minecraft:lava"
+		}
+	},
+	"entities": [
+		{
+			"entity": "minecraft:wither_skeleton",
+			"spawnWeight": 65,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "minecraft:zombie_pigman",
+			"spawnWeight": 45,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "netherex:spinout",
+			"spawnWeight": 100,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "ebwizardry:lightning_wraith",
+			"spawnWeight": 1,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}, 
+		{
+			"entity": "ebwizardry:evil_wizard",
+			"spawnWeight": 3,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}
+	],
+	"traits": [
+		{
+			"trait": "libraryex:fluid",
+			"generationAttempts": 8,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 4,
+			"maximumGenerationHeight": 124,
+			"blockToTarget": {
+				"block": "netherex:gloomy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:flowing_lava"
+			},
+			"generateFalling": false,
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:cluster",
+			"generationAttempts": 10,
+			"randomizeGenerationAttempts": true,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 4,
+			"maximumGenerationHeight": 124,
+			"direction": "down",
+			"blockToAttachTo": {
+				"block": "netherex:gloomy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:glowstone"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:cluster",
+			"generationAttempts": 10,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 1,
+			"maximumGenerationHeight": 128,
+			"direction": "down",
+			"blockToAttachTo": {
+				"block": "netherex:gloomy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:glowstone"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:fluid",
+			"generationAttempts": 16,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 10,
+			"maximumGenerationHeight": 118,
+			"blockToTarget": {
+				"block": "netherex:gloomy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:flowing_lava"
+			},
+			"generateFalling": true,
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "netherex:thornstalk",
+			"generationAttempts": 16,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 32,
+			"maximumGenerationHeight": 108,
+			"generationStage": "plant_decoration"
+		}, 
+		{
+			"trait": "libraryex:ore",
+			"generationAttempts": 16,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 10,
+			"maximumGenerationHeight": 108,
+			"veinSize": 14,
+			"blockToReplace": {
+				"block": "netherex:gloomy_netherrack"
+			},
+			"blockToSpawn": {
+				"block": "netherex:quartz_ore"
+			},
+			"generationStage": "ore"
+		}
+	],
+	"subBiomes": []
+}

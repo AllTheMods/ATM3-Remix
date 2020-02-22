@@ -1,0 +1,174 @@
+{
+	"biome": "netherex:fungi_forest",
+	"generationWeight": 4,
+	"useDefaultDecorations": true,
+	"isSubBiome": false,
+	"isEnabled": true,
+	"blocks": {
+		"surfaceBlock": {
+			"block": "netherex:hyphae"
+		},
+		"subsurfaceBlock": {
+			"block": "netherex:lively_netherrack"
+		},
+		"caveCeilingBlock": {
+			"block": "netherex:lively_netherrack"
+		},
+		"caveWallBlock": {
+			"block": "netherex:lively_netherrack"
+		},
+		"caveFloorBlock": {
+			"block": "netherex:lively_netherrack"
+		},
+		"fluidBlock": {
+			"block": "minecraft:lava"
+		}
+	},
+	"entities": [
+		{
+			"entity": "netherex:mogus",
+			"spawnWeight": 100,
+			"minimumGroupCount": 4,
+			"maximumGroupCount": 6
+		}, 
+		{
+			"entity": "netherex:spore",
+			"spawnWeight": 25,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "netherex:spore_creeper",
+			"spawnWeight": 50,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 4
+		}, 
+		{
+			"entity": "ebwizardry:lightning_wraith",
+			"spawnWeight": 1,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}, 
+		{
+			"entity": "ebwizardry:evil_wizard",
+			"spawnWeight": 3,
+			"minimumGroupCount": 1,
+			"maximumGroupCount": 1
+		}
+	],
+	"traits": [
+		{
+			"trait": "libraryex:cluster",
+			"generationAttempts": 10,
+			"randomizeGenerationAttempts": true,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 4,
+			"maximumGenerationHeight": 124,
+			"direction": "down",
+			"blockToAttachTo": {
+				"block": "minecraft:netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:glowstone"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:cluster",
+			"generationAttempts": 10,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 1,
+			"maximumGenerationHeight": 128,
+			"direction": "down",
+			"blockToAttachTo": {
+				"block": "minecraft:netherrack"
+			},
+			"blockToSpawn": {
+				"block": "minecraft:glowstone"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:big_mushroom",
+			"generationAttempts": 256,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 32,
+			"maximumGenerationHeight": 108,
+			"shape": "flat",
+			"blockToPlaceOn": {
+				"block": "netherex:hyphae"
+			},
+			"mushroomStem": {
+				"block": "netherex:elder_mushroom_stem"
+			},
+			"mushroomCap": {
+				"block": "netherex:brown_elder_mushroom_cap"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:big_mushroom",
+			"generationAttempts": 256,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 32,
+			"maximumGenerationHeight": 108,
+			"shape": "bulb",
+			"blockToPlaceOn": {
+				"block": "netherex:hyphae"
+			},
+			"mushroomStem": {
+				"block": "netherex:elder_mushroom_stem"
+			},
+			"mushroomCap": {
+				"block": "netherex:red_elder_mushroom_cap"
+			},
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "netherex:enoki",
+			"generationAttempts": 32,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 48,
+			"maximumGenerationHeight": 118,
+			"generationStage": "decoration"
+		}, 
+		{
+			"trait": "libraryex:ore",
+			"generationAttempts": 16,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 1.0,
+			"minimumGenerationHeight": 10,
+			"maximumGenerationHeight": 108,
+			"veinSize": 14,
+			"blockToReplace": {
+				"block": "minecraft:netherrack"
+			},
+			"blockToSpawn": {
+				"block": "netherex:quartz_ore"
+			},
+			"generationStage": "ore"
+		}, 
+		{
+			"trait": "libraryex:structure",
+			"generationAttempts": 1,
+			"randomizeGenerationAttempts": false,
+			"generationProbability": 0.0125,
+			"minimumGenerationHeight": 32,
+			"maximumGenerationHeight": 118,
+			"structures": [
+				"netherex:ghast_queen_shrine"
+			],
+			"structureType": "air",
+			"ignoredBlock": {
+				"block": "minecraft:structure_void"
+			},
+			"clearancePercentage": 1.0,
+			"generationStage": "structure"
+		}
+	],
+	"subBiomes": []
+}

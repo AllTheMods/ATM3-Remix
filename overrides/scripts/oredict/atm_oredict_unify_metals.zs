@@ -215,31 +215,5 @@ function fixMetals (
 	
 	// Brass
 	recipes.addShapeless("BrassFix", <techreborn:ingot:1>, [<thaumcraft:ingot:2>]);
-
-//====== Process Metals ======
-// NOT YET ENABLED
-	/*
-	print(0 == fixMetals(<ore:blockBrass>, <ore:ingotBrass>, <ore:nuggetBrass>)                 ? "Fixed Brass" : "Brass FAILED");
-	print(0 == fixMetals(<ore:blockChrome>, <ore:ingotChrome>, <ore:nuggetChrome>)              ? "Fixed Chrome" : "Chrome FAILED");
-	print(0 == fixMetals(<ore:blockIridium>, <ore:ingotIridium>, <ore:nuggetIridium>)           ? "Fixed Iridium" : "Iridium FAILED");
-	print(0 == fixMetals(<ore:blockTitanium>, <ore:ingotTitanium>, <ore:nuggetTitanium>)        ? "Fixed Titanium" : "Titanium FAILED");
-	print(0 == fixMetals(<ore:blockCopper>, <ore:ingotCopper>, <ore:nuggetCopper>)              ? "Fixed Copper" : "Copper FAILED");
-	print(0 == fixMetals(<ore:blockTin>, <ore:ingotTin>, <ore:nuggetTin>)                       ? "Fixed Tin" : "Tin FAILED");
-	print(0 == fixMetals(<ore:blockSilver>, <ore:ingotSilver>, <ore:nuggetSilver>)              ? "Fixed Silver" : "Silver FAILED");
-	print(0 == fixMetals(<ore:blockConstantan>, <ore:ingotConstantan>, <ore:nuggetConstantan>)  ? "Fixed Constantan" : "Constantan FAILED");
-	print(0 == fixMetals(<ore:blockBronze>, <ore:ingotBronze>, <ore:nuggetBronze>)              ? "Fixed Bronze" : "Bronze FAILED");
-	print(0 == fixMetals(<ore:blockInvar>, <ore:ingotInvar>, <ore:nuggetInvar>)                 ? "Fixed Invar" : "Invar FAILED");
-	print(0 == fixMetals(<ore:blockElectrum>, <ore:ingotElectrum>, <ore:nuggetElectrum>)        ? "Fixed Electrum" : "Electrum FAILED");
-	print(0 == fixMetals(<ore:blockSteel>, <ore:ingotSteel>, <ore:nuggetSteel>)                 ? "Fixed Steel" : "Steel FAILED");
-	print(0 == fixMetals(<ore:blockMithril>, <ore:ingotMithril>, <ore:nuggetMithril>)           ? "Fixed Mithril" : "Mithril FAILED");
-	print(0 == fixMetals(<ore:blockPlatinum>, <ore:ingotPlatinum>, <ore:nuggetPlatinum>)        ? "Fixed Platinum" : "Platinum FAILED");
-	print(0 == fixMetals(<ore:blockNickel>, <ore:ingotNickel>, <ore:nuggetNickel>)              ? "Fixed Nickel" : "Nickel FAILED");
-	print(0 == fixMetals(<ore:blockAluminum>, <ore:ingotAluminum>, <ore:nuggetAluminum>)        ? "Fixed Aluminum" : "Aluminum FAILED");
-	print(0 == fixMetals(<ore:blockLead>, <ore:ingotLead>, <ore:nuggetLead>)                    ? "Fixed Lead" : "Lead FAILED");
-	print(0 == fixMetals(<ore:blockUranium>, <ore:ingotUranium>, <ore:nuggetUranium>)           ? "Fixed Uranium" : "Uranium FAILED");
-	*/
-
-
-
-
-
+	
+	

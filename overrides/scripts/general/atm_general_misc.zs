@@ -637,3 +637,8 @@ recipes.remove(<minecraft:chest>);
 	mods.jei.JEI.removeAndHide(<extracells:terminal.fluid.wireless>);
 	mods.jei.JEI.removeAndHide(<extracells:terminal.universal.wireless>);
 	mods.jei.JEI.removeAndHide(<extracells:terminal.gas.wireless>);
+
+//===== Remove Tech Reborn Crafter =====
+
+    mods.jei.JEI.removeAndHide(<techreborn:auto_crafting_table>);
+    <techreborn:auto_crafting_table>.addTooltip("Use " + format.red("Disabled: Due to Crashes"));

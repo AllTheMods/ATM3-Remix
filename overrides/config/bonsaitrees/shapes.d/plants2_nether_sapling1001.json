@@ -1,0 +1,139 @@
+{
+  "type": "plants2:nether_sapling1",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "plants2:nether_leaves",
+      "meta": 6
+    },
+    "b": {
+      "name": "plants2:nether_leaves",
+      "meta": 7
+    },
+    "c": {
+      "name": "plants2:nether_log",
+      "meta": 6
+    }
+  },
+  "shape": [
+    [
+      "       ",
+      "       ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   a   ",
+      " aaaaa ",
+      "   a   ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  aaa  ",
+      " aacaa ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  aaa  ",
+      " aaaaa ",
+      "  aca  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   a   ",
+      " aaaaa ",
+      "  aaa  ",
+      " aaaaa ",
+      "   c   ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  abb  ",
+      " aacbba",
+      "  abc  ",
+      " aaccc ",
+      "  aacc ",
+      "    cc ",
+      "     c "
+    ],
+    [
+      "   baa ",
+      " aabcaa",
+      "   baa ",
+      " aaaaa ",
+      "   a   ",
+      "    c  ",
+      "       ",
+      "       "
+    ],
+    [
+      "    a  ",
+      "  abbaa",
+      " aaaa  ",
+      "  aaa  ",
+      "    c  ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  aaaa ",
+      "aaaaa  ",
+      "  ac   ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      " aaa   ",
+      "aacaa  ",
+      " aaa   ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  a    ",
+      "aaaaa  ",
+      "  a    ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      " aaa   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

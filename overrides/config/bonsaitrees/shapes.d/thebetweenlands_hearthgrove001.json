@@ -1,0 +1,144 @@
+{
+  "type": "thebetweenlands:hearthgrove",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "thebetweenlands:leaves_hearthgrove_tree",
+      "meta": 0
+    },
+    "b": {
+      "name": "thebetweenlands:log_hearthgrove",
+      "meta": 1
+    },
+    "c": {
+      "name": "thebetweenlands:hanger",
+      "meta": 1
+    },
+    "d": {
+      "name": "thebetweenlands:log_hearthgrove",
+      "meta": 3
+    }
+  },
+  "shape": [
+    [
+      "       ",
+      "   a   ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   a   ",
+      " aaaaa ",
+      "aaaaaaa",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  aaa  ",
+      " aaaaa ",
+      "aaa aaa",
+      " c    c",
+      " c    c",
+      "      c",
+      "      c",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   d   ",
+      "   d   "
+    ],
+    [
+      " aaaaa ",
+      "aaa aaa",
+      "aa d aa",
+      "   b c ",
+      "   b c ",
+      "   b   ",
+      "   b   ",
+      "   b   ",
+      "   b   ",
+      "   b   ",
+      "   b   ",
+      "  db   ",
+      "  d    "
+    ],
+    [
+      "  aaa  ",
+      " aaaaa ",
+      "aaddaaa",
+      "  dd  c",
+      "      c",
+      "      c",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   d   ",
+      "   d   "
+    ],
+    [
+      "   a   ",
+      " aaaaa ",
+      "aaaaaaa",
+      "  cc  c",
+      "  cc  c",
+      "  cc  c",
+      "  cc  c",
+      "  cc  c",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   a   ",
+      " aaaaa ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "  aaa  ",
+      "  cc   ",
+      "  cc   ",
+      "  c    ",
+      "  c    ",
+      "  c    ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}
