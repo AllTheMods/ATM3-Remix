@@ -642,3 +642,8 @@ recipes.remove(<minecraft:chest>);
 
     mods.jei.JEI.removeAndHide(<techreborn:auto_crafting_table>);
     <techreborn:auto_crafting_table>.addTooltip("Use " + format.red("Disabled: Due to Crashes"));
+
+	
+ //====== Advanced Rocketry  warp core fix ======
+ //
+ <ore:blockWarpCoreRim>.add(<techreborn:storage:2>); 
