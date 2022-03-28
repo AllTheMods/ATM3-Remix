@@ -93,5 +93,35 @@
 			"minecraft:grass",
 			"minecraft:gravel"
 		]
+	},
+	{
+		"type": "oreGen",
+		"identifier": "andesite",
+		"enabled": false,
+		"amount": 10,
+		"size": 33,
+		"minHeight": 0,
+		"maxHeight": 80,
+		"ore": "minecraft:stone:1"
+	},
+	{
+		"type": "oreGen",
+		"identifier": "diorite",
+		"enabled": false,
+		"amount": 10,
+		"size": 33,
+		"minHeight": 0,
+		"maxHeight": 80,
+		"ore": "minecraft:stone:3"
+	},
+	{
+		"type": "oreGen",
+		"identifier": "granite",
+		"enabled": false,
+		"amount": 10,
+		"size": 33,
+		"minHeight": 0,
+		"maxHeight": 80,
+		"ore": "minecraft:stone:5"
 	}
 ]

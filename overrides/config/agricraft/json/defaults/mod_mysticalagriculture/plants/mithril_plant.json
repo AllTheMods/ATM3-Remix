@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/mithril_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "mithril_plant",
   "plant_name": "Mithril Crop",
   "seed_name": "Mithril Seeds",

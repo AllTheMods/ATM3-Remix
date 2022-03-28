@@ -1,7 +1,7 @@
 {
   "path": "mod_mysticalagradditions/nether_star_plant.json",
-  "enabled": false,
-  "id": "mysticalagradditions:nether_star_plant",
+  "enabled": true,
+  "id": "nether_star_plant",
   "plant_name": "Nether Star Crop",
   "seed_name": "Nether Star Seeds",
   "seed_items": [
@@ -65,7 +65,7 @@
         "item": "mysticalagradditions:special",
         "meta": 0,
         "tags": "",
-        "ignoreMeta": true,
+        "ignoreMeta": false,
         "ignoreTags": [],
         "useOreDict": false
       }

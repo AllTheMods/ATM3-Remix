@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/tier4_inferium_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "tier4_inferium_plant",
   "plant_name": "Tier4 Inferium Crop",
   "seed_name": "Tier4 Inferium Seeds",
@@ -34,11 +34,11 @@
   "products": {
     "products": [
       {
-        "min": 1,
-        "max": 5,
+        "min": 4,
+        "max": 16,
         "chance": 0.9,
         "required": true,
-        "item": "mysticalagriculture:inferium_essence",
+        "item": "mysticalagriculture:crafting",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,

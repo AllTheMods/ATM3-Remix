@@ -438,8 +438,6 @@ print(" ========================================================== ");
 		<roots:moonglow_seed:*>,
 		<roots:spirit_herb_seed:*>,
 		<roots:wildewheet_seed:*>,
-		<roots:assorted_seeds:*>,
-		<roots:cooked_seeds:*>,
 		<rustic:apple_seeds:*>,
 		<rustic:chili_pepper_seeds:*>,
 		<rustic:grape_stem:*>,

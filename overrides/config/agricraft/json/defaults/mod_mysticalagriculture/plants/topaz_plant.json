@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/topaz_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "topaz_plant",
   "plant_name": "Topaz",
   "seed_name": "Topaz Seeds",

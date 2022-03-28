@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/nether_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "nether_plant",
   "plant_name": "Nether Crop",
   "seed_name": "Nether Seeds",

@@ -1,12 +1,12 @@
 {
-  "path": "mod_mysticalagriculture/plants/silicon_plant.json",
+  "path": "mod_mysticalagriculture/plants/hop_graphite_plant.json",
   "enabled": true,
-  "id": "mysticalagriculture:silicon_plant",
-  "plant_name": "Silicon Crop",
-  "seed_name": "Silicon Seeds",
+  "id": "hop_graphite_plant",
+  "plant_name": "HOP Graphite",
+  "seed_name": "HOP Graphite Seeds",
   "seed_items": [
     {
-      "item": "mysticalagriculture:silicon_seeds",
+      "item": "mysticalagriculture:hop_graphite_seeds",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Silicon Seeds."
+    "default": "HOP Graphite Seeds."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 5,
         "chance": 0.9,
         "required": true,
-        "item": "mysticalagriculture:silicon_essence",
+        "item": "mysticalagriculture:hop_graphite_essence",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -57,7 +57,7 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "mysticalagriculture:items/silicon_seeds",
+    "seed_texture": "mysticalagriculture:items/hop_graphite_seeds",
     "plant_textures": [
       "mysticalagriculture:blocks/crop0",
       "mysticalagriculture:blocks/crop1",
@@ -66,7 +66,7 @@
       "mysticalagriculture:blocks/crop3",
       "mysticalagriculture:blocks/crop4",
       "mysticalagriculture:blocks/crop4",
-      "mysticalagriculture:blocks/silicon_crop"
+      "mysticalagriculture:blocks/hop_graphite_crop"
     ]
   }
 }

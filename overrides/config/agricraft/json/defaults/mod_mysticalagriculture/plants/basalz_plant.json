@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/basalz_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "basalz_plant",
   "plant_name": "Basalz Crop",
   "seed_name": "Basalz Seeds",

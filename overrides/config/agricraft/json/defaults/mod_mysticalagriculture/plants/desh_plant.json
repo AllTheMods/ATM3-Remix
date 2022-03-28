@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/desh_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "desh_plant",
   "plant_name": "Desh Crop",
   "seed_name": "Desh Seeds",

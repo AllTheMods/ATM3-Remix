@@ -1,6 +1,6 @@
 {
   "path": "mod_mysticalagriculture/plants/electrum_plant.json",
-  "enabled": false,
+  "enabled": true,
   "id": "electrum_plant",
   "plant_name": "Electrum Crop",
   "seed_name": "Electrum Seeds",
